@@ -1,0 +1,259 @@
+﻿### Paradox Pirates Improved
+### This list includes all of the names of the default pirate ships and starbases from the vanilla game, as well as a few jokes of my own. --SageWilde
+
+
+paradox_pirates_improved = {
+	category = "Humanoid"
+
+	ship_names = {
+		generic = {
+            Eyesore Tinderbox Pipedream Deathtrap Jawbreaker Crybaby Spoilsport Pottymouth Whippersnapper Stepchild Homewrecker Roadkill Malcontent "Loose Cannon" Butterfingers Snapperhead "Hissy Fit" Sourpuss "Sucker Punch" Gutbuster "I Hate Everything" Highwayman Outlaw "Turbulent Priest" "Sea Monkey" "Dairy Farmer" "Morally Bankrupt" "Bucket of Bolts" "Free Lunch" "Wallet Inspector" "Laughing Stock" Gunslinger Sellsword Rapscallion "Wayward Son" Braindrain "Inconspicuous Asteroid" "One Trick Pony" "Wide Load" "No Refunds" Fencesitter Blindspot "Ugly Stick" "Shows Over" "Four Lights" "Poetic Justice" "Foreign Object" "Why Me" "Last Straw" "Designated Driver" "Comet Sighted" "Slapped Together" "Lowest Bidder" "Wet Blanket" "Sordid Methods" "Broken Record" Neer-do-well Grotesque "Impudent Whelp" "Harsh Language" "Public Servant" "Love Is In The Air" "Class Act" Ineptitude Malaise Chomper "Diminishing Returns" "Calculated Risk" "Logistical Nightmare" "Come Closer" "Soylent Green" "Tunnel of Love" "Tax Evasion" "Hippie Slayer" "Gross Negligence" "Another Mouth to Feed" Blunderbuss "Catch Me If You Can" Obscenity "Holier Than Thou" "Open Wide" Target Bullseye Taxman Solicitor "Red Dread" "Missing Link" "Duct Taped" "Robber Baron" "Affront to Nature" "Queen Xoggras' Revenge" "Total Loss" "Village Idiot" Tattletale Filibuster "Smarmy Toad" "Ligma" "Mangy Cur" Cityslicker "Depth Perception" "This Way" "Mysterious Rash" "Divine Intervention" Crossbones "Jolly Roger" "No Surrender" "No Quarter" "Victim of Circumstance" "Red Flag" "Product of Society" "Under Evaluation" "Flying Coffin" "Gilded Cage" "Disgruntled Worker" "Of Sound Mind" "Ivory Tower" "Bastard Son" "Carpet Sample" "Scarlet Tentacle" "Down In Front" "Learning Experience VII" "Lowest Common Denominator" "Glory Days" "Gripping Appendage" "Desperate Pauper" "Born Lucky" "Boltragg's Folly" "MyFirstShip IV" "Base Instincts" "Check Please" "Infinite Loop" "Lazy Morning" "Consequences Be Damned" "Pointless Platitude" "Grey Matter" "Conscientious Objector" "Unexplained Itch" Anarchist "Out of Control" "Unexpected Obstacle" "Toxic Behavior" "Controlled Explosion" Fugitive "Unfortunate Ending" "Criminally Insane" "Not Guilty" "Double Jeopardy" "Perfect Pitch" "Pedal to the Metal" Mistrial "Lump of Coal" "I Am Truly Sorry" "Dark Forecast" "Apologies in Advance" "Reduced to This" "Surprise Encounter" "Meat Locker" "Cardiac Arrest" "Piece of Junk" "I Didnt Want This" "Bottom Line" "With Abandon" "Do Not Respond" "Unsound Methods" "Beast of Burden" "Red Claw" "Flying Dorgabloid" "No Laughing Matter" "Nothing Personal" "Great Experiment" "Looks Like Trouble" "Curse of Zuldaxim" Scalawag Guttersnipe "Murderous Intent" "If Looks Could Kill" "What Sorcery Is This" Untranslatable "Liquid Courage" "Attention Seeker" "Your Female Parent" "Juvenile Delinquent" "Mystery Meat" "Slippery Slope" Knucklehead "Spirit of Zalussa" "Empty Gesture" "Annoying Pest" "Zarga's Ship" "Zarga's Other Ship" "Killing Implement" "Blunt Object" "The General Xarg" "Blockade Runner" "Innocent Bystander" Reprobate "Lacking Purpose" "Beyond Salvation" "This Too Shall Pass" "Guilty Pleasure" "Exploratory Surgery" "Inelegant Solution" Ragamuffin "Under New Ownership" "Resonance Cascade" "Festering Wound" "Red Smile" Rabble-rouser "Mysterious Stranger" "Process of Elimination" Wastrel Poppycock Hogwash Balderdash "Enough Lollygagging" "Prone to Hysteria" "Star Beggar" "Grace Under Pressure" Brainiac Nogoodnik Pockmark "Dream Shatterer" Oathbreaker Turncoat "Do The Math" "By The Numbers" Mishap Harridan "Big Boy" "Teacher's Pet" Destitute "Hell's Bells" Beguiler "Critical Mass" "Star Wench" "Double Standard" Half-wit Dunderhead Numbskull "Blind Fury" "Curse You All" "Carrion Eater" Unbidden "Pound of Flesh" "Pucker Up" "Short Fuse" Killjoy Footpad "Travel Agent" Bushranger Simpleton Ignoramus "Not What It Seems" Reprehensible Intolerant Petulant "Deceiving Looks" "Pillage and Reconciliation" "An Arrow in Flight" Gun-to-Head Megalomaniac "Petty Theft" "Grand Larceny" "Pop Up" "A Promise Kept" "Frag Machine" "Impersonal Space" "Fallen Pillar" "Motion Tabled" Aimbot "Attack on Freighter" "The Slings" "The Arrows" "Outrageous Fortune" Thermopylaeic "Pyrrhic and Proud" "Wiggling Bait" "Shoot for Loot" "Feature Creep" "Creepy Feats" "Tone Deaf Siren" "No Good" "The Worst Thing" "Oh That's a Pirate" "Science Ship Killer" Ravageoid Violence-Liker "Illegal Repercussions" "Shameless Plagiarist" "Dove Crow" Alcheringa "Barnacle Jim" "Charles in Charge" Ganker "Manus Celer Dei" "Fatum Iustum Stultorum" "Strange Aeons" "Red Queen" Jabberwock Boojum Snark
+		}
+	
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+            "Big Hug" "Per My Last E-Mail" "Millennial Falchion" "Ball Eater" "Mistake" "Nein Heroez" "I Would Like To Rage" "Your Extended Warranty" "Get Off my Keybfjjjj" "Emotional Support Vessel" "Belma's Panties" "Going Jolly" "Million Moony" "Pirate D. Ship" "Mental Possum" "Lusty Tzynn Maid" "Doorknob Sock" "Stolen Sweetroll" Mass-kisser "Ban Hammer" Nerf-herder "Gaston" "Spit and Prayers" "Daddy's Little Ship" "Byzantium V" "Wench's Wink" Showstopper Show-off "Scythe of Death" "Philosophy" 
+		}
+		
+		science = {
+			"Orville" "Enterprise" "Complete Breakfast" "Robbie Rotten" "Alestorm" "1337 H4XX0R" "Runtime Error" "Failed Host Lookup" "DROPTABLE" "Deviant Drone" "404 Ship Not Found" "Tiyanki Feathers" "Pirate School Dropout" "Mystery Machine" "NEET's Basement" "Goin' Commando" "Flagpole Undies" "Nerd Alert" "Humm Parsec"   
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		transport = {
+		}
+	
+		military_station_small = {
+		}
+
+		ion_cannon = {
+		}
+		
+		#orbital_station = { }
+		mining_station = { }
+		research_station = { }
+		#wormhole_station = { }
+		#terraform_station = { }
+		#observation_station = { }
+		#outpost_station = {	}
+	
+		military_station_small = {}
+	
+		military_station_medium = {}
+	
+		military_station_large = {}	
+	}
+	
+	fleet_names = {
+		random_names = {
+            "Blood Armada" "Dread Fleet" "Flotilla of Death" "Skull Armada" "Fleet of Doom" "Raider Flotilla" "Pirate Squadron" "Dark Flotilla" "War Party" "Pirate Armada" "Pirate Flotilla" "Raiding Strike Force" "Blood Host" "Hunting Squadron" "Hunting Pack" "Scourge of the Stars" "Black Flotilla" "Crimson Flotilla" "Stellar Marauders" "Black Flag Furore" "Pirates Without Borders" "Incessant Nagging" "Cirque des Soleils" "Scallywags United" "Captain Kirk's Trousers" "qID Saghqu'" "Merry Men of Sherwood Planet" "Tribble Tossers" Disagreeables "Dishonor Among Thieves" "Prize Rule Breakers" Sunblasters Moonchasers "Carbon Hounds" "Under Pressure" "Home Team" "Away Team" Interlopers "The Persistents" "Piracy Potentiators" "Prank Patrol" "China Plates" "Privateering Enthusiasts" "Raiding Specialists" "Boarding Broncos" "Peaceful Travelers" "Blue Rogues" "Radical Dreamers" "They Breathe" Orbwalkers
+		}
+		sequential_name = PARADOX_PIRATES_IMPROVED_xxFLEETNAMES_ORD
+	}
+
+	###ARMIES
+	army_names = {
+			
+		generic = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxASSAULTARMY_ORD
+		}
+			
+		machine_defense = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxMACHINEDEFENSE_ORD
+		}
+			
+		machine_assault_1 = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT1_ORD
+		}
+			
+		machine_assault_2 = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT2_ORD
+		}
+			
+		machine_assault_3 = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT3_ORD
+		}
+	
+		defense_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxDEFENSEARMY_ORD
+		}
+			
+		assault_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxASSAULTARMY_ORD
+		}
+		
+		slave_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxSLAVEARMY_ORD
+		}
+		
+		clone_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxCLONEARMY_ORD
+		}
+		
+		perfected_clone_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxCLONEARMY_ORD
+		}
+		
+		undead_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxUNDEADARMY_ORD
+		}
+		
+		robotic_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxROBOTICARMY_ORD
+		}
+		
+		robotic_defense_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxROBOTICDEFENSEARMY_ORD
+		}
+		
+		psionic_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxPSIONICARMY_ORD
+		}
+		
+		xenomorph_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxXENOMORPHARMY_ORD
+		}
+		
+		gene_warrior_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxGENEWARRIORARMY_ORD
+		}
+		
+		occupation_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxOCCUPATIONARMY_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxROBOTICOCCUPATIONARMY_ORD
+		}
+
+		individual_machine_occupation_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_xxROBOTICOCCUPATIONARMY_ORD
+		}
+
+		primitive_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = PARADOX_PIRATES_IMPROVED_POSTATOMICARMYxx_SEQ
+		}
+		warpling_army = {
+			sequential_name = seq_warpling_army
+		}
+		abomination_army = {
+			sequential_name = seq_abomination_army
+		}
+		wilderness_pre_sapient_defence_army = {
+			sequential_name = seq_wilderness_pre_sapient_defence_army
+		}
+		wilderness_pre_sapient_assault_army = {
+			sequential_name = seq_wilderness_pre_sapient_assault_army
+		}
+	}
+	
+	### PLANETS
+	
+	planet_names = {
+	
+		generic = {
+			names = {
+                "Dark Lair" "Port Despair" "Solid Ground" "Vorpal House" "Morbid Home" "Spacer Alley" "The Big House" "Beyond the Pale" "The Pirate Bulge" "Foul Parish" "Pit of Piracy" "Corsair Court" "The Privateers Privates" "Buccaneer Bodega" "Zero-G Chateau" "Just Rewards" "The Heft of Theft" "Predatory Positioning" "Military-Piracy Complex"
+            }
+		}
+		
+		pc_desert = {
+			names = {
+                "Kingdom Crumbs" "Gothgirlsere" "Anken's Bane"
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+                "Polly's Perch" "Poogan's Porch" "Prestley's Preach"
+			}
+		}
+		
+		pc_arid = {
+			names = {
+                "Lookout" "Reckless Abandon" "Stripey Rocks"
+			}
+		}
+		
+		pc_continental = {
+			names = {
+                "Happy Camper" "Grumpy Camper" "Goldilocks"
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+                "Unsafe Harbor" "Safe Harbor" "OSHA-Approved Harbor"
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+                "Snow Day" "Hard Pack" "Balto" 
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+                "Black Ice" "Franklin" "Shield of Crystal"
+			}
+		}
+
+        pc_alpine = {
+            names = {
+                "Rocky Outhouse" "Tumbledown" "Mt Areskupardi"
+            }
+        }
+		
+	}
+	
+	### CHARACTERS
+	
+	character_names = {
+		names1 = {
+			weight = 100
+
+            first_names_male = { 
+                Aragon Ash Bjorn Boar Bootstrap Braveheart Brock Burt Cole Cygnus Doug Delvin Elias Erdin Eurylochus Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Jack Jaeger Jan Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Rathkran Robin Rock Shepherd Smiley "Stan Lee" Trombone Sully Tristan Tupper Vegeta Weasel William Z Zheng 
+            }
+           
+            first_names_female = { 
+                Blaze Catra Cassiopeia Coliope Curse Danger Delenn Determination Dolores Drucilla Echo Edith Fanta Fantoma Frisk Geraldine Helga Jester Karai Law Lillian Margot Max Makone Misty May Light Lillith Ondine Eurydice Kitty Hunter Lyra Peep Penelope Penny Peridot Peril Perseverance Rue Scarlet Shizuka Siren Trouble Tulip Tyde Valkyrie Vellen Vendetta Zariel Zelda Zoe
+            }
+			
+			second_names = { 
+                Aruj Ace Ango Aleyn Alday Archer Axe Book Bras-de-Fer Bellamy Barbarossa Barton Brasiliano Butler Baldassare Bashir Crusher Crusoe Cossa Clisson Crabbe Cooke Dax Drake Groundrunner Hawkins Hawley Hood Hook Jailbreak Janeway Jing Juzou Kim Kirk Kyber Luffy Mayweather Mendoza Morgan Ning North Nobody Nolastname Nowhere O'Hare Picard Raze Reaver Reed Resolve Ryker Sisko Skywalker Silver Special Solo Sparrow Troi Uhura Takanobu Tempest Teach "von Wicke" Washbuckle Ward Wick Wunder Victorious Viper 
+			}
+			
+            regnal_first_names_male = {
+            }
+           
+            regnal_first_names_female = {
+            }
+			
+			regnal_second_names = {
+                "of the Great Black" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
+				
+			}
+		}
+	}
+}

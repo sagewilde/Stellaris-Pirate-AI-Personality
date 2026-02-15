@@ -1,0 +1,80 @@
+
+# Message in a Bottle
+site_space_shanty_dig = {
+	desc = {
+		trigger = {
+			owner = {
+				country_uses_bio_ships = no
+			}
+		}
+		text = "space_shanty_intro"
+	}
+	desc = {
+		trigger = {
+			owner = {
+				country_uses_bio_ships = yes
+			}
+		}
+		text = "space_shanty_intro_bio"
+	}
+	desc = {
+		trigger = {
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "space_shanty_intro_pirate"
+	}
+	picture = GFX_evt_frozen
+	stages = 5
+	weight = 0 #via system initializer
+
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+	}
+
+	on_visible = {
+		country_event = { id = story.5 days = 30 }
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_A2
+		event = ancrel.15021
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_A2
+		event = ancrel.15022
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_A3
+		event = ancrel.15023
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_A3
+		event = ancrel.15024
+	}
+
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_A3
+		event = ancrel.15025
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = site_spaceship_random_events }
+		}
+	}
+}

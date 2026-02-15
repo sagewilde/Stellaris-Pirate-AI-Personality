@@ -1,0 +1,28 @@
+is_pirate_empire = {
+    OR = {
+        has_valid_civic = civic_crusader_spirit_corporate
+        has_technology = tech_pirate_leadership
+    }
+}
+
+is_a_huge_jerk = {
+    OR = {
+        has_ai_personality = became_the_crisis
+        has_ethic = ethic_fanatic_authoritarian
+		has_ethic = ethic_fanatic_capitalism
+        has_ethic = ethic_fanatic_xenophobe
+		has_origin = origin_slavers
+		has_origin = origin_under_one_rule
+		has_origin = origin_syncretic_evolution
+        has_origin = origin_endbringers
+		has_civic = civic_slaver_guilds
+		has_civic = civic_indentured_assets
+		has_civic = civic_caste_system
+		has_civic = civic_slave_race
+		has_civic = civic_barbaric_despoilers
+        has_civic = civic_dystopian_society
+		has_civic = civic_state_monopoly
+		has_civic = civic_military_dictatorship
+		has_civic = civic_military_dictatorship_corporate
+    }
+}

@@ -1,0 +1,31 @@
+on_solar_sails_cat = {
+	desc = "on_solar_sails_cat_desc"
+	picture = GFX_evt_star_neutron
+	level = 2
+	max_once_global = yes
+	spawn_chance = {
+		modifier = {
+			add = 50			# Seriously, space pirates should get space shanties.
+			from.owner = { is_pirate_empire = yes }
+		}
+		modifier = {
+			add = 0.1
+			from.leader = {
+				species = {
+					NOT = { has_trait = trait_aquatic }
+				}
+			}
+		}
+		modifier = {
+			add = 0.3
+ 			from.leader = {
+ 				species = { has_trait = trait_aquatic }
+ 			}
+ 		}
+ 		modifier = {
+ 			factor = 0
+ 			from.owner = { is_gestalt = yes }
+ 		}
+	}
+	on_success = anomaly.7020
+}

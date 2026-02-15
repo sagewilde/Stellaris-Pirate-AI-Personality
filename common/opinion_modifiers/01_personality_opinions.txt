@@ -1,0 +1,242 @@
+##########################################################################
+# HARD FIXED STATE - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+opinion_from_personality = {
+	opinion = {
+		modifier = {
+			add = -1000
+			has_ai_personality = metalhead
+		}
+		modifier = {
+			add = 100
+			has_ai_personality = fanatic_befrienders
+		}
+		modifier = {
+			add = -50
+			has_ai_personality = cunning_raiders
+		}
+	}
+}
+
+opinion_tempting_raiding_target = {
+	trigger = {
+		is_pirate_empire = yes
+		FROM = {
+			AND = {
+				relative_power = {
+					who = root
+					category = economy
+					value >= equivalent
+				}
+				relative_power = {
+					who = root
+					category = military
+					value <= equivalent
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -30
+		modifier = {
+			relative_power = {
+				who = root
+				category = military
+				value <= inferior
+				}
+			add = -20
+		}
+	}
+}
+
+opinion_rich_vs_robinhood = {
+	trigger = {
+		OR = {
+			is_capitalism = yes
+			is_authoritarian = yes
+			AND = {
+				is_megacorp = yes
+				is_worker_coop_empire = no
+			}
+			any_owned_pop_group = {
+				OR = {
+					has_living_standard = living_standard_stratified
+					has_living_standard = living_standard_subsistence
+				}
+			}
+			allows_slavery = yes
+		}
+		FROM = { has_ai_personality = mirthful_bandits }
+	}
+	opinion = {
+		base = -50
+		modifier = {
+			is_a_huge_jerk = yes
+			add = -150
+		}
+	}
+}
+
+opinion_robinhood_vs_rich = {
+	trigger = {
+		has_ai_personality = mirthful_bandits
+		FROM = {
+			OR = {
+				is_capitalism = yes
+				is_authoritarian = yes
+				AND = {
+					is_megacorp = yes
+					is_worker_coop_empire = no
+				}
+				any_owned_pop_group = {
+					OR = {
+						has_living_standard = living_standard_stratified
+						has_living_standard = living_standard_subsistence
+					}
+				}
+				allows_slavery = yes
+			}
+		}
+	}
+	opinion = {
+		base = -50
+		modifier = {
+			FROM = {
+				is_a_huge_jerk = yes
+				add = -50
+			}
+		}
+	}
+}
+
+opinion_honor_among_thieves = {
+	trigger = {
+		has_ai_personality = mirthful_bandit
+		FROM = { has_ai_personality = mirthful_bandit }
+	}
+	opinion = {
+		add = 100
+	}
+}
+
+opinion_impoverished_empire = {
+	trigger = {
+		OR = {
+			has_ai_personality = mirthful_bandits
+			has_ai_personality = cunning_raiders
+		}
+		FROM = {
+			is_homicidal = no
+			OR = {
+				AND = {
+					is_lithoid_empire = no
+					is_robotic_species = no
+					has_monthly_income = {
+						resource = food
+						value < 1
+					}
+				}
+				AND = {
+					is_lithoid_empire = yes
+					has_monthly_income = {
+						resource = minerals
+						value < 1
+					}
+				}
+				AND = {
+					is_robotic_species = yes
+					has_monthly_income = {
+						resource = energy
+						value < 1
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 0
+		modifier = {
+			has_ai_personality = cunning_raiders
+			add = -20
+		}
+		modifier = {
+			has_ai_personality = mirthful_bandits
+			add = 100
+		}
+	}
+}
+
+opinion_cr_vs_jerks = {
+	trigger = {
+		has_ai_personality = cunning_raiders
+		FROM = {
+			OR = {
+				has_civic = civic_criminal_heritage
+				has_civic = civic_state_monopoly
+			}
+		}
+	}
+	opinon = {
+		base = 50
+		modifier = {
+			FROM = {
+				OR = {
+					has_civic = civic_crusader_spirit_corporate
+					has_civic = civic_private_military_companies
+				}
+			}
+			add = 50
+		}
+	}
+}
+
+opinion_cr_vs_slavers = {
+	trigger = {
+		has_ai_personality = cunning_raiders
+		FROM = {
+			allows_slavery = yes
+		}
+	}
+	opinion = {
+		base = 50
+		modifier = {
+			FROM = {
+				has_origin = origin_slavers
+				has_origin = origin_syncretic_evolution
+				has_origin = origin_under_one_rule
+				has_civic = civic_indentured_assets
+				has_civic = civic_slaver_guilds
+				has_civic = civic_caste_system
+				has_civic = civic_slave_race
+				has_civic = civic_dystopian_society
+			}
+			add = 30
+		}
+	}
+}
+
+opinion_king_of_pirates = {
+	trigger = {
+		has_civic = civic_crusader_spirit_corporate
+		NOT = { has_ai_personality = mirthful_bandits }
+		FROM = { has_civic = civic_military_dictatorship_corporate }
+	}
+	opinion = {
+		modifier = {
+			add = 50
+		}
+	}
+}
+
+opinion_only_one_king = {
+	trigger = {
+		has_civic = civic_military_dictatorship_corporate
+		FROM = { has_civic = civic_military_dictatorship_corporate }
+	}
+	opinion = {
+		modifier = {
+			add = -1000
+		}
+	}
+}

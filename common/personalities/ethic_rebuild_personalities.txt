@@ -1,0 +1,208 @@
+fanatic_befrienders = {
+	aggressiveness = 2.0
+	trade_willingness = 1.0
+	bravery = 1.5
+	combat_bravery = 1.0
+
+	military_spending = 1.2
+	colony_spending = 1.0
+
+	federation_acceptance = 0 # 50
+	nap_acceptance = 50
+	commercial_pact_acceptance = 50
+	research_agreement_acceptance = 50
+	defensive_pact_acceptance = 50
+	migration_pact_acceptance = 50
+	loyalty_acceptance = 2.0
+
+	advanced_start_chance = 25
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.4
+	shields_ratio = 0.5
+	hull_ratio = 0.1
+
+	threat_modifier = 0.5
+	threat_others_modifier = 0.75
+	friction_modifier = 0
+	claims_modifier = 0.25
+
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = yes
+		purger = no
+		displacer = no
+		dominator = no
+		infiltrator = yes
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = no
+		multispecies = yes
+		crisis_fighter = yes
+	}
+
+	allow = {
+		is_country_type = default
+		is_xenophile = yes
+		OR = {
+			is_spiritualist = yes		# Fixed this so the default Blorg spawn correctly. --SageWilde
+			is_capitalism = yes
+		}
+		is_militarist = yes
+		has_trait = trait_repugnant
+		has_trait = trait_solitary
+		has_trait = trait_venerable
+
+	}
+
+	weight_modifier = {
+		weight = 10
+		modifier = {
+			add = 1000
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+	}
+}
+
+metalhead = {
+	aggressiveness = 10.0
+	trade_willingness = 0.0
+	bravery = 10.0
+	combat_bravery = 10.0
+
+	military_spending = 1.2
+	colony_spending = 1.2
+
+	federation_acceptance = -1000
+	nap_acceptance = -1000
+	commercial_pact_acceptance = -1000
+	research_agreement_acceptance = -1000
+	defensive_pact_acceptance = -1000
+	migration_pact_acceptance = -1000
+	loyalty_acceptance = 1.0
+
+	advanced_start_chance = 100
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.5
+	shields_ratio = 0.0
+	hull_ratio = 0.5
+
+	threat_modifier = 0
+	threat_others_modifier = 0
+	friction_modifier = 0
+	claims_modifier = 0
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		slaver = no
+		opportunist = yes
+		uplifter = no
+		purger = yes
+		displacer = no
+		dominator = yes
+		infiltrator = no
+		robot_exploiter = no
+		robot_liberator = yes
+		propagator = no
+		multispecies = no
+		crisis_fighter = no
+		attack_neutrals = yes
+	}
+
+	allow = {
+		is_country_type = default
+		is_xenophobe = yes
+		OR = {
+			has_ethic = "ethic_materialist"
+			has_ethic = "ethic_industrial"		# This was just me extrapolating that if a Metalhead empire is materialist with a penchant for mining, they would likely also be industrialist. -- SageWilde
+		}
+		is_militarist = yes
+		OR = {
+			has_trait = "trait_robot_power_drills"
+			has_trait = "trait_industrious"
+		}
+		OR ={
+			has_trait = "trait_strong"
+			has_trait = "trait_very_strong"
+			has_trait = "trait_robot_history_warbot"
+		}
+	}
+
+	weight_modifier = {
+		weight = 10
+		modifier = {
+			add = 1000
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		modifier = {
+			add = 1000
+			has_ethic = "ethic_fanatic_militarist"
+		}
+	}
+}
+
+utopia_builders = {
+	aggressiveness = 1
+	trade_willingness = 1
+	bravery = 1
+	combat_bravery = 1.0
+	military_spending = 0.8
+	colony_spending = 1.5
+
+	federation_acceptance = 20
+	nap_acceptance = 10
+	commercial_pact_acceptance = 20
+	research_agreement_acceptance = 20
+	defensive_pact_acceptance = 10
+	migration_pact_acceptance = 20
+	loyalty_acceptance = 1.0
+
+	advanced_start_chance = 20
+
+	weapon_preferences = weapon_type_kinetic
+	armor_ratio = 0.4
+	shields_ratio = 0.4
+	hull_ratio = 0.3
+
+	threat_modifier = 1.4
+	threat_others_modifier = 0.9
+	friction_modifier = 0.7
+	claims_modifier = 1.0
+
+	behaviour = {
+		conqueror = no
+		subjugator = no
+		liberator = no
+		opportunist = no
+		slaver = no
+		uplifter = no
+		purger = no
+		displacer = no
+		infiltrator = yes
+		dominator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = yes
+		multispecies = yes
+		crisis_fighter = yes			# Changed this, because why wouldn't they fight the Crisis? After all, it threatens their utopia if the galaxy is destroyed. -- SageWilde
+	}
+
+	allow = {
+		is_fallen_empire = no
+		OR = {
+			is_socialism = yes
+			is_green = yes
+		}
+	}
+
+	weight_modifier = {
+		weight = 10
+	}
+}
