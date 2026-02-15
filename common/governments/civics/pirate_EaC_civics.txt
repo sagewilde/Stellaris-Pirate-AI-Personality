@@ -475,6 +475,7 @@ civic_free_haven = {
 				has_ai_personality = federation_builders
 				has_ai_personality = fanatic_befrienders
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
 			}
 		}
 		modifier = {
@@ -493,6 +494,7 @@ civic_free_haven = {
 				has_ai_personality = xenophobic_isolationists
 				has_ai_personality = slaving_despots
 				has_ai_personality = fanatic_purifiers
+				has_ai_personality = cunning_raiders
 			}
 		}
 	}
@@ -538,6 +540,7 @@ civic_cutthroat_politics = {
 				has_ai_personality = hegemonic_imperialists
 				has_ai_personality = slaving_despots
 				has_ai_personality = decadent_hierarchy
+				has_ai_personality = cunning_raiders
 			}
 		}
 		modifier = {
@@ -546,6 +549,7 @@ civic_cutthroat_politics = {
 				has_ai_personality = federation_builders
 				has_ai_personality = erudite_explorers
 				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 		modifier = {
@@ -686,6 +690,7 @@ civic_shadow_council = {
 				has_ai_personality = hegemonic_imperialists
 				has_ai_personality = slaving_despots
 				has_ai_personality = decadent_hierarchy
+				has_ai_personality = cunning_raiders
 			}
 		}
 		modifier = {
@@ -700,6 +705,7 @@ civic_shadow_council = {
 			OR = {
 				has_ai_personality = peaceful_traders
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
@@ -806,6 +812,8 @@ civic_efficient_bureaucracy = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = spiritual_seekers
 				has_ai_personality = democratic_crusaders
+				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 		modifier = {
@@ -896,6 +904,7 @@ civic_aristocratic_elite = {
 				has_ai_personality = slaving_despots
 				has_ai_personality = decadent_hierarchy
 				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = cunning_raiders
 			}
 		}
 		modifier = {
@@ -913,6 +922,7 @@ civic_aristocratic_elite = {
 			OR = {
 				has_ai_personality = democratic_crusaders
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
@@ -1040,6 +1050,8 @@ civic_byzantine_bureaucracy = {
 			factor = @ai_civic_personality_forbid_factor
 			OR = {
 				has_ai_personality = spiritual_seekers
+				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
@@ -1097,6 +1109,8 @@ civic_toxic_baths = {
 				has_ai_personality = democratic_crusaders
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = cunning_raiders
 			}
 		}
 		modifier = {
@@ -1154,6 +1168,8 @@ civic_scavengers = {
 				has_ai_personality = peaceful_traders
 				has_ai_personality = slaving_despots
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = cunning_raiders
 			}
 		}
 		modifier = {
@@ -1221,6 +1237,8 @@ civic_technocracy = {
 				has_ai_personality = democratic_crusaders
 				has_ai_personality = evangelising_zealots
 				has_ai_personality = spiritual_seekers
+				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 		modifier = {
@@ -1263,6 +1281,8 @@ civic_idealistic_foundation = {
 				has_ai_personality = peaceful_traders
 				has_ai_personality = fanatic_befrienders
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = federation_builders
 			}
 		}
 		modifier = {
@@ -1283,6 +1303,7 @@ civic_idealistic_foundation = {
 				has_ai_personality = slaving_despots
 				has_ai_personality = ruthless_capitalists
 				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
 			}
 		}
 	}
@@ -1318,12 +1339,37 @@ civic_civil_education = {
 		add_attunement_the_cradle_of_souls = @civic_attunement1
 	}
 	hide_modifiers = yes
+	random_weight = @ai_civic_rare_base_weight
 	ai_weight = {
 		base = @ai_civic_default_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = erudite_explorers
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = evangelising_zealots
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = decadent_hierarchy
 			}
 		}
 	}
@@ -1362,6 +1408,31 @@ civic_circular_economy = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = erudite_explorers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = decadent_hierarchy
 			}
 		}
 	}
@@ -1403,6 +1474,31 @@ civic_naturalism = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = harmonious_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = erudite_explorers
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = decadent_hierarchy
 			}
 		}
 	}
@@ -1441,6 +1537,31 @@ civic_peaceful_urbanism = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = erudite_explorers
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = xenophobic_isolationists
 			}
 		}
 	}
@@ -1491,6 +1612,31 @@ civic_keepers_harmony = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = erudite_explorers
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = xenophobic_isolationists
 			}
 		}
 	}
@@ -1533,6 +1679,31 @@ civic_asceticism = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = erudite_explorers
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = xenophobic_isolationists
 			}
 		}
 	}
@@ -1572,6 +1743,31 @@ civic_enlightment = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = erudite_explorers
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = xenophobic_isolationists
 			}
 		}
 	}
@@ -1644,6 +1840,31 @@ civic_terraforming = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = erudite_explorers
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = evangelising_zealots
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = decadent_hierarchy
 			}
 		}
 	}
@@ -1687,6 +1908,31 @@ civic_peacekeepers = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = federation_builders
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = erudite_explorers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = slaving_despots
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = cunning_raiders
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = ruthless_capitalists
 			}
 		}
 	}
@@ -1765,6 +2011,31 @@ civic_spiritual_seekers = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = evangelising_zealots
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = federation_builders
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = decadent_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = erudite_explorers
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = slaving_despots
+				has_ai_personality = cunning_raiders
+				has_ai_personality = ruthless_capitalists
 			}
 		}
 	}
@@ -1814,6 +2085,31 @@ civic_peaceful_republic = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
 				has_ai_personality = peaceful_counterculture
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = erudite_explorers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = mirthful_bandits
+				has_ai_personality = slaving_despots
+				has_ai_personality = cunning_raiders
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = fanatic_purifiers
 			}
 		}
 	}
