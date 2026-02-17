@@ -1,0 +1,11 @@
+empire_korinth_conglomerate = {
+	flags = { korinth_conglomerate }
+}
+
+empire_yldarian_raider_clan = {
+	flags = { yldarian_raiders custom_start_screen }
+}
+
+empire_free_fleets_of_lore = {
+	flags = { lore_spacers custom_start_screen }
+}

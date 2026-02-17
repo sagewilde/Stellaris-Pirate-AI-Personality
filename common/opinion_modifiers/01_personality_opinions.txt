@@ -24,6 +24,7 @@ opinion_tempting_raiding_target = {
 		is_pirate_empire = yes
 		FROM = {
 			is_weak_and_rich = yes
+			is_impoverished = no
 		}
 	}
 	opinion = {
@@ -81,27 +82,37 @@ opinion_honor_among_thieves = {
 	}
 }
 
-opinion_impoverished_empire = {
+opinion_feed_the_poor = {
 	trigger = {
-		OR = {
-			has_ai_personality = mirthful_bandits
-			has_ai_personality = cunning_raiders
-		}
+		has_ai_personality = mirthful_bandits
 		FROM = {
-			is_homicidal = no
-			is_unfriendly = no
+			is_a_jerk = no
 			is_impoverished = yes
 		}
 	}
 	opinion = {
-		base = 0
-		modifier = {
+		base = 100
+	}
+}
+
+opinion_impoverished_empire = {
+	trigger = {
+		OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = slaving_despots
+			has_ai_personality = ruthless_capitalists
 			has_ai_personality = cunning_raiders
-			add = -20
 		}
+		FROM = { 
+			is_impoverished = yes 
+			is_weak_and_rich = no
+		}
+	}
+	opinion = {
+		base = -20
 		modifier = {
-			has_ai_personality = mirthful_bandits
-			add = 100
+			FROM = { is_socialism = yes }
+			add = -20
 		}
 	}
 }
@@ -148,7 +159,7 @@ opinion_cr_vs_slavers = {
 opinion_king_of_pirates = {
 	trigger = {
 		has_civic = civic_crusader_spirit_corporate
-		NOT = { has_ai_personality = mirthful_bandits }
+		is_egalitarian = no
 		FROM = { has_civic = civic_military_dictatorship_corporate }
 	}
 	opinion = {
@@ -162,6 +173,9 @@ opinion_only_one_king = {
 	trigger = {
 		has_civic = civic_military_dictatorship_corporate
 		FROM = { has_civic = civic_military_dictatorship_corporate }
+		OR = {
+
+		}
 	}
 	opinion = {
 		modifier = {

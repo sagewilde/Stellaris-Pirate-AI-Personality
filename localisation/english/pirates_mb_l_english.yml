@@ -27,6 +27,9 @@
  MB_NEUTRAL_GREETING_04:0 "We're not interested in dealing with you. But trust us, this won't be the last time we discuss business. Not by a long shot."
  MB_NEUTRAL_GREETING_05:0 "Now, please, don't be afraid to say the 'p' word. 'Piracy' isn't a filthy word, it's a difficult and noble vocation. But if you prefer, we'll also answer to 'buccaneers', 'privateers', 'freebooters' and 'corsairs'. I see us as xenos of a noble history and an ancient brotherhood."
  MB_NEUTRAL_GREETING_06:0 "I could have been a surgeon. I do like taking things apart. I could have been a lawyer, but I just have too much heart." # Credit to 'Muppet Treasure Island'
+ MB_NEUTRAL_GREETING_OGX:0 "Are you hungry? You're looking a little hollow around the [From.GetSpeciesEyePlural] there, friend. Here, come on. We have a full table. Take whatever you need. Don't give us such a surprised look, this is what we do. Rob the rich, feed the poor. Let's see what we can trade instead. We haev plenty to spare."
+ MB_NEUTRAL_GREETING_LTD:0 "When was the last time you shed that litho-shell? You're looking a little bit crumbly around the [From.GetSpeciesEyePlural] there, friend. Come now. We have a storeroom full of stone and crystal that we can spare. What? Why do you look so surprised? It's just what we do. Take as long as you need. In fact, take back what you can carry. We can work out a fair trade."
+ MB_NEUTRAL_GREETING_RBT:0 "Are your batteries low? You're looking a little dim around the optic sensors there, friend. Come with me. We have an entire power bank, fully charged. Take as long as you need. What? You look like we hoard energy credits because we like it. We prefer putting that wealth to its proper use. Plug right in, don't be shy. Let's see what sort of trade we can work out."
  MB_NEUTRAL_GREETING_CORP_01:0 "A corporate ballpit? Ha! Pull the other one."
  MB_NEUTRAL_GREETING_CORP_02:0 ""
  MB_NEUTRAL_GREETING_CORP_03:0 ""

@@ -5,11 +5,25 @@
  personality_cunning_raiders:0 "Cunning Raiders"
  personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The trade routes may never be safe again as long as their ships sail the Great Black."
 
+ ### Free Fleets of Lore
+ EMPRIE_DESIGN_lore_spacers: "Free Fleets of Lore"
+ PRESCRIPTED_adjective_lore_spacers: "Lore Spacers"
+ PRESCRIPTED_lore_spacers: "FFL"
+ PRESCRIPTED_species_name_lore_spacers: "Exceed"
+ PRESCRIPTED_species_plural_lore_spacers: "Exceeds"
+ PRESCRIPTED_species_adjective_lore_spacers: "Exceed"
+ PRESCRIPTED_species_bio_lore_spacers: "Land on Lore is a rare, and precious resource, and for centuries, the Exceeds fought viciously over the few patches of dry ground the planet had. This led to concentrated trade routes that were frequently attacked by pirates. As these pirates rose to political power, they began to slowly disassemble old rivalries and unite with a common goal; the safety and prosperity of their pirate havens. Finally united, they eagerly take to the stars, bringing with them a millennium of seafaring culture."
+ PRESCRIPTED_planet_name_lore_spacers: "Lore"
+ PRESCRIPTED_system_name_lore_spacers: "Myth"
+ PRESCRIPTED_ruler_name_lore_spacers: "Phanta Sharp"
+ PRESCRIPTED_ruler_bio_lore_spacers: "Captain Sharp is more than a cunning commander, she is a wily politician, a born dealmaker, and an enthusiastic explorer."
+
  ### Action and Modifier Labels
  opinion_rich_vs_robinhood: "Common Thieves"
- opinion_robinhood_vs_rich: "Rob the Rich, Feed the Poor"
+ opinion_robinhood_vs_rich: "Rob the Rich"
  opinion_tempting_raiding_target: "Tempting Raiding Target"
  opinion_impoverished_empire: "Impoverished Empire"
+ opinion_feed_the_poor: "Feed the Poor"
  opinion_cr_vs_slavers: "Slave Trader"
  opinion_cr_vs_jerks: "Morally Flexible"
  opinion_king_of_pirates: "Pirate Lord"

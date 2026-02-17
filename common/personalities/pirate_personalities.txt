@@ -54,29 +54,28 @@
 
 mirthful_bandits = {
 	aggressiveness = 2.0
-	trade_willingness = 1.5
+	trade_willingness = 1.2
 	bravery = 1.5
 	combat_bravery = 0.8
 
 	military_spending = 1.2
 	colony_spending = 1.0
 
-	federation_acceptance = 0 # 50
+	federation_acceptance = 5 # 50
 	nap_acceptance = -10
 	commercial_pact_acceptance = 20
 	research_agreement_acceptance = 0
-	defensive_pact_acceptance = 10
-	migration_pact_acceptance = 0
-	loyalty_acceptance = 1.0
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = 10
+	loyalty_acceptance = 0.75
 
-	advanced_start_chance = 25
+	advanced_start_chance = 100
 
 	weapon_preferences = weapon_type_explosive
 	armor_ratio = 0.4
 	shields_ratio = 0.5
 	hull_ratio = 0.1
 
-	
 	threat_modifier = 1.1
 	friction_modifier = 1.0
 	claims_modifier = 0.75
@@ -137,7 +136,7 @@ cunning_raiders = {
 	commercial_pact_acceptance = 20
 	research_agreement_acceptance = 0
 	defensive_pact_acceptance = 0
-	migration_pact_acceptance = -100
+	migration_pact_acceptance = 0
 	loyalty_acceptance = 0.25
 
 	advanced_start_chance = 100
