@@ -1,7 +1,7 @@
 Dear Player;
 Thanks for downloading this mod! If you're reading this, you're much more thorough than most players are. That's a good thing. If you look in the files, you'll notice that there is currently dialogue that isn't quite programmed in completely. That's still in development, and I'm working on replacing every dialogue option with one that reflects this AI personality.
 
-This mod is still unpublished and in beta, so most of it is still broken. However, if you like this or my Hippie AI Personality mod, and have ideas for improvement, please reach out on the Discussion tab in the Steam Workshop or at the Github repo at https://github.com/sagewilde/Stellaris-Pirate-AI-Personality/issues. 
+This mod is still unpublished and in alpha, so most of it is still broken. However, if you like this or my Hippie AI Personality mod, and have ideas for improvement, please reach out on the Discussion tab in the Steam Workshop or at the Github repo at https://github.com/sagewilde/Stellaris-Pirate-AI-Personality/issues. 
 
 Thank you for playing,
 -- sagewilde
