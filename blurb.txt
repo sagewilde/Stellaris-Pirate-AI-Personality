@@ -23,7 +23,7 @@ The scourge of the galaxy is here! The Pirate Lord has unified the squabbling ra
 This mod completely revamps dialogue with any empire that has the Cunning Raider or Mirthful Bandit personality, with immersive dialogue tailored to every ethic. Unlocks some special interactions and insults with Peaceful Counterculture empires.
 
 [h2]New Governments[/h2]
-This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to function better as pirates. In addition, Pirate empires that choose to play as Megacorporations will gain access to new government forms that are unique to Pirates after any ascension path, including EvoPreds.
+This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to function better as an empire of pirates. In addition, Pirate empires that choose to play as Megacorporations or Direct Democracies will gain access to new government forms that are unique to Pirates after any ascension path, including EvoPreds.
 
 [h2]New Jobs[/h2]
 The [b]Shanty Singer[/b] job makes entertainers a valuable asset to your empire's navy. Empires that have the Letters of Marque civic or the Pirate Leadership technology have a guaranteed chance of encountering the [u]Message in a Bottle[/u] archeological dig site. Upon completion, Entertainers throughout your empire will become Shanty Singers, which increase your sublight speed, as well as build speed for ships and buildings.
@@ -40,4 +40,4 @@ The [b]Shanty Singer[/b] job makes entertainers a valuable asset to your empire'
 [/list]
 
 [h2]Need a hand, matey?[/h2]
-If this mod is exhibiting strange behavior, such as generating Elites when you build a Pirate Haven as a Worker Coop empire, try merging this mod with Ethics and Civics Classic using the Irony Mod Manager. I've found this fixes all the problems I have encountered.
+If this mod is exhibiting strange behavior, such as generating Elites when you build a Pirate Haven as a Worker Coop empire, or not correctly changing Educators to Pirate Combat Instructors, try merging this mod with Ethics and Civics Classic using the Irony Mod Manager. I've found this fixes all the problems I have encountered.
