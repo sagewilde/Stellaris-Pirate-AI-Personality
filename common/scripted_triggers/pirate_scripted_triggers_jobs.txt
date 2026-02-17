@@ -9,7 +9,7 @@ politician_is_commandante_pirate = {
 	}
 }
 
-bureaucrat_is_pirate_captain = {
+bureaucrat_is_steward_captain = {
 	exists = owner
 	owner = {
 		OR = {

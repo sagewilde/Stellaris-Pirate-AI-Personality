@@ -28,7 +28,7 @@ This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to
 [h2]New Jobs[/h2]
 The [b]Shanty Singer[/b] job makes entertainers a valuable asset to your empire's navy. Empires that have the Letters of Marque civic or the Pirate Leadership technology have a guaranteed chance of encountering the [u]Message in a Bottle[/u] archeological dig site. Upon completion, Entertainers throughout your empire will become Shanty Singers, which increase your sublight speed, as well as build speed for ships and buildings.
 
-[b]Pirate Captains[/b] are bureaucrats in Pirate Worker Coop empires. They fulfill the same functions as regular Pirate Captain elites and enhance the role of Stewards. They increase planetary stability and naval capacity, as well as reduce orbital bombardment damage.
+[b]Steward Captains[/b] are bureaucrats in Pirate Worker Coop empires. They fulfill the same functions as regular Pirate Captain elites and enhance the role of Stewards. They increase planetary stability and naval capacity, as well as reduce orbital bombardment damage.
 
 [b]Pirate Combat Instructors[/b] allow anarchist pirates to place education before punishment, making roleplay more seamless for anti-authoritarian outlaws. They increase starting army experience, in addition to the general benefits of Educators.
 

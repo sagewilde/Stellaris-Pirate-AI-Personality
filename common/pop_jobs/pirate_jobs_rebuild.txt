@@ -606,10 +606,10 @@ bureaucrat = {
         }
         swap_type = {
             trigger = {
-                bureaucrat_is_pirate_captain = yes
+                bureaucrat_is_steward_captain = yes
             }
-            name = pirate_captain
-            desc = pirate_captain
+            name = steward_captain
+            desc = steward_captain
             icon = commandante_pirate
             building_icon = building_pirate_haven
             condition_string = SPECIALIST_JOB_TRIGGER
@@ -1266,14 +1266,14 @@ bureaucrat = {
     }
     triggered_planet_modifier = {
         potential = {
-            bureaucrat_is_pirate_captain = yes
+            bureaucrat_is_steward_captain = yes
         }
         planet_stability_add = 0.25
         planet_orbital_bombardment_damage = -0.012
     }
     triggered_planet_modifier = {
         potential = {
-            bureaucrat_is_pirate_captain = yes
+            bureaucrat_is_steward_captain = yes
             has_councilor = {
                 COUNCILOR = councilor_worker_coop
             }
@@ -1283,7 +1283,7 @@ bureaucrat = {
     }
     triggered_country_modifier = {
         potential = {
-            bureaucrat_is_pirate_captain = yes
+            bureaucrat_is_steward_captain = yes
         }
         country_naval_cap_add = 0.5
     }

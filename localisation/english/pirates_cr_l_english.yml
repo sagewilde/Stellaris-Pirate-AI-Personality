@@ -51,7 +51,7 @@
   CR_FRIENDLY_GREETING_CORP_01:0 ""
   CR_FRIENDLY_GREETING_AQU_01:0 ""
   CR_FRIENDLY_GREETING_MIL_01:0 ""
-  CR_FRIENDLY_GREETING_AUT_01:0 "Ah, [From.GetRulerTitle] [From.GetRulerName]. To what do we owe the pleasure?"
+  CR_FRIENDLY_GREETING_AUT_01:0 "Ah, [From.GetRulerTitle] [From.GetRulerName]. To what do we owe this pleasure?"
   CR_FRIENDLY_GREETING_SLV_01:0 "Ah, our favorite clients! I think you'll find the stock we acquired from our last raid most vigorous."
   CR_FRIENDLY_GREETING_CR_01:0 "Ahoy, me hearty."
 
@@ -61,7 +61,7 @@
 
   ### Cunning Raiders - Insult (Recipient)
   CR_INSULT_MB_01:0 "Too late to be known as [Root.GetRulerName] the First, [Root.Ruler.GetSheHe] [Root.Ruler.GetIsAre] sure to be known as [Root.GetRulerName] the Worst! A pox on the phony king of pirates! Oo-de-lally!"
-  CR_INSULT_MB_02:0 "Yar-har-har! Shiver me timbers! Blow me down! Secure the vol-mote chest! Smeegibb, cast off the hawser!"
+  CR_INSULT_MB_02:0 "Yar-har-har! Shiver me fuselage! Blow me down! Secure the vol-mote chest! Smeegibb, cast off the hawser!"
   CR_INSULT_01:0 "You look like you need to eat more oranges. Perhaps a few thousand of them."
   CR_INSULT_HUMAN_01:0 "You're no Blackbeard. You're not even a Dread Pirate Roberts! You're Robbie Rotten!"
 

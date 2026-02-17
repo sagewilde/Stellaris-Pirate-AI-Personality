@@ -26,9 +26,9 @@
  job_pirate_combat_instructor:0 "Pirate Combat Instructor"
  job_pirate_combat_instructor_plural:0 "Pirate Combat Instructors"
  job_pirate_combat_instructor_desc:0 "A sharp mind is a valuable asset to every privateer fleet. Focusing on development instead of punishment not only enables pirates to make their own fate, it stops shipboard conflict before it can even arise--a deeply vital necessity on years-long voyages. After all, there's only so much room in the brig, and every hand brings the payday closer."
- job_pirate_captain:0 "Steward Captain"
- job_pirate_captain_plural:0 "Steward Captain"
- job_pirate_captain_desc:0 "As a loose confederation of cooperative fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
+ job_steward_captains:0 "Steward Captain"
+ job_steward_captains_plural:0 "Steward Captain"
+ job_steward_captains_desc:0 "As a loose confederation of cooperative fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
  job_shanty_singer:0 "Shanty Singer"
  job_shanty_singer_plural:0 "Shanty Singers"
  job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
@@ -101,34 +101,33 @@
  RT_CAPTAIN_PEOPLE: "Captain of the People"
 
  gov_pirate_kingdom: "Pirate Kingdom"
- gov_pirate_kingdom_desc: "Pirate kingdoms coalesce around one captain and their most senior officers, following the orders of the Pirate Lord with fierce and utter devotion. Pirates gravitate toward this powerful figure, and pay a portion of their loot directly to them in tribute."
+ gov_pirate_kingdom_desc: "Pirate kingdoms coalesce around one captain and their most senior officers, following the orders of the monarch with fierce and utter devotion. Pirates gravitate toward this powerful figure, and pay a portion of their loot directly to them in tribute. The monarch decides where treasure is spent, and if booty is misappropriated, the punishment is often marooning on an asteroid, with one blaster and one tank of oxygen."
 
  gov_death_raiders: "Death Raiders"
- gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners."
+ gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners--they only take undead slaves."
 
  gov_privateer_guild: "Privateer Guild"
- gov_privateer_guild_desc: "These enterprising sailors of fortune ply their scurvy trade for any space nation that can pay their fee. These highly organized and politically ambitious privateers can be fickle, but are exceptionally effective in their practice."
+ gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Sail that binds them is complex and legally robust, and all privateers of the company pay a portion of the booty directly to the guild's coffers for the right to sail under their flag. Breaches of the Charter are dealt with by the Captains personally."
 
  gov_pirate_confederation: "Pirate Confederation"
- gov_pirate_confederation_desc: "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. They decide on raiding targets and production needs via committee, and distribute the spoils according to their contributions."
+ gov_pirate_confederation_desc: "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."
 
  gov_free_fleets: "Free Fleets"
- gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but their cultural loyalty to their crews and to their allies, which can be profoundly deep and enduring. While the fleets recognize no singular leader, a Captain of the People is chosen for the purposes of representing them in interstellar diplomacy."
+ gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborn hydrarchy--astrarchy, if you will--these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
 
  auth_pirate_commune: "Pirate Commune"
- auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarcho-syndicalist commune and a pirate haven, their economic model is strictly mutualist in nature."
+ auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarcho-syndicalist commune and a pirate haven, their economic model is strictly mutualist in nature. Every pirate receives one share of treasure, regardless of rank or station, providing for the needs of the ship and the havens first before personal pay."
 
  concept_auth_pirate_commune: "$auth_pirate_commune$"
  gov_pirate_commune: "$auth_pirate_commune$"
  gov_pirate_commune_desc: "$auth_pirate_commune_desc$"
 
  auth_privateer_union: "Privateer Union"
- auth_privateer_union_desc: "A privateer union is a private military company that operates as a worker's collective, with a command structure that horizonally organized and volunteer-oriented. Contracts taken by union privateers have stringent requirements for pay and equipment, but they are exceptionally competent pirates."
+ auth_privateer_union_desc: "A privateer union is a uniquely 'flexible' private military company that operates as a worker's collective, with a command structure that horizonally organized and volunteer-oriented. Contracts taken by union privateers have stringent requirements for pay and equipment, but they are exceptionally competent pirates, and injuries are handsomely compensated."
  
  concept_auth_privateer_union: "$auth_privateer_union$"
  gov_privateer_union: "$auth_privateer_union$"
  gov_privateer_union_desc: "$auth_privateer_union_desc$"
-
 # AUTHORITIES
 # Synth Corporate Physical
  RT_FLEET_OVERSEER: "Fleet Overseer"
@@ -173,7 +172,7 @@
 
 # Bio Cloning
  auth_bio_corporate_cloning_pirate: "Corsair Cloners"
- auth_bio_corporate_cloning_pirate_desc: "The limits of a ship are dictated by the limits of her crew. So what can one do when the cunning and craft of an organic being is married with the easy replicability of a machine? The result is a navy that is never short of fit, healthy shipmates; an insurmountable raiding force, winning through sheer numbers."
+ auth_bio_corporate_cloning_pirate_desc: "The limits of a ship are dictated by the limits of her crew. So what can one do when the cunning and craft of an organic being is married with the easy replicability of a machine? The result is a navy that is never short of fit, healthy spacers; an insurmountable raiding force, winning through sheer numbers."
 
  concept_bio_corporate_cloning_pirate: "$auth_bio_corporate_cloning_pirate$"
  gov_bio_corporate_cloning_pirate: "$auth_bio_corporate_cloning_pirate$"
