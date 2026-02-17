@@ -20,7 +20,7 @@ site_space_shanty_dig = {
 	desc = {
 		trigger = {
 			owner = {
-				is_pirate_empire = yes
+				has_valid_civic = civic_crusader_spirit_corporate
 			}
 		}
 		text = "space_shanty_intro_pirate"

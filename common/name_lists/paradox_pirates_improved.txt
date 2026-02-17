@@ -172,7 +172,7 @@ paradox_pirates_improved = {
 	
 		generic = {
 			names = {
-                "Dark Lair" "Port Despair" "Solid Ground" "Vorpal House" "Morbid Home" "Spacer Alley" "The Big House" "Beyond the Pale" "The Pirate Bulge" "Foul Parish" "Pit of Piracy" "Corsair Court" "The Privateers Privates" "Buccaneer Bodega" "Zero-G Chateau" "Just Rewards" "The Heft of Theft" "Predatory Positioning" "Military-Piracy Complex"
+            	"Libertalia" "Nassau" "Tortuga" "Dark Lair" "Port Despair" "Solid Ground" "Vorpal House" "Morbid Home" "Spacer Alley" "The Big House" "Beyond the Pale" "The Pirate Bulge" "Foul Parish" "Pit of Piracy" "Corsair Court" "The Privateers Privates" "Buccaneer Bodega" "Zero-G Chateau" "Just Rewards" "The Heft of Theft" "Predatory Positioning" "Military-Piracy Complex"
             }
 		}
 		
@@ -233,15 +233,24 @@ paradox_pirates_improved = {
 			weight = 100
 
             first_names_male = { 
-                Aragon Ash Bjorn Boar Bootstrap Braveheart Brock Burt Cole Cygnus Doug Delvin Elias Erdin Eurylochus Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Jack Jaeger Jan Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Rathkran Robin Rock Shepherd Smiley "Stan Lee" Trombone Sully Tristan Tupper Vegeta Weasel William Z Zheng 
+                Aragon Ash Bjorn Boar Bootstrap Braveheart Brock Burt Cole Cygnus Doug Delvin Elias Erdin Eurylochus Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Jack Jaeger Jan Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Rathkran Robert Robin Rock Shepherd Smiley "Stan Lee" Todd Trombone Sully Tristan Tupper Vegeta Weasel William Z Zheng 
             }
            
             first_names_female = { 
-                Blaze Catra Cassiopeia Coliope Curse Danger Delenn Determination Dolores Drucilla Echo Edith Fanta Fantoma Frisk Geraldine Helga Jester Karai Law Lillian Margot Max Makone Misty May Light Lillith Ondine Eurydice Kitty Hunter Lyra Peep Penelope Penny Peridot Peril Perseverance Rue Scarlet Shizuka Siren Trouble Tulip Tyde Valkyrie Vellen Vendetta Zariel Zelda Zoe
+                Agene Blaze Catra Cassiopeia Coliope Curse Danger Delenn Determination Dolores Drucilla Echo Edith Fantoma Frisk Geraldine Helga Jester Karai Law Lillian Margot Max Makone Misty May Light Lillith Ondine Eurydice Kitty Hunter Lyra Phanta Peep Penelope Penny Peridot Peril Perseverance Rue Sela Scarlet Shizuka Siren Trouble Tulip Tyde Valkyrie Vellen Vendetta Zariel Zelda Zoe
             }
 			
 			second_names = { 
-                Aruj Ace Ango Aleyn Alday Archer Axe Book Bras-de-Fer Bellamy Barbarossa Barton Brasiliano Butler Baldassare Bashir Crusher Crusoe Cossa Clisson Crabbe Cooke Dax Drake Groundrunner Hawkins Hawley Hood Hook Jailbreak Janeway Jing Juzou Kim Kirk Kyber Luffy Mayweather Mendoza Morgan Ning North Nobody Nolastname Nowhere O'Hare Picard Raze Reaver Reed Resolve Ryker Sisko Skywalker Silver Special Solo Sparrow Troi Uhura Takanobu Tempest Teach "von Wicke" Washbuckle Ward Wick Wunder Victorious Viper 
+                Aruj Ace Ango Aleyn Alday Archer Axe Bones Book Bras-de-Fer Bellamy Barbarossa Barton Brasiliano Butler Baldassare Bashir Calevario Chance Crusher Crusoe Cossa Clisson Crabbe Cooke Dax "De Foe" Drake Groundrunner Hawkins Hawley Hood Hook Jailbreak Janeway Jing Juzou Kim Kirk Kyber Luffy Mayweather Mendoza Morgan Ning North Nobody Nolastname Nowhere O'Hare Pyle Raze Reaver Reed Rees Resolve Ryker Sharp Silver Special Solo Sparrow Stevenson Takanobu Tempest Teach "von Wicke" Washbuckle Ward Wick Wunder Victorious Viper 
+			}
+
+			full_names_male = {
+				"Cheung Po Tsai" "Chen Tien-pao" "Zheng Zhilong" "Ho Hsi-wen" "Zheng Yi" "'Calico' Jack Rackham" "James Misson" "Stede Bonnet" "François l'Olonnais" "Henry Morgan" "Black Caesar" "Uluj Ali" "Samuel Axe" "Rock Brasiliano" "Baltazar de Cordes" "Francis Drake" "Arnaut Mami" "Matsura Takanobu" "Jelles de Lecat" "Montbars the Exterminator" "Stenka Razin" "Rahmah ibn Jabir al-Jalhami" "Jasim bin Jabir" "Thomas Tew" "Oruç Reis"
+			}
+
+			full_names_female = {
+				
+				"Zheng Yi Sao" "Mary Read" "Anne Bonny" "Tchiao Kuo-fu-ja" "Artemisia of Caria" "Joanna 'the Flame' Flanders" "Jeanne 'the Lioness' de Clisson" "Grace O'Malley" "Sayyida al Hurra" "Mary 'Lady Killigrew' Wolverston" "Cornelia 'Neel' Cowper" "Jacquotte Delahaye" "Sarah Bishop" "Rachel Wall" "Johanna Hård" "Lo Hon-cho" "'Sister' Ping"
 			}
 			
             regnal_first_names_male = {

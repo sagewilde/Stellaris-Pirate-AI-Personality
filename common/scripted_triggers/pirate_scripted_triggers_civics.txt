@@ -5,16 +5,32 @@ is_pirate_empire = {
     }
 }
 
+is_a_jerk = {
+	OR = {
+		has_ethic = ethic_fanatic_authoritarian
+		has_ethic = ethic_fanatic_capitalism
+		AND = {
+			is_megacorp = yes
+			is_worker_coop_empire = no
+		}
+		any_owned_pop_group = {
+			OR = {
+				has_living_standard = living_standard_stratified
+				has_living_standard = living_standard_subsistence
+			}
+		}
+		allows_slavery = yes
+	}
+}
+
 is_a_huge_jerk = {
     OR = {
-        has_ai_personality = became_the_crisis
         has_ethic = ethic_fanatic_authoritarian
 		has_ethic = ethic_fanatic_capitalism
         has_ethic = ethic_fanatic_xenophobe
 		has_origin = origin_slavers
 		has_origin = origin_under_one_rule
 		has_origin = origin_syncretic_evolution
-        has_origin = origin_endbringers
 		has_civic = civic_slaver_guilds
 		has_civic = civic_indentured_assets
 		has_civic = civic_caste_system
@@ -26,3 +42,46 @@ is_a_huge_jerk = {
 		has_civic = civic_military_dictatorship_corporate
     }
 }
+
+is_impoverished = {
+	OR = {
+		AND = {
+			is_lithoid_empire = no
+			is_robotic_species = no
+			has_monthly_income = {
+				resource = food
+				value < 1
+			}
+		}
+		AND = {
+			is_lithoid_empire = yes
+			has_monthly_income = {
+				resource = minerals
+				value < 1
+			}
+		}
+		AND = {
+			is_robotic_species = yes
+			has_monthly_income = {
+				resource = energy
+				value < 1
+			}
+		}
+	}
+}
+
+is_weak_and_rich = {
+	AND = {
+		relative_power = {
+			who = root
+			category = economy
+			value >= equivalent
+		}
+		relative_power = {
+			who = root
+			category = military
+			value <= equivalent
+		}
+	}
+}
+

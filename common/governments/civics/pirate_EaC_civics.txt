@@ -2080,7 +2080,7 @@ civic_peaceful_republic = {
 	}
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = {
-		base = @ai_civic_default_base_weight
+		base = @ai_civic_rare_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {

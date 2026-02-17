@@ -13,7 +13,7 @@ opinion_from_personality = {
 			has_ai_personality = fanatic_befrienders
 		}
 		modifier = {
-			add = -50
+			add = -20
 			has_ai_personality = cunning_raiders
 		}
 	}
@@ -23,18 +23,7 @@ opinion_tempting_raiding_target = {
 	trigger = {
 		is_pirate_empire = yes
 		FROM = {
-			AND = {
-				relative_power = {
-					who = root
-					category = economy
-					value >= equivalent
-				}
-				relative_power = {
-					who = root
-					category = military
-					value <= equivalent
-				}
-			}
+			is_weak_and_rich = yes
 		}
 	}
 	opinion = {
@@ -52,21 +41,7 @@ opinion_tempting_raiding_target = {
 
 opinion_rich_vs_robinhood = {
 	trigger = {
-		OR = {
-			is_capitalism = yes
-			is_authoritarian = yes
-			AND = {
-				is_megacorp = yes
-				is_worker_coop_empire = no
-			}
-			any_owned_pop_group = {
-				OR = {
-					has_living_standard = living_standard_stratified
-					has_living_standard = living_standard_subsistence
-				}
-			}
-			allows_slavery = yes
-		}
+		is_a_jerk = yes
 		FROM = { has_ai_personality = mirthful_bandits }
 	}
 	opinion = {
@@ -82,21 +57,7 @@ opinion_robinhood_vs_rich = {
 	trigger = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
-			OR = {
-				is_capitalism = yes
-				is_authoritarian = yes
-				AND = {
-					is_megacorp = yes
-					is_worker_coop_empire = no
-				}
-				any_owned_pop_group = {
-					OR = {
-						has_living_standard = living_standard_stratified
-						has_living_standard = living_standard_subsistence
-					}
-				}
-				allows_slavery = yes
-			}
+			is_a_jerk = yes
 		}
 	}
 	opinion = {
@@ -104,8 +65,8 @@ opinion_robinhood_vs_rich = {
 		modifier = {
 			FROM = {
 				is_a_huge_jerk = yes
-				add = -50
 			}
+			add = -50
 		}
 	}
 }
@@ -128,30 +89,8 @@ opinion_impoverished_empire = {
 		}
 		FROM = {
 			is_homicidal = no
-			OR = {
-				AND = {
-					is_lithoid_empire = no
-					is_robotic_species = no
-					has_monthly_income = {
-						resource = food
-						value < 1
-					}
-				}
-				AND = {
-					is_lithoid_empire = yes
-					has_monthly_income = {
-						resource = minerals
-						value < 1
-					}
-				}
-				AND = {
-					is_robotic_species = yes
-					has_monthly_income = {
-						resource = energy
-						value < 1
-					}
-				}
-			}
+			is_unfriendly = no
+			is_impoverished = yes
 		}
 	}
 	opinion = {
@@ -171,10 +110,7 @@ opinion_cr_vs_jerks = {
 	trigger = {
 		has_ai_personality = cunning_raiders
 		FROM = {
-			OR = {
-				has_civic = civic_criminal_heritage
-				has_civic = civic_state_monopoly
-			}
+			is_a_jerk = yes
 		}
 	}
 	opinon = {
@@ -202,14 +138,7 @@ opinion_cr_vs_slavers = {
 		base = 50
 		modifier = {
 			FROM = {
-				has_origin = origin_slavers
-				has_origin = origin_syncretic_evolution
-				has_origin = origin_under_one_rule
-				has_civic = civic_indentured_assets
-				has_civic = civic_slaver_guilds
-				has_civic = civic_caste_system
-				has_civic = civic_slave_race
-				has_civic = civic_dystopian_society
+				is_a_huge_jerk = yes
 			}
 			add = 30
 		}
