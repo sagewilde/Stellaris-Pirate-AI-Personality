@@ -1,7 +1,43 @@
-Dear Player;
-Thanks for downloading this mod! If you're reading this, you're much more thorough than most players are. That's a good thing. If you look in the files, you'll notice that there is currently dialogue that isn't quite programmed in completely. That's still in development, and I'm working on replacing every dialogue option with one that reflects this AI personality.
+[h1]Arrrr ye ready, lads?[/h1]
 
-I don't want money. Personally, I'd rather have support in the form of extra hands to help make these immersive AI Personalities functional and interesting. If you like these mods and have ideas for making more of them, please reach out on the Discussion tab in the Steam Workshop. More than anything, I really need help localizing these since (unfortunately) the only language that I speak well is English. And because of personal convictions, I would rather entrust that task to a human instead of an LLM.
+The most comprehensive Pirate AI Personalities in Stellaris are here! With two fully immersive personalities to choose from, and all new pirate government authorities for every ascension, you can create the ultimate pirate empire.
 
-Thank you for playing,
--- sagewilde
+[h2]Rob the Rich, and Feed the Poor![/h2]
+Befriend or battle a nation of post-FTL heroes of the people! The [b]Mirthful Bandits[/b] are galactic liberators of wealth and protectors of impoverished empires. Mirthful Bandits are quick-witted, sneaky, and rarely pick a fight they would lose. They're quick to make enemies with rich or oppressive empires, and have a soft spot for empires with low resources.
+[h3]Spawn Requirements[/h3]
+[list]
+[*] Anarchist Utopia or Anarchist Ideals civic
+[*] Letters of Marque civic
+[*] Cannot be Competitive or Xenophobic
+[/list]
+
+[h2]Hoist the Blood Flag, and Give No Quarter![/h2]
+The scourge of the galaxy is here! The Pirate Lord has unified the squabbling raiders and has come to take your empire for all that it has. Ruthless and tactical, the [b]Cunning Raiders[/b] are sneak-attackers and opportunists with military spending to match. Rather than conquer territory or subjugate empires, they prefer frequent pirate raids that keep their neighbors weak and ripe for extortion. But if there is another Cunning Raider in the galaxy, they will swear eternal enmity against each other; there can only be one Pirate Lord!
+[h3]Spawn Requirements[/h3]
+[list]
+[*] Criminal Heritage or Pirate Lord civic
+[*] Letters of Marque civic
+[/list]
+
+[h2]New Dialogue[/h2]
+This mod completely revamps dialogue with any empire that has the Cunning Raider or Mirthful Bandit personality, with immersive dialogue tailored to every ethic. Unlocks some special interactions and insults with Peaceful Counterculture empires.
+
+[h2]New Governments[/h2]
+This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to function better as an empire of pirates. In addition, Pirate empires that choose to play as Megacorporations or Direct Democracies will gain access to new government forms that are unique to Pirates after any ascension path, including EvoPreds.
+
+[h2]New Jobs[/h2]
+The [b]Shanty Singer[/b] job makes entertainers a valuable asset to your empire's navy. Empires that have the Letters of Marque civic or the Pirate Leadership technology have a guaranteed chance of encountering the [u]Message in a Bottle[/u] archeological dig site. Upon completion, Entertainers throughout your empire will become Shanty Singers, which increase your sublight speed, as well as build speed for ships and buildings.
+
+[b]Pirate Captains[/b] are bureaucrats in Pirate Worker Coop empires. They fulfill the same functions as regular Pirate Captain elites and enhance the role of Stewards. They increase planetary stability and naval capacity, as well as reduce orbital bombardment damage.
+
+[b]Pirate Combat Instructors[/b] allow anarchist pirates to place education before punishment, making roleplay more seamless for anti-authoritarian outlaws. They increase starting army experience, in addition to the general benefits of Educators.
+
+[h1]Mod Load Order[/h1]
+[list]
+[*] Ethics and Civics Classic
+[*] Hippie AI Personality (optional)
+[*] This Mod
+[/list]
+
+[h2]Need a hand, matey?[/h2]
+If this mod is exhibiting strange behavior, such as generating Elites when you build a Pirate Haven as a Worker Coop empire, or not correctly changing Educators to Pirate Combat Instructors, try merging this mod with Ethics and Civics Classic using the Irony Mod Manager. I've found this fixes all the problems I have encountered.
