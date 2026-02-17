@@ -10,7 +10,7 @@
  MB_FRIENDLY_GREETING_CORP_01:0 "Hm? A missing merchant vessel? Sorry, mate. Trust me, you'd be the first one to know if it was on my orders. Obviously, I can't make promises for unsanctioned raids..."
  MB_FRIENDLY_GREETING_HM_01:0 "The instinctive and cohesive communication of your drones is admirable. On our vessels, we've developed 'space shanties' that synchronize such work. Amazing that you do it naturally. May I ask... do *you* sing?"
  MB_FRIENDLY_GREETING_MECH_01:0 ""
- MB_FRIENDLY_GREETING_PAC_01:0 "Speaking strictly as your friendly expert on the matter, I strongly suggest building out your navy. While our treaties may prohibit official attacks on your vessels, we can't control every pirate in the galaxy--it's impossible to try. Consider sending a small escort of corvettes with your science ships."
+ MB_FRIENDLY_GREETING_PAC_01:0 "Speaking strictly as your friendly expert on the matter, I strongly suggest building out your navy. While our treaties may prohibit official attacks on your vessels, we can't control every pirate in the galaxy--it's impossible to try. Consider sending a small escort of corvettes with your science ships. If anything, to keep cuthuloids at bay."
  MB_FRIENDLY_GREETING_MIL_01:0 ""
  MB_FRIENDLY_GREETING_EGL_01:0 "Are you familiar with 'hydrarchy'? On our ancestral worlds, our oppressors were thoroughly shocked and surprised that we not only mutinied on their ships, but took them for our own and governed ourselves. Freebooters have long been incubators of democracy, believe it or not."
  MB_FRIENDLY_GREETING_MAT_01:0 "While piracy began with taking merchant vessels on the high seas, its evolution in the realm of knowledge and technology is merely a natural extension of our thirst for treasure. What greater treasure is there than knowledge? What greater gift to the galaxy than making it free?"
@@ -21,13 +21,15 @@
  MB_FRIENDLY_GREETING_IND_01:0 ""
 
  # Mirthful Bandits - Neutral
- MB_NEUTRAL_GREETING_01:0 "'Rob?' Tsk, tsk, tsk. That's a naughty word, we *never* rob. We just borrow a bit from those as can afford it, that's all."
- MB_NEUTRAL_GREETING_02:0 "We're an independent coalition of fleets. But if you have need of an escort for particularly... 'sensitive' shipments, we can be both flexible and discreet, so long as we're well paid."
+ MB_NEUTRAL_GREETING_01:0 "'Rob?' Tsk, tsk, tsk. That's a naughty word, we *never* rob. We just borrow a bit from those as can afford it, that's all." # If you haven't seen this movie, I can't help you.
+ MB_NEUTRAL_GREETING_02:0 "To us, our crews are family. When you are all on the same ship for years on end, you tend to develop deep bonds. We're gentle-xenos of fortune, and professionals to boot. We're the freest folk you'll ever meet, should we meet on friendly terms. Should we not... well, we'll give you a fair and bloody fight."
  MB_NEUTRAL_GREETING_03:0 "It seems like your hyperlanes are a little lightly guarded. Very very dangerous, you know. If you're looking for assistance there, we happen to have a fleet available for rent."
  MB_NEUTRAL_GREETING_04:0 "We're not interested in dealing with you. But trust us, this won't be the last time we discuss business. Not by a long shot."
- MB_NEUTRAL_GREETING_05:0 "Now, please, don't be afraid to say the 'p' word. 'Piracy' isn't a filthy word, it's a difficult and noble vocation. But if you prefer, we'll also answer to 'privateer', 'freebooter' and 'corsair'."
- MB_NEUTRAL_GREETING_CORP_01:0 ""
- MB_NEUTRAL_GREETING_CORP_01:0 ""
+ MB_NEUTRAL_GREETING_05:0 "Now, please, don't be afraid to say the 'p' word. 'Piracy' isn't a filthy word, it's a difficult and noble vocation. But if you prefer, we'll also answer to 'buccaneers', 'privateers', 'freebooters' and 'corsairs'. I see us as xenos of a noble history and an ancient brotherhood."
+ MB_NEUTRAL_GREETING_06:0 "I could have been a surgeon. I do like taking things apart. I could have been a lawyer, but I just have too much heart." # Credit to 'Muppet Treasure Island'
+ MB_NEUTRAL_GREETING_CORP_01:0 "A corporate ballpit? Ha! Pull the other one."
+ MB_NEUTRAL_GREETING_CORP_02:0 ""
+ MB_NEUTRAL_GREETING_CORP_03:0 ""
  MB_NEUTRAL_GREETING_HM_01:0 ""
  MB_NEUTRAL_GREETING_MECH_01:0 ""
  MB_NEUTRAL_GREETING_PAC_01:0 ""
@@ -55,7 +57,7 @@
  MB_HOSTILE_GREETING_MECH_01:0 "'This statement is false.' 'Does a set of all sets contain itself?' No? Umm... Okay, how about I verbally give you a set of instructions so you can go fork bomb yourself? "
  MB_HOSTILE_GREETING_PAC_01:0 "When did I get here? Oh, a few hours ago. You know, speaking as something of an expert in the matter... you should start investing in your security. At least make it fun for us."
  MB_HOSTILE_GREETING_MIL_01:0 "Oh no, the [From.GetAdjective] negotiator! Whatever shall we do? I suppose we had best accept subjugation. Please, come on in. Stand right... here. On this X on the floor. We'll discuss the terms right now. No, no. Step a little more to the left. Perfect."
- MB_HOSTILE_GREETING_AUT_01:0 "'Fugitives?' 'Extradition?' Who, us? No, you've misunderstood. Those were refugees. And as a nation that embraces freedom from tyranny, we were only too happy to take them into our 'lawless' haven. And we will keep taking in refugees. What are *you* going to do about it?"
+ MB_HOSTILE_GREETING_AUT_01:0 "'Fugitives?' 'Extradition?' Who, us? No, you've misunderstood. Those were refugees, seeking asylum. And as a nation that embraces freedom from tyranny, we were only too happy to take them into our 'lawless' haven. And we will keep granting asylum to refugees. What are *you* going to do about it?"
  MB_HOSTILE_GREETING_AUT_02:0 "Where are our weapons? Heh. Wouldn't you like to know, mall-cop."
  MB_HOSTILE_GREETING_EGL_01:0 "You know, there's an old phrase I think you may know; 'The roots of the tree of liberty must be refreshed from time to time in the blood of patriots and tyrants.' Dare I say... your palace lawn looks like it needs watering. Badly."
  MB_HOSTILE_GREETING_MAT_01:0 "I'd hardly call myself a luddite; really, where would we be without technology? Knowledge must be shared freely, after all. But you know, there are some things we really weren't meant to know. Like how low you can sink."
@@ -70,7 +72,7 @@
  
  # Mirthful Bandits - Vassalization
  MB_PROTECTIVE_GREETING_01:0 "Here's an idea for you; why not join our merry band? We'll keep you warm, fed, and the galaxy's ripe for plundering from those too big for their own good!"
- MB_DOMINEERING_GREETING_01:0 "You'll see the error of your ways, [Root.GetSpeciesNamePlural]. Soon. We'll make sure of it. Change is coming, and you aren't going to be ready for it."
+ MB_DOMINEERING_GREETING_01:0 "You'll see the error of your ways, [From.GetSpeciesNamePlural]. Soon. We'll make sure of it. Change is coming, and you aren't going to be ready for it."
 
  # Mirthful Bandits - War
  MB_WAR_GREETING_01:0 ""
