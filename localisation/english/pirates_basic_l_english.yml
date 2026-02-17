@@ -128,6 +128,7 @@
  concept_auth_privateer_union: "$auth_privateer_union$"
  gov_privateer_union: "$auth_privateer_union$"
  gov_privateer_union_desc: "$auth_privateer_union_desc$"
+
 # AUTHORITIES
 # Synth Corporate Physical
  RT_FLEET_OVERSEER: "Fleet Overseer"
