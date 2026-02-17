@@ -2,6 +2,7 @@ required mods:
 
 Ethics and Civics Classic (by Coggernaut)
 
+------------------------------
 
 required:
 
@@ -9,8 +10,10 @@ galactic paragons
 
 megacorporations
 
+-------------------
 
 recommended:
+
 first contact - cloaking
 
 nemesis - espionage
