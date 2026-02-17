@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # This is what I don't want it to send.
+/home/sagewilde/Games/Stellaris Shortcuts/Link to Proton Frontend/mod/pirates/Stellaris-Pirate-AI-Personality/.gitignore
 /vscode-userdata:
 
 # User-specific files
