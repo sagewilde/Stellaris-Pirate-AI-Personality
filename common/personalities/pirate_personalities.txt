@@ -107,7 +107,6 @@ mirthful_bandits = {
 
 	allow = {
 		is_country_type = default
-		has_ethic = ethic_fanatic_egalitarian
         is_capitalism = no
         is_xenophobe = no
 		has_valid_civic = civic_crusader_spirit_corporate
@@ -154,7 +153,7 @@ cunning_raiders = {
 	behaviour = {
 		conqueror = no
 		subjugator = no 	# Experimenting with yes/no on this. I want them to Raid as often as is feasible.
-		liberator = no		# Set so they will be more likely to pick Pirate Raid as a casus belli.
+		liberator = no		
 		opportunist = yes
 		slaver = yes 		# Duh. Robin Hood and One Piece memes aside, this is historically what pirates did. 
 		uplifter = no

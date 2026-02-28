@@ -48,10 +48,10 @@ fanatic_befrienders = {
 	allow = {
 		is_country_type = default
 		is_xenophile = yes
-		OR = {
-			is_spiritualist = yes		# Fixed this so the default Blorg spawn correctly. --SageWilde
-			is_capitalism = yes
-		}
+		# OR = {
+		# 	is_spiritualist = yes		# Fixed this so the default Blorg spawn correctly. --SageWilde
+		# 	is_capitalism = yes
+		# }
 		is_militarist = yes
 		has_trait = trait_repugnant
 		has_trait = trait_solitary
@@ -121,30 +121,32 @@ metalhead = {
 		is_xenophobe = yes
 		OR = {
 			has_ethic = "ethic_materialist"
-			has_ethic = "ethic_industrial"		# This was just me extrapolating that if a Metalhead empire is materialist with a penchant for mining, they would likely also be industrialist. -- SageWilde
+			has_ethic = "ethic_industrial"					# This just seems logical for this personality. -- SageWilde
 		}
 		is_militarist = yes
 		OR = {
-			has_trait = "trait_robot_power_drills"
-			has_trait = "trait_industrious"
-		}
-		OR ={
-			has_trait = "trait_strong"
-			has_trait = "trait_very_strong"
-			has_trait = "trait_robot_history_warbot"
+			AND = {
+				has_trait = "trait_industrious"
+				has_trait = "trait_strong"
+			}
+			AND = {
+				has_trait = "trait_industrious"
+				has_trait = "trait_very_strong"	
+			}
+			AND = {
+				has_trait = "trait_robot_power_drills"			
+				has_trait = "trait_robot_history_warbot"
+			}
+			AND = {
+				has_trait = "trait_cyborg_power_drills" 		# Tweaked for Hard Reset Origin	-- SageWilde
+				has_trait = "trait_unplugged_cybernetic_positives_3"
+				has_trait = "trait_unplugged_cybernetic_negatives_3"
+			}
 		}
 	}
 
 	weight_modifier = {
-		weight = 10
-		modifier = {
-			add = 1000
-			has_ethic = "ethic_fanatic_xenophobe"
-		}
-		modifier = {
-			add = 1000
-			has_ethic = "ethic_fanatic_militarist"
-		}
+		weight = 1000
 	}
 }
 

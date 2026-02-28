@@ -48,6 +48,10 @@ is_impoverished = {
 		AND = {
 			is_lithoid_empire = no
 			is_robotic_species = no
+			has_country_resource = { 
+				type = food 
+				amount < 450 
+			}
 			has_monthly_income = {
 				resource = food
 				value < 1
@@ -55,6 +59,10 @@ is_impoverished = {
 		}
 		AND = {
 			is_lithoid_empire = yes
+			has_country_resource = { 
+				type = minerals 
+				amount < 450 
+			}
 			has_monthly_income = {
 				resource = minerals
 				value < 1
@@ -62,6 +70,10 @@ is_impoverished = {
 		}
 		AND = {
 			is_robotic_species = yes
+			has_country_resource = { 
+				type = energy
+				amount < 450 
+			}
 			has_monthly_income = {
 				resource = energy
 				value < 1

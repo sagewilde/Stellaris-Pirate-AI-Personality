@@ -37,6 +37,13 @@ opinion_tempting_raiding_target = {
 				}
 			add = -20
 		}
+		modifier = {
+			AND = {
+				is_ai = yes
+				is_impoverished = yes
+			}
+			add = -20
+		}
 	}
 }
 
