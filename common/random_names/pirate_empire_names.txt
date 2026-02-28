@@ -26,10 +26,9 @@ empire_name_parts_list = {
 	parts = {
 		Interstellar = 3
 		Allied = 3
-		k = 2
-		United = 2
-		k = 1
-		k = 1
+		Allegiant = 2
+		Unified = 2
+		Autocratic = 1
 	}
 }
 
