@@ -1,0 +1,664 @@
+# Pirate Kingdom Parts List
+empire_name_parts_list = {
+	key = prt_kingdom
+	parts = {
+		Kingdom = 3
+		Empire = 2
+		Warbands = 2
+		Imperium = 1
+		Armada = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_kingdom_desc
+	parts = {
+		Corsair = 3
+		Buccaneer = 2
+		Privateer = 2
+		Bandit = 1
+		Starfaring = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_kingdom_mid_desc
+	parts = {
+		Interstellar = 3
+		Allied = 3
+		k = 2
+		United = 2
+		k = 1
+		k = 1
+	}
+}
+
+# Death Raiders Parts List
+empire_name_parts_list = {
+	key = prt_death_raiders
+	parts = {
+		Necro-Corsairs = 3
+		Command = 2
+		Order = 2
+		Death_Fleets = 2
+		Union = 1
+		Suns = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_death_raiders_desc
+	parts = {
+		Innumerable = 3
+		Black = 2
+		Immortal = 2
+		Tomb-Born = 1
+		Corpsewrought = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_death_raiders_mid_desc
+	parts = {
+		Interstellar = 3
+		Allied = 3
+		Stellar = 2
+		United = 2
+		Accursed = 1
+	}
+}
+
+# Privateer Guild Parts List
+empire_name_parts_list = {
+	key = prt_priv_guild
+	parts = {
+		Circle = 3
+		Seekers = 2
+		Cloister = 2
+		Monastery = 2
+		Union = 1
+		Brotherhood = 1
+		Sisterhood = 1
+		Coven = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_priv_guild_desc
+	parts = {
+		Peaceful = 3
+		Bohemian = 2
+		Harmonious = 2
+		Mindful = 1
+		Aquarian = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_priv_guild_mid_desc
+	parts = {
+		Interstellar = 3
+		Allied = 3
+		Sacred = 2
+		United = 2
+		Holy = 1
+		Sheltering = 1
+	}
+}
+
+# Pirate Confederation Parts List
+empire_name_parts_list = {
+	key = prt_confederation
+	parts = {
+		Pirate_Republic = 3
+		Confederacy = 2
+		Militias = 2
+		Nation = 2
+		Coalition = 1
+		Cartels = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_confederation_desc
+	parts = {
+		Democratic = 3
+		Astronautical = 2
+		Democratic = 2
+		Mindful = 1
+		Lawful = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_confederation_mid_desc
+	parts = {
+		Interstellar = 3
+		Allied = 3
+		United = 2
+		Security = 2
+		Contractual = 1
+		Archival = 1
+	}
+}
+
+# Free Fleets Parts List
+empire_name_parts_list = {
+	key = prt_freefleets
+	parts = {
+		Fleets = 3
+		Anarchs = 2
+		Spacers = 2
+		Affinities = 2
+		Union = 1
+		Syndicate = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_freefleets_desc
+	parts = {
+		Free = 3
+		Autonomous = 2
+		Cooperative = 2
+		Mutual = 1
+		Revolutionary = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = prt_freefleets_mid_desc
+	parts = {
+		Interstellar = 3
+		Allied = 3
+		United = 2
+		Collective = 2
+		Popular = 1
+		Associated = 1
+	}
+}
+
+### Pirate Kingdom
+
+# Pirate Kingdom 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_pirate_kingdom"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<prt_kingdom> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_kingdom>}}"
+	# Empire of Sol
+}
+
+# Pirate Kingdom 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_pirate_kingdom"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<prt_kingdom> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_kingdom>}}"
+	# Empire of Earth
+}
+
+# Pirate Kingdom 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_pirate_kingdom"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_kingdom>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_kingdom>}}"
+	# Human Empire
+}
+
+# Pirate Kingdom 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_pirate_kingdom"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_kingdom_desc> {[This.GetSpeciesAdj] {<prt_kingdom>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_kingdom>}}"
+	# Great Human Empire
+}
+
+# Pirate Kingdom 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_pirate_kingdom"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_kingdom_mid_desc> {<prt_kingdom>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_kingdom>}}"
+	# Human Star Empire
+}
+
+### Death Raiders
+
+# Death Raiders 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_death_raiders"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<prt_death_raiders> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_death_raiders>}}"
+	# Empire of Sol
+}
+
+# Death Raiders 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_death_raiders"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<prt_death_raiders> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_death_raiders>}}"
+	# Empire of Earth
+}
+
+# Death Raiders 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_death_raiders"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_death_raiders>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_death_raiders>}}"
+	# Human Empire
+}
+
+# Death Raiders 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_death_raiders"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_priv_guild_desc> {[This.GetSpeciesAdj] {<prt_death_raiders>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_death_raiders>}}"
+	# Great Human Empire
+}
+
+# Death Raiders 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_death_raiders"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_death_raiders_mid_desc> {<prt_death_raiders>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_death_raiders>}}"
+	# Human Star Empire
+}
+
+### Privateer Guild
+
+# Privateer Guild 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_privateer_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<prt_priv_guild> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_priv_guild>}}"
+	# Empire of Sol
+}
+
+# Privateer Guild 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_privateer_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<prt_priv_guild> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_priv_guild>}}"
+	# Empire of Earth
+}
+
+# Privateer Guild 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_privateer_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_priv_guild>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_priv_guild>}}"
+	# Human Empire
+}
+
+# Privateer Guild 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_privateer_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_priv_guild_desc> {[This.GetSpeciesAdj] {<prt_priv_guild>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_priv_guild>}}"
+	# Great Human Empire
+}
+
+# Privateer Guild 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_privateer_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_priv_guild_mid_desc> {<prt_priv_guild>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_priv_guild>}}"
+	# Human Star Empire
+}
+
+### Pirate Confederation
+
+# Pirate Confederation 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_pirate_confederation"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<prt_confederation> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_confederation>}}"
+	# Empire of Sol
+}
+
+# Pirate Confederation 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_pirate_confederation"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<prt_confederation> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_confederation>}}"
+	# Empire of Earth
+}
+
+# Pirate Confederation 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_pirate_confederation"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_confederation>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_confederation>}}"
+	# Human Empire
+}
+
+# Pirate Confederation 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_pirate_confederation"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_confederation_desc> {[This.GetSpeciesAdj] {<prt_confederation>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_confederation>}}"
+	# Great Human Empire
+}
+
+# Pirate Confederation 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_pirate_confederation"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_confederation_mid_desc> {<prt_confederation>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_confederation>}}"
+	# Human Star Empire
+}
+
+### Free Fleets
+
+# Free Fleets 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<prt_free_fleets> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_free_fleets>}}"
+	# Empire of Sol
+}
+
+# Free Fleets 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<prt_free_fleets> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_free_fleets>}}"
+	# Empire of Earth
+}
+
+# Free Fleets 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_free_fleets>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_free_fleets>}}"
+	# Human Empire
+}
+
+# Free Fleets 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_free_fleets_desc> {[This.GetSpeciesAdj] {<prt_free_fleets>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_free_fleets>}}"
+	# Great Human Empire
+}
+
+# Free Fleets 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<prt_free_fleets_mid_desc> {<prt_free_fleets>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<prt_free_fleets>}}"
+	# Human Star Empire
+}
