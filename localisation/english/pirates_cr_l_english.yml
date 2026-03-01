@@ -12,7 +12,7 @@
   CR_HOSTILE_GREETING_MB_02:0 "You call yourselves pirates. You're cosplayers! Pretenders! Fakes and phonies unworthy to serve under the [Root.GetRulerTitle]! You deserve nothing more than to be stuffed down the barrel of a mass driver and shot into a star!"
   CR_HOSTILE_GREETING_MECH_01:0 "If you like where all your things are bolted, you'll think about addressing the [Root.GetRulerTitle] with more respect."
   CR_HOSTILE_GREETING_MECH_02:0 ""
-  CR_HOSTILE_GREETING_HM_01:0 ""
+  CR_HOSTILE_GREETING_HM_01:0 "You seem to operate under the assumption that the wrath of the swarm is the scariest thing in the galaxy. You're a cloud of minnows. You're swimming with sharks now."
   CR_HOSTILE_GREETING_HM_02:0 ""
   CR_HOSTILE_GREETING_CORP_01:0 ""
   CR_HOSTILE_GREETING_CORP_02:0 ""
@@ -21,8 +21,8 @@
 
   ### Cunning Raiders - Neutral
   CR_NEUTRAL_GREETING_01:0 "We are the [Root.GetName], and we are the shadow cast by the great [Root.GetRulerTitle] [Root.GetRulerName]"
-  CR_NEUTRAL_GREETING_02:0 
-  CR_NEUTRAL_GREETING_03:0 
+  CR_NEUTRAL_GREETING_02:0 ""
+  CR_NEUTRAL_GREETING_03:0 ""
   CR_NEUTRAL_GREETING_04:0 ""
   CR_NEUTRAL_GREETING_05:0 ""
   CR_NEUTRAL_GREETING_CORP_01:0 ""
