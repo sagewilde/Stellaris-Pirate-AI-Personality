@@ -14,6 +14,43 @@
 #
 #}
 
+# Pirate Marauders - Rebuild
+gov_pirate_marauders = {
+	ruler_title = RT_PIRATE_LORD
+
+	should_force_rename = yes
+
+	possible = {
+		has_valid_civic = civic_crusader_spirit_corporate
+		has_valid_civic = civic_barbaric_despoilers_corporate
+	}
+
+	weight = {
+		base = 30000
+	}
+}
+
+
+#Pirate Haven - Rebuild
+gov_pirate_haven = {
+	ruler_title = RT_CORSAIR_OLIGARCH
+
+	should_force_rename = yes
+
+	possible = {
+		is_megacorp = yes
+		has_valid_civic = civic_crusader_spirit_corporate
+		OR = {
+			has_valid_civic = civic_criminal_heritage
+			has_valid_civic = civic_military_dictatorship_corporate
+		}
+	}
+
+	weight = {
+		base = 25000
+	}
+}
+
 #Pirate Kingdom
 gov_pirate_kingdom = {
 	ruler_title = RT_PIRATE_KING
@@ -32,33 +69,30 @@ gov_pirate_kingdom = {
 	}
 
 	weight = {
-		base = 2000
+		base = 22000
 	}
 }
 
-#Pirate Haven - Rebuild
-gov_pirate_haven = {
-	ruler_title = RT_CORSAIR_OLIGARCH
+# Pirate Regime
+
+gov_pirate_regime = {
+	ruler_title = RT_SUPREME_COMMANDER
 
 	should_force_rename = yes
 
 	possible = {
-		is_megacorp = yes
 		has_valid_civic = civic_crusader_spirit_corporate
-		OR = {
-			has_valid_civic = civic_criminal_heritage
-			has_valid_civic = civic_military_dictatorship_corporate
-		}
+		is_dictatorial_authority = yes
 	}
 
 	weight = {
-		base = 20000
+		base = 22000
 	}
 }
 
 # Naval Hamarchy
 gov_pirate_oligarchy = {
-	ruler_ritle = RT_PIRATE_OLIGARCH
+	ruler_ritle = RT_CORSAIR_OLIGARCH
 
 	should_force_rename = yes
 
@@ -68,23 +102,7 @@ gov_pirate_oligarchy = {
 	}
 
 	weight = {
-		base = 2000
-	}
-}
-
-# Pirate Marauders - Rebuild
-gov_pirate_marauders = {
-	ruler_title = RT_PIRATE_LORD
-
-	should_force_rename = yes
-
-	possible = {
-		has_valid_civic = civic_crusader_spirit_corporate
-		has_valid_civic = civic_barbaric_despoilers_corporate
-	}
-
-	weight = {
-		base = 30000
+		base = 22000
 	}
 }
 
@@ -99,13 +117,12 @@ gov_death_raiders = {
 		has_valid_civic = civic_crusader_spirit_corporate
 		OR = {
 			has_valid_civic = civic_reanimated_armies
-			has_valid_civic = civic_death_cult
 			has_origin = origin_necrophage
 		}
 	}
 
 	weight = {
-		base = 3000
+		base = 30000
 	}
 }
 
@@ -130,7 +147,7 @@ gov_privateer_guild = {
 	}
 
 	weight = {
-		base = 2000
+		base = 22000
 	}
 }
 
@@ -146,7 +163,7 @@ gov_pirate_confederation = {
 	}
 
 	weight = {
-		base = 2000
+		base = 22000
 	}
 }
 

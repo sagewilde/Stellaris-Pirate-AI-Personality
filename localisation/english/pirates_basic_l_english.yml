@@ -108,6 +108,7 @@
  RT_PIRATE_QUEEN: "Pirate Queen"
  HT_PIRATE PRINCE: "Pirate Prince"
  HT_PIRATE_PRINCESS: "Pirate Princess"
+ RT_SUPREME_COMMANDER: "Supreme Commander"
  RT_DREAD_LORD: "Dread Lord"
  HT_DREAD_SCION: "Scion of Dark Tides"
  RT_COMMODORE: "Commodore"
@@ -115,32 +116,35 @@
  RT_CAPTAIN_PEOPLE: "Captain of the People"
 
  gov_pirate_kingdom: "Pirate Kingdom"
- gov_pirate_kingdom_desc: "Pirate kingdoms coalesce around one captain and their most senior officers, following the orders of the monarch with fierce and utter devotion. Pirates gravitate toward this powerful figure, and pay a portion of their loot directly to them in tribute. The monarch decides where treasure is spent, and if booty is misappropriated, the punishment is often marooning on an asteroid, with one blaster and one tank of oxygen."
+ gov_pirate_kingdom_desc: "Pirate kingdoms coalesce around one captain and their most senior officers, following the orders of the monarch with fierce and utter devotion. Pirates gravitate toward this powerful figure, and pay a portion of their loot directly to them in tribute."
 
  gov_death_raiders: "Death Raiders"
  gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners--they only take undead slaves."
+
+ gov_pirate_regime: "Buccaneer Regime"
+ gov_pirate_regime_desc: "This collection of pirate armadas is ruled with an iron fist by a single supreme commander. This military dictator directs not only the entire raider navy, but also the planets where they make berth."
 
  gov_pirate_oligarchy: "Naval Hamarchy"
  gov_pirate_oligarchy_desc: "A hamarchy is an oligarchic form of government where its contituent parts have partial autonomy, but still answer to a central authority. This mode of government is particularly conducive to the operation of an allied navy of privateers."
 
  gov_privateer_guild: "Privateer Guild"
- gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Sail that binds them is complex and legally robust, and all privateers of the company pay a portion of the booty directly to the guild's coffers for the right to sail under their flag. Breaches of the Charter are dealt with by the Captains personally."
+ gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Space that binds them is complex and legally robust, and all privateers of the company pay a portion of the booty directly to the guild's coffers for the right to operate under their flag. Breaches of the Charter are dealt with by the Captains personally."
 
  gov_pirate_confederation: "Pirate Confederation"
  gov_pirate_confederation_desc: "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."
 
  gov_free_fleets: "Free Fleets"
- gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborn hydrarchy--astrarchy, if you will--these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
+ gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborne hydrarchy--astrarchy, if you will--these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
 
  auth_pirate_commune: "Pirate Commune"
- auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarcho-syndicalist commune and a pirate haven, their economic model is strictly mutualist in nature. Every pirate receives one share of treasure, regardless of rank or station, providing for the needs of the ship and the havens first before personal pay."
+ auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarchist commune and a pirate haven, their economic model is strictly anarcho-syndicalist in nature. Booty won from a prize is first directed to repairing and maintaining the fleets, then the havens, then equitably shared among those who participated in the raid according to need."
 
  concept_auth_pirate_commune: "$auth_pirate_commune$"
  gov_pirate_commune: "$auth_pirate_commune$"
  gov_pirate_commune_desc: "$auth_pirate_commune_desc$"
 
  auth_privateer_union: "Privateer Union"
- auth_privateer_union_desc: "A privateer union is a uniquely 'flexible' private military company that operates as a worker's collective, with a command structure that horizonally organized and volunteer-oriented. Contracts taken by union privateers have stringent requirements for pay and equipment, but they are exceptionally competent pirates, and injuries are handsomely compensated."
+ auth_privateer_union_desc: "A privateer union is a uniquely 'flexible' private military company that operates as a worker's collective, with a command structure that is horizonally organized and volunteer-oriented. Contracts taken by union privateers have stringent requirements for pay and equipment, but they are exceptionally competent pirates, and injuries are handsomely compensated."
  
  concept_auth_privateer_union: "$auth_privateer_union$"
  gov_privateer_union: "$auth_privateer_union$"
