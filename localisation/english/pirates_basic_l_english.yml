@@ -137,7 +137,7 @@
  gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborne hydrarchy--astrarchy, if you will--these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
 
  auth_pirate_commune: "Pirate Commune"
- auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarchist commune and a pirate haven, their economic model is strictly anarcho-syndicalist in nature. Booty won from a prize is first directed to repairing and maintaining the fleets, then the havens, then equitably shared among those who participated in the raid according to need."
+ auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarchist commune and a pirate haven, their economic model is strictly anarcho-syndicalist in nature. Booty won from a prize is first directed to repairing and maintaining the fleets, then the havens, then equally among the crew."
 
  concept_auth_pirate_commune: "$auth_pirate_commune$"
  gov_pirate_commune: "$auth_pirate_commune$"

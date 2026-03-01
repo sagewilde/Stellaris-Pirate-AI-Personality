@@ -73,7 +73,7 @@ gov_pirate_kingdom = {
 	}
 }
 
-# Pirate Regime
+# Buccaneer Regime
 
 gov_pirate_regime = {
 	ruler_title = RT_SUPREME_COMMANDER
