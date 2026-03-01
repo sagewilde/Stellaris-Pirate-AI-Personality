@@ -117,10 +117,10 @@
   CORP_CR_FRIENDLY_GREETING_05: "Welcome back, [Root.GetRulerTitle] [Root.GetLeaderName]. Your usual cabin is prepared, with planet-side view and complimentary chamber service. I think you'll like the servants we've assigned to you for your visit."
   MECH_CR_FRIENDLY_GREETING_01: "[Root.GetAdjective] assets have proven to be useful to our goals. We calculate current gain-to-expenditure ratios as exceptionally favourable."
   MECH_CR_FRIENDLY_GREETING_02: "We are receiving you, [Root.GetRulerTitle]. We trust that our calculated list of potential trade route targets has been illuminating."
-  HM_CR_FRIENDLY_GREETING_01: ""
-  HM_CR_FRIENDLY_GREETING_02: ""
-  PIRATE_CHUMLY_AHOY_01: ""
-  PIRATE_CHUMLY_AHOY_02: ""
+  HM_CR_FRIENDLY_GREETING_01: "May the song of our collective harmonize with your war shanties, and shake the very stars."
+  HM_CR_FRIENDLY_GREETING_02: "The [From.GetSpeciesNamePlural] welcome you, noble pirate."
+  PIRATE_CHUMLY_AHOY_01: "... Ahoy."
+  PIRATE_CHUMLY_AHOY_02: "Arr?"
 
   ### Concerning Hippies
   PC_CR_INSULT_01: ""

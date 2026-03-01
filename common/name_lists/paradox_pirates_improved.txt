@@ -22,6 +22,18 @@ paradox_pirates_improved = {
 		battleship = {
             "Alestorm" "Robbie Rotten" "Big Hug" "Complete Breakfast" "Per My Last E-Mail" "Millennial Falchion" "Ball Eater" "Mistake" "Nein Heroez" "I Would Like To Rage" "Your Extended Warranty" "Get Off my Keybfjjjj" "Goin' Commando" "Emotional Support Vessel" "Belma's Panties" "Going Jolly" "Million Moony" "Pirate D. Ship" "Mental Possum" "Lusty Tzynn Maid" "Doorknob Sock" "Stolen Sweetroll" Mass-kisser "Ban Hammer" Nerf-herder "Gaston" "Spit and Prayers" "Daddy's Little Ship" "Byzantium V" "Wench's Wink" Showstopper Show-off "Scythe of Death" "Philosophy" 
 		}
+
+		titan = {
+			"Blackbeard" "Tortuga" "Drake" "Revenge" "Legacy" "Parade" "Flying Blorg"
+		}
+
+		juggernaut = {
+			"Planetlubber" "Drydock" "Harbor" "Brigand Cove" "Merxeno Lagoon" "Haulout"
+		}
+
+		colossus = {
+			"Black Spot" "Kraken" "Gargantua"
+		}
 		
 		science = {
 			"Orville" "Enterprise" "1337 H4XX0R" "Runtime Error" "Failed Host Lookup" "DROPTABLE" "Deviant Drone" "404 Ship Not Found" "Tiyanki Feathers" "Pirate School Dropout" "Mystery Machine" "NEET's Basement" "Flagpole Undies" "Nerd Alert" "Humm Parsec" "Modern Major-General"
@@ -35,13 +47,7 @@ paradox_pirates_improved = {
 		
 		transport = {
 		}
-	
-		military_station_small = {
-		}
 
-		ion_cannon = {
-		}
-		
 		#orbital_station = { }
 		mining_station = { }
 		research_station = { }
@@ -50,11 +56,15 @@ paradox_pirates_improved = {
 		#observation_station = { }
 		#outpost_station = {	}
 	
-		military_station_small = {}
+		military_station_small = {
+			"Maria's Claw" "Margaret's Talon" "Morales' Dagger" "Mercedes' Appendage" "Mario's Plunger" "Marc's Cutlass"
+		}
 	
 		military_station_medium = {}
 	
-		military_station_large = {}	
+		military_station_large = {}
+
+		ion_cannon = {}	
 	}
 	
 	fleet_names = {

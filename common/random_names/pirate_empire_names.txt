@@ -174,6 +174,7 @@ empire_name_parts_list = {
 		Commune = 2
 		Municipalities = 2
 		Affinities = 2
+		Havens = 2
 		Union = 1
 		Syndicate = 1
 	}
@@ -187,6 +188,7 @@ empire_name_parts_list = {
 		Cooperative = 2
 		Mutual = 1
 		Revolutionary = 1
+		Rebel = 1
 	}
 }
 
