@@ -56,6 +56,22 @@ gov_pirate_haven = {
 	}
 }
 
+# Naval Hamarchy
+gov_pirate_oligarchy = {
+	ruler_ritle = RT_PIRATE_OLIGARCH
+
+	should_force_rename = yes
+
+	possible = {
+		has_valid_civic = civic_crusader_spirit_corporate
+		is_oligarchic_authority = yes
+	}
+
+	weight = {
+		base = 2000
+	}
+}
+
 # Pirate Marauders - Rebuild
 gov_pirate_marauders = {
 	ruler_title = RT_PIRATE_LORD
@@ -81,7 +97,11 @@ gov_death_raiders = {
 
 	possible = {
 		has_valid_civic = civic_crusader_spirit_corporate
-		has_valid_civic = civic_reanimated_armies
+		OR = {
+			has_valid_civic = civic_reanimated_armies
+			has_valid_civic = civic_death_cult
+			has_origin = origin_necrophage
+		}
 	}
 
 	weight = {

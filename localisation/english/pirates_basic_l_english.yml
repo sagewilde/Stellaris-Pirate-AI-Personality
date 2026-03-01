@@ -120,6 +120,9 @@
  gov_death_raiders: "Death Raiders"
  gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners--they only take undead slaves."
 
+ gov_pirate_oligarchy: "Naval Hamarchy"
+ gov_pirate_oligarchy_desc: "A hamarchy is an oligarchic form of government where its contituent parts have partial autonomy, but still answer to a central authority. This mode of government is particularly conducive to the operation of an allied navy of privateers."
+
  gov_privateer_guild: "Privateer Guild"
  gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Sail that binds them is complex and legally robust, and all privateers of the company pay a portion of the booty directly to the guild's coffers for the right to sail under their flag. Breaches of the Charter are dealt with by the Captains personally."
 

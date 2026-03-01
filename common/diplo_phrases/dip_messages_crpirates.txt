@@ -1,229 +1,229 @@
-greetings = {
-    CR_HOSTILE_GREETING_01 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_02 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_03 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_04 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_05 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_06 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_07 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_MECH_01 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-            FROM = { is_species_class = ROBOT }
-        }
-    }
-    CR_HOSTILE_GREETING_MECH_02 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-            FROM = { is_species_class = ROBOT }
-        }
-    }
-    CR_HOSTILE_GREETING_HM_01 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-            FROM = { is_gestalt = yes }
-        }
-    }
-    CR_HOSTILE_GREETING_HM_02 = {
-        weight = { weight = 1000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-            FROM = { is_gestalt = yes }
-        }
-    }
-    CR_NEUTRAL_GREETING_01 = {
+# greetings = {
+#     CR_HOSTILE_GREETING_01 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_02 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_03 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_04 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_05 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_06 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_07 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_MECH_01 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#             FROM = { is_species_class = ROBOT }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_MECH_02 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#             FROM = { is_species_class = ROBOT }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_HM_01 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#             FROM = { is_gestalt = yes }
+#         }
+#     }
+#     CR_HOSTILE_GREETING_HM_02 = {
+#         weight = { weight = 1000 }
+#         trigger = {
+#             has_ai_personality = cunning_raiders
+#             NOT = { is_at_war_with = FROM }
+#             OR = {
+#                 is_hostile_to = FROM
+#                 is_unfriendly_to = FROM
+#             }
+#             FROM = { is_gestalt = yes }
+#         }
+#     }
+#     CR_NEUTRAL_GREETING_01 = {
       
-    }
-    CR_NEUTRAL_GREETING_02 = {
+#     }
+#     CR_NEUTRAL_GREETING_02 = {
       
-    }
-    CR_NEUTRAL_GREETING_03 = {
+#     }
+#     CR_NEUTRAL_GREETING_03 = {
       
-    }
-    CR_NEUTRAL_GREETING_04 = {
+#     }
+#     CR_NEUTRAL_GREETING_04 = {
       
-    }
-    CR_NEUTRAL_GREETING_05 = {
+#     }
+#     CR_NEUTRAL_GREETING_05 = {
       
-    }
-    CR_NEUTRAL_GREETING_CORP_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_CORP_01 = {
       
-    }
-    CR_NEUTRAL_GREETING_CORP_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_CORP_01 = {
       
-    }
-    CR_NEUTRAL_GREETING_HM_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_HM_01 = {
       
-    }
-    CR_NEUTRAL_GREETING_MECH_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_MECH_01 = {
       
-    }
-    CR_NEUTRAL_GREETING_PAC_01 = {
-    }
-    CR_NEUTRAL_GREETING_MIL_01 = {
-    }
-    CR_NEUTRAL_GREETING_AUT_01 = {
-    }
-    CR_NEUTRAL_GREETING_EGL_01 = {
-    }
-    CR_NEUTRAL_GREETING_MAT_01 = {
-    }
-    CR_NEUTRAL_GREETING_SPR_01 = {
-    }
-    CR_NEUTRAL_GREETING_XPB_01 = {
-    }
-    CR_NEUTRAL_GREETING_XPL_01 = {
-    }
-    CR_NEUTRAL_GREETING_SOC_01 = {
-    }
-    CR_NEUTRAL_GREETING_CAP_01 = {
-    }
-    CR_NEUTRAL_GREETING_ECO_01 = {
-    }
-    CR_NEUTRAL_GREETING_IND_01 = {
-    }
-    CR_FRIENDLY_GREETING_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_PAC_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_MIL_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_AUT_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_EGL_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_MAT_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_SPR_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_XPB_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_XPL_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_SOC_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_CAP_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_ECO_01 = {
+#     }
+#     CR_NEUTRAL_GREETING_IND_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_01 = {
       
-    }
-    CR_FRIENDLY_GREETING_02 = {
+#     }
+#     CR_FRIENDLY_GREETING_02 = {
       
-    }
-    CR_FRIENDLY_GREETING_03 = {
+#     }
+#     CR_FRIENDLY_GREETING_03 = {
       
-    }
-    CR_FRIENDLY_GREETING_04 = {
+#     }
+#     CR_FRIENDLY_GREETING_04 = {
       
-    }
-    CR_FRIENDLY_GREETING_05 = {
+#     }
+#     CR_FRIENDLY_GREETING_05 = {
       
-    }
-    CR_FRIENDLY_GREETING_CORP_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_CORP_01 = {
       
-    }
-    CR_FRIENDLY_GREETING_CORP_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_CORP_01 = {
       
-    }
-    CR_FRIENDLY_GREETING_HM_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_HM_01 = {
       
-    }
-    CR_FRIENDLY_GREETING_MECH_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_MECH_01 = {
       
-    }
-    CR_FRIENDLY_GREETING_PAC_01 = {
-    }
-    CR_FRIENDLY_GREETING_MIL_01 = {
-    }
-    CR_FRIENDLY_GREETING_AUT_01 = {
-    }
-    CR_FRIENDLY_GREETING_EGL_01 = {
-    }
-    CR_FRIENDLY_GREETING_MAT_01 = {
-    }
-    CR_FRIENDLY_GREETING_SPR_01 = {
-    }
-    CR_FRIENDLY_GREETING_XPB_01 = {
-    }
-    CR_FRIENDLY_GREETING_XPL_01 = {
-    }
-    CR_FRIENDLY_GREETING_SOC_01 = {
-    }
-    CR_FRIENDLY_GREETING_CAP_01 = {
-    }
-    CR_FRIENDLY_GREETING_ECO_01 = {
-    }
-    CR_FRIENDLY_GREETING_IND_01 = {
-    }
-}
+#     }
+#     CR_FRIENDLY_GREETING_PAC_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_MIL_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_AUT_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_EGL_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_MAT_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_SPR_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_XPB_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_XPL_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_SOC_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_CAP_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_ECO_01 = {
+#     }
+#     CR_FRIENDLY_GREETING_IND_01 = {
+#     }
+# }

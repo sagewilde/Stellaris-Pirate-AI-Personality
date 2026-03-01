@@ -233,7 +233,7 @@ paradox_pirates_improved = {
 			weight = 100
 
             first_names_male = { 
-                Ace Aragon Ash Bjorn Ben Boar Bootstrap Braveheart Brock Burt Cole Cygnus Delvin Doug Elias Erdin Eurylochus Francis Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Jack Jaeger Jan Juan Judge Justice Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Racer Rathkran Rebel Revelry Robert Rocket Robin Rock Shepherd Smiley "Stan Lee" Todd Trombone Sully Todd Tristan Tupper Vegeta Weasel William Z Zheng 
+                Ace Aragon Ash Bjorn Ben Boar Bootstrap Braveheart Brock Burt Cole Cygnus Delvin Doug Elias Erdin Eurylochus Francis Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Ivor Jack Jaeger Jan Juan Judge Justice Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Racer Rathkran Rebel Revelry Robert Rocket Robin Rock Shepherd Smiley "Stan Lee" Todd Trombone Sully Todd Tristan Tupper Vegeta Weasel William Z Zheng 
             }
            
             first_names_female = { 
@@ -250,7 +250,7 @@ paradox_pirates_improved = {
 
 			full_names_female = {
 				
-				"Zheng Yi Sao" "Mary Read" "Anne Bonny" "Tchiao Kuo-fu-ja" "Artemisia of Caria" "Joanna 'the Flame' Flanders" "Jeanne 'the Lioness' de Clisson" "Grace O'Malley" "Sayyida al Hurra" "Mary 'Lady Killigrew' Wolverston" "Cornelia 'Neel' Cowper" "Jacquotte Delahaye" "Sarah Bishop" "Rachel Wall" "Johanna Hård" "Lo Hon-cho" "'Sister' Ping"
+				"Zheng Yi Sao" "Mary Read" "Anne Bonny" "Tchiao Kuo-fu-ja" "Artemisia of Caria" "Joanna 'the Flame' Flanders" "Jeanne 'the Lioness' de Clisson" "Grace O'Malley" "Sayyida al Hurra" "Lady Killigrew" "Cornelia 'Neel' Cowper" "Jacquotte Delahaye" "Sarah Bishop" "Rachel Wall" "Johanna Hård" "Lo Hon-cho" "'Sister' Ping"
 			}
 			
             regnal_first_names_male = {
