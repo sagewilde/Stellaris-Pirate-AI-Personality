@@ -68,7 +68,12 @@ wg_plunder_raid = {
 		modifier = {
 			has_ai_personality = mirthful_bandits
 			from = { allows_slavery = yes }
-			factor = 0		# This is to ensure that Mirthful Bandits pick the Liberation cb if their neighbor is a slaver empire.
+			factor = 0		# This is to ensure that Mirthful Bandits pick the Liberation cb if their neighbor is a slaver empire.	--SageWilde
+		}
+		modifier = {
+			has_valid_civic = civic_military_dictatorship_corporate
+			from = { has_valid_civic = civic_military_dictatorship_corporate }
+			factor = 0		# Ensures that competing Pirate Lords annihilate each other faster.	--SageWilde
 		}
 	}
 }

@@ -4,6 +4,14 @@ site_space_shanty_dig = {
 	desc = {
 		trigger = {
 			owner = {
+				has_valid_civic = civic_crusader_spirit_corporate
+			}
+		}
+		text = "space_shanty_intro_pirate"
+	}
+	desc = {
+		trigger = {
+			owner = {
 				country_uses_bio_ships = no
 			}
 		}
@@ -16,14 +24,6 @@ site_space_shanty_dig = {
 			}
 		}
 		text = "space_shanty_intro_bio"
-	}
-	desc = {
-		trigger = {
-			owner = {
-				has_valid_civic = civic_crusader_spirit_corporate
-			}
-		}
-		text = "space_shanty_intro_pirate"
 	}
 	picture = GFX_evt_frozen
 	stages = 5

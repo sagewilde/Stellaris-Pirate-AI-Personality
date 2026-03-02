@@ -94,6 +94,7 @@ opinion_feed_the_poor = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
 			is_a_jerk = no
+			is_a_huge_jerk = no
 			is_impoverished = yes
 		}
 	}
