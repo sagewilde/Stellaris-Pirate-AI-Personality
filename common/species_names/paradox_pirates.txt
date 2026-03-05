@@ -1,0 +1,470 @@
+# Generated species derive their names from here
+# Rule of thumb: at least one of each culture for each species, except mammalian and humanoid which gets at least ~4 per each
+
+### MAMMALIANS
+
+MAM = {
+	amand = {
+		name = Amandese
+		plural = Amandese
+		home_planet = "Amand's Cove"
+		home_system = "Rodrick's Bay"
+		name_list = "paradox_pirates_improved"
+	}
+	ether = {
+		name = Etheran
+		plural = Etherans
+		home_planet = "White Ether"
+		home_system = "Blue Ether"
+		name_list = "paradox_pirates_improved"
+	}
+	harmo = {
+		name = Harmian
+		plural = Harmians
+		home_planet = Harmo
+		home_system = Curford
+		name_list = "paradox_pirates_improved"
+	}
+	gibbesley = {
+		name = Gibbian
+		plural = Gibbians
+		home_planet = Gibbesley
+		home_system = "Sea of Switley Kai"
+		name_list = "paradox_pirates_improved"
+	}
+	zai = {
+		name = Zai
+		plural = Zai
+		home_planet = "House of Zaison"
+		home_system = "Lordly Zaine"
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### FUNGOID
+
+FUN = {
+	harne = {
+		name = Harnian
+		plural = Harnians
+		home_planet = "Port of Harnhawk"
+		home_system = Harne 
+		name_list = "paradox_pirates_improved"
+	}
+	swalley = {
+		name = Swallian
+		plural = Swallians
+		home_planet = "Swalley's Fort"
+		home_system = "Godon's Treasure" 
+		name_list = "paradox_pirates_improved"
+	}
+	remither = {
+		name = Remithan
+		plural = Remithans
+		home_planet = "Low Remither"
+		home_system = "High Remither" 
+		name_list = "paradox_pirates_improved"
+	}
+	farthel = {
+		name = Farthelese
+		plural = Farthelese
+		home_planet = Farthel
+		home_system = Vestbraker 
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### ARTHROPOID
+
+ART = {
+	garmant = {
+		name = Garmantoid
+		plural = Garmantoids
+		home_planet = "House of Garmant"
+		home_system = "Shard's Doom"
+		name_list = "paradox_pirates_improved"
+	}
+	Theld = {
+		name = Theld
+		plural = Theld
+		home_planet = "Harbor of Leetch"
+		home_system = "Bay of Emmes-Glock"
+		name_list = "paradox_pirates_improved"
+	}
+	mabric = {
+		name = Mabrican
+		plural = Mabricans
+		home_planet = "Mabric Coast"
+		home_system = "Suthron Ocean"
+		name_list = "paradox_pirates_improved"
+	}
+	barburriesh = {
+		name = Burroid
+		plural = Burroids
+		home_planet = Barburriesh
+		home_system = Baradsayder
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### REPTILIAN
+
+REP = {
+	lazard = {
+		name = Lazardian  
+		plural = Lazardians
+		home_planet = "Lazard's Door"
+		home_system = "Barlock's Base"
+		name_list = "paradox_pirates_improved"
+	}
+	brosshalow = {
+		name = Lincher  
+		plural = Linchers
+		home_planet = "Bross Halow"
+		home_system = "Scourge of Elvon"
+		name_list = "paradox_pirates_improved"
+	}
+	lincomir = {
+		name = Lincomite  
+		plural = Lincomites
+		home_planet = Lincomir
+		home_system = "Blabbott Sea"
+		name_list = "paradox_pirates_improved"
+	}
+	kiplen = {
+		name = Cajamarca  
+		plural = Kiplenese
+		home_planet = "Cliffs of Kiplen"
+		home_system = "Gaban Sea"
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### AVIAN 
+
+AVI = {
+	preux = {
+		name = Preux 
+		plural = Preux
+		home_planet = "Lady Kailey"
+		home_system = "Lord Kennon"
+		name_list = "paradox_pirates_improved"
+	}
+	thort = {
+		name = Thort 
+		plural = Thort
+		home_planet = "Chund Egert"
+		home_system = Curris
+		name_list = "paradox_pirates_improved"
+	}
+	harus = {
+		name = Harusid 
+		plural = Harusids
+		home_planet = "Harus Watch"
+		home_system = "Emmeton Wall"
+		name_list = "paradox_pirates_improved"
+	}
+	gaber = {
+		name = Gaberian 
+		plural = Gaberians
+		home_planet = Gaber
+		home_system = Ruste
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### MOLLUSCOID
+
+MOL = {
+	barmane = {
+		name = Barmian
+		plural = Barmians
+		home_planet = "Host of Barmane"
+		home_system = Baraker
+		name_list = "paradox_pirates_improved"
+	}
+	blabee = {
+		name = Blagee
+		plural = Blagees
+		home_planet = "Swington's Isle"
+		home_system = "Froomb Farlo"
+		name_list = "paradox_pirates_improved"
+	}
+	burrickle = {
+		name = Burrickle
+		plural = Burrickles
+		home_planet = "Burrickle's Home"
+		home_system = "Spauldharus's Hope"
+		name_list = "paradox_pirates_improved"
+	}
+	standal = {
+		name = Standoid
+		plural = Standoids
+		home_planet = Standal
+		home_system = Inchertond
+		name_list = "paradox_pirates_improved"
+	}
+	elavicio = {
+		name = Élavician
+		plural = Élavicians
+		home_planet = Élavicio
+		home_system = Holmen
+		name_list = "paradox_pirates_improved"
+	}
+	harrinkley = {
+		name = Harrink
+		plural = Harrinks
+		home_planet = Harrinkley
+		home_system = Neantine
+		name_list = "paradox_pirates_improved"
+	}
+	guandorgos = {
+		name = Guandorgian
+		plural = Guandorgians
+		home_planet = Guandorgos
+		home_system = Emmandra
+		name_list = "paradox_pirates_improved"
+	}
+	coveofthedead = {
+		name = Damptonian
+		plural = Damptonians
+		home_planet = "Cove of the Dead"
+		home_system = "Dread Hideout"
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### PLANTOID
+
+PLANT = {
+	churban = {
+		name = Churbanoid
+		plural = Churbanoids
+		home_planet = Churban
+		home_system = "Swier Dalph"
+		name_list = "paradox_pirates_improved"
+	}
+	farbash = {
+		name = Farbashi
+		plural = Farbashis
+		home_planet = "Farbash Island"
+		home_system = "Wastond Ocean"
+		name_list = "paradox_pirates_improved"
+	}
+	arvin = {
+		name = Arvinan
+		plural = Arvinans
+		home_planet = "Island of Arvin's Sword"
+		home_system = "Blarrison Bay"
+		name_list = "paradox_pirates_improved"
+	}
+	emster = {
+		name = Emsterian
+		plural = Emsterians
+		home_planet = Emster
+		home_system = Warlendon
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### HUMANOIDS
+
+HUM = {
+	barban = {
+		name = Barbanian
+		plural = Barbanians
+		home_planet = "House of Light"
+		home_system = "Salton Sea"
+		name_list = "paradox_pirates_improved"
+	}
+	fandalph = {
+		name = Fandian
+		plural = Fandians
+		home_planet = "Fandalph Island"
+		home_system = "Homesley's Cove"
+		name_list = "paradox_pirates_improved"
+	}
+	lazar = {
+		name = Lazarian
+		plural = Lazarians
+		home_planet = "Gold of Lazar"
+		home_system = "Jackley's Chest"
+		name_list = "paradox_pirates_improved"
+	}
+	lough = {
+		name = Lough
+		plural = Lough
+		home_planet = "Oracle of Holmeter"
+		home_system = "Blade of Kedries"
+		name_list = "paradox_pirates_improved"
+	}
+	walthel = {
+		name = Walthelite
+		plural = Walthelites
+		home_planet = Walthel
+		home_system = Amaradley
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### LITHOIDS
+
+LITHOID = {
+	lagarna = {
+		name = Lagarnian
+		plural = Lagarnians
+		home_planet = Lagarna
+		home_system = Alving
+		name_list = "paradox_pirates_improved"
+	}
+	lornurryker = {
+		name = Lornuring
+		plural = Lornurings
+		home_planet = Lornurryker
+		home_system = Sutingto
+		name_list = "paradox_pirates_improved"
+	}
+	palatinateofthestones = {
+		name = Walthean
+		plural = Waltheans
+		home_planet = "Palatinate of the Stones"
+		home_system = "Night's Crag"
+		name_list = "paradox_pirates_improved"
+	}
+	lorton = {
+		name = Lortonese
+		plural = Lortonese
+		home_planet = Lorton
+		home_system = Witherby
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### NECROIDS
+
+NECROID = {
+	sarudyzen = {
+		name = Drane
+		plural = Dranes
+		home_planet = Sarudyzen
+		home_system = Méliancoson
+		name_list = "paradox_pirates_improved"
+	}
+	audettonslair = {
+		name = Audettonian
+		plural = Audettonians
+		home_planet = "Audetton's Lair"
+		home_system = "Audetton's Booty"
+		name_list = "paradox_pirates_improved"
+	}
+	bryonling = {
+		name = Fronian
+		plural = Fronians
+		home_planet = "Byron Ling"
+		home_system = Swithers
+		name_list = "paradox_pirates_improved"
+	}
+	chersutina = {
+		name = Sutinan
+		plural = Sutinans
+		home_planet = "Cher Sutina"
+		home_system = Tacianso
+		name_list = "paradox_pirates_improved"
+	}
+	fromie = {
+		name = Fromid
+		plural = Fromids
+		home_planet = Fromie
+		home_system = Maranewen
+		name_list = "paradox_pirates_improved"
+	}
+	armang = {
+		name = Armangese
+		plural = Armangese
+		home_planet = Armang
+		home_system = Walthe
+		name_list = "paradox_pirates_improved"
+	}
+}
+
+### AQUATICS
+
+AQUATIC = {
+	ranolentian = {
+		name = Chaëllener
+		plural = Chaëlleners
+		home_planet = "Rano Lentian's Cackle"
+		home_system = "Tydeth's Plague"
+		name_list = "paradox_pirates_improved"
+	}
+	adrosabra = {
+		name = Adrosabrian
+		plural = Adrosabrians
+		home_planet = Adrosabra
+		home_system = Mandaluck
+		name_list = "paradox_pirates_improved"
+	}
+	wurine = {
+		name = Wurinian
+		plural = Wurinians
+		home_planet = Wurine
+		home_system = "Swetch Tond"
+		name_list = "paradox_pirates_improved"
+	}
+	portofwitonia = {
+		name = Witonian
+		plural = Witonians
+		home_planet = "Port of Witonia"
+		home_system = "Aletcher's Bay"
+		name_list = "paradox_pirates_improved"
+	}
+	blaure = {
+		name = Blaurish
+		plural = Blaurish
+		home_planet = Blaure
+		home_system = Naudgermania
+		name_list = "paradox_pirates_improved"
+	}
+	wittepatris = {
+		name = Wittepatrian
+		plural = Wittepatrians
+		home_planet = "Witte Patris"
+		home_system = Rivarlouis
+		name_list = "paradox_pirates_improved"
+	}
+	industryofunrest = {
+		name = Mardan
+		plural = Mardans
+		home_planet = "Industry of Unrest"
+		home_system = "Revolutionary Jest"
+		name_list = "paradox_pirates_improved"
+	}
+	richaelle = {
+		name = Richaëllian
+		plural = Richaëllians
+		home_planet = Richaëlle
+		home_system = Richaëlle
+		name_list = "paradox_pirates_improved"
+	}
+	underseatrench = {
+		name = Crowlen
+		plural = Crowlens
+		home_planet = "Undersea Trench"
+		home_system = "Path of Stability"
+		name_list = "paradox_pirates_improved"
+	}
+	muelleysship = {
+		name = "Warn-Alie Muell"
+		plural = "Warn-Alie Muells"
+		home_planet = "Muelley's Ship"
+		home_system = "Sea of Haëlline"
+		name_list = "paradox_pirates_improved"
+	}
+	fulcane = {
+		name = Fulcanian
+		plural = Fulcanians
+		home_planet = Fulcane
+		home_system = Nianarelth
+		name_list = "paradox_pirates_improved"
+	}
+}

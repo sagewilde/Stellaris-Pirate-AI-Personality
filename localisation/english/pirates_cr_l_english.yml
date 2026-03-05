@@ -11,9 +11,9 @@
   CR_HOSTILE_GREETING_MB_01:0 "If I hear one more 'arr' or 'shiver me timbers' out of you, I will space you myself!"
   CR_HOSTILE_GREETING_MB_02:0 "You call yourselves pirates. You're cosplayers! Pretenders! Fakes and phonies unworthy to serve under the [Root.GetRulerTitle]! You deserve nothing more than to be stuffed down the barrel of a mass driver and shot into a star!"
   CR_HOSTILE_GREETING_MECH_01:0 "If you like where all your things are bolted, you'll think about addressing the [Root.GetRulerTitle] with more respect."
-  CR_HOSTILE_GREETING_MECH_02:0 ""
-  CR_HOSTILE_GREETING_HM_01:0 "You seem to operate under the assumption that the wrath of the swarm is the scariest thing in the galaxy. You're a cloud of minnows. You're swimming with sharks now."
-  CR_HOSTILE_GREETING_HM_02:0 ""
+  CR_HOSTILE_GREETING_MECH_02:0 "I look at you and your planets, and do you know what I see? Scrap. Scrap that will be recycled into a brand new [Root.GetAdjective] fleet."
+  CR_HOSTILE_GREETING_HM_01:0 "You seem to operate under the assumption that the wrath of the swarm is the most feared thing in the galaxy. You're a cloud of minnows. You're swimming with sharks now."
+  CR_HOSTILE_GREETING_HM_02:0 "There really are no slaves more perfect than a hive mind. All you need to do is control one crucial head, and the rest fall in line."
   CR_HOSTILE_GREETING_CORP_01:0 ""
   CR_HOSTILE_GREETING_CORP_02:0 ""
   CR_HOSTILE_GREETING_CORP_03:0 ""
@@ -62,10 +62,12 @@
   ### Cunning Raiders - Insult (Recipient)
   CR_INSULT_MB_01:0 "Too late to be known as [Root.GetRulerName] the First, [Root.Ruler.GetSheHe] [Root.Ruler.GetIsAre] sure to be known as [Root.GetRulerName] the Worst! A pox on the phony king of pirates! Oo-de-lally!"
   CR_INSULT_MB_02:0 "Yar-har-har! Shiver me fuselage! Blow me down! Secure the vol-mote chest! Smeegibb, cast off the hawser!"
-  CR_INSULT_01:0 "You look like you need to eat more oranges. Perhaps a few thousand of them."
+  CR_INSULT_DEFAULT_01:0 "You look like you need to eat more oranges. Perhaps a few thousand of them."
   CR_INSULT_HUMAN_01:0 "You're no Blackbeard. You're not even a Dread Pirate Roberts! You're Robbie Rotten!"
 
   ### Cunning Raiders - Insult (Sender)
+  CR_INSULT_01: "The [Root.GetAdjective] envoy strides arrogantly into the [From.GetRulerTitle]'s office. With a haughty, wicked grin, they throw a bag onto [From.Leader.GetHerHis] desk. Inside is the severed head of a [From.GetSpecies]!"
+  CR_INSULT_02: "When I became [Root.GetRulerTitle], I had to jettison my predecessor from an airlock to prove that I was a worthy leader. When I make you walk the ramp, your [From.GetSpeciesSpawnName] will weep before I make them follow you."
 
   ### Cunning Raiders - Rivalry
 
@@ -114,7 +116,7 @@
   CORP_CR_FRIENDLY_GREETING_02: "Hey, there [Root.Leader.GetSheHe] [Root.Leader.GetIsAre]! There's my favorite [Root.GetSpeciesAdjective] [Root.GetSpeciesNameCompliment]! The last blockade runner you sent really brought the good stuff! We can't keep it on the shelves! You're absolute geniuses at cutting red tape. And cutting throats, for that matter."
   CORP_CR_FRIENDLY_GREETING_03: "There's my favorite mean, lean, deal-making machine! You smell that? That, my friend, is the smell of a new 10,000 credit fleet revving up the engines!"
   CORP_CR_FRIENDLY_GREETING_04: "We have a simple relationship; we're the brains, and you're the brawn. I cook the books, and you cook the competition."
-  CORP_CR_FRIENDLY_GREETING_05: "Welcome back, [Root.GetRulerTitle] [Root.GetLeaderName]. Your usual cabin is prepared, with planet-side view and complimentary chamber service. I think you'll like the servants we've assigned to you for your visit."
+  CORP_CR_FRIENDLY_GREETING_05: "Welcome back, [Root.GetRulerTitle] [Root.GetRulerName]. Your usual cabin is prepared, with planet-side view and complimentary chamber service. I think you'll like the servants we've assigned to you for your visit."
   MECH_CR_FRIENDLY_GREETING_01: "[Root.GetAdjective] assets have proven to be useful to our goals. We calculate current gain-to-expenditure ratios as exceptionally favourable."
   MECH_CR_FRIENDLY_GREETING_02: "We are receiving you, [Root.GetRulerTitle]. We trust that our calculated list of potential trade route targets has been illuminating."
   HM_CR_FRIENDLY_GREETING_01: "May the song of our collective harmonize with your war shanties, and shake the very stars."
@@ -124,10 +126,10 @@
 
   ### Concerning Hippies
   PC_CR_INSULT_01: ""
-  CR_PC_INSULT_01: ""
-  CR_PC_WAR_GREETING_01: ""
+  CR_PC_WAR_GREETING_01: "The slave chips we install in our assets are very versatile. Did you know they can override your ability to speak? Our captains are rejoicing. We won't have to hear your pathetic, mewling protest chants."
+  PC_CR_FRIENDLY_GREETING_01: "I have no clue how you did it, dude. But I"m not complaining if we're on good terms. Just keep your fleets over there!"
   CR_PC_FRIENDLY_GREETING_01: "I dunno how you did it. But you must have cheated somehow to make us tolerate you."
-  PC_CR_NEUTRAL_GREETING_01:0 ""
+  PC_CR_NEUTRAL_GREETING_01:0 "I've met some dudes with some *seriously* bad vibes. On a scale of 1 to 10, I've had to downgrade the old '10' to an '8'. That's not a compliment."
   CR_PC_NEUTRAL_GREETING_01:0 "There is some debate among the captains if lazy, shiftless sacks of flesh like you are even worth taking as slaves."
-  PC_CR_HOSTILE_GREETING_01: ""
-  CR_PC_HOSTILE_GREETING_01: "The slave chips we install in our assets are very versatile. Did you know they can override your ability to speak? Our captains are rejoicing. We won't have to hear your pathetic, mewling protest chants."
+  PC_CR_HOSTILE_GREETING_01: "Pardon my language, but Karma is a bitch. Seriously, we've been talking, and she does not like you. You literally exist to do harm, and the universe doesn't take kindly to such bad vibes."
+  CR_PC_HOSTILE_GREETING_01: "Go ahead. Chain yourselves to your trees, hippies. Make our job easier when we burn down your forest villages."

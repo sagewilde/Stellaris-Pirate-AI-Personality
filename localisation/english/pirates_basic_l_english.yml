@@ -3,7 +3,7 @@
  personality_mirthful_bandits:0 "Mirthful Bandits"
  personality_mirthful_bandits_desc:0 "'Rob the rich to feed the poor' is the mirthful bandit's credo. Defiant and mischievous, this star nation has chosen to pursue piracy as a path to redistributing wealth to the less advantaged peoples of their nation, as well as others. They do so with a smart remark and a quick blaster, but are just as eager to make friends as they are to make enemies."
  personality_cunning_raiders:0 "Cunning Raiders"
- personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The trade routes may never be safe again as long as their ships fly the Great Black."
+ personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the Great Black."
 
  ### Free Fleets of Lore
  EMPRIE_DESIGN_lore_spacers: "Free Fleets of Lore"
@@ -16,7 +16,7 @@
  PRESCRIPTED_planet_name_lore_spacers: "Lore"
  PRESCRIPTED_system_name_lore_spacers: "Myth"
  PRESCRIPTED_ruler_name_lore_spacers: "Phanta Sharp"
- PRESCRIPTED_ruler_bio_lore_spacers: "Captain Sharp is more than a cunning commander, she is a wily politician, a born dealmaker, and an enthusiastic explorer."
+ PRESCRIPTED_ruler_bio_lore_spacers: "Captain Sharp is more than a cunning commander; she is a wily politician, an enthusiastic explorer, and a gleeful troublemaker."
 
  ### Action and Modifier Labels
  opinion_rich_vs_robinhood: "Common Thieves"
@@ -55,11 +55,11 @@
  
  ### Slightly tweaked, for humor and flavor. -- SageWilde
  
- name_list_cybrxkhan_handmade_pirate:0 "Fantasy Pirates (Cybrxkhan)"
- name_list_cybrxkhan_handmade_pirate_desc:0 " "
  name_list_paradox_pirates_improved:0 "Paradox Pirates (Improved)"
  name_list_paradox_pirates_improved_desc:0 " "
- 
+ name_list_cybrxkhan_handmade_pirate:0 "Fantasy Pirates (Cybrxkhan)"
+ name_list_cybrxkhan_handmade_pirate_desc:0 " "
+
  PARADOX_PIRATES_IMPROVED_xxFLEETNAMES_ORD:0 "$ORD$ Armada"
  PARADOX_PIRATES_IMPROVED_xxMACHINEDEFENSE_ORD:0 "$ORD$ Port Guard"
  PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT1_ORD:0 "$ORD$ Corsairs"

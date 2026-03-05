@@ -28,7 +28,7 @@ paradox_pirates_improved = {
 		}
 
 		juggernaut = {
-			"Planetlubber" "Drydock" "Harbor" "Brigand Cove" "Merxeno Lagoon" "Haulout"
+			"Planetlubber" "Drydock" "Harbor" "Brigand Cove" "Merxeno Lagoon" "Haulout" "Your Mom"
 		}
 
 		colossus = {
