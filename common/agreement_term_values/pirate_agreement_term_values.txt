@@ -8,7 +8,7 @@ subject_is_pirate = {
 					has_valid_civic = civic_military_dictatorship_corporate
 					has_ai_personality = mirthful_bandits
 				}
-				has_valid_civic = civic_crusader_spirit_corporate
+				is_pirate_empire = yes
 			}
 		}
 		loyalty_change = -20
@@ -27,9 +27,9 @@ subject_is_pirate_lord = {
 				has_valid_civic = civic_military_dictatorship_corporate
 			}
 		}
-		loyalty_change = -40
+		loyalty_change = -20
 		ai_acceptance = {
-			subject = -1000
+			subject = -900
 		}
 	}
 }
