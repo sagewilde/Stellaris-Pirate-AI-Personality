@@ -124,8 +124,10 @@ metalhead = {
 			has_ethic = "ethic_industrial"					# This just seems logical for this personality. -- SageWilde
 		}
 		is_militarist = yes
-		is_spiritualist = no
-		is_green = no
+		AND = { 
+			is_spiritualist = no
+			is_green = no
+		}
 		OR = {
 			AND = {
 				has_trait = "trait_industrious"

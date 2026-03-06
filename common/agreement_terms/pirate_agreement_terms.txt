@@ -1,0 +1,14 @@
+subject_pirate = {
+	term_type = discrete
+	hidden = yes
+}
+
+subject_pirate_lord = {
+	term_type = discrete
+	hidden = yes
+}
+
+subject_mirthful_bandit = {
+	term_type = discrete
+	hidden = yes
+}

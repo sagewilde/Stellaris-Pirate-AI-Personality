@@ -49,7 +49,7 @@ tradition_supremacy = {
 			is_homicidal = yes
 		}
 		modifier = {
-			factor = 5
+			factor = 50
 			is_pirate_empire = yes
 		}
 	}

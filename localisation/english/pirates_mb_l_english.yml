@@ -101,7 +101,7 @@
  MB_WAR_GREETING_XPB_01:0 "You know, surprisingly, I don't hate you, [From.GetSpecies]. I hate what your culture did to you."
  MB_WAR_GREETING_XPL_01:0 "Once we get to your homeworld, we'll be sure not to damage any of your schools or museums. Surrender quickly, and we can all go home."
  MB_WAR_GREETING_SOC_01:0 "Don't think of it as 'counter-revolutionary reactionism.' Think of it as 'aggressive dialectical reexamination of your understanding of theory.' Because we're seizing your means of production."
- MB_WAR_GREETING_CAP_01:0 "Wealth may not trickle down. But [From.GetAdjective] blood certainly does."
+ MB_WAR_GREETING_CAP_01:0 "Wealth may not trickle down. But [From.GetAdjective] [From.GetBloodType] certainly does."
  MB_WAR_GREETING_ECO_01:0 "You care so deeply about the sanctity of your planets' biospheres, but so little about the natural rights of your own people. Maybe you'd care more if they had paws!"
  MB_WAR_GREETING_IND_01:0 "Lock out, Tag out, and Get out. Your factories belong to your workers now."
  MB_DOW_PROPOSE_01:0 "We have watched you grow fat on the riches you've extracted from your people for too long. Stand and deliver!"

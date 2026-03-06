@@ -1,0 +1,51 @@
+subject_is_pirate = {
+	term = subject_pirate
+
+	triggered_loyalty_change = {
+		trigger = {
+			target = {
+				NOR = {
+					has_valid_civic = civic_military_dictatorship_corporate
+					has_ai_personality = mirthful_bandits
+				}
+				has_valid_civic = civic_crusader_spirit_corporate
+			}
+		}
+		loyalty_change = -20
+		ai_acceptance = {
+			subject = -100
+		}
+	}
+}
+
+subject_is_pirate_lord = {
+	term = subject_pirate_lord
+
+	triggered_loyalty_change = {
+		trigger = {
+			target = {
+				has_valid_civic = civic_military_dictatorship_corporate
+			}
+		}
+		loyalty_change = -40
+		ai_acceptance = {
+			subject = -1000
+		}
+	}
+}
+
+subject_is_mirthful_bandit = {
+	term = subject_mirthful_bandit
+
+	triggered_loyalty_change = {
+		trigger = {
+			target = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		loyalty_change = -25
+		ai_acceptance = {
+			subject = -200
+		}
+	}
+}
