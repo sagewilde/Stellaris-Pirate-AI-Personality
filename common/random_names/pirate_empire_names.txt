@@ -698,6 +698,7 @@ empire_name_format = {
 	}
 	format = "{AofB {<prt_free_fleets> [This.GetCapitalSystemNameOrRandom]}}"
 	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	adjective = "{[This.GetCapitalSystemName]}"
 	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <prt_free_fleets>}}"
 	# Empire of Sol
 }
@@ -717,6 +718,26 @@ empire_name_format = {
 	}
 	format = "{AofB{<prt_free_fleets> [This.GetCapitalPlanetNameOrRandom]}}"
 	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	adjective = "{[This.GetCapitalPlanetName]}"
 	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <prt_free_fleets>}}"
 	# Empire of Earth
+}
+
+# Free Fleets 3
+empire_name_format = {
+	random_weight = { 
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_free_fleets"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<prt_free_fleets_desc> {[This.GetCapitalPlanetName] {<prt_free_fleets>}}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	adjective = "{[This.GetCapitalPlanetName]}"
+	prefix_format = "{[This.GetCapitalPlanetNameOrRandom] {<prt_free_fleets>}}"
 }

@@ -5,7 +5,7 @@ subject_is_pirate = {
 		trigger = {
 			target = {
 				NOR = {
-					has_valid_civic = civic_military_dictatorship_corporate
+					ROOT.owner = { has_valid_civic = civic_military_dictatorship_corporate }
 					has_ai_personality = mirthful_bandits
 				}
 				is_pirate_empire = yes

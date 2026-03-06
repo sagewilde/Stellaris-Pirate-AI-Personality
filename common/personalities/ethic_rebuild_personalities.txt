@@ -143,8 +143,7 @@ metalhead = {
 			}
 			AND = {
 				has_trait = "trait_cyborg_power_drills" 		# Tweaked for Hard Reset Origin	-- SageWilde
-				has_trait = "trait_unplugged_cybernetic_positives_3"
-				has_trait = "trait_unplugged_cybernetic_negatives_3"
+				has_origin = origin_unplugged
 			}
 		}
 	}
