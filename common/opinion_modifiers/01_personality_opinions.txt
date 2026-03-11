@@ -19,6 +19,72 @@ opinion_from_personality = {
 	}
 }
 
+opinion_pc_vs_the_man = {
+	trigger = {
+		has_ai_personality = peaceful_counterculture
+		OR = {
+			FROM = { is_dictatorial_authority = yes }
+			FROM = { is_imperial_authority = yes }
+			FROM = {
+				is_megacorp = yes
+				NOR = {
+					has_ethic = "ethic_socialism"
+					has_ethic = "ethic_fanatic_socialism"
+					has_valid_civic = "civic_worker_coop"
+				}
+			}
+			FROM = {
+				OR = {
+					has_ai_personality = ruthless_capitalists
+					has_ai_personality = hegemonic_imperialists
+					has_ai_personality = slaving_despots
+					has_ai_personality = decadent_hierarchy
+					has_ai_personality = decadent_capitalists
+				}
+			}
+			FROM = { is_homicidal = yes }
+			FROM = { is_slaver = yes }
+			FROM = { is_unfriendly = yes }
+		}
+	}
+	opinion = {
+		modifier = {
+			add = -50
+		}
+	}
+}
+
+opinion_the_man_vs_pc = {
+	trigger = {
+		OR = {
+			is_dictatorial_authority = yes
+			is_imperial_authority = yes
+			AND = {
+				is_megacorp = yes
+				NOR = {
+					has_ethic = "ethic_socialism"
+					has_ethic = "ethic_fanatic_socialism"
+					has_valid_civic = "civic_worker_coop"
+				}
+			}
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = slaving_despots
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = decadent_capitalists
+			is_homicidal = yes
+			is_slaver = yes
+			is_unfriendly = yes
+			}
+		FROM = { has_ai_personality = peaceful_counterculture }
+	}
+	opinion = {
+		modifier = {
+			add = -50
+		}
+    }
+}
+
 opinion_tempting_raiding_target = {
 	trigger = {
 		is_pirate_empire = yes
