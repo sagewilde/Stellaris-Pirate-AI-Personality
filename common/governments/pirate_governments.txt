@@ -56,7 +56,7 @@ gov_pirate_kingdom = {
 	ruler_title = RT_PIRATE_KING
 	ruler_title_female = RT_PIRATE_QUEEN
 	heir_title = HT_PIRATE_PRINCE
-	heir_title = HT_PIRATE_PRINCESS
+	heir_title_female = HT_PIRATE_PRINCESS
 
 	use_regnal_names = yes
 	dynastic_last_names = yes
