@@ -5,7 +5,7 @@
  MB_FRIENDLY_GREETING_02:0 "The [From.GetName] and the [Root.GetName], partners in cri--er, international diplomacy. It's good to see you. What can we do for you?"
  MB_FRIENDLY_GREETING_03:0 "Thank you for helping us resettle those refugees. The pirate's life isn't for everyone, and we only take willing crew. Did you want to discuss our migration treaty, or something else?"
  MB_FRIENDLY_GREETING_04:0 "Welcome in, mate! Sit down, share a bottle of *very* potent potables with me. Let's talk business."
- MB_FRIENDLY_GREETING_05:0 "The havens are full of new opportunities for new crews, each eager to make their mark on the Great Black. Thanks to our friendship, they're fuller than ever."
+ MB_FRIENDLY_GREETING_05:0 "The havens are full of new opportunities for new crews, each eager to make their mark on the void. Thanks to our friendship, they're fuller than ever."
  MB_FRIENDLY_GREETING_CORP_01:0 "[From.GetLeaderName], welcome. I trust that our current trade agreements are still suitable for your needs? Or were you looking to hire a fleet from us? We don't come cheap, but we are excellent at what we do."
  MB_FRIENDLY_GREETING_CORP_01:0 "Hm? A missing merchant vessel? Sorry, mate. Trust me, you'd be the first one to know if it was on my orders. Obviously, I can't make promises for unsanctioned raids..."
  MB_FRIENDLY_GREETING_HM_01:0 "The instinctive and cohesive communication of your drones is admirable. On our vessels, we've developed 'space shanties' that synchronize such work. Amazing that you do it naturally. May I ask... do *you* sing?"

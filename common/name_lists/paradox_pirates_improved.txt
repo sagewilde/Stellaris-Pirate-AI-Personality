@@ -272,7 +272,7 @@ paradox_pirates_improved = {
             }
 			
 			regnal_second_names = {
-                "of the Great Black" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
+                "of the void" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
 			}
 		}
 	}

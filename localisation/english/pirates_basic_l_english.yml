@@ -3,7 +3,7 @@
  personality_mirthful_bandits:0 "Mirthful Bandits"
  personality_mirthful_bandits_desc:0 "'Rob the rich to feed the poor' is the mirthful bandit's credo. Defiant and mischievous, this star nation has chosen to pursue piracy as a path to redistributing wealth to the less advantaged peoples of their nation, as well as others. They do so with a smart remark and a quick blaster, but are just as eager to make friends as they are to make enemies."
  personality_cunning_raiders:0 "Cunning Raiders"
- personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the Great Black."
+ personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the void."
 
  ### Free Fleets of Lore
  EMPRIE_DESIGN_lore_spacers: "Free Fleets of Lore"
@@ -48,10 +48,10 @@
  job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
  job_duelist_shanty_singer:0 "Tavern Storyteller"
  job_duelist_shanty_singer_plural:0 "Tavern Storytellers"
- job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the Great Black, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
+ job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the void, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
 
  ### Space Shanty Intro - Pirate
- space_shanty_intro_pirate:0 "It's like something out of a childhood dream. A vast, beautiful wood and ceramo-metallo alloy ship. Like a hybrid between the most graceful bird and the most regal planetbound sea vessel, she's shaped as if she was raptured from the surface of an ocean world and set to glide in the Great Black. Her long photovoltaic sails shimmer with gold, as if the sunlight she caught in eons past is still there in the hyperglass fibers. Our linguists have managed to translate only her name; 'Daughter of Kambell'. This beautiful queen of the Black, broken and worn 'til her bones were exposed, brings the heart to tears. Yet still, she holds a treasure, unlike anything we have ever uncovered. With this great reverence for spacefarers past, we are compelled to find out what she carried. Our treasure-diggers eagerly stand by, awaiting the order to begin the excavation with bated breath."
+ space_shanty_intro_pirate:0 "It's like something out of a childhood dream. A vast, beautiful wood and ceramo-metallo alloy ship. Like a hybrid between the most graceful bird and the most regal planetbound sea vessel, she's shaped as if she was raptured from the surface of an ocean world and set to glide in the void. Her long photovoltaic sails shimmer with gold, as if the sunlight she caught in eons past is still there in the hyperglass fibers. Our linguists have managed to translate only her name; 'Daughter of Kambell'. This beautiful queen of the Black, broken and worn 'til her bones were exposed, brings the heart to tears. Yet still, she holds a treasure, unlike anything we have ever uncovered. With this great reverence for spacefarers past, we are compelled to find out what she carried. Our treasure-diggers eagerly stand by, awaiting the order to begin the excavation with bated breath."
  
  ### Slightly tweaked, for humor and flavor. -- SageWilde
  
@@ -106,7 +106,7 @@
  RT_CORSAIR_OLIGARCH: "Corsair Oligarch"
  RT_PIRATE_KING: "Pirate King"
  RT_PIRATE_QUEEN: "Pirate Queen"
- HT_PIRATE PRINCE: "Pirate Prince"
+ HT_PIRATE_PRINCE: "Pirate Prince"
  HT_PIRATE_PRINCESS: "Pirate Princess"
  RT_SUPREME_COMMANDER: "Supreme Commander"
  RT_DREAD_LORD: "Dread Lord"
@@ -128,7 +128,7 @@
  gov_pirate_oligarchy_desc: "A hamarchy is an oligarchic form of government where its contituent parts have partial autonomy, but still answer to a central authority. This mode of government is particularly conducive to the operation of an allied navy of privateers."
 
  gov_privateer_guild: "Privateer Guild"
- gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Space that binds them is complex and legally robust, and all privateers of the company pay a portion of the booty directly to the guild's coffers for the right to operate under their flag. Breaches of the Charter are dealt with by the Captains personally."
+ gov_privateer_guild_desc: "These privateers are well-organized and well-funded. The Charter of Space that binds them is complex and legally robust. All privateers of the company pay a portion of the booty directly to the guild's coffers for the right to operate under their flag. Breaches of the Charter are dealt with by the Captains personally."
 
  gov_pirate_confederation: "Pirate Confederation"
  gov_pirate_confederation_desc: "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."

@@ -2,6 +2,10 @@ required mods:
 
 Ethics and Civics Classic (by Coggernaut)
 
+recommended mods:
+
+GK Raiding Expanded (by GridKitty ) https://steamcommunity.com/sharedfiles/filedetails/?id=3686119381 
+
 ------------------------------
 
 required:

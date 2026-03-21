@@ -1627,8 +1627,8 @@ entertainer = {
         potential = {
             entertainer_is_shanty_singer_trigger = yes
         }
-        ship_speed_mult = 0.05
-        starbase_shipyard_build_speed_mult = 0.05
+        ship_speed_mult = 0.005
+        starbase_shipyard_build_speed_mult = 0.005
     }
     weight = {
         weight = @high_prio_specialist_job_weight
