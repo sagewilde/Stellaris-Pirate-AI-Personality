@@ -8,7 +8,7 @@
  ### Free Fleets of Lore
  EMPRIE_DESIGN_lore_spacers: "Free Fleets of Lore"
  PRESCRIPTED_adjective_lore_spacers: "Lore Spacers"
- PRESCRIPTED_lore_spacers: "FFL"
+ PRESCRIPTED_lore_spacers: "FV"
  PRESCRIPTED_species_name_lore_spacers: "Exceed"
  PRESCRIPTED_species_plural_lore_spacers: "Exceeds"
  PRESCRIPTED_species_adjective_lore_spacers: "Exceed"
@@ -39,7 +39,7 @@
  job_noble_commandante_pirate_desc:0 "This monarchic kleptocracy prizes family lines derived from the most feared pirate captains in galactic history. Sculpted into icons of power and bloody wealth from birth, these pirate nobles put a whole new, dreadful meaning behind 'Robber Barons'."
  job_pirate_combat_instructor:0 "Pirate Combat Instructor"
  job_pirate_combat_instructor_plural:0 "Pirate Combat Instructors"
- job_pirate_combat_instructor_desc:0 "A sharp mind is a valuable asset to every privateer fleet. Focusing on development instead of punishment not only enables pirates to make their own fate, it stops shipboard conflict before it can even arise--a deeply vital necessity on years-long voyages. After all, there's only so much room in the brig, and every hand brings the payday closer."
+ job_pirate_combat_instructor_desc:0 "A sharp mind is a valuable asset to every privateer fleet. Focusing on development instead of punishment not only enables pirates to make their own fate, it stops shipboard conflict before it can even arise - a deeply vital necessity on years-long voyages. After all, there's only so much room in the brig, and every hand brings the payday closer."
  job_steward_captains:0 "Steward Captain"
  job_steward_captains_plural:0 "Steward Captain"
  job_steward_captains_desc:0 "As a labor union of cooperative privateer fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
@@ -53,7 +53,7 @@
  ### Space Shanty Intro - Pirate
  space_shanty_intro_pirate:0 "It's like something out of a childhood dream. A vast, beautiful wood and ceramo-metallo alloy ship. Like a hybrid between the most graceful bird and the most regal planetbound sea vessel, she's shaped as if she was raptured from the surface of an ocean world and set to glide in the void. Her long photovoltaic sails shimmer with gold, as if the sunlight she caught in eons past is still there in the hyperglass fibers. Our linguists have managed to translate only her name; 'Daughter of Kambell'. This beautiful queen of the Black, broken and worn 'til her bones were exposed, brings the heart to tears. Yet still, she holds a treasure, unlike anything we have ever uncovered. With this great reverence for spacefarers past, we are compelled to find out what she carried. Our treasure-diggers eagerly stand by, awaiting the order to begin the excavation with bated breath."
  
- ### Slightly tweaked, for humor and flavor. -- SageWilde
+ ### Slightly tweaked, for humor and flavor.  -  SageWilde
  
  name_list_paradox_pirates_improved:0 "Paradox Pirates (Improved)"
  name_list_paradox_pirates_improved_desc:0 " "
@@ -119,7 +119,7 @@
  gov_pirate_kingdom_desc: "Pirate kingdoms coalesce around one captain and their most senior officers, following the orders of the monarch with fierce and utter devotion. Pirates gravitate toward this powerful figure, and pay a portion of their loot directly to them in tribute."
 
  gov_death_raiders: "Death Raiders"
- gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners--they only take undead slaves."
+ gov_death_raiders_desc: "Death raiders are necromancer corsairs, raiding vulnerable worlds and razing them to the ground in order to raise the dead to crew their ships. Ruthless and tireless, these pirates never take prisoners - they only take undead slaves."
 
  gov_pirate_regime: "Buccaneer Regime"
  gov_pirate_regime_desc: "This collection of pirate armadas is ruled with an iron fist by a single supreme commander. This military dictator directs not only the entire raider navy, but also the planets where they make berth."
@@ -134,7 +134,7 @@
  gov_pirate_confederation_desc: "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."
 
  gov_free_fleets: "Free Fleets"
- gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborne hydrarchy--astrarchy, if you will--these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
+ gov_free_fleets_desc: "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborne hydrarchy - astrarchy, if you will - these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."
 
  auth_pirate_commune: "Pirate Commune"
  auth_pirate_commune_desc: "This loose confederation of pirates is largely an autonomous collective. Representing an idea between an anarchist commune and a pirate haven, their economic model is strictly anarcho-syndicalist in nature. Booty won from a prize is first directed to repairing and maintaining the fleets, then the havens, then equally among the crew."
@@ -150,7 +150,7 @@
  gov_privateer_union: "$auth_privateer_union$"
  gov_privateer_union_desc: "$auth_privateer_union_desc$"
 
-# AUTHORITIES
+# AUTHORITIES - Corporate
 # Synth Corporate Physical
  RT_FLEET_OVERSEER: "Fleet Overseer"
  auth_synth_corporate_physical_pirate: "Pirate Sapience"
@@ -179,7 +179,7 @@
 
 # Cyber Corporate Individualist
  auth_cyber_corporate_individualist_pirate: "Wetwork Wire-ates"
- auth_cyber_corporate_individualist_pirate_desc: "A pirate makes his own fate. With bionic weapons and replaceable limbs, every hand on deck is both unique and equally powerful./n/nWith this vast renegotiation of power, comes a new swath of tools that captains must use to maintain order on their vessels. Some may call it hacking. Others may call it insurance. This has lead to a malware arms' race to maintain political control."
+ auth_cyber_corporate_individualist_pirate_desc: "A pirate makes his own fate. With bionic weapons and replaceable limbs, every hand on deck is both unique and equally powerful.\n\nWith this vast renegotiation of power comes a new swath of tools that captains must use to maintain order on their vessels. Some may call it hacking. Others may call it insurance. This has lead to a malware arms' race to maintain political control."
  gov_cyber_corporate_individualist_pirate: "$auth_cyber_corporate_individualist_pirate$"
  gov_cyber_corporate_individualist_pirate_desc: "$auth_cyber_corporate_individualist_pirate_desc$"
  concept_auth_cyber_corporate_individualist_pirate: "$auth_cyber_corporate_individualist_pirate$"
@@ -218,7 +218,7 @@
 
 # Shroud Transcendant
  auth_shroud_corporate_transcendant_pirate: "Mindscape Marauders"
- auth_shroud_corporate_transcendant_pirate_desc: "These pirates haven't had an original thought in ages; because they've stolen all of yours. This pirate syndicate has little interest in taking your ship. They are capable of slipping into a populace and stealing military secrets, political blackmail, and personal passwords./n/nYou will give your ship to them--and anything else they want--because you will not have a choice."
+ auth_shroud_corporate_transcendant_pirate_desc: "These pirates haven't had an original thought in ages, because they've stolen all of yours. This pirate syndicate has little interest in taking your ship. They are capable of slipping into a populace and stealing military secrets, political blackmail, and personal passwords.\n\nYou will give your ship to them - and anything else they want - because you will not have a choice."
 
  concept_shroud_corporate_transcendant_pirate: "$auth_shroud_corporate_transcendant_pirate$"
  gov_shroud_corporate_transcendant_pirate: "$auth_shroud_corporate_transcendant_pirate$"
@@ -226,7 +226,7 @@
 
 # Shroud Corporeal
  auth_shroud_corporate_corporeal_pirate: "Telekinetic Kleptocracy"
- auth_shroud_corporate_corporeal_pirate_desc: "No prison can hold these criminals. When the ability to rip open a bank vault at twenty paces is commonplace, what can possibly stop these pirates from taking what they want, when they want?/n/nWith the ability to make their will manifest, psi-pirates are more capable than ever of building--or breaking--whatever their twisted hearts desire."
+ auth_shroud_corporate_corporeal_pirate_desc: "No prison can hold these criminals. When the ability to rip open a bank vault at twenty paces is commonplace, what can possibly stop these pirates from taking what they want, when they want?\n\nWith the ability to make their will manifest, psi-pirates are more capable than ever of building - or breaking - whatever their twisted hearts desire."
 
  concept_shroud_corporate_corporeal_pirate: "$auth_shroud_corporate_corporeal_pirate$"
  gov_shroud_corporate_corporeal_pirate: "$auth_shroud_corporate_corporeal_pirate$"

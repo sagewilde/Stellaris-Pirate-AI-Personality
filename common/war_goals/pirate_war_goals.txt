@@ -65,11 +65,12 @@ wg_plunder_raid = {
 
 	ai_weight = {
 		weight = 100
-		modifier = {
-			has_ai_personality = mirthful_bandits
-			from = { allows_slavery = yes }
-			factor = 0		# This is to ensure that Mirthful Bandits pick the Liberation cb if their neighbor is a slaver empire.	--SageWilde
-		}
+#		modifier = {
+#			has_ai_personality = mirthful_bandits
+#			from = { allows_slavery = yes }
+#			factor = 0		# This is to ensure that Mirthful Bandits pick the Liberation cb if their neighbor is a slaver empire.	--SageWilde
+#		}		
+# Disabling this for now, since I can just guarantee that Mirthful Bandits will just use the Liberate Slaves bombardment stance wherever possible. Dunno why I didn't think of it earlier.
 		modifier = {
 			has_valid_civic = civic_military_dictatorship_corporate
 			from = { has_valid_civic = civic_military_dictatorship_corporate }
