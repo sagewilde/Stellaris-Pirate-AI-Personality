@@ -36,6 +36,7 @@ is_a_huge_jerk = {
 		has_civic = civic_caste_system
 		has_civic = civic_slave_race
 		has_civic = civic_barbaric_despoilers
+		has_civic = civic_barbaric_despoilers_corporate
         has_civic = civic_dystopian_society
 		has_civic = civic_state_monopoly
 		has_civic = civic_military_dictatorship
