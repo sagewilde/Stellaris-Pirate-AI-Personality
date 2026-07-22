@@ -76,5 +76,13 @@ wg_plunder_raid = {
 			from = { has_valid_civic = civic_military_dictatorship_corporate }
 			factor = 0		# Ensures that competing Pirate Lords annihilate each other faster.	--SageWilde
 		}
+		modifier = {
+			from = { is_weak_and_rich = yes }
+			factor = 5
+		}
+		modifier = {
+			from = { is_impoverished = yes }
+			factor = 0
+		}
 	}
 }

@@ -30,7 +30,6 @@ gov_pirate_marauders = {
 	}
 }
 
-
 #Pirate Haven - Rebuild
 gov_pirate_haven = {
 	ruler_title = RT_CORSAIR_OLIGARCH
@@ -197,4 +196,3 @@ gov_free_fleets = {
 		base = 30000
 	}
 }
-

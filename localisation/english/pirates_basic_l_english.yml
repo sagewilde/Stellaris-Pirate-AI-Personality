@@ -6,7 +6,7 @@
  personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the void."
 
  ### Free Fleets of Lore
- EMPRIE_DESIGN_lore_spacers: "Free Fleets of Lore"
+ EMPIRE_DESIGN_lore_spacers: "Free Fleets of Lore"
  PRESCRIPTED_adjective_lore_spacers: "Lore Spacers"
  PRESCRIPTED_lore_spacers: "FV"
  PRESCRIPTED_species_name_lore_spacers: "Exceed"
@@ -45,7 +45,7 @@
  job_steward_captains_desc:0 "As a labor union of cooperative privateer fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
  job_shanty_singer:0 "Shanty Singer"
  job_shanty_singer_plural:0 "Shanty Singers"
- job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
+ job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of the ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
  job_duelist_shanty_singer:0 "Tavern Storyteller"
  job_duelist_shanty_singer_plural:0 "Tavern Storytellers"
  job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the void, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
@@ -77,9 +77,9 @@
  PARADOX_PIRATES_IMPROVED_xxGENEWARRIORARMY_ORD:0 "$ORD$ Spliced Scallywags"
  PARADOX_PIRATES_IMPROVED_xxOCCUPATIONARMY_ORD:0 "$ORD$ Boarding Party"
  PARADOX_PIRATES_IMPROVED_xxROBOTICOCCUPATIONARMY_ORD:0 "$ORD$ Ironclad Boarding Party"
- PARADOX_PIRATES_IMPROVED_PRIMITIVEARMYxx_SEQ:0 "Primitive Army $C$"
- PARADOX_PIRATES_IMPROVED_INDUSTRIALARMYxx_SEQ:0 "Industrial Army $C$"
- PARADOX_PIRATES_IMPROVED_POSTATOMICARMYxx_SEQ:0 "Post-Atomic Army $C$"
+ PARADOX_PIRATES_IMPROVED_PRIMITIVEARMYxx_SEQ:0 "Primitive Pirates $C$"
+ PARADOX_PIRATES_IMPROVED_INDUSTRIALARMYxx_SEQ:0 "Industrial Pirates $C$"
+ PARADOX_PIRATES_IMPROVED_POSTATOMICARMYxx_SEQ:0 "Post-Atomic Pirates $C$"
 
  cybrxkhan_handmade_pirate_xxFLEETNAMES_ORD:0 "$ORD$ Armada"
  cybrxkhan_handmade_pirate_xxMACHINEDEFENSE_ORD:0 "$ORD$ Militia"

@@ -45,7 +45,7 @@ subject_is_mirthful_bandit = {
 		}
 		loyalty_change = -25
 		ai_acceptance = {
-			subject = -200
+			subject = -900
 		}
 	}
 }
