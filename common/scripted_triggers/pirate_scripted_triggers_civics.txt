@@ -1,6 +1,8 @@
 is_pirate_empire = {
     OR = {
         has_valid_civic = civic_crusader_spirit_corporate
+		has_valid_civic = civic_void_reavers
+		has_valid_civic = civic_hired_guns
         has_technology = tech_pirate_leadership
     }
 }
@@ -25,12 +27,14 @@ is_a_jerk = {
 
 is_a_huge_jerk = {
     OR = {
+		allows_purge = yes
         has_ethic = ethic_fanatic_authoritarian
 		has_ethic = ethic_fanatic_capitalism
         has_ethic = ethic_fanatic_xenophobe
 		has_origin = origin_slavers
 		has_origin = origin_under_one_rule
 		has_origin = origin_syncretic_evolution
+		has_origin = origin_heirs_of_the_khan
 		has_civic = civic_slaver_guilds
 		has_civic = civic_indentured_assets
 		has_civic = civic_caste_system
@@ -41,6 +45,7 @@ is_a_huge_jerk = {
 		has_civic = civic_state_monopoly
 		has_civic = civic_military_dictatorship
 		has_civic = civic_military_dictatorship_corporate
+		has_civic = civic_void_reavers
     }
 }
 
@@ -98,3 +103,9 @@ is_weak_and_rich = {
 	}
 }
 
+is_special_personality = {
+	#has_ai_personality = peaceful_counterculture
+	has_ai_personality = mirthful_bandits
+	has_ai_personality = cunning_raiders
+	#has_ai_personality = mega_union
+}

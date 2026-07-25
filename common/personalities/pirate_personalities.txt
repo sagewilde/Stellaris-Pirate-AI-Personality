@@ -109,7 +109,10 @@ mirthful_bandits = {
 		is_country_type = default
         is_capitalism = no
         is_xenophobe = no
-		has_valid_civic = civic_crusader_spirit_corporate
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_hired_guns
+		}
         OR = {
             has_valid_civic = civic_anarchy_utopia
             has_valid_civic = civic_anarchy_ideals
@@ -177,11 +180,14 @@ cunning_raiders = {
 
 	allow = {
 		is_country_type = default
-        has_civic = civic_crusader_spirit_corporate
-		OR = { 
-            has_valid_civic = civic_military_dictatorship_corporate
-            has_valid_civic = civic_criminal_heritage
-        }
+        OR = {
+			AND = {
+				has_valid_civic = civic_crusader_spirit_corporate
+				has_valid_civic = civic_criminal_heritage
+			}
+			has_valid_civic = civic_military_dictatorship_corporate
+			has_valid_civic = civic_void_reavers
+		}
 	}
 
 	weight_modifier = {

@@ -21,8 +21,13 @@ gov_pirate_marauders = {
 	should_force_rename = yes
 
 	possible = {
-		has_valid_civic = civic_crusader_spirit_corporate
-		has_valid_civic = civic_barbaric_despoilers_corporate
+		OR = {
+			AND = {
+				has_valid_civic = civic_crusader_spirit_corporate
+				has_valid_civic = civic_barbaric_despoilers_corporate
+			}
+			has_valid_civic = civic_void_reavers
+		}
 	}
 
 	weight = {
@@ -64,7 +69,7 @@ gov_pirate_kingdom = {
 
 	possible = {
 		is_imperial_authority = yes
-		has_valid_civic = civic_crusader_spirit_corporate
+		is_pirate_empire = yes
 	}
 
 	weight = {
@@ -79,8 +84,8 @@ gov_pirate_regime = {
 	should_force_rename = yes
 
 	possible = {
-		has_valid_civic = civic_crusader_spirit_corporate
 		is_dictatorial_authority = yes
+		is_pirate_empire = yes
 	}
 
 	weight = {
@@ -95,8 +100,8 @@ gov_pirate_oligarchy = {
 	should_force_rename = yes
 
 	possible = {
-		has_valid_civic = civic_crusader_spirit_corporate
 		is_oligarchic_authority = yes
+		is_pirate_empire = yes
 	}
 
 	weight = {
@@ -112,7 +117,7 @@ gov_death_raiders = {
 	should_force_rename = yes
 
 	possible = {
-		has_valid_civic = civic_crusader_spirit_corporate
+		is_pirate_empire = yes
 		OR = {
 			has_valid_civic = civic_reanimated_armies
 			has_origin = origin_necrophage
@@ -135,11 +140,11 @@ gov_privateer_guild = {
 			AND = {
 				is_oligarchic_authority = yes
 				has_valid_civic = civic_corporate_dominion
-				has_valid_civic = civic_crusader_spirit_corporate
+				is_pirate_empire = yes
 			}
 			AND = {
 				is_megacorp = yes
-				has_valid_civic = civic_crusader_spirit_corporate
+				is_pirate_empire = yes
 			}
 		}
 	}
@@ -157,7 +162,7 @@ gov_pirate_confederation = {
 
 	possible = {
 		is_democratic_authority = yes
-		has_valid_civic = civic_crusader_spirit_corporate
+		is_pirate_empire = yes
 	}
 
 	weight = {
@@ -175,7 +180,7 @@ gov_free_fleets = {
 		OR = {
 			AND = {
 				is_worker_coop_empire = yes
-				has_valid_civic = civic_crusader_spirit_corporate
+				is_pirate_empire = yes
 				OR = {
 					has_valid_civic = civic_anarchy_utopia
 					has_valid_civic = civic_anarchy_ideals
@@ -183,7 +188,7 @@ gov_free_fleets = {
 			}
 			AND = {
 				has_authority = auth_direct_democratic
-				has_valid_civic = civic_crusader_spirit_corporate
+				is_pirate_empire = yes
 				OR = {
 					has_valid_civic = civic_anarchy_utopia
 					has_valid_civic = civic_shared_burden
