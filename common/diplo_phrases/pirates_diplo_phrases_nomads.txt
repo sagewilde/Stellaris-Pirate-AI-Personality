@@ -1,0 +1,661 @@
+greetings = {
+	MB_NOMAD_HOSTILE_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_HOSTILE_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOR = { 
+				is_at_war_with = FROM 
+				is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_HOSTILE_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_HOSTILE_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_HOSTILE_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOR = { 
+				is_at_war_with = FROM 
+				is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_HOSTILE_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_NEUTRAL_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_NEUTRAL_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOR = { 
+				is_at_war_with = FROM 
+			 	is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_NEUTRAL_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_NEUTRAL_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_NEUTRAL_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOR = { 
+				is_at_war_with = FROM 
+			 	is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_NEUTRAL_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_FRIENDLY_GREETING_FROM_01 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_FRIENDLY_GREETING_FROM_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_FRIENDLY_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOR = { 
+				is_at_war_with = FROM
+				is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_FRIENDLY_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_FRIENDLY_GREETING_FROM_01 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_FRIENDLY_GREETING_FROM_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { NOT = { is_nomadic = yes } }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_FRIENDLY_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOR = { 
+				is_at_war_with = FROM
+				is_nomadic = yes 
+			}
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	CR_NOMAD_FRIENDLY_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_at_war_with = FROM }
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	MB_NOMAD_WAR_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_nomadic = yes
+			is_at_war_with = FROM
+			FROM = { NOT = { is_nomadic = yes } }
+		}
+	}
+	MB_NOMAD_WAR_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_nomadic = yes }
+			is_at_war_with = FROM
+			FROM = { 
+				is_nomadic = yes 
+			}
+		}
+	}
+	MB_NOMAD_WAR_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_nomadic = yes
+			is_at_war_with = FROM
+			FROM = { is_nomadic = yes }
+		}
+	}
+	CR_NOMAD_WAR_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			is_nomadic = yes
+			is_at_war_with = FROM
+			FROM = { NOT = { is_nomadic = yes } }
+		}
+	}
+	CR_NOMAD_WAR_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_nomadic = yes }
+			is_at_war_with = FROM
+			FROM = { 
+				is_nomadic = yes 
+			}
+		}
+	}
+	CR_NOMAD_WAR_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			is_nomadic = yes
+			is_at_war_with = FROM
+			FROM = { is_nomadic = yes }
+		}
+	}
+	MB_NOMAD_OVERLORD_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_nomadic = yes
+			FROM = {
+				NOT = { is_nomadic = yes }
+				is_overlord_to = ROOT
+			}
+		}
+	}
+	MB_NOMAD_OVERLORD_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_nomadic = yes }
+			FROM = { is_nomadic = yes }
+			is_overlord_to = FROM
+		}
+	}
+	MB_NOMAD_OVERLORD_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			is_overlord_to = FROM
+		}
+	}
+	CR_NOMAD_OVERLORD_GREETING_FROM = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			is_nomadic = yes
+			FROM = {
+				NOT = { is_nomadic = yes }
+				is_overlord_to = ROOT
+			}
+		}
+	}
+	CR_NOMAD_OVERLORD_GREETING_TO = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			NOT = { is_nomadic = yes }
+			FROM = { is_nomadic = yes }
+			is_overlord_to = FROM
+		}
+	}
+	CR_NOMAD_OVERLORD_GREETING_BOTH = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = cunning_raider
+			is_nomadic = yes
+			FROM = { is_nomadic = yes }
+			is_overlord_to = FROM
+		}
+	}
+}
+
+action_form_waystation_pact = {
+	select = {
+		# Settled grants to nomad
+		MB_GRANT_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		# Nomad requests from settled
+		MB_REQUEST_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = no 
+				}
+			}
+		}
+		# Nomad shares with nomad
+		MB_SHARE_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		# Settled grants to nomad
+		CR_GRANT_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+		# Nomad requests from settled
+		CR_REQUEST_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = no 
+				}
+			}
+		}
+		# Nomad shares with nomad
+		CR_SHARE_WAYSTATION_PACT_SELECT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+	}
+	propose = {
+		MB_GRANT_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		MB_REQUEST_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = no
+				}
+			}
+		}
+		MB_SHARE_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_GRANT_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_REQUEST_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = no
+				}
+			}
+		}
+		CR_SHARE_WAYSTATION_PACT_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+	}
+	accept = {
+		MB_GRANT_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		MB_REQUEST_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = no 
+				}
+			}
+		}
+		MB_SHARE_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_GRANT_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_REQUEST_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = no 
+				}
+			}
+		}
+		CR_SHARE_WAYSTATION_PACT_ACCEPT = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+	}
+	refuse = {
+		MB_GRANT_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		MB_REQUEST_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = no 
+				}
+			}
+		}
+		MB_SHARE_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = mirthful_bandits
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_GRANT_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = no }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+		CR_REQUEST_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = no 
+				}
+			}
+		}
+		CR_SHARE_WAYSTATION_PACT_REFUSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = { is_nomadic = yes }
+				ROOT = { 
+					has_ai_personality = cunning_raider
+					is_nomadic = yes 
+				}
+			}
+		}
+	}
+}

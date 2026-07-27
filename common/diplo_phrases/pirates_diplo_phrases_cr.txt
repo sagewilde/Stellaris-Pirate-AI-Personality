@@ -1,6 +1,6 @@
  greetings = {
     CR_HOSTILE_GREETING_01 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -11,7 +11,7 @@
         }
     }
     CR_HOSTILE_GREETING_02 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -22,7 +22,7 @@
         }
     }
     CR_HOSTILE_GREETING_03 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -33,7 +33,7 @@
         }
     }
     CR_HOSTILE_GREETING_04 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -44,7 +44,7 @@
         }
     }
     CR_HOSTILE_GREETING_05 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -55,7 +55,7 @@
         }
     }
     CR_HOSTILE_GREETING_06 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -66,7 +66,7 @@
         }
     }
     CR_HOSTILE_GREETING_07 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -77,7 +77,7 @@
         }
     }
     CR_HOSTILE_GREETING_MECH_01 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -89,7 +89,7 @@
         }
     }
     CR_HOSTILE_GREETING_MECH_02 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -101,7 +101,7 @@
         }
     }
     CR_HOSTILE_GREETING_HM_01 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
@@ -113,7 +113,7 @@
         }
     }
     CR_HOSTILE_GREETING_HM_02 = {
-        weight = { weight = 1000 }
+        weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }

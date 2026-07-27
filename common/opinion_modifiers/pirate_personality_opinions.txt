@@ -19,7 +19,7 @@ opinion_from_personality = {
 	}
 }
 
-# Left intentionally blank, in case people install hippies.
+# Left intentionally blank, in case people install Hippies.
 
 opinion_pc_vs_the_man = {
 	trigger = { }
@@ -31,7 +31,31 @@ opinion_the_man_vs_pc = {
 	opinion = { }
 }
 
-opinion_tempting_raiding_target = {
+# Modded
+
+opinion_honor_among_thieves = {
+	trigger = {
+		has_ai_personality = mirthful_bandit
+		FROM = { has_ai_personality = mirthful_bandit }
+	}
+	opinion = {
+		add = 100
+	}
+}
+
+opinion_only_one_king = {
+	trigger = {
+		has_civic = civic_military_dictatorship_corporate
+		FROM = { has_civic = civic_military_dictatorship_corporate }
+	}
+	opinion = {
+		modifier = {
+			add = -1000
+		}
+	}
+}
+
+triggered_opinion_tempting_raiding_target = {
 	trigger = {
 		is_pirate_empire = yes
 		FROM = {
@@ -59,7 +83,7 @@ opinion_tempting_raiding_target = {
 	}
 }
 
-opinion_rich_vs_robinhood = {
+triggered_opinion_rich_vs_robinhood = {
 	trigger = {
 		is_a_jerk = yes
 		FROM = { has_ai_personality = mirthful_bandits }
@@ -73,7 +97,7 @@ opinion_rich_vs_robinhood = {
 	}
 }
 
-opinion_robinhood_vs_rich = {
+triggered_opinion_robinhood_vs_rich = {
 	trigger = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
@@ -91,17 +115,7 @@ opinion_robinhood_vs_rich = {
 	}
 }
 
-opinion_honor_among_thieves = {
-	trigger = {
-		has_ai_personality = mirthful_bandit
-		FROM = { has_ai_personality = mirthful_bandit }
-	}
-	opinion = {
-		add = 100
-	}
-}
-
-opinion_feed_the_poor = {
+triggered_opinion_feed_the_poor = {
 	trigger = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
@@ -115,7 +129,7 @@ opinion_feed_the_poor = {
 	}
 }
 
-opinion_impoverished_empire = {
+triggered_opinion_impoverished_empire = {
 	trigger = {
 		OR = {
 			has_ai_personality = hegemonic_imperialists
@@ -136,66 +150,54 @@ opinion_impoverished_empire = {
 	}
 }
 
-opinion_cr_vs_jerks = {
+triggered_opinion_cr_vs_jerks = {
 	trigger = {
 		has_ai_personality = cunning_raiders
 		FROM = {
 			is_a_jerk = yes
 		}
 	}
-	opinon = {
-		base = 50
+	opinion = {
+		base = 10
 		modifier = {
 			FROM = {
-				OR = {
-					has_civic = civic_crusader_spirit_corporate
-					has_civic = civic_private_military_companies
-				}
+				is_militarist = yes
 			}
-			add = 50
+			add = 20
 		}
 	}
 }
 
-opinion_cr_vs_slavers = {
+triggered_opinion_cr_vs_slavers = {
 	trigger = {
 		has_ai_personality = cunning_raiders
 		FROM = {
-			allows_slavery = yes
+			is_a_huge_jerk = yes
 		}
 	}
 	opinion = {
 		base = 50
 		modifier = {
 			FROM = {
-				is_a_huge_jerk = yes
+				OR = {
+					is_slaver = yes
+					has_origin = origin_slavers
+				}
 			}
 			add = 30
 		}
 	}
 }
 
-opinion_king_of_pirates = {
+triggered_opinion_king_of_pirates = {
 	trigger = {
-		has_civic = civic_crusader_spirit_corporate
-		is_egalitarian = no
+		is_pirate_empire = yes
+		NOT = { is_egalitarian = yes }
 		FROM = { has_civic = civic_military_dictatorship_corporate }
 	}
 	opinion = {
 		modifier = {
 			add = 50
-		}
-	}
-}
-
-opinion_only_one_king = {
-	trigger = {
-		has_civic = civic_military_dictatorship_corporate
-		FROM = { has_civic = civic_military_dictatorship_corporate }
-	}
-	opinion = {
-		modifier = {
-			add = -1000
 		}
 	}
 }

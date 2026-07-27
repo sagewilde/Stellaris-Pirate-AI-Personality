@@ -1,0 +1,1308 @@
+# FEDERATIONS
+
+action_invite_to_federation = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ITOA_SELECT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		CR_ITOA_SELECT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+		MB_ITOA_SELECT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_SELECT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+	propose = {
+		CR_ITOA_PROPOSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = yes
+					has_ai_personality = cunning_raiders 
+				}
+			}
+		}
+		CR_ITOA_PROPOSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = no
+					has_ai_personality = cunning_raiders 
+				}
+			}
+		}
+		MB_ITOA_PROPOSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = yes
+					has_ai_personality = mirthful_bandits 
+				}
+			}
+		}
+		MB_ITOA_PROPOSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = no
+					has_ai_personality = mirthful_bandits 
+				}
+			}
+		}
+	}
+	accept = {
+		CR_ITOA_ACCEPT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		CR_ITOA_ACCEPT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+		MB_ITOA_ACCEPT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_ACCEPT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+	refuse = {
+		CR_ITOA_REFUSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		CR_ITOA_REFUSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+		MB_ITOA_REFUSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_REFUSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+}
+
+action_ask_to_join_federation = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_TO_JOIN_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_JOIN_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_TO_JOIN_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_TO_JOIN_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_TO_JOIN_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_JOIN_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_TO_JOIN_A_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_JOIN_A_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_leave_federation = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_TO_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_TO_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_TO_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_TO_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_kick_from_federation = {
+	select = {
+		CR_KICK_FROM_ALLIANCE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_KICK_FROM_ALLIANCE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_KICK_FROM_ALLIANCE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_KICK_FROM_ALLIANCE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_KICK_FROM_ALLIANCE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_KICK_FROM_ALLIANCE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_offer_federation_association_status = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_OFFER_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_revoke_federation_association_status = {
+	select = {
+		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_for_federation_association_status = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_end_federation_association_status = {
+	select = {
+		CR_END_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_END_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_to_leave_federation = {
+	select = {
+		CR_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+# OVERLORDS AND VASSALS
+
+action_demand_subjugation = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		# Vassalization Select
+		 CR_DEMAND_VASS_SELECT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		# Vassalization Select (Hostile)
+		CR_DEMAND_VASS_SELECT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				NOT = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+	}
+	propose = {
+		CR_DEMAND_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+	}
+	accept = {
+		# Accept
+		CR_DEMAND_VASS_ACCEPT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		# Accept Mirthful Bandits
+		CR_DEMAND_VASS_ACCEPT_2 = {
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+		# Accept other pirates
+		CR_DEMAND_VASS_ACCEPT_3 = {
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+	}
+	refuse = {
+		# Refuse
+		CR_DEMAND_VASS_REFUSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		# Refuse Hostile
+		CR_DEMAND_VASS_REFUSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				NOT = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+	}
+}
+
+action_ask_to_become_subjugated = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_FOR_VASS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_VASS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_FOR_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_FOR_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_FOR_VASS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_VASS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_FOR_VASS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_VASS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_demand_subsidiary = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		# Other Pirates
+		CR_DEMAND_SUBS_SELECT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		CR_DEMAND_SUBS_SELECT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = no }
+			}
+		}
+		# Pirates
+		MB_DEMAND_SUBS_SELECT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		MB_DEMAND_SUBS_SELECT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
+			}
+		}
+	}
+	propose = {
+		CR_DEMAND_SUBS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_DEMAND_SUBS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		# Other Pirates
+		CR_DEMAND_SUBS_ACCEPT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		CR_DEMAND_SUBS_ACCEPT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = no }
+			}
+		}
+		# Pirates
+		MB_DEMAND_SUBS_ACCEPT_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		MB_DEMAND_SUBS_ACCEPT_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
+			}
+		}
+	}
+	refuse = {
+		# Other Pirates
+		CR_DEMAND_SUBS_REFUSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		CR_DEMAND_SUBS_REFUSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = no }
+			}
+		}
+		# Pirates
+		MB_DEMAND_SUBS_REFUSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		MB_DEMAND_SUBS_REFUSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
+			}
+		}
+	}
+}
+
+action_ask_to_become_subsidiary = {
+	consider = { 
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_FOR_SUBS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_SUBS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		# Other Pirates
+		CR_ASK_FOR_SUBS_PROPOSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		CR_ASK_FOR_SUBS_PROPOSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = no }
+			}
+		}
+		# Other Pirates
+		MB_ASK_FOR_SUBS_PROPOSE_1 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+		# Non-Pirates
+		MB_ASK_FOR_SUBS_PROPOSE_2 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_FOR_SUBS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_SUBS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_FOR_SUBS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_FOR_SUBS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_release_subject = {
+	select = {
+		CR_RELEASE_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_RELEASE_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_RELEASE_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_RELEASE_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_RELEASE_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_RELEASE_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_to_be_released_subject = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_TO_BE_RELEASED_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_BE_RELEASED_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_TO_BE_RELEASED_SUBJECT_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_TO_BE_RELEASED_SUBJECT_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_demand_tributary = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_DEMAND_TRIBUTARY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_DEMAND_TRIBUTARY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_DEMAND_TRIBUTARY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_DEMAND_TRIBUTARY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	accept = {
+		CR_DEMAND_TRIBUTARY_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_DEMAND_TRIBUTARY_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_DEMAND_TRIBUTARY_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_DEMAND_TRIBUTARY_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+
+action_ask_to_become_tributary = {
+	consider = {
+		CR_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		CR_ASK_BECOME_TRIBUTARY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_BECOME_TRIBUTARY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		CR_ASK_BECOME_TRIBUTARY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = cunning_raiders }
+			}
+		}
+		MB_ASK_BECOME_TRIBUTARY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		CR_ASK_BECOME_TRIBUTARY_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_BECOME_TRIBUTARY_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		CR_ASK_BECOME_TRIBUTARY_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+			}
+		}
+		MB_ASK_BECOME_TRIBUTARY_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}

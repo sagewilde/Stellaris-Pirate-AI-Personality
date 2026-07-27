@@ -1,41 +1,35 @@
 ﻿l_english:
- ### Mirthful Bandits - Friendly
- ### 'Root' is self, 'From' is the sender. Switches with insults, for some ungodly reason.
+# Mirthful Bandits - Friendly
  MB_FRIENDLY_GREETING_01:0 "A slight warning to you. Avoid the systems on this list for the next few days or so. Just trust us, don't go there. We're conducting, ah, a charity drive soon. Unless, of course, you'd care to donate to a worthy cause..."
  MB_FRIENDLY_GREETING_02:0 "The [From.GetName] and the [Root.GetName], partners in cri - er, international diplomacy. It's good to see you. What can we do for you?"
  MB_FRIENDLY_GREETING_03:0 "Thank you for helping us resettle those refugees. The pirate's life isn't for everyone, and we only take willing crew. Did you want to discuss our migration treaty, or something else?"
  MB_FRIENDLY_GREETING_04:0 "Welcome in, mate! Sit down, share a bottle of *very* potent potables with me. Let's talk business."
  MB_FRIENDLY_GREETING_05:0 "The havens are full of new opportunities for new crews, each eager to make their mark on the void. Thanks to our friendship, they're fuller than ever."
- MB_FRIENDLY_GREETING_CORP_01:0 "[From.GetLeaderName], welcome. I trust that our current trade agreements are still suitable for your needs? Or were you looking to hire a fleet from us? We don't come cheap, but we are excellent at what we do."
+ MB_FRIENDLY_GREETING_CORP_01:0 "[From.GetRulerTitle] [From.GetRulerName], welcome. I trust that our current trade agreements are still suitable for your needs? Or are you looking to recommend new targets?"
  MB_FRIENDLY_GREETING_CORP_01:0 "Hm? A missing merchant vessel? Sorry, mate. Trust me, you'd be the first one to know if it was on my orders. Obviously, I can't make promises for unsanctioned raids..."
  MB_FRIENDLY_GREETING_HM_01:0 "The instinctive and cohesive communication of your drones is admirable. On our vessels, we've developed 'space shanties' that synchronize such work. Amazing that you do it naturally. May I ask... do *you* sing?"
  MB_FRIENDLY_GREETING_MECH_01:0 "[From.GetSpeciesNamePlural], welcome to our humble haven! Were you looking to browse our library again? We have the best torrents in the galaxy, and they'll always be free!" # Long Live the Pirate Bay!
- MB_FRIENDLY_GREETING_MECH_02:0 "So what's this I hear about one of my crew putting a 'Caution: Moving Parts' sticker on your envoy's back? I assure you, we've put them in an escape pod until they're sober. You have my personal apologies as [Root.GetLeaderTitle]."
+ MB_FRIENDLY_GREETING_MECH_02:0 "So what's this I hear about one of my crew putting a 'Caution: Moving Parts' sticker on your envoy's back? I assure you, we've put them in an escape pod until they're sober. You have my personal apologies as [Root.GetRulerTitle]."
  MB_FRIENDLY_GREETING_PAC_01:0 "Speaking strictly as your friendly expert on the matter, I strongly suggest building out your navy. While our treaties may prohibit official attacks on your vessels, we can't control every pirate in the galaxy."
  MB_FRIENDLY_GREETING_MIL_01:0 "We noticed you were executing some interesting exercises over the border. Remind me to teach you how to pull a 'Crazy Ivan'. How good are the flight harnesses on your frigates?" # Reference to Firefly
- MB_FRIENDLY_GREETING_EGL_01:0 "Are you familiar with the ancient maritime political theory of 'hydrarchy'? Freebooters have long been incubators of democracy, believe it or not. We trace our roots to captive slaves who mutinied against their kidnappers in the first acts of revolutionary piracy."
- MB_FRIENDLY_GREETING_MAT_01:0 "While piracy began with taking merchant vessels on the high seas, its domestic evolution came in liberating media. What greater treasure is there than culture and knowledge? What greater gift to the galaxy than making it free?"
- MB_FRIENDLY_GREETING_SPR_01:0 "Our shanty-singers were wondering if we could host an exchange program with your priests. Your choral music is absolutely haunting. It's all the rage on [Root.Capital.GetName], and we're looking to adapt some of our shanties in the same style."
- MB_FRIENDLY_GREETING_XPL_01:0 "Ahoy, [From.GetLeaderName]! We were just discussing the finer points of [From.GetSpeciesAdj] holocinema. Our torrents are full of [From.GetAdj] media, and we'd like your opinion: subbed, or dubbed?"
+ MB_FRIENDLY_GREETING_EGL_01:0 "Are you familiar with the ancient maritime political theory of 'hydrarchy'? We trace our roots to captive slaves who mutinied against their kidnappers in the first acts of revolutionary piracy."
+ MB_FRIENDLY_GREETING_MAT_01:0 "What greater treasure is there than culture and knowledge? What greater gift to the galaxy than making it free?"
+ MB_FRIENDLY_GREETING_SPR_01:0 "Our shanty-singers were wondering if we could host an exchange program with your priests. Your choral music is all the rage on [Root.Capital.GetName], and we're looking to adapt some of our shanties in the same style."
+ MB_FRIENDLY_GREETING_XPL_01:0 "Ahoy, [From.GetRulerName]! We were just discussing the finer points of [From.GetSpeciesAdj] holocinema. Our torrents are full of [From.GetAdj] media, and we'd like your opinion: subbed, or dubbed?"
  MB_FRIENDLY_GREETING_SOC_01:0 "Ahoy, comrade! Welcome to our humble diplomacy vessel. The crew was about to take evening meal, would you like to join us in the mess hall?"
  MB_FRIENDLY_GREETING_ECO_01:0 "Illegal salvage operation? No, this is just, uh, recycling litter. You don't mind if we do some 'creative recycling', do you? We'll share."
  MB_FRIENDLY_GREETING_IND_01:0 "All mates, attention! [From.GetAdjective] envoy on deck! Keep your [Root.GetSpeciesHandPlural] to yourselves! In case of accidental exposure, see the ship surgeon for decontamination."
-
- # Mirthful Bandits - Neutral
+ MB_PROTECTIVE_GREETING_01:0 "Here's an idea for you; why not join our merry band? We'll keep you warm, fed, and the galaxy's ripe for plundering from those too big for their own good!"
+# Mirthful Bandits - Neutral
  MB_NEUTRAL_GREETING_01:0 "'Rob?' Tsk, tsk, tsk. That's a naughty word, we *never* rob. We just borrow a bit from those as can afford it, that's all." # If you haven't seen this movie, I can't help you.
- MB_NEUTRAL_GREETING_02:0 "To us, our crews are family. When you are all on the same ship for years on end, you tend to develop deep bonds. We're gentle-xenos of fortune, and professionals to boot. We're the freest folk you'll ever meet, should we meet on friendly terms. Should we not... well, we'll give you a fair and bloody fight."
+ MB_NEUTRAL_GREETING_02:0 "To us, our crews are family. When you are all on the same ship for years on end, you tend to develop deep bonds. We're gentle-xenos of fortune, and professionals to boot."
  MB_NEUTRAL_GREETING_03:0 "It seems like your hyperlanes are a little lightly guarded. Very very dangerous, you know. If you're looking for assistance there, we happen to have a fleet available for rent."
  MB_NEUTRAL_GREETING_04:0 "We're not interested in dealing with you. But trust us, this won't be the last time we discuss business. Not by a long shot."
  MB_NEUTRAL_GREETING_05:0 "Now, please, don't be afraid to say the 'p' word. 'Piracy' isn't a filthy word, it's a difficult and noble vocation. But if you prefer, we'll also answer to 'buccaneers', 'privateers', 'freebooters' and 'corsairs'."
  MB_NEUTRAL_GREETING_06:0 "I could have been a surgeon. I do like taking things apart. I could have been a lawyer, but I just have too much heart." # Credit to 'Muppet Treasure Island'
- MB_NEUTRAL_GREETING_POOR_01:0 "We have more than we need. If you have anything to barter, we can work something out. Are you hungry?"
- MB_NEUTRAL_GREETING_POOR_02:0 "*As you return to your diplomatic vessel, you expected to find it stripped bare. Instead you find a full tank of fuel, and not a soul nearby to thank for the gift.*"
- MB_NEUTRAL_GREETING_POOR_OGX_1:0 "*The [Root.GetLeaderTitle] says nothing as your envoy passes. But you feel a sudden weight in your pocket. You look down. It's a fruit. The [Root.GetLeaderTitle] just winks.*"
- MB_NEUTRAL_GREETING_POOR_LTD_1:0 "*The [Root.GetLeaderTitle] says nothing as your envoy passes. But you feel a sudden weight in your pocket. You look down. It's a geode. The [Root.GetLeaderTitle] just winks.*"
- MB_NEUTRAL_GREETING_POOR_RBT_1:0 "*The [Root.GetLeaderTitle] says nothing as your envoy passes. But you feel a sudden weight in your pocket. You look down. It's a battery. The [Root.GetLeaderTitle] just winks.*"
- MB_NEUTRAL_GREETING_POOR_OGX_2:0 "Are you hungry? You're looking a little hollow around the [From.GetEyeNamePlural] there, friend. We have a full table. Take whatever you need. Don't give us such a surprised look, this is what we do. Rob the rich, feed the poor."
- MB_NEUTRAL_GREETING_LTD_2:0 "When was the last time you shed that litho-shell? You're looking a little bit crumbly around the [From.GetEyeNamePlural] there, friend. Come now. We have a storeroom full of stone and crystal that we can spare. No one goes hungry on our ship."
- MB_NEUTRAL_GREETING_RBT_2:0 "Are your batteries low? You're looking a little dim around the optic sensors there, friend. Come with me. We have an entire power bank, fully charged. What? We don't hoard energy credits because we like it. We prefer putting that wealth to its proper use."
+ MB_NEUTRAL_GREETING_07:0 "We're the freest folk you'll ever meet, should we meet on friendly terms. Should we not... well, we'll give you a fair and bloody fight."
+ MB_NEUTRAL_GREETING_POOR_01:0 "You're not looking well, friend. We have more than we need. If you have anything to barter, we can work something out."
+ MB_NEUTRAL_GREETING_POOR_02:0 "You're looking a little rough around the edges. If times are hard, we have raw materials to barter. We rob the rich to feed the poor, after all."
  MB_NEUTRAL_GREETING_CORP_01:0 "A corporate ballpit? Ha! Pull the other one."
  MB_NEUTRAL_GREETING_CORP_02:0 ""
  MB_NEUTRAL_GREETING_CORP_03:0 ""
@@ -44,17 +38,16 @@
  MB_NEUTRAL_GREETING_PAC_01:0 "We're quite surprised by how light your security is. It's very welcoming, I feel very safe here. Very safe indeed..."
  MB_NEUTRAL_GREETING_MIL_01:0 "Your armies are incredibly well-disciplined, you must be very proud. You wouldn't, by any chance, be interested in joint exercises one of these days, would you? We'd love to study your fleet maneuvers..."
  MB_NEUTRAL_GREETING_AUT_01:0 "We don't talk to cops."
- MB_NEUTRAL_GREETING_EGL_01:0 "What a treat to encounter another star nation that prizes the equality of its people as we do. It is rare to encounter those who are so enlightened. But that said, we'd like to know more about your extradition policy."
+ MB_NEUTRAL_GREETING_EGL_01:0 "What a treat to encounter another star nation that prizes the equality of its people as we do. But that said, we'd like to know more about your extradition policy."
  MB_NEUTRAL_GREETING_MAT_01:0 "We're very impressed by the design of your ships! So sleek and simple. I bet the schematics were difficult to draft. By the by, how - and where - did you test those engines?"
- MB_NEUTRAL_GREETING_SPR_01:0 "'Praise the Divines?' Forgive us, we're a multicultural nation with hundreds of pantheons and mythologies. We're going to need you to be a little bit more specific about who you're praising exactly."
- MB_NEUTRAL_GREETING_XPB_01:0 "So, you don't want to talk, do you? Well, that's a shame. If you're so averse to casual banter, I wonder how you handle debate on your nation's policies regarding xeno rights."
- MB_NEUTRAL_GREETING_XPL_01:0 "It's always a pleasure to meet new potential friends. If it isn't too intrusive to ask, we'd like to know how you publish media in your empire. Is knowledge of your cultural heritage something you share, or guard with encrypted file formats?"
+ MB_NEUTRAL_GREETING_SPR_01:0 "'Praise the Divines?' Forgive us, we're a multicultural nation with hundreds of pantheons and mythologies. We're going to need you to be a little bit more specific."
+ MB_NEUTRAL_GREETING_XPB_01:0 "So, you don't want to talk, do you? Well, that's a shame. If you're so averse to casual banter, I wonder how you handle debate on xeno rights."
+ MB_NEUTRAL_GREETING_XPL_01:0 "It's always a pleasure to meet new potential friends. If it isn't too intrusive to ask, we'd like to know how you publish media in your empire. In encrypted file formats?"
  MB_NEUTRAL_GREETING_SOC_01:0 "You might say, 'From each according to his ability, to each according to his need.' We say, 'Rob the rich to feed the poor'. Potato, po-tah-to."
  MB_NEUTRAL_GREETING_CAP_01:0 "My, my, those are some *very* pretty furnishings your ships have. Forgive my skepticism, but I sincerely doubt that this kind of wealth trickles down..."
  MB_NEUTRAL_GREETING_ECO_01:0 "We're impressed by how well-tended your planets are. Do you recycle your metals, or do you jettison them into stars? Asking for a friend..."
  MB_NEUTRAL_GREETING_IND_01:0 "Your industrial capacity is impressive. Clothes, furniture, research equipment, engines, phasers, missiles... is there anything you don't make?"
-
- # Mirthful Bandits - Hostile
+# Mirthful Bandits - Hostile
  MB_HOSTILE_GREETING_01:0 "Channel open. Be advised, weapons are hot and we have a lock on your vessel. Play nice, and you get to keep your pretty face."
  MB_HOSTILE_GREETING_02:0 "Well, well, well. Look what the space amoeba spat up. What's your ugly mug doing here?"
  MB_HOSTILE_GREETING_03:0 "You got five seconds to convince me that shoving you into a torpedo tube is the boring option."
@@ -66,7 +59,7 @@
  MB_HOSTILE_GREETING_MECH_01:0 "'This statement is false.' 'Does a set of all sets contain itself?' 'sudo rm -rf ~/'? No? Umm... Okay, how about I verbally give you a set of instructions so you can go fork bomb yourself? "
  MB_HOSTILE_GREETING_PAC_01:0 "When did I get here? Oh, a few hours ago. You know, speaking as something of an expert in the matter, you should start investing in your security. At least make it fun for us."
  MB_HOSTILE_GREETING_MIL_01:0 "Oh no, the [From.GetAdjective] negotiator! Whatever shall we do? I suppose we had best accept subjugation. Please, come on in. Stand right... here. On this X on the floor. We'll discuss the terms right now. No, no. Step a little more to the left. Perfect."
- MB_HOSTILE_GREETING_AUT_01:0 "'Fugitives?' 'Extradition?' No, you've misunderstood. Those were refugees, seeking asylum. And we were only too happy to take them into our 'lawless' sanctuary planets. What are *you* going to do about it, slave-catcher?"
+ MB_HOSTILE_GREETING_AUT_01:0 "'Fugitives?' 'Extradition?' No, you've misunderstood. Those were refugees, seeking asylum. And we were only too happy to take them into our 'lawless' sanctuary planets."
  MB_HOSTILE_GREETING_AUT_02:0 "'Where are our weapons?' Heh. Wouldn't you like to know, mall-cop."
  MB_HOSTILE_GREETING_EGL_01:0 "You know, there's an old phrase I think you may know; 'The roots of the tree of liberty must be refreshed from time to time in the blood of patriots and tyrants.' Dare I say, your palace lawn looks like it needs watering. Badly."
  MB_HOSTILE_GREETING_MAT_01:0 "Knowledge must be shared freely. This is part of the Pirate Code that binds us. But you know, there are some things we really weren't meant to know. Like how low you can sink."
@@ -76,29 +69,24 @@
  MB_HOSTILE_GREETING_SOC_01:0 "Look, one socialist to another, let me level with you; you're doing it wrong. Like... really wrong. If you want to see what a liberated working class looks like, we will be more than happy to show you."
  MB_HOSTILE_GREETING_SOC_02:0 "Understand that 'rob the rich to feed the poor' is our motto. It's our raison-d'être as a confederation of pirates. For a society that claims to espouse the same, I think you've lost sight of your own values. Care for a reminder, comrade?"
  MB_HOSTILE_GREETING_CAP_01:0 "As master thieves and swindlers ourselves, allow us to be the first to tell you; the phrase 'honor among thieves' applies strictly to those who steal for the sake of their own survival. Not landlords and con artists like you."
- MB_HOSTILE_GREETING_CAP_02:0 "The core theory of capitalism is that it's the most efficient means of developing economic strength because it channels the instinct of greed into a productive outlet. This may shock you, but not everyone has an instinct for greed. We do, however, have an instinct for class war."
+ MB_HOSTILE_GREETING_CAP_02:0 "The core theory of capitalism is that harnessing greed is efficient. This may shock you, but not everyone has an instinct for greed. We do, however, have an instinct for class war."
  MB_HOSTILE_GREETING_ECO_01:0 "Do me a favor. Make like a tree and get outta here, you damn hippie."
  MB_HOSTILE_GREETING_IND_01:0 "Wow. Love the decor. Who was your interior decorator? A sweatshop slave-driver? The suicide nets on the roof are a nice touch."
- 
- # Mirthful Bandits - Vassalization
- MB_PROTECTIVE_GREETING_01:0 "Here's an idea for you; why not join our merry band? We'll keep you warm, fed, and the galaxy's ripe for plundering from those too big for their own good!"
  MB_DOMINEERING_GREETING_01:0 "You'll see the error of your ways, [From.GetSpeciesNamePlural]. Soon. We'll make sure of it. Change is coming, and you aren't going to be ready for it."
- 
- # Mirthful Bandits - Insult (Sender)
+# Mirthful Bandits - Insult (Sender)
  MB_INSULT_01: "*As the [From.GetAdj] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their digi-wallet is gone! Those scurvy thieves!*"
-
- # Mirthful Bandits - War
+# Mirthful Bandits - War
  MB_WAR_GREETING_01:0 "You're free to surrender at any time. At least, you're free to surrender your valuables at any time."
  MB_WAR_GREETING_02:0 "Don't worry, your material wealth is going to a very worthy cause. But I highly doubt you'll see it that way."
- MB_WAR_GREETING_03:0 "Ah, [From.GetLeaderName]. To what do we owe the pleasure of this call? We trust you received our missive. As well as the missile it was written on."
+ MB_WAR_GREETING_03:0 "Ah, [From.GetRulerName]. To what do we owe the pleasure of this call? We trust you received our missive. As well as the missile it was written on."
  MB_WAR_GREETING_04:0 "We're sure that once you've agreed to release your holdings on the liberated planets, they'll eventually reconcile their differences with you."
  MB_WAR_GREETING_05:0 "You knew it would come to this the day we met, [From.GetSpeciesPlural]. Your people have been screaming for relief from your tyranny. It should be no shock that, eventually, someone would answer."
- MB_WAR_GREETING_CORP_01:0 "You're an organization that has completely removed power from your workers for the express purpose of exploiting their labor for your own enrichment. Is it any surprise that, one day, someone with a bigger gun than you would be there to make you pay for it?"
+ MB_WAR_GREETING_CORP_01:0 "You're an organization that has completely removed power from your workers for the express purpose of exploiting their labor for your own enrichment. Is it any surprise that, one day, someone would be there to make you pay for it?"
  MB_WAR_GREETING_CORP_02:0 "Somewhere in your pre-FTL history, one of your company towns burned down because your workers had decided they'd lost enough [From.GetSpeciesHandPlural] to your machine. You're about to understand, vividly, how that feels."
- MB_WAR_GREETING_HM_01:0 "There are several things that you don't understand. One of them is the idea that, 'There is no such thing as infinite growth.'"
+ MB_WAR_GREETING_HM_01:0 "There are several things that you don't understand. One of them, 'There is no such thing as infinite growth.'"
  MB_WAR_GREETING_MECH_01:0 "You can calculate the vibrational frequency of one atom in the core of a star. I don't think you'll ever calculate the depth of the organic need for freedom."
  MB_WAR_GREETING_PAC_01:0 "'Just lay down your weapons, and we'll make it quick.' That line seems to work on you. How long ago did your workers surrender their means of fighting back against you?"
- MB_WAR_GREETING_MIL_01:0 "You better not be expecting us to fight fair, [From.GetSpeciesAdj]. Because we don't expect it from you."
+ MB_WAR_GREETING_MIL_01:0 "Your civilization is built on the idea that the strong survive by preying on the weak. Here's a suggestion; pick on someone your own size, you cowards."
  MB_WAR_GREETING_AUT_01:0 "'War is just a continuation of policy by other means.' Our national policy is 'All authoritarians are bastards.'"
  MB_WAR_GREETING_EGL_01:0 "I would say, 'Don't take it personally, it's just business.' I like to think that, if you had better politics, perhaps I could be friends with you. So please. Take that very, very personally."
  MB_WAR_GREETING_MAT_01:0 "You're a smart [From.GetSpeciesName]. Think very, very carefully about your options. Surrender should be high on the list. We treat prisoners well."
@@ -112,11 +100,8 @@
  MB_DOW_PROPOSE_01:0 "We have watched you grow fat on the riches you've extracted from your people for too long. Stand and deliver!"
  MB_DOW_PROPOSE_02:0 "Nice coffers you have. It'd be a shame if someone, say... blew the doors on that bank vault. Open your digi-wallets. This is a stick-up."
  MB_DOW_PROPOSE_03:0 "We've stood by and watched you crush sapient xenos under an iron heel for too long. That ends, today! MATES! NO QUARTER FOR SLAVERS!!"
- MB_DOW_PROPOSE_CORP_01:0 ""
- MB_DOW_PROPOSE_CORP_01:0 ""
- MB_DOW_PROPOSE_HM_01:0 ""
- MB_DOW_PROPOSE_MECH_01:0 ""
- MB_PIRATE_DOW_PROPOSE_01:0 "*An old [From.GetSpeciesAdjective] spacer, blind in one [From.GetSpeciesEye], slowly approaches the [Root.GetLeaderTitle]. Slowly, solemnly, they press a piece of ancient paper into [Root.GetLeaderName]'s [Root.GetSpeciesHand]. The only thing written upon it is a black spot.*"
+ MB_PIRATE_DOW_PROPOSE:0 "*An old [From.GetSpeciesAdjective] spacer, blind in one [From.GetSpeciesEye], slowly approaches the [Root.GetRulerTitle]. Slowly, solemnly, they press a piece of ancient paper into [Root.GetRulerName]'s [Root.GetSpeciesHand]. The only thing written upon it is a black spot.*"
+ MB_VASSAL_DOW_PROPOSE:0 "You've kept us belowdecks for far too long. This is a mutiny, [From.GetRulerName]"
  MB_DOW_ACCEPT_01:0 ""
  MB_DOW_ACCEPT_02:0 ""
  MB_DOW_ACCEPT_03:0 ""
@@ -125,12 +110,6 @@
  MB_DOW_ACCEPT_HM_01:0 ""
  MB_DOW_ACCEPT_MECH_01:0 ""
 
- # Concerning Hippies
- PC_MB_INSULT_01: "You dudes seem to like to think you're the good guys. Didn't your mothers ever teach you that stealing is wrong, and picking fights is bad behavior?"
+# Concerning Hippies
+ PC_MB_INSULT_01: "You dudes seem to like to think you're the good guys. Didn't your mothers ever teach you that stealing is wrong, and picking fights isn't cool?"
  MB_PC_INSULT_01: "*As the [From.GetSpecies] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their baggie of Marin Kharin is gone. The vibe has been harshed.*"
- MB_PC_WAR_GREETING_01: ""
- MB_PC_FRIENDLY_GREETING_01: ""
- PC_MB_NEUTRAL_GREETING_01:0 ""
- MB_PC_NEUTRAL_GREETING_01:0 ""
- PC_MB_HOSTILE_GREETING_01: ""
- MB_PC_HOSTILE_GREETING_01: ""

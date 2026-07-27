@@ -1,7 +1,7 @@
 ### Pirate Greetings
   greetings = {
       MB_HOSTILE_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -12,7 +12,7 @@
   		}
       }
       MB_HOSTILE_GREETING_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -22,7 +22,7 @@
   		}
       }
       MB_HOSTILE_GREETING_03 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
              has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -34,7 +34,7 @@
   		}
   	}
       MB_HOSTILE_GREETING_04 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -45,7 +45,7 @@
   		}
       }
       MB_HOSTILE_GREETING_05 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -62,7 +62,7 @@
   		}
       }
       MB_HOSTILE_GREETING_CORP_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -78,7 +78,7 @@
   		}
     }
 		MB_HOSTILE_GREETING_CORP_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -94,7 +94,7 @@
   		}
       }
       MB_HOSTILE_GREETING_HM_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		NOT = { is_at_war_with = FROM }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -107,7 +107,7 @@
   		}
       }
       MB_MECH_HOSTILE_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = { is_species_class = ROBOT }
@@ -119,7 +119,7 @@
   		}
       }
       MB_PROTECTIVE_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -127,7 +127,7 @@
   		}
       }
       MB_DOMINEERING_GREETING_01 = {
-          weight = { weight = 1000 }
+          weight = { weight = 10000 }
           trigger = {
               has_ai_personality = mirthful_bandits
               NOT = { is_at_war_with = FROM }
@@ -135,7 +135,7 @@
           }
       }
       MB_NEUTRAL_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -143,7 +143,7 @@
   		}
       }
       MB_NEUTRAL_GREETING_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_same_species = FROM }
@@ -152,7 +152,7 @@
   		}
       }
       MB_NEUTRAL_GREETING_03 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
               FROM = {
@@ -168,7 +168,7 @@
   		}
       }
       MB_NEUTRAL_GREETING_04 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			has_valid_civic = "civic_pleasure_seekers"
@@ -178,7 +178,7 @@
   		}
       }
       MB_NEUTRAL_GREETING_05 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = { is_spiritualist = yes }
@@ -187,7 +187,7 @@
   		}
       }
       MB_NEUTRAL_GREETING_06 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -195,7 +195,7 @@
   		}
       }
       MB_MECH_NEUTRAL_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
           trigger = {
               has_ai_personality = mirthful_bandits
               FROM = { is_species_class = ROBOT }
@@ -204,7 +204,7 @@
           }
       }
       MB_THREATENED_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -212,7 +212,7 @@
   		}
   	}
       MB_FRIENDLY_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -225,7 +225,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_in_federation_with = FROM
@@ -238,7 +238,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_03 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = {
@@ -256,7 +256,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_04 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -275,7 +275,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_05 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
@@ -293,7 +293,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_06 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = {
@@ -311,7 +311,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_HUMAN_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = { is_human_species = yes }
@@ -324,7 +324,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_HUMAN_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = { is_human_species = yes }
@@ -337,7 +337,7 @@
   		}
       }
       MB_FRIENDLY_GREETING_AQUATIC_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = {
@@ -358,7 +358,7 @@
   		}
       }
       MB_MECH_FRIENDLY_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			FROM = { is_species_class = ROBOT }
@@ -371,14 +371,14 @@
   		}
       }
       MB_WAR_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
   		}
       }
       MB_WAR_GREETING_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
@@ -393,7 +393,7 @@
   		}
       }
       MB_WAR_GREETING_03 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
@@ -407,7 +407,7 @@
   		}
       }
       MB_WAR_GREETING_04 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
@@ -415,7 +415,7 @@
   		}
       }
       MB_WAR_GREETING_05 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
@@ -423,7 +423,7 @@
   		}
       }
       MB_WAR_GREETING_06 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_democratic_authority = yes
@@ -431,7 +431,7 @@
   		}
       }
       MB_WAR_GREETING_HUMAN_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
@@ -439,7 +439,7 @@
   		}
       }
       MB_VASSAL_GREETING_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			exists = overlord
@@ -449,7 +449,7 @@
   		}
   	}
   	MB_VASSAL_GREETING_DISLOYAL_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			exists = overlord
@@ -462,7 +462,7 @@
   action_insult = {
   	select = {
   		MB_PREINSULT_PIRATE_01 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -475,7 +475,7 @@
   			}
   		}
   		MB_PREINSULT_PIRATE_02 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -485,7 +485,7 @@
   			}
   		}
   		MB_PREINSULT_PIRATE_03 = {
-  		weight = { weight = 1000 }
+  		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -639,7 +639,7 @@
   	}
   	accept = {
   		MB_INSULTED_PIRATE_01 = {
-  			weight = { weight = 1000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -652,7 +652,7 @@
   			}
   		}
   		MB_INSULTED_PIRATE_02 = {
-  			weight = { weight = 1000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -662,7 +662,7 @@
   			}
   		}
   		MB_INSULTED_PIRATE_03 = {
-  			weight = { weight = 1000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -673,7 +673,7 @@
   			}
   		}
   		MB_INSULTED_PIRATE_04 = {
-  			weight = { weight = 1000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -686,7 +686,7 @@
   			}
   		}
   		MB_INSULTED_PIRATE_05 = {
-  			weight = { weight = 1000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				FROM = { is_authoritarian = yes }

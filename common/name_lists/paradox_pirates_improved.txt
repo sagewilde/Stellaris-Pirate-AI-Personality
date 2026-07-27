@@ -264,15 +264,15 @@ paradox_pirates_improved = {
 			}
 			
             regnal_first_names_male = {
-				"Jack" "Baltazar" "Vigo" "Karsus" "Vindict" "Garrick" "Shepherd" "Barnabus" "Lazarus" "Judas" "Baal" "Paimon" "Agares" "Thanatos"
+				"Jack" "Baltazar" "Vigo" "Karsus" "Vindict" "Garrick" "Shepherd" "Barnabus" "Siren" "Sable" "Lazarus" "Judas" "Baal" "Paimon" "Agares" "Thanatos"
             }
            
             regnal_first_names_female = {
-				"Katrina" "Vendetta" "Anne" "Mary" "Danger" "Lilith" "Banshee" "Harpy" "Siren" "Bride" "Lucy" "Andariel" "Hecate" "Hera"
+				"Katrina" "Vendetta" "Anne" "Mary" "Danger" "Lilith" "Banshee" "Harpy" "Siren" "Sable" "Bride" "Lucy" "Andariel" "Hecate" "Hera"
             }
 			
 			regnal_second_names = {
-                "of the void" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
+                "of the Great Black" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
 			}
 		}
 	}

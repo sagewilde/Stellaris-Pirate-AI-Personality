@@ -1,0 +1,94 @@
+is_pirate_empire = {
+    OR = {
+        has_valid_civic = civic_crusader_spirit_corporate
+		has_valid_civic = civic_void_reavers
+        has_technology = tech_pirate_leadership
+    }
+}
+
+is_a_jerk = {
+	OR = {
+		any_enslaved_species = {
+		is_sapient = yes
+		OR = {
+			has_slavery_type = { type = slavery_normal }
+			has_slavery_type = { type = slavery_livestock }
+			has_slavery_type = { type = slavery_matrix }
+			}
+		}
+		AND = {
+			is_gestalt = no
+			any_owned_species = {
+				is_sapient = yes
+				OR = {
+					has_living_standard = { type = living_standard_subsistence }
+					has_living_standard = { type = living_standard_stratified }
+					has_living_standard = { type = living_standard_dystopian_society }
+				}
+			}
+		}
+	}
+}
+
+is_impoverished = {
+	OR = {
+		AND = {
+			is_lithoid_empire = no
+			is_robotic_species = no
+			has_country_resource = { 
+				type = food 
+				amount < 450 
+			}
+			has_monthly_income = {
+				resource = food
+				value < 1
+			}
+		}
+		AND = {
+			is_lithoid_empire = yes
+			has_country_resource = { 
+				type = minerals 
+				amount < 450 
+			}
+			has_monthly_income = {
+				resource = minerals
+				value < 1
+			}
+		}
+		AND = {
+			is_robotic_species = yes
+			has_country_resource = { 
+				type = energy
+				amount < 450 
+			}
+			has_monthly_income = {
+				resource = energy
+				value < 1
+			}
+		}
+	}
+}
+
+is_weak_and_rich = {
+	AND = {
+		relative_power = {
+			who = root
+			category = economy
+			value >= equivalent
+		}
+		relative_power = {
+			who = root
+			category = military
+			value <= equivalent
+		}
+	}
+}
+
+is_special_personality = {
+	OR = {
+		#has_ai_personality = peaceful_counterculture
+		has_ai_personality = mirthful_bandits
+		has_ai_personality = cunning_raiders
+		#has_ai_personality = mega_union
+	}
+}

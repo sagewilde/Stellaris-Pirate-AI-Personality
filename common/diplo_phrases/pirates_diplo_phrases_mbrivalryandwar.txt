@@ -1,0 +1,542 @@
+action_make_rival = {
+	select = {
+		MB_MAKE_RIVAL_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_DFLT_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+				NOR = {
+					is_pirate_empire = yes
+					is_megacorp = yes
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		DFLT_MB_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				from = {
+					NOR = {
+						is_pirate_empire = yes
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+			}
+		}
+		MB_TO_CORPO_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+				is_megacorp = yes
+				NOT = {
+					is_pirate_empire = yes
+				}
+			}
+		}
+		CORPO_TO_MB_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				from = {
+					is_megacorp = yes
+					NOT = {
+						is_pirate_empire = yes
+					}
+				}
+			}
+		}
+		MB_PE_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+				is_pirate_empire = yes
+				NOT = { has_ai_personality = mirthful_bandits }
+			}
+		}
+		PE_MB_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				from = {
+					is_pirate_empire = yes
+				}
+			}
+		}
+		MB_TO_MB_MAKE_RIVAL_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_DFLT_MAKE_RIVAL_ACCEPT_HOSTILE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_pirate_empire = yes
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_unfriendly_to = FROM
+					is_domineering_to = FROM
+					is_hostile_to = FROM
+				}
+			}
+		}
+		MB_DFLT_MAKE_RIVAL_ACCEPT_NEUTRAL = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_pirate_empire = yes
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_DFLT_MAKE_RIVAL_ACCEPT_FRIENDLY = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_pirate_empire = yes
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		DFLT_MB_MAKE_RIVAL_ACCEPT_HOSTILE = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+				NOR = {
+					is_pirate_empire = yes
+					is_megacorp = yes
+					has_ai_personality = mirthful_bandits
+				}
+				OR = {
+					is_unfriendly_to = FROM
+					is_domineering_to = FROM
+					is_hostile_to = FROM
+				}
+			}
+		}
+		DFLT_MB_MAKE_RIVAL_ACCEPT_NEUTRAL = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+				NOR = {
+					is_pirate_empire = yes
+					is_megacorp = yes
+					has_ai_personality = mirthful_bandits
+				}
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		DFLT_MB_MAKE_RIVAL_ACCEPT_FRIENDLY = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+				NOR = {
+					is_pirate_empire = yes
+					is_megacorp = yes
+					has_ai_personality = mirthful_bandits
+				}
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_TO_CORPO_RIVAL_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					is_megacorp = yes
+					NOT = { is_pirate_empire = yes }
+				}
+			}
+		}
+		CORPO_TO_MB_RIVAL_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+				is_megacorp = yes
+				NOT = { is_pirate_empire = yes }
+			}
+		}
+		MB_TO_MB_RIVAL_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_ai_personality = mirthful_bandits
+					NOT = { is_pirate_empire = yes }
+				}
+			}
+		}
+	}
+}
+
+action_end_rivalry = {
+	select = {
+		MB_END_RIVAL_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_DFLT_END_RIVALRY_FRIENDLY = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_DFLT_END_RIVALRY_NEUTRAL = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_DFLT_END_RIVALRY_HOSTILE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOR = {
+						is_megacorp = yes
+						has_ai_personality = mirthful_bandits
+					}
+				}
+				OR = {
+					is_unfriendly_to = FROM
+					is_threatened_to = FROM
+					is_domineering_to = FROM
+				}
+			}
+		}
+		DFLT_MB_END_RIVALRY_HOSTILE = {
+			weight = { weight = 1000 }
+			trigger = {
+				NOR = {
+					has_ai_personality = mirthful_bandits
+					is_megacorp = yes
+				}
+				FROM = { has_ai_personality = mirthful_bandits }
+				OR = {
+					is_unfriendly_to = FROM
+					is_domineering_to = FROM
+					is_hostile_to = FROM
+				}
+			}
+		}
+		MB_TO_CORPO_END_RIVALRY_FRIENDLY = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_megacorp = yes }
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		CORPO_TO_MB_END_RIVALRY_FRIENDLY= {
+			weight = { weight = 1000 }
+			trigger = {
+				NOR = {
+					has_ai_personality = mirthful_bandits
+					is_megacorp = yes
+					is_pirate_empire = yes
+					has_ethic = ethic_gestalt_consciousness
+				}
+				FROM = { has_ai_personality = mirthful_bandits }
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_TO_CORPO_END_RIVALRY_NEUTRAL= {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_megacorp = yes }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		CORPO_TO_MB_END_RIVALRY_NEUTRAL= {
+			weight = { weight = 1000 }
+			trigger = {
+				is_megacorp = yes
+				FROM = { has_ai_personality = mirthful_bandits }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_TO_CORPO_END_RIVALRY_HOSTILE= {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_megacorp = yes }
+				OR = {
+					is_unfriendly_to = FROM
+					is_threatened_to = FROM
+					is_domineering_to = FROM
+				}
+			}
+			
+		}
+		CORPO_TO_MB_END_RIVALRY_HOSTILE= {
+			weight = { weight = 1000 }
+			trigger = {
+				is_megacorp = yes
+				FROM = { has_ai_personality = mirthful_bandits }
+				OR = {
+					is_unfriendly_to = FROM
+					is_threatened_to = FROM
+					is_domineering_to = FROM
+				}
+			}
+		}
+		MB_TO_MB_END_RIVALRY= {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		# MBs to Default
+		MB_DFLT_END_RIVALRY_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					NOT = {
+						is_pirate_empire = yes
+					}
+				}
+			}
+		}
+		MB_TO_CORPO_END_RIVALRY_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					is_megacorp = yes
+				}
+			}
+		}
+		MB_TO_CORPO_END_RIVALRY_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+}
+
+action_declare_war = {
+	propose = {
+		# Generic
+		MB_DOW_PROPOSE_01 = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+				NOT = { is_a_huge_jerk = yes }
+			}
+		}
+		# Pirates
+		MB_DOW_PROPOSE_02 = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+				NOT = { is_a_huge_jerk = yes }
+			}
+		}
+		MB_DOW_PROPOSE_03 = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+				is_a_huge_jerk = yes
+			}
+		}
+		# Subject
+		MB_VASSAL_DOW_PROPOSE = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					exists = overlord
+					overlord = { is_same_value = ROOT }
+				}
+			}
+		}
+	}
+	accept = {
+		# Generic
+		MB_DOW_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		# Pirates
+		MB_DOW_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+			}
+		}
+	}
+	propose_vote = {
+		MB_DOW_VOTE_PROPOSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+}
+
+action_offer_peace = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 100 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		# Generic Empires
+		MB_PEACE_PROPOSE_01 = {
+			weight = { weight = 1000 }
+			trigger = {
+				from = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		# Peace with Pirates
+		MB_PEACE_PROPOSE_03 = {
+			weight = { weight = 1000 }
+			trigger = {
+				is_pirate_empire = yes 
+				from = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		# Cunning Raiders
+		MB_PEACE_PROPOSE_04 = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				from = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+	}
+	accept = {
+		# Generic Empires
+		MB_PEACE_ACCEPT_01 = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				
+			}
+		}
+		# Peace with PEans
+		MB_PEACE_ACCEPT_02 = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				
+				FROM = { is_pirate_empire = yes	}
+			}
+		}
+	}
+	refuse = {
+		MB_PEACE_REFUSE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}

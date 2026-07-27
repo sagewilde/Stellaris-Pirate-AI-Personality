@@ -1,21 +1,29 @@
-
+# EaC Overwrites
 politician_is_commandante_pirate = {
 	exists = owner
 	OR = {
 		has_active_building = building_pirate_haven_2
 		owner = {
-			has_technology = tech_pirate_leaders
+			is_pirate_empire = yes
 		}
 	}
 }
 
+soldier_is_pirate = {
+	exists = owner
+	owner = {
+		is_pirate_empire = yes
+	}
+}	
+
+# Modded
 bureaucrat_is_steward_captain = {
 	exists = owner
 	owner = {
 		OR = {
 			has_active_building = building_pirate_haven_2
 			owner = {
-				has_technology = tech_pirate_leaders
+				is_pirate_empire = yes
 			}
 		}
 		has_valid_civic = civic_worker_coop
@@ -33,18 +41,11 @@ enforcer_is_pirate_combat_instructor = {
 		OR = {
 			has_active_building = building_pirate_haven_2
 			owner = {
-				has_technology = tech_pirate_leaders
+				is_pirate_empire = yes
 			}
 		}
 	}
 }
-
-soldier_is_pirate = {
-	exists = owner
-	owner = {
-		is_pirate_empire = yes
-	}
-}	
 
 entertainer_is_shanty_singer_trigger = {
 	exists = owner

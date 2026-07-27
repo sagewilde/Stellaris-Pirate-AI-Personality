@@ -53,7 +53,7 @@
 # NOTE: Weight is additive!
 
 mirthful_bandits = {
-	aggressiveness = 2.0
+	aggressiveness = 2.5
 	trade_willingness = 1.2
 	bravery = 1.5
 	combat_bravery = 0.8

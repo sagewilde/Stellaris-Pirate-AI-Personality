@@ -1,11 +1,12 @@
 ﻿l_english:
- ### AI Personalities
+### AI Personalities
  personality_mirthful_bandits:0 "Mirthful Bandits"
  personality_mirthful_bandits_desc:0 "'Rob the rich to feed the poor' is the mirthful bandit's credo. Defiant and mischievous, this star nation has chosen to pursue piracy as a path to redistributing wealth to the less advantaged peoples of their nation, as well as others. They do so with a smart remark and a quick blaster, but are just as eager to make friends as they are to make enemies."
+
  personality_cunning_raiders:0 "Cunning Raiders"
  personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the void."
 
- ### Free Fleets of Lore
+### Prescripted Empire - Free Fleets of Lore
  EMPIRE_DESIGN_lore_spacers: "Free Fleets of Lore"
  PRESCRIPTED_adjective_lore_spacers: "Lore Spacers"
  PRESCRIPTED_lore_spacers: "FV"
@@ -18,42 +19,39 @@
  PRESCRIPTED_ruler_name_lore_spacers: "Phanta Sharp"
  PRESCRIPTED_ruler_bio_lore_spacers: "Captain Sharp is more than a cunning commander; she is a wily politician, an enthusiastic explorer, and a gleeful troublemaker."
 
- ### Action and Modifier Labels
- opinion_rich_vs_robinhood: "Common Thieves"
- opinion_robinhood_vs_rich: "Rob the Rich"
- opinion_tempting_raiding_target: "Tempting Raiding Target"
- opinion_impoverished_empire: "Impoverished Empire"
- opinion_feed_the_poor: "Feed the Poor"
- opinion_cr_vs_slavers: "Slave Trader"
- opinion_cr_vs_jerks: "Morally Flexible"
- opinion_king_of_pirates: "Pirate Lord"
+### Action and Modifier Labels
  opinion_only_one_king: "There Can Only Be One"
  opinion_honor_among_thieves: "Honor Among Thieves"
+ triggered_opinion_rich_vs_robinhood: "Common Thieves"
+ triggered_opinion_robinhood_vs_rich: "Rob the Rich"
+ triggered_opinion_tempting_raiding_target: "Tempting Raiding Target"
+ triggered_opinion_impoverished_empire: "Impoverished Empire"
+ triggered_opinion_feed_the_poor: "Feed the Poor"
+ triggered_opinion_cr_vs_slavers: "Slave Trader"
+ triggered_opinion_cr_vs_jerks: "Morally Flexible"
+ triggered_opinion_king_of_pirates: "Pirate Lord"
 
- ### Jobs and Job Descriptions
- job_commandante_pirate:0 "Pirate Admiral"
- job_commandante_pirate_plural:0 "Pirate Admirals"
- job_commandante_pirate_desc:0 "In a wretched hive of scum and villainy, it pays to be the one that makes pirates cower. Pirates are violent, bloodthirsty, and cruel. They only understand power, and these master tacticians are fluent in the language of bloodshed. Fear keeps them in line, on-planet and in space."
- job_noble_commandante_pirate:0 "Pirate Lord-Commandante"
- job_noble_commandante_pirate_plural:0 "Pirate Lords-Commandante"
- job_noble_commandante_pirate_desc:0 "This monarchic kleptocracy prizes family lines derived from the most feared pirate captains in galactic history. Sculpted into icons of power and bloody wealth from birth, these pirate nobles put a whole new, dreadful meaning behind 'Robber Barons'."
+### Jobs and Job Descriptions
  job_pirate_combat_instructor:0 "Pirate Combat Instructor"
  job_pirate_combat_instructor_plural:0 "Pirate Combat Instructors"
  job_pirate_combat_instructor_desc:0 "A sharp mind is a valuable asset to every privateer fleet. Focusing on development instead of punishment not only enables pirates to make their own fate, it stops shipboard conflict before it can even arise - a deeply vital necessity on years-long voyages. After all, there's only so much room in the brig, and every hand brings the payday closer."
- job_steward_captains:0 "Steward Captain"
- job_steward_captains_plural:0 "Steward Captain"
- job_steward_captains_desc:0 "As a labor union of cooperative privateer fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
+
+ job_steward_pirate:0 "Steward Captain"
+ job_steward_pirate_plural:0 "Steward Captains"
+ job_steward_pirate_desc:0 "As a labor union of cooperative privateer fleets, the charter under which a pirate captain may fly our flag requires on-planet duties as well as in space. From our foes, we take all that they have hoarded by their greed. And to each pirate, a fair share of the loot!"
+
  job_shanty_singer:0 "Shanty Singer"
  job_shanty_singer_plural:0 "Shanty Singers"
  job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of the ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
+
  job_duelist_shanty_singer:0 "Tavern Storyteller"
  job_duelist_shanty_singer_plural:0 "Tavern Storytellers"
  job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the void, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
 
- ### Space Shanty Intro - Pirate
+### Space Shanty Intro - Pirate
  space_shanty_intro_pirate:0 "It's like something out of a childhood dream. A vast, beautiful wood and ceramo-metallo alloy ship. Like a hybrid between the most graceful bird and the most regal planetbound sea vessel, she's shaped as if she was raptured from the surface of an ocean world and set to glide in the void. Her long photovoltaic sails shimmer with gold, as if the sunlight she caught in eons past is still there in the hyperglass fibers. Our linguists have managed to translate only her name; 'Daughter of Kambell'. This beautiful queen of the Black, broken and worn 'til her bones were exposed, brings the heart to tears. Yet still, she holds a treasure, unlike anything we have ever uncovered. With this great reverence for spacefarers past, we are compelled to find out what she carried. Our treasure-diggers eagerly stand by, awaiting the order to begin the excavation with bated breath."
  
- ### Slightly tweaked, for humor and flavor.  -  SageWilde
+### Slightly tweaked, for humor and flavor.  -  SageWilde
  
  name_list_paradox_pirates_improved:0 "Paradox Pirates (Improved)"
  name_list_paradox_pirates_improved_desc:0 " "
@@ -179,7 +177,7 @@
 
 # Cyber Corporate Individualist
  auth_cyber_corporate_individualist_pirate: "Wetwork Wire-ates"
- auth_cyber_corporate_individualist_pirate_desc: "A pirate makes his own fate. With bionic weapons and replaceable limbs, every hand on deck is both unique and equally powerful.\n\nWith this vast renegotiation of power comes a new swath of tools that captains must use to maintain order on their vessels. Some may call it hacking. Others may call it insurance. This has lead to a malware arms' race to maintain political control."
+ auth_cyber_corporate_individualist_pirate_desc: "A pirate makes his own fate. With bionic weapons and replaceable limbs, every hand on deck is both unique and equally powerful.\n\nWith this vast renegotiation of power comes a new swath of tools that captains must use to maintain order on their vessels. Some may call it hacking. Others may call it statecraft. This has lead to a malware arms' race to maintain political control."
  gov_cyber_corporate_individualist_pirate: "$auth_cyber_corporate_individualist_pirate$"
  gov_cyber_corporate_individualist_pirate_desc: "$auth_cyber_corporate_individualist_pirate_desc$"
  concept_auth_cyber_corporate_individualist_pirate: "$auth_cyber_corporate_individualist_pirate$"
