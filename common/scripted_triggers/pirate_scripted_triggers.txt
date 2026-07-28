@@ -1,33 +1,33 @@
+### Vanilla Overwrites
+
+values_others = {
+	AND = {
+		OR = {
+			is_xenophile = yes
+			has_valid_civic = civic_hive_empath
+			has_valid_civic = civic_machine_servitor
+			has_valid_civic = civic_machine_exploration_protocol
+			has_origin = origin_fruitful
+			has_animal_handler_job = yes
+			has_symbiosis_integrator_job = yes
+			has_valid_civic = civic_hive_familiar_face
+			#has_hippie_government = yes
+			has_ai_personality = mirthful_bandits
+		}
+		NOT = {
+			has_menace_perk = menp_behemoth_ever_hungry
+		}
+	}
+}
+
+# Pirates
+
 is_pirate_empire = {
     OR = {
         has_valid_civic = civic_crusader_spirit_corporate
 		has_valid_civic = civic_void_reavers
         has_technology = tech_pirate_leadership
     }
-}
-
-is_a_jerk = {
-	OR = {
-		any_enslaved_species = {
-		is_sapient = yes
-		OR = {
-			has_slavery_type = { type = slavery_normal }
-			has_slavery_type = { type = slavery_livestock }
-			has_slavery_type = { type = slavery_matrix }
-			}
-		}
-		AND = {
-			is_gestalt = no
-			any_owned_species = {
-				is_sapient = yes
-				OR = {
-					has_living_standard = { type = living_standard_subsistence }
-					has_living_standard = { type = living_standard_stratified }
-					has_living_standard = { type = living_standard_dystopian_society }
-				}
-			}
-		}
-	}
 }
 
 is_impoverished = {

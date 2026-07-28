@@ -165,7 +165,7 @@ EaC_yldarian_raider_clan = {
 }
 
 # Free Fleets of Lore
-EaC_lore_spacers = {
+lore_spacers = {
 	name = "EMPIRE_DESIGN_lore_spacers"
 	adjective = "PRESCRIPTED_adjective_lore_spacers"
 	spawn_enabled = yes # yes / no / always
@@ -234,10 +234,6 @@ EaC_lore_spacers = {
 		evolution_mask=0
 		attachment=0
 		clothes=1
-		ruler_title = {
-			key="Captain of the People"
-			literal=yes
-		}
  		custom_biography = {
 			key="PRESCRIPTED_ruler_bio_lore_spacers"
 			literal=yes

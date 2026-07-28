@@ -44,6 +44,10 @@ tech_cloaking_1 = {
 			factor = 5
 			has_tradition = tr_subterfuge_adopt
 		}
+		modifier = {
+			factor = 5
+			is_pirate_empire = yes
+		}
 	}
 
 	ai_weight = {
@@ -102,6 +106,10 @@ tech_cloaking_2 = {
 			factor = 5
 			has_tradition = tr_subterfuge_adopt
 		}
+		modifier = {
+			factor = 5
+			is_pirate_empire = yes
+		}
 	}
 
 	ai_weight = {
@@ -152,6 +160,10 @@ tech_cloaking_3 = {
 			factor = 5
 			has_tradition = tr_subterfuge_adopt
 		}
+		modifier = {
+			factor = 5
+			is_pirate_empire = yes
+		}
 	}
 
 	ai_weight = {
@@ -195,6 +207,10 @@ tech_cloaking_dark_matter = {
 		modifier = {
 			factor = 5
 			has_tradition = tr_subterfuge_adopt
+		}
+		modifier = {
+			factor = 5
+			is_pirate_empire = yes
 		}
 	}
 

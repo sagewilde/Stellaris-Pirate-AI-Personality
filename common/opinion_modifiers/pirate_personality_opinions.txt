@@ -73,42 +73,37 @@ triggered_opinion_tempting_raiding_target = {
 				}
 			add = -20
 		}
-		modifier = {
-			AND = {
-				is_ai = yes
-				is_impoverished = yes
-			}
-			add = -20
-		}
 	}
 }
 
-triggered_opinion_rich_vs_robinhood = {
+triggered_opinion_tyrants_vs_robinhood = {
 	trigger = {
-		is_a_jerk = yes
+		is_gestalt = no
+		has_policy_flag = { slavery_allowed = yes }
 		FROM = { has_ai_personality = mirthful_bandits }
 	}
 	opinion = {
 		base = -50
 		modifier = {
-			is_a_huge_jerk = yes
+			is_slaver = yes
 			add = -150
 		}
 	}
 }
 
-triggered_opinion_robinhood_vs_rich = {
+triggered_opinion_robinhood_vs_tyrants = {
 	trigger = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
-			is_a_jerk = yes
+			is_gestalt = no
+			has_policy_flag = { slavery_allowed = yes }
 		}
 	}
 	opinion = {
 		base = -50
 		modifier = {
 			FROM = {
-				is_a_huge_jerk = yes
+				is_slaver = yes
 			}
 			add = -50
 		}
@@ -119,8 +114,7 @@ triggered_opinion_feed_the_poor = {
 	trigger = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
-			is_a_jerk = no
-			is_a_huge_jerk = no
+			values_others = yes
 			is_impoverished = yes
 		}
 	}
@@ -154,14 +148,18 @@ triggered_opinion_cr_vs_jerks = {
 	trigger = {
 		has_ai_personality = cunning_raiders
 		FROM = {
-			is_a_jerk = yes
+			is_authoritarian = yes
+			is_capitalism = yes
 		}
 	}
 	opinion = {
 		base = 10
 		modifier = {
 			FROM = {
-				is_militarist = yes
+				OR = {
+					is_fanatic_authoritarian = yes
+					is_fanatic_capitalism = yes
+				}
 			}
 			add = 20
 		}
@@ -172,20 +170,12 @@ triggered_opinion_cr_vs_slavers = {
 	trigger = {
 		has_ai_personality = cunning_raiders
 		FROM = {
-			is_a_huge_jerk = yes
+			is_gestalt = no
+			has_policy_flag = { slavery_allowed = yes }
 		}
 	}
 	opinion = {
 		base = 50
-		modifier = {
-			FROM = {
-				OR = {
-					is_slaver = yes
-					has_origin = origin_slavers
-				}
-			}
-			add = 30
-		}
 	}
 }
 
