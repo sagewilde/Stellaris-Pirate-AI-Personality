@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Ethics_and_Civics_Classic",
+			"path": "../Ethics_and_Civics_Classic"
+		},
+		{
+			"name": "Stellaris-Hippies-AI-Personality",
+			"path": "../Stellaris-Hippies-AI-Personality"
+		},
+		{
+			"name": "Stellaris-Pirate-AI-Personality",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
