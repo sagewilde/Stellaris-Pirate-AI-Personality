@@ -1,0 +1,1635 @@
+##################################
+# CUNNING RAIDER DIPLOMACY PHRASES
+##################################
+
+# COMMERCE
+
+action_offer_trade_deal = {
+	propose = {
+		MB_OFFER_TRADE_DEAL_PROPOSE = {
+			only_for_trade = yes
+			weight = { weight = 100 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_OFFER_TRADE_DEAL_GIFT_ACCEPT = {
+			only_for_gift = yes
+			weight = { weight = 100 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+		MB_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE = {
+			only_for_gift = yes
+			weight = { weight = 100 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+		MB_OFFER_TRADE_DEAL_ACCEPT = {
+			only_for_trade = yes
+			weight = { weight = 100 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_OFFER_TRADE_DEAL_REFUSE = {
+			only_for_trade = yes
+			weight = { weight = 100 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+	}
+}
+
+# DEFENSIVE PACTS
+
+action_form_defensive_pact = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_FORM_DP_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_FORM_DP_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_FORM_DP_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_FORM_DP_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_break_defensive_pact = {
+	select = {
+		MB_BREAK_DP_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_BREAK_DP_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_BREAK_DP_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+# NON-AGGRESSION & INDEPENDENCE
+
+action_form_non_aggression_pact = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_FORM_NAP_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_FORM_NAP_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { is_anti_hippie = yes }
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_FORM_NAP_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_FORM_NAP_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_break_non_aggression_pact = {
+	select = {
+		MB_BREAK_NAP_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+
+	propose = {
+		MB_BREAK_NAP_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+
+	accept = {
+		MB_BREAK_NAP_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_guarantee_independence = {
+	select = {
+		MB_GUARANTEE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+
+	propose = {
+		MB_GUARANTEE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+
+	accept = {
+		MB_GUARANTEE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_break_guarantee = {
+	select = {
+		MB_REVOKE_GUARANTEE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+
+	propose = {
+		MB_REVOKE_GUARANTEE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+
+	accept = {
+		MB_REVOKE_GUARANTEE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_support_independence = {
+	select = {
+		MB_SUPPORT_INDEPENDENCE_SELECT_LOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+		MB_SUPPORT_INDEPENDENCE_SELECT_DISLOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+	}
+
+	propose = {
+		MB_SUPPORT_INDEPENDENCE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+	}
+
+	accept = {
+		MB_SUPPORT_INDEPENDENCE_ACCEPT_LOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		MB_SUPPORT_INDEPENDENCE_ACCEPT_DISLOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+	}
+}
+
+action_break_support = {
+	select = {
+		MB_REVOKE_INDEPENDENCE_SELECT_LOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+		MB_REVOKE_INDEPENDENCE_SELECT_DISLOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+	}
+
+	propose = {
+		MB_REVOKE_INDEPENDENCE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+	}
+
+	accept = {
+		MB_REVOKE_INDEPENDENCE_ACCEPT_LOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		MB_REVOKE_INDEPENDENCE_ACCEPT_DISLOYAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_at_war_with = overlord
+					is_disloyal_to = overlord
+				}
+			}
+		}
+	}
+}
+
+# BORDERS & MIGRATION
+
+action_form_migration_pact = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_FORM_MIGRATION_PACT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_FORM_MIGRATION_PACT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_FORM_MIGRATION_PACT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_FORM_MIGRATION_PACT_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_break_migration_pact = {
+	select = {
+		MB_BREAK_MIGRATION_PACT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_BREAK_MIGRATION_PACT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_BREAK_MIGRATION_PACT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_BREAK_MIGRATION_PACT_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_open_borders = {
+	select = {
+		MB_OPEN_BORDERS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_OPEN_BORDERS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_OPEN_BORDERS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_close_borders = {
+	select = {
+		MB_CLOSE_BORDERS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_CLOSE_BORDERS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_CLOSE_BORDERS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+# FEDERATIONS
+
+action_invite_to_federation = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ITOA_SELECT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_SELECT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+	propose = {
+		MB_ITOA_PROPOSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = yes
+					has_ai_personality = mirthful_bandits 
+				}
+			}
+		}
+		MB_ITOA_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { 
+					has_federation = no
+					has_ai_personality = mirthful_bandits 
+				}
+			}
+		}
+	}
+	accept = {
+		MB_ITOA_ACCEPT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_ACCEPT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+	refuse = {
+		MB_ITOA_REFUSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = yes
+				}
+			}
+		}
+		MB_ITOA_REFUSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					has_federation = no
+				}
+			}
+		}
+	}
+}
+
+action_ask_to_join_federation = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_TO_JOIN_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_TO_JOIN_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_TO_JOIN_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_TO_JOIN_A_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_leave_federation = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_TO_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_TO_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_TO_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_kick_from_federation = {
+	select = {
+		MB_KICK_FROM_ALLIANCE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_KICK_FROM_ALLIANCE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_KICK_FROM_ALLIANCE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_offer_federation_association_status = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_revoke_federation_association_status = {
+	select = {
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_for_federation_association_status = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_end_federation_association_status = {
+	select = {
+		MB_END_FEDERATION_ASSOCIATION_STATUS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_to_leave_federation = {
+	select = {
+		MB_LEAVE_A_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_LEAVE_A_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_LEAVE_A_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+# SUBJUGATION
+
+action_demand_subjugation = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		# Vassalization Select
+		 MB_DEMAND_VASS_SELECT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		# Vassalization Select (Hostile)
+		MB_DEMAND_VASS_SELECT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOT = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+	}
+	propose = {
+		MB_DEMAND_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		# Accept
+		MB_DEMAND_VASS_ACCEPT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		# Accept Wilderness
+		MB_DEMAND_VASS_ACCEPT_02 = {
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { has_ai_personality = benevolent_wilderness }
+			}
+		}
+		# Accept Humans
+		MB_DEMAND_VASS_ACCEPT_3 = {
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_human_species = yes }
+			}
+		}
+	}
+	refuse = {
+		# Refuse
+		MB_DEMAND_VASS_REFUSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		# Refuse Hostile
+		MB_DEMAND_VASS_REFUSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				NOT = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+	}
+}
+
+action_ask_to_become_subjugated = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_FOR_VASS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_FOR_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_FOR_VASS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_FOR_VASS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_demand_subsidiary = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		# Tankies
+		MB_DEMAND_SUBS_SELECT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_socialism = yes }
+			}
+		}
+		# Capitalists
+		MB_DEMAND_SUBS_SELECT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_capitalism = yes }
+			}
+		}
+	}
+	propose = {
+		MB_DEMAND_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		# Tankies
+		MB_DEMAND_SUBS_ACCEPT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_socialism = yes }
+			}
+		}
+		# Capitalists
+		MB_DEMAND_SUBS_ACCEPT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_capitalism = yes }
+			}
+		}
+	}
+	refuse = {
+		# Tankies
+		MB_DEMAND_SUBS_REFUSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_socialism = yes }
+			}
+		}
+		# Capitalists
+		MB_DEMAND_SUBS_REFUSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_capitalism = yes }
+			}
+		}
+	}
+}
+
+action_ask_to_become_subsidiary = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_FOR_VASS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		# Tankies
+		MB_ASK_FOR_SUBS_PROPOSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_socialism = yes }
+			}
+		}
+		# Capitalists
+		MB_ASK_FOR_SUBS_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_capitalism = yes }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_FOR_VASS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_FOR_VASS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_release_subject = {
+	select = {
+		MB_RELEASE_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_RELEASE_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_RELEASE_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_to_be_released_subject = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_TO_BE_RELEASED_SUBJECT_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_TO_BE_RELEASED_SUBJECT_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_demand_tributary = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_DEMAND_TRIBUTARY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_DEMAND_VASS_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_DEMAND_TRIBUTARY_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_DEMAND_TRIBUTARY_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_ask_to_become_tributary = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = {
+		MB_ASK_FOR_VASS_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ASK_BECOME_TRIBUTARY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ASK_FOR_VASS_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	refuse = {
+		MB_ASK_FOR_VASS_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+# COOPERATION
+
+action_form_commercial_pact = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = { }
+	propose = { }
+	accept = { }
+	refuse = { }
+}
+
+action_form_research_agreement = {
+	consider = {
+		MB_CONSIDER = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	select = { }
+	propose = {	}
+	accept = { }
+	refuse = { }
+}
+
+# EMBASSIES
+
+action_embassy = {
+	select = {
+		MB_ESTABLISH_EMBASSY_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_ESTABLISH_EMBASSY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ESTABLISH_EMBASSY_ACCEPT_FRIENDLY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_ESTABLISH_EMBASSY_ACCEPT_NEUTRAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_ESTABLISH_EMBASSY_ACCEPT_HOSTILE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+	}
+	refuse = { }
+}
+
+action_recall_embassy = {
+	select = {
+		MB_RECALL_EMBASSY_FRIENDLY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_RECALL_EMBASSY_NEUTRAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_RECALL_EMBASSY_HOSTILE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+	}
+	propose = {
+		MB_RECALL_EMBASSY_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_RECALL_EMBASSY_ACCEPT_FRIENDLY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_RECALL_EMBASSY_ACCEPT_NEUTRAL = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_RECALL_EMBASSY_ACCEPT_HOSTILE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+	}
+}
+
+# AGREEMENTS AND FEALTY
+
+action_negotiate_existing_agreement = {
+	propose = {
+		MB_NEGOTIATE_EXISTING_AGREEMENT_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ACCEPT_NEGOTIATE_EXISTING_AGREEMENT = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	refuse = {
+		MB_DECLINE_NEGOTIATE_EXISTING_AGREEMENT = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+}
+
+action_pledge_secret_fealty = {
+	select = {
+		MB_SELECT_PLEDGE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_PROPOSE_PLEDGE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ACCEPT_PLEDGE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_propose_secret_fealty = {
+	select = {
+		MB_SELECT_PROPOSE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_PROPOSE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ACCEPT_PROPOSE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	reject = {
+		MB_REJECT_PROPOSE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_propose_to_break_secret_fealty = {
+	select = {
+		MB_SELECT_REVOKE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_PROPOSE_REVOKE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ACCEPT_REVOKE_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}
+
+action_break_secret_fealty = {
+	select = {
+		MB_SELECT_BREAK_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	propose = {
+		MB_PROPOSE_BREAK_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				from = { has_ai_personality = mirthful_bandits }
+			}
+		}
+	}
+	accept = {
+		MB_ACCEPT_BREAK_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+	reject = {
+		MB_REJECT_BREAK_SEMBET_FEALTY = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+			}
+		}
+	}
+}

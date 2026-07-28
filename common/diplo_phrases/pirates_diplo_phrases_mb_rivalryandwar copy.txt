@@ -1,94 +1,83 @@
 action_make_rival = {
 	select = {
-		CR_MAKE_RIVAL_SELECT = {
+		MB_MAKE_RIVAL_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
 	propose = {
-		CR_DFLT_MAKE_RIVAL_PROPOSE = {
+		MB_DFLT_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				from = { has_ai_personality = cunning_raiders }
+				from = { has_ai_personality = mirthful_bandits }
 				NOR = {
 					is_pirate_empire = yes
 					is_megacorp = yes
-					has_ai_personality = cunning_raiders
 				}
 			}
 		}
-		DFLT_CR_MAKE_RIVAL_PROPOSE = {
+		DFLT_MB_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				from = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = cunning_raiders
-					}
+					NOT = {	is_megacorp = yes }
 				}
 			}
 		}
-		CR_TO_CORPO_MAKE_RIVAL_PROPOSE = {
+		MB_TO_CORPO_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				from = { has_ai_personality = cunning_raiders }
+				from = { has_ai_personality = mirthful_bandits }
 				is_megacorp = yes
-				NOT = {
-					is_pirate_empire = yes
-				}
+				NOT = {	is_pirate_empire = yes }
 			}
 		}
-		CORPO_TO_CR_MAKE_RIVAL_PROPOSE = {
+		CORPO_TO_MB_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
-				from = {
+				has_ai_personality = mirthful_bandits
+				from = { 
 					is_megacorp = yes
-					NOT = {
-						is_pirate_empire = yes
-					}
+					NOT = { is_pirate_empire = yes }
 				}
 			}
 		}
-		CR_PE_MAKE_RIVAL_PROPOSE = {
+		MB_PE_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				from = { has_ai_personality = cunning_raiders }
+				from = { has_ai_personality = mirthful_bandits }
 				is_pirate_empire = yes
-				NOT = { has_ai_personality = cunning_raiders }
+				NOT = { has_ai_personality = mirthful_bandits }
 			}
 		}
-		PE_CR_MAKE_RIVAL_PROPOSE = {
+		PE_MB_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
-				from = {
-					is_pirate_empire = yes
-				}
+				has_ai_personality = mirthful_bandits
+				from = { is_pirate_empire = yes }
 			}
 		}
-		CR_TO_CR_MAKE_RIVAL_PROPOSE = {
+		MB_TO_CR_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				from = { has_ai_personality = cunning_raiders }
 			}
 		}
 	}
 	accept = {
-		CR_DFLT_MAKE_RIVAL_ACCEPT_HOSTILE = {
+		MB_DFLT_MAKE_RIVAL_ACCEPT_HOSTILE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_pirate_empire = yes
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -98,15 +87,15 @@ action_make_rival = {
 				}
 			}
 		}
-		CR_DFLT_MAKE_RIVAL_ACCEPT_NEUTRAL = {
+		MB_DFLT_MAKE_RIVAL_ACCEPT_NEUTRAL = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_pirate_empire = yes
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -115,15 +104,15 @@ action_make_rival = {
 				}
 			}
 		}
-		CR_DFLT_MAKE_RIVAL_ACCEPT_FRIENDLY = {
+		MB_DFLT_MAKE_RIVAL_ACCEPT_FRIENDLY = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_pirate_empire = yes
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -133,14 +122,14 @@ action_make_rival = {
 				}
 			}
 		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_HOSTILE = {
+		DFLT_MB_MAKE_RIVAL_ACCEPT_HOSTILE = {
 			weight = { weight = 1000 }
 			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				NOR = {
 					is_pirate_empire = yes
 					is_megacorp = yes
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 				OR = {
 					is_unfriendly_to = FROM
@@ -149,14 +138,14 @@ action_make_rival = {
 				}
 			}
 		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_NEUTRAL = {
+		DFLT_MB_MAKE_RIVAL_ACCEPT_NEUTRAL = {
 			weight = { weight = 1000 }
 			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				NOR = {
 					is_pirate_empire = yes
 					is_megacorp = yes
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 				OR = {
 					is_neutral_to = FROM
@@ -164,14 +153,14 @@ action_make_rival = {
 				}
 			}
 		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_FRIENDLY = {
+		DFLT_MB_MAKE_RIVAL_ACCEPT_FRIENDLY = {
 			weight = { weight = 1000 }
 			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				NOR = {
 					is_pirate_empire = yes
 					is_megacorp = yes
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 				OR = {
 					is_friendly_to = FROM
@@ -180,31 +169,49 @@ action_make_rival = {
 				}
 			}
 		}
-		CR_TO_CORPO_RIVAL_ACCEPT = {
+		MB_TO_CORPO_RIVAL_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					is_megacorp = yes
 					NOT = { is_pirate_empire = yes }
 				}
 			}
 		}
-		CORPO_TO_CR_RIVAL_ACCEPT = {
+		CORPO_TO_MB_RIVAL_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				is_megacorp = yes
 				NOT = { is_pirate_empire = yes }
 			}
 		}
-		CR_TO_CR_RIVAL_ACCEPT = {
+		MB_TO_PE_RIVAL_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
+				FROM = {
+					is_pirate_empire = yes
+				}
+			}
+		}
+		PE_TO_MB_RIVAL_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				is_pirate_empire = yes
+				NOT = { has_ai_personality = mirthful_bandits }
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		MB_TO_CR_RIVAL_ACCEPT = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					has_ai_personality = cunning_raiders
-					NOT = { is_pirate_empire = yes }
 				}
 			}
 		}
@@ -213,22 +220,22 @@ action_make_rival = {
 
 action_end_rivalry = {
 	select = {
-		CR_END_RIVAL_SELECT = {
+		MB_END_RIVAL_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
 	propose = {
-		CR_DFLT_END_RIVALRY_FRIENDLY = {
+		MB_DFLT_END_RIVALRY_FRIENDLY = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -238,14 +245,14 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_DFLT_END_RIVALRY_NEUTRAL = {
+		MB_DFLT_END_RIVALRY_NEUTRAL = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -254,14 +261,14 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_DFLT_END_RIVALRY_HOSTILE = {
+		MB_DFLT_END_RIVALRY_HOSTILE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOR = {
 						is_megacorp = yes
-						has_ai_personality = cunning_raiders
+						has_ai_personality = mirthful_bandits
 					}
 				}
 				OR = {
@@ -271,14 +278,14 @@ action_end_rivalry = {
 				}
 			}
 		}
-		DFLT_CR_END_RIVALRY_HOSTILE = {
+		DFLT_MB_END_RIVALRY_HOSTILE = {
 			weight = { weight = 1000 }
 			trigger = {
 				NOR = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 					is_megacorp = yes
 				}
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				OR = {
 					is_unfriendly_to = FROM
 					is_domineering_to = FROM
@@ -286,10 +293,10 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_TO_CORPO_END_RIVALRY_FRIENDLY = {
+		MB_TO_CORPO_END_RIVALRY_FRIENDLY = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = { is_megacorp = yes }
 				OR = {
 					is_friendly_to = FROM
@@ -298,16 +305,16 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CORPO_TO_CR_END_RIVALRY_FRIENDLY= {
+		CORPO_TO_MB_END_RIVALRY_FRIENDLY= {
 			weight = { weight = 1000 }
 			trigger = {
 				NOR = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 					is_megacorp = yes
 					is_pirate_empire = yes
 					has_ethic = ethic_gestalt_consciousness
 				}
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				OR = {
 					is_friendly_to = FROM
 					is_cordial_to = FROM
@@ -315,10 +322,10 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_TO_CORPO_END_RIVALRY_NEUTRAL= {
+		MB_TO_CORPO_END_RIVALRY_NEUTRAL= {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = { is_megacorp = yes }
 				OR = {
 					is_neutral_to = FROM
@@ -326,21 +333,21 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CORPO_TO_CR_END_RIVALRY_NEUTRAL= {
+		CORPO_TO_MB_END_RIVALRY_NEUTRAL= {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megacorp = yes
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				OR = {
 					is_neutral_to = FROM
 					is_threatened_to = FROM
 				}
 			}
 		}
-		CR_TO_CORPO_END_RIVALRY_HOSTILE= {
+		MB_TO_CORPO_END_RIVALRY_HOSTILE= {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = { is_megacorp = yes }
 				OR = {
 					is_unfriendly_to = FROM
@@ -350,11 +357,11 @@ action_end_rivalry = {
 			}
 			
 		}
-		CORPO_TO_CR_END_RIVALRY_HOSTILE= {
+		CORPO_TO_MB_END_RIVALRY_HOSTILE= {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megacorp = yes
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { has_ai_personality = mirthful_bandits }
 				OR = {
 					is_unfriendly_to = FROM
 					is_threatened_to = FROM
@@ -362,20 +369,20 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_TO_CR_END_RIVALRY= {
+		MB_TO_CR_END_RIVALRY= {
 			weight = { weight = 10000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = { has_ai_personality = cunning_raiders }
 			}
 		}
 	}
 	accept = {
 		# MBs to Default
-		CR_DFLT_END_RIVALRY_ACCEPT = {
+		MB_DFLT_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					NOT = {
 						is_pirate_empire = yes
@@ -383,20 +390,20 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CR_TO_CORPO_END_RIVALRY_ACCEPT = {
+		MB_TO_CORPO_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					is_megacorp = yes
 				}
 			}
 		}
-		CR_TO_CORPO_END_RIVALRY_ACCEPT = {
+		MB_TO_CR_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { has_ai_personality = cunning_raiders }
+				has_ai_personality = mirthful_bandits
+				FROM = { has_ai_personality = cunning_raiders}
 			}
 		}
 	}
@@ -405,29 +412,29 @@ action_end_rivalry = {
 action_declare_war = {
 	propose = {
 		# Generic
-		CR_DOW_PROPOSE_01 = {
+		MB_DOW_PROPOSE_01 = {
 			weight = { weight = 10000 }
 			trigger = {
 				FROM = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
 		# Pirates
-		CR_DOW_PROPOSE_02 = {
+		MB_DOW_PROPOSE_02 = {
 			weight = { weight = 10000 }
 			trigger = {
 				FROM = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 				is_pirate_empire = yes
 			}
 		}
 		# Subject
-		CR_VASSAL_DOW_PROPOSE = {
+		MB_VASSAL_DOW_PROPOSE = {
 			weight = { weight = 10000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = {
 					exists = overlord
 					overlord = { is_same_value = ROOT }
@@ -437,26 +444,26 @@ action_declare_war = {
 	}
 	accept = {
 		# Generic
-		CR_DOW_ACCEPT = {
+		MB_DOW_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 		# Pirates
-		CR_DOW_ACCEPT = {
+		MB_DOW_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
 	propose_vote = {
-		CR_DOW_VOTE_PROPOSE = {
+		MB_DOW_VOTE_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				from = { has_ai_personality = cunning_raiders }
+				from = { has_ai_personality = mirthful_bandits }
 			}
 		}
 	}
@@ -464,68 +471,68 @@ action_declare_war = {
 
 action_offer_peace = {
 	consider = {
-		CR_CONSIDER = {
+		MB_CONSIDER = {
 			weight = { weight = 100 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}
 	propose = {
 		# Generic Empires
-		CR_PEACE_PROPOSE_01 = {
+		MB_PEACE_PROPOSE_01 = {
 			weight = { weight = 1000 }
 			trigger = {
 				from = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
 		# Peace with Pirates
-		CR_PEACE_PROPOSE_03 = {
+		MB_PEACE_PROPOSE_03 = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_pirate_empire = yes 
 				from = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
 		# Cunning Raiders
-		CR_PEACE_PROPOSE_04 = {
+		MB_PEACE_PROPOSE_04 = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
 				from = {
-					has_ai_personality = cunning_raiders
+					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
 	}
 	accept = {
 		# Generic Empires
-		CR_PEACE_ACCEPT_01 = {
+		MB_PEACE_ACCEPT_01 = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				
 			}
 		}
 		# Peace with PEans
-		CR_PEACE_ACCEPT_02 = {
+		MB_PEACE_ACCEPT_02 = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 				
 				FROM = { is_pirate_empire = yes	}
 			}
 		}
 	}
 	refuse = {
-		CR_PEACE_REFUSE = {
+		MB_PEACE_REFUSE = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = cunning_raiders
+				has_ai_personality = mirthful_bandits
 			}
 		}
 	}

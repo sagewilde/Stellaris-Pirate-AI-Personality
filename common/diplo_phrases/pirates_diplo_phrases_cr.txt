@@ -109,7 +109,10 @@
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
             }
-            FROM = { is_gestalt = yes }
+            FROM = { 
+                is_gestalt = yes
+                is_machine_empire = no
+            }
         }
     }
     CR_HOSTILE_GREETING_HM_02 = {
@@ -121,7 +124,25 @@
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
             }
-            FROM = { is_gestalt = yes }
+            FROM = { 
+                is_gestalt = yes
+                is_machine_empire = no
+            }
+        }
+    }
+    CR_HOSTILE_GREETING_07 = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            NOT = { is_at_war_with = FROM }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+            }
+            FROM = { 
+                is_megacorp = yes 
+                is_special_personality = no 
+            }
         }
     }
     CR_NEUTRAL_GREETING_01 = {
