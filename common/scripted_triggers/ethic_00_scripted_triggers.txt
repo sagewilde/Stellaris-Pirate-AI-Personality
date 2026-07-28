@@ -1,3 +1,73 @@
+#	Example:
+#
+#	example_trigger = {
+#		is_country_type = default
+#		num_communications > 0
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+#
+has_encountered_other_species = {
+	OR = {
+		has_origin = origin_syncretic_evolution
+		has_origin = origin_necrophage
+		has_origin = origin_payback
+		has_civic = civic_machine_servitor	
+		has_valid_civic = civic_machine_cult_machine	#Modded
+		has_valid_civic = civic_symbiotic_race			#Modded
+		has_valid_civic = civic_slave_race				#Modded
+		num_communications > 0
+		any_owned_species = {
+			NOT = { has_trait = "trait_mechanical" }
+			NOT = { is_same_species = prev }
+		}
+	}
+}
+
+is_relentless_industrialist_empire = {
+	OR = {
+		has_valid_civic = civic_relentless_industrialists
+		has_valid_civic = civic_corporate_relentless_industrialists
+		has_valid_civic = civic_relentless_industrialists_machine_cult
+	}
+}
+
+is_democratic_authority = {
+	OR = {
+		has_authority = auth_democratic
+		has_authority = auth_direct_democratic
+	}
+}
+
+# Country scope trigger
+# NOTE: Any time you update this trigger, update the can_nomad_settle game rule as well
+nomad_can_settle_trigger = {
+	has_nomads_dlc = yes
+	OR = {
+		AND = {
+			OR = {
+				has_tradition = tr_adaptability_finish
+				has_tradition = tr_versatility_finish
+			}
+			NOR = {
+				has_origin = origin_sacred_path
+				has_origin = origin_heirs_of_the_khan
+				has_origin = origin_heirs_of_the_khan_corporate
+				has_origin = origin_forever_cruise
+			}
+		}
+		AND = {
+			has_origin = origin_forever_cruise
+			has_country_flag = forever_cruise_planetfall
+		}
+	}
+}
+
 has_opposing_ethics = {
 	OR = {
 		AND = {
@@ -199,8 +269,15 @@ is_fanatic = {
 
 is_capitalist = {
 	OR = {
-		is_capitalism = yes
-		is_megacorp = yes
+		has_ethic = ethic_capitalism
+		has_ethic = ethic_fanatic_capitalism
+		AND = {
+			is_megacorp = yes
+			NOR = {
+				has_ethic = ethic_socialism
+				has_ethic = ethic_fanatic_socialism
+			}
+		}
 		has_civic = civic_corporate_dominion
 		has_civic = civic_merchant_guilds
 	}
@@ -290,4 +367,3 @@ subject_overlord_opposing_ethics = {
 		subject_capitalism_overlord_opposing = yes
 	}
 }
-

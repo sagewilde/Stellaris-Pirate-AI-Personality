@@ -349,7 +349,6 @@ diplomatic_stance = {
 					has_communications = root
 					is_country_type = default
 					is_subject = no
-					values_others = yes
 					relative_power = {
 						who = root
 						category = economy
