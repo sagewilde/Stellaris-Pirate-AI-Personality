@@ -1,6 +1,6 @@
 ### Pirate Greetings
-  greetings = {
-      MB_HOSTILE_GREETING_01 = {
+greetings = {
+    MB_HOSTILE_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -33,7 +33,7 @@
   			}
   		}
   	}
-      MB_HOSTILE_GREETING_04 = {
+    MB_HOSTILE_GREETING_02 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -42,107 +42,312 @@
   				is_hostile_to = FROM
   				is_unfriendly_to = FROM
   			}
-  		}
-      }
-      MB_HOSTILE_GREETING_05 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			NOT = { is_at_war_with = FROM }
-  			FROM = {
-  				OR = {
-  					is_a_huge_jerk = yes
-  				}
-  			}
-  			OR = {
-  				is_hostile_to = FROM
-  				is_unfriendly_to = FROM
-  				is_domineering_to = FROM
-  			}
-  		}
-      }
-      MB_HOSTILE_GREETING_CORP_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			NOT = { is_at_war_with = FROM }
-  			FROM = {
-  				has_authority = auth_corporate
-  				is_worker_coop_empire = no
-  			}0
-  		}
-  		OR = {
-  			is_hostile_to = FROM
-  			is_unfriendly_to = FROM
-  			is_domineering_to = FROM
   		}
     }
-		MB_HOSTILE_GREETING_CORP_02 = {
+    MB_HOSTILE_GREETING_03 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
-  			NOT = { is_at_war_with = FROM }
-  			FROM = {
-  				has_authority = auth_corporate
-  				is_worker_coop_empire = no
-  			}0
-  		}
-  		OR = {
-  			is_hostile_to = FROM
-  			is_unfriendly_to = FROM
-  			is_domineering_to = FROM
-  		}
-      }
-      MB_HOSTILE_GREETING_HM_01 = {
-  		weight = { weight = 10000 }
-  		NOT = { is_at_war_with = FROM }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			FROM = {is_gestalt = yes }
-  		}
-  		OR = {
-  			is_hostile_to = FROM
-  			is_unfriendly_to = FROM
-  			is_domineering_to = FROM
-  		}
-      }
-      MB_MECH_HOSTILE_GREETING_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			FROM = { is_species_class = ROBOT }
   			NOT = { is_at_war_with = FROM }
   			OR = {
   				is_hostile_to = FROM
   				is_unfriendly_to = FROM
   			}
   		}
-      }
-      MB_PROTECTIVE_GREETING_01 = {
+    }
+    MB_HOSTILE_GREETING_04 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+			FROM = { is_pirate_empire = yes }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_05 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+			FROM = {
+				is_authoritarian_or_homicidal = yes
+			}
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_CORP_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = {
+  				is_megacorp = yes
+  			}
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+				is_domineering_to = FROM
+			}
+  		}
+    }
+	MB_HOSTILE_GREETING_CORP_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = {
+  				is_megacorp = yes
+  				is_worker_coop_empire = no
+  			}
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+				is_domineering_to = FROM
+			}
+  		}
+    }
+    MB_HOSTILE_GREETING_HM = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			FROM = { is_gestalt = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+				is_domineering_to = FROM
+			}
+  		}
+    }
+    MB_HOSTILE_GREETING_MECH = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { is_species_class = ROBOT }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_PAC = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_pacifist }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_MIL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_militarist }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_AUT_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_authoritarian }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_AUT_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { 
+				has_ethic = ethic_fanatic_authoritarian 
+				OR = {
+					has_valid_civic = civic_police_state
+					has_valid_civic = civic_dystopian_society
+				}
+			}
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_EGL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_egalitarian }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_MAT = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_materialist }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_SPR = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_spiritualist }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_XPB = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_xenophobe }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_XPL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_xenophile }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_SOC = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_socialism }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_CAP_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { 
+				has_ethic = ethic_fanatic_capitalism 
+				OR = {
+					is_pirate_empire = yes
+					is_criminal_syndicate = yes
+				}
+			}
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_CAP_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { 
+				has_ethic = ethic_fanatic_capitalism 
+				NOR = {
+					is_pirate_empire = yes
+					is_criminal_syndicate = yes
+				}
+			}
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_ECO = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_green }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_HOSTILE_GREETING_IND = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			FROM = { has_ethic = ethic_fanatic_industrial }
+  			OR = {
+  				is_hostile_to = FROM
+  				is_unfriendly_to = FROM
+  			}
+  		}
+    }
+    MB_PROTECTIVE_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
   			is_protective_to = FROM
   		}
-      }
-      MB_DOMINEERING_GREETING_01 = {
-          weight = { weight = 10000 }
-          trigger = {
-              has_ai_personality = mirthful_bandits
-              NOT = { is_at_war_with = FROM }
-              is_domineering_to = FROM
-          }
-      }
-      MB_NEUTRAL_GREETING_01 = {
+    }
+    MB_DOMINEERING_GREETING = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = mirthful_bandits
+            NOT = { is_at_war_with = FROM }
+            is_domineering_to = FROM
+        }
+    }
+    MB_NEUTRAL_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_NEUTRAL_GREETING_02 = {
+    }
+    MB_NEUTRAL_GREETING_02 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -150,24 +355,24 @@
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_NEUTRAL_GREETING_03 = {
+    }
+    MB_NEUTRAL_GREETING_03 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
               FROM = {
                   OR = {
-                      has_ethic = "ethic_industrial"
-                      has_ethic = "ethic_fanatic_industrial"
-                      is_materialist = yes
-                  }
-              }
+                    has_ethic = "ethic_industrial"
+                    has_ethic = "ethic_fanatic_industrial"
+                    is_materialist = yes
+                }
+            }
   			NOT = { is_same_species = FROM }
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_NEUTRAL_GREETING_04 = {
+    }
+    MB_NEUTRAL_GREETING_04 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -176,8 +381,8 @@
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_NEUTRAL_GREETING_05 = {
+    }
+    MB_NEUTRAL_GREETING_05 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -185,25 +390,25 @@
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_NEUTRAL_GREETING_06 = {
+    }
+    MB_NEUTRAL_GREETING_06 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
   			is_neutral_to = FROM
   		}
-      }
-      MB_MECH_NEUTRAL_GREETING_01 = {
+    }
+    MB_MECH_NEUTRAL_GREETING_01 = {
   		weight = { weight = 10000 }
           trigger = {
               has_ai_personality = mirthful_bandits
               FROM = { is_species_class = ROBOT }
               NOT = { is_at_war_with = FROM }
               is_neutral_to = FROM
-          }
-      }
-      MB_THREATENED_GREETING_01 = {
+    	}
+    }
+    MB_THREATENED_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -211,20 +416,20 @@
   			is_threatened_to = FROM
   		}
   	}
-      MB_FRIENDLY_GREETING_01 = {
+    MB_FRIENDLY_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
+  			FROM = { NOT = { has_ethic = ethic_gestalt_consciousness } }
   			OR = {
   				is_friendly_to = FROM
   				is_cordial_to = FROM
   				is_protective_to = FROM
   			}
-  			FROM = { NOT = { has_ethic = ethic_gestalt_consciousness } }
   		}
-      }
-      MB_FRIENDLY_GREETING_02 = {
+    }
+    MB_FRIENDLY_GREETING_02 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -236,17 +441,11 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_FRIENDLY_GREETING_03 = {
+    }
+    MB_FRIENDLY_GREETING_03 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
-  			FROM = {
-                  OR = {
-                      is_pacifist = yes
-                      is_egalitarian = yes
-                  }
-  			}
   			NOT = { is_at_war_with = FROM }
   			OR = {
   				is_friendly_to = FROM
@@ -254,8 +453,8 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_FRIENDLY_GREETING_04 = {
+    }
+    MB_FRIENDLY_GREETING_04 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -270,11 +469,11 @@
                       has_ethic = "ethic_fanatic_green"
                       has_ethic = "ethic_green"
                       has_ai_personality = benevolent_wilderness
-                  }
+                }
   			}
   		}
-      }
-      MB_FRIENDLY_GREETING_05 = {
+    }
+    MB_FRIENDLY_GREETING_05 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -285,23 +484,17 @@
   				is_protective_to = FROM
   			}
   			FROM = {
-                  NOT =  {
-                      is_lithoid_empire = yes
-                      is_species_class = ROBOT
-                  }
-              }
+                NOT =  {
+                    is_lithoid_empire = yes
+                    is_species_class = ROBOT
+                }
+            }
   		}
-      }
-      MB_FRIENDLY_GREETING_06 = {
+    }
+    MB_FRIENDLY_GREETING_06 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
-  			FROM = {
-                  OR = {
-                      is_xenophile = yes
-                      is_spiritualist = yes
-                  }
-  			}
   			NOT = { is_at_war_with = FROM }
   			OR = {
   				is_friendly_to = FROM
@@ -309,8 +502,20 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_FRIENDLY_GREETING_HUMAN_01 = {
+    }
+    MB_FRIENDLY_GREETING_HUMAN_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = mirthful_bandits
+  			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+  		}
+    }
+    MB_FRIENDLY_GREETING_HUMAN_02 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -322,21 +527,8 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_FRIENDLY_GREETING_HUMAN_02 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			FROM = { is_human_species = yes }
-  			NOT = { is_at_war_with = FROM }
-  			OR = {
-  				is_friendly_to = FROM
-  				is_cordial_to = FROM
-  				is_protective_to = FROM
-  			}
-  		}
-      }
-      MB_FRIENDLY_GREETING_AQUATIC_01 = {
+    }
+    MB_FRIENDLY_GREETING_AQUATIC_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -356,8 +548,8 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_MECH_FRIENDLY_GREETING_01 = {
+    }
+    MB_MECH_FRIENDLY_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -369,15 +561,15 @@
   				is_protective_to = FROM
   			}
   		}
-      }
-      MB_WAR_GREETING_01 = {
+    }
+    MB_WAR_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
   		}
-      }
-      MB_WAR_GREETING_02 = {
+    }
+    MB_WAR_GREETING_02 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -391,8 +583,8 @@
   				}
   			}
   		}
-      }
-      MB_WAR_GREETING_03 = {
+    }
+    MB_WAR_GREETING_03 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -402,43 +594,43 @@
                       has_authority = auth_imperial
                       has_authority = auth_dictatorial
                       has_authority = auth_corporate
-                  }
+                }
   			}
   		}
-      }
-      MB_WAR_GREETING_04 = {
+    }
+    MB_WAR_GREETING_04 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
   			FROM = { has_ethic = ethic_gestalt_consciousness }
   		}
-      }
-      MB_WAR_GREETING_05 = {
+    }
+    MB_WAR_GREETING_05 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
   			is_domineering_to = FROM
   		}
-      }
-      MB_WAR_GREETING_06 = {
+    }
+    MB_WAR_GREETING_06 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_democratic_authority = yes
   			is_at_war_with = FROM
   		}
-      }
-      MB_WAR_GREETING_HUMAN_01 = {
+    }
+    MB_WAR_GREETING_HUMAN_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			is_at_war_with = FROM
   			FROM = { is_human_species = yes }
   		}
-      }
-      MB_VASSAL_GREETING_01 = {
+    }
+    MB_VASSAL_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -458,10 +650,11 @@
   			is_disloyal_to = FROM
   		}
   	}
-  }
-  action_insult = {
+}
+
+action_insult = {
   	select = {
-  		MB_PREINSULT_PIRATE_01 = {
+  		MB_PREINSULT_01 = {
   		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
@@ -474,7 +667,7 @@
   				}
   			}
   		}
-  		MB_PREINSULT_PIRATE_02 = {
+  		MB_PREINSULT_02 = {
   		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
@@ -484,7 +677,7 @@
   				}
   			}
   		}
-  		MB_PREINSULT_PIRATE_03 = {
+  		MB_PREINSULT_03 = {
   		weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
@@ -497,148 +690,149 @@
   			}
   		}
   	}
+# 	propose = {
+#  		MB_INSULT_01 = {
+#  			trigger = {
+#  					has_ai_personality = mirthful_bandits
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_02 = {
+#  			trigger = {
+#  				OR = {
+#  					has_ai_personality = mirthful_bandits
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_03 = {
+#  			trigger = {
+#  				OR = {
+#  					has_ai_personality = mirthful_bandits
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_04 = {
+#  			trigger = {
+#  				has_ai_personality = mirthful_bandits
+#  				wears_clothes = no
+#  				FROM = {
+#  					wears_clothes = yes
+#  					NOR = {
+#  						is_species_class = ROBOT
+#  						has_ethic = ethic_gestalt_consciousness
+#  					}
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_05 = {
+#  			trigger = {
+#  				has_ai_personality = mirthful_bandits
+#  				wears_clothes = no
+#  				is_species_class = MAM
+#  				FROM = {
+#  					wears_clothes = yes
+#  					NOR = {
+#  						is_species_class = ROBOT
+#  						has_ethic = ethic_gestalt_consciousness
+#  					}
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_06 = {
+#  			trigger = {
+#  				has_ai_personality = mirthful_bandits
+#  				wears_clothes = no
+#  				is_species_class = AVI
+#  				FROM = {
+#  					wears_clothes = yes
+#  					NOR = {
+#  						is_species_class = ROBOT
+#  						has_ethic = ethic_gestalt_consciousness
+#  					}
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_07 = {
+#  			trigger = {
+#  				has_ai_personality = mirthful_bandits
+#  				OR = {
+#  					is_spiritualist = yes
+#  					has_trait = trait_psionic
+#  				}
+#  				FROM = {
+#  					is_lithoid_empire = yes
+#  					NOR = {
+#  						is_spiritualist = yes
+#  						has_trait = trait_psionic
+#  					}
+#  				}
+#  			}
+#  		}
+#  	}
   	propose = {
-  		MB_INSULT_PIRATE_01 = {
+  		MB_INSULT_08 = {
   			trigger = {
-  					has_ai_personality = mirthful_bandits
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_02 = {
-  			trigger = {
-  				OR = {
-  					has_ai_personality = mirthful_bandits
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_03 = {
-  			trigger = {
-  				OR = {
-  					has_ai_personality = mirthful_bandits
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_04 = {
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				wears_clothes = no
-  				FROM = {
-  					wears_clothes = yes
-  					NOR = {
-  						is_species_class = ROBOT
-  						has_ethic = ethic_gestalt_consciousness
-  					}
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_05 = {
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				wears_clothes = no
-  				is_species_class = MAM
-  				FROM = {
-  					wears_clothes = yes
-  					NOR = {
-  						is_species_class = ROBOT
-  						has_ethic = ethic_gestalt_consciousness
-  					}
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_06 = {
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				wears_clothes = no
-  				is_species_class = AVI
-  				FROM = {
-  					wears_clothes = yes
-  					NOR = {
-  						is_species_class = ROBOT
-  						has_ethic = ethic_gestalt_consciousness
-  					}
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_07 = {
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				OR = {
-  					is_spiritualist = yes
-  					has_trait = trait_psionic
-  				}
-  				FROM = {
-  					is_lithoid_empire = yes
-  					NOR = {
-  						is_spiritualist = yes
-  						has_trait = trait_psionic
-  					}
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_08 = {
-  			trigger = {
+				NOT = { has_ethic = ethic_gestalt_consciousness }
   				FROM = { has_ai_personality = mirthful_bandits }
   			}
   		}
   	}
-  	propose = {
-  		MB_INSULT_PIRATE_09 = {
-  			trigger = {
-  				FROM = { has_ai_personality = mirthful_bandits }
-  				is_megacorp = yes
-  				NOR = {
-  					has_valid_civic = civic_worker_coop
-  					has_ethic = ethic_green
-  					has_ethic = ethic_fanatic_green
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_10 = {
-  			trigger = {
-  				FROM = { has_ai_personality = mirthful_bandits }
-  				NOT = { has_ethic = ethic_gestalt_consciousness }
-  				NOR = {
-  					has_ethic = ethic_fanatic_green
-  					has_ethic = ethic_green
-  					is_pacifist = no
-  					is_egalitarian = no
-  					has_ethic = ethic_socialism
-  				}
-  			}
-  		}
-  	}
-  	propose = {
-  		MB_INSULT_PIRATE_11 = {
-  			trigger = {
-  				FROM = { has_ai_personality = mirthful_bandits }
-  				OR = {
-  					is_militarist = yes
-  					is_xenophobe = yes
-  				}
-  				NOR = {
-  					is_species_class = ROBOT
-  					has_ethic = ethic_gestalt_consciousness
-  				}
-  			}
-  		}
-  	}
+#  	propose = {
+#  		MB_INSULT_09 = {
+#  			trigger = {
+#  				FROM = { has_ai_personality = mirthful_bandits }
+#  				is_megacorp = yes
+#  				NOR = {
+#  					has_valid_civic = civic_worker_coop
+#  					has_ethic = ethic_green
+#  					has_ethic = ethic_fanatic_green
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_10 = {
+#  			trigger = {
+#  				FROM = { has_ai_personality = mirthful_bandits }
+#  				NOT = { has_ethic = ethic_gestalt_consciousness }
+#  				NOR = {
+#  					has_ethic = ethic_fanatic_green
+#  					has_ethic = ethic_green
+#  					is_pacifist = no
+#  					is_egalitarian = no
+#  					has_ethic = ethic_socialism
+#  				}
+#  			}
+#  		}
+#  	}
+#  	propose = {
+#  		MB_INSULT_11 = {
+#  			trigger = {
+#  				FROM = { has_ai_personality = mirthful_bandits }
+#  				OR = {
+#  					is_militarist = yes
+#  					is_xenophobe = yes
+#  				}
+#  				NOR = {
+#  					is_species_class = ROBOT
+#  					has_ethic = ethic_gestalt_consciousness
+#  				}
+#  			}
+#  		}
+#  	}
   	accept = {
-  		MB_INSULTED_PIRATE_01 = {
+  		MB_INSULTED_01 = {
   			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
@@ -651,7 +845,7 @@
   				}
   			}
   		}
-  		MB_INSULTED_PIRATE_02 = {
+  		MB_INSULTED_02 = {
   			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
@@ -661,38 +855,11 @@
   				}
   			}
   		}
-  		MB_INSULTED_PIRATE_03 = {
+  		MB_INSULTED_03 = {
   			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
-  					is_hostile_to = FROM
-  					is_domineering_to = FROM
-  					is_unfriendly_to = FROM
-  				}
-  			}
-  		}
-  		MB_INSULTED_PIRATE_04 = {
-  			weight = { weight = 10000 }
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				OR = {
-  					is_neutral_to = FROM
-  					is_threatened_to = FROM
-  					is_hostile_to = FROM
-  					is_domineering_to = FROM
-  					is_unfriendly_to = FROM
-  				}
-  			}
-  		}
-  		MB_INSULTED_PIRATE_05 = {
-  			weight = { weight = 10000 }
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				FROM = { is_authoritarian = yes }
-  				OR = {
-  					is_neutral_to = FROM
-  					is_threatened_to = FROM
   					is_hostile_to = FROM
   					is_domineering_to = FROM
   					is_unfriendly_to = FROM
@@ -700,4 +867,4 @@
   			}
   		}
   	}
-  }
+}
