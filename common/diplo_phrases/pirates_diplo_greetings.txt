@@ -1,0 +1,611 @@
+greetings = {
+	# Addressing Pirate Empires
+	CORP_PE_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CORP_PE_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	TO_PE_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			is_pirate_empire = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	TO_PE_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			is_pirate_empire = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	TO_PE_HOSTILE_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			is_pirate_empire = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	TO_PE_GREETING_HOSTILE_EG_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			FROM = { 
+				is_slaver = yes
+				is_pirate_empire = yes
+			}
+			is_egalitarian = yes
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CORP_PE_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_pirate_empire = no
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	TO_PE_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	TO_PE_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	TO_PE_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	TO_PE_THREATENED_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = from }
+			is_threatened_to = FROM
+		}
+	}
+	CORP_PE_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_pirate_empire = no
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	TO_PE_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	TO_PE_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	TO_PE_FRIENDLY_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+				is_overlord_to = FROM
+			}
+		}
+	}
+	TO_PE_WAR_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			is_pirate_empire = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	TO_PE_WAR_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	TO_PE_WAR_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = no
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	TO_PE_WAR_GREETING_EG_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_egalitarian = yes
+			FROM = { 
+				is_slaver = yes
+				is_pirate_empire = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	TO_PE_OVERLORD_GREETING_01 = {
+		weight = { weight = 3 }
+		trigger = {
+			is_gestalt = no
+			is_pirate_empire = no
+			is_overlord_to = FROM
+			FROM = { is_pirate_empire = yes }
+		}
+	}
+	TO_PE_VASSAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOR = {
+				is_at_war_with = FROM
+				is_disloyal_to = FROM
+			}
+		}
+	}
+	TO_PE_VASSAL_GREETING_DISLOYAL_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			is_disloyal_to = FROM
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	TO_PE_VASSAL_DOMINEERING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_gestalt = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			is_domineering_to = FROM
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+
+	# Pirate Empire Greetings
+	PE_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { NOT = { is_pirate_empire = yes } }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	PE_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { NOT = { is_pirate_empire = yes } }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	PE_PE_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	PE_PE_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	PE_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+			}
+		}
+	}
+	PE_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+			}
+		}
+	}
+	PE_PE_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	PE_PE_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+	}
+	PE_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = { 
+			is_pirate_empire = yes
+			is_special_personality = no
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	PE_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = { 
+			is_pirate_empire = yes
+			is_special_personality = no
+			is_in_federation_with = FROM
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	PE_PE_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = { 
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { is_pirate_empire = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	PE_WAR_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			is_at_war_with = FROM
+		}
+	}
+	PE_WAR_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			is_at_war_with = FROM
+		}
+	}
+	PE_WAR_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { 
+				is_megacorp = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	PE_PE_WAR_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			FROM = { 
+				is_pirate_empire = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	PE_VASSAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOR = {
+				is_at_war_with = FROM
+				is_disloyal_to = FROM
+			}
+		}
+	}
+	PE_VASSAL_GREETING_DISLOYAL_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			is_disloyal_to = FROM
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	PE_VASSAL_DOMINEERING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_pirate_empire = yes
+			is_special_personality = no
+			is_domineering_to = FROM
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+}
