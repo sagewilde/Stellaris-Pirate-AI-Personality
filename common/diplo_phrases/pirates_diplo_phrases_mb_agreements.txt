@@ -1404,7 +1404,7 @@ action_embassy = {
 
 action_recall_embassy = {
 	select = {
-		MB_RECALL_EMBASSY_FRIENDLY = {
+		MB_RECALL_EMBASSY_SELECT_FRIENDLY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -1415,7 +1415,7 @@ action_recall_embassy = {
 				}
 			}
 		}
-		MB_RECALL_EMBASSY_NEUTRAL = {
+		MB_RECALL_EMBASSY_SELECT_NEUTRAL = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -1425,7 +1425,7 @@ action_recall_embassy = {
 				}
 			}
 		}
-		MB_RECALL_EMBASSY_HOSTILE = {
+		MB_RECALL_EMBASSY_SELECT_HOSTILE = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
