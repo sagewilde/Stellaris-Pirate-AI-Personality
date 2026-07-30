@@ -420,6 +420,8 @@ action_declare_war = {
 		MB_DOW_PROPOSE_01 = {
 			weight = { weight = 10000 }
 			trigger = {
+				is_pirate_empire = no
+				NOT = { has_policy_flag = { slavery_allowed = yes } }
 				FROM = {
 					has_ai_personality = mirthful_bandits
 				}
@@ -428,12 +430,15 @@ action_declare_war = {
 		MB_DOW_PROPOSE_02 = {
 			weight = { weight = 10000 }
 			trigger = {
+				is_pirate_empire = no
+				NOT = { has_policy_flag = { slavery_allowed = yes } }
 				FROM = {
 					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
-		MB_DOW_PROPOSE_02 = {
+		# Slavers
+		MB_DOW_PROPOSE_03 = {
 			weight = { weight = 10000 }
 			trigger = {
 				has_policy_flag = { slavery_allowed = yes }
@@ -443,13 +448,14 @@ action_declare_war = {
 			}
 		}
 		# Pirates
-		MB_PE_DOW_PROPOSE = {
+		MB_DOW_PROPOSE_PE = {
 			weight = { weight = 10000 }
 			trigger = {
+				is_pirate_empire = yes
+				NOT = { has_policy_flag = { slavery_allowed = yes } }
 				FROM = {
 					has_ai_personality = mirthful_bandits
 				}
-				is_pirate_empire = yes
 			}
 		}
 		# Subject
@@ -466,14 +472,15 @@ action_declare_war = {
 	}
 	accept = {
 		# Generic
-		MB_DOW_ACCEPT = {
+		MB_DOW_ACCEPT_01 = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
 			}
 		}
 		# Pirates
-		MB_DOW_ACCEPT = {
+		MB_DOW_ACCEPT_PE = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -533,12 +540,10 @@ action_offer_peace = {
 		}
 	}
 	accept = {
-		# Generic Empires
 		MB_PEACE_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				
 			}
 		}
 	}

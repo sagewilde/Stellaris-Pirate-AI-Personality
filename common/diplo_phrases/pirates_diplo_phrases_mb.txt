@@ -1230,7 +1230,7 @@ greetings = {
 action_insult = {
   	select = {
   		MB_PREINSULT_01 = {
-  		weight = { weight = 10000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -1243,7 +1243,7 @@ action_insult = {
   			}
   		}
   		MB_PREINSULT_02 = {
-  		weight = { weight = 10000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -1253,7 +1253,7 @@ action_insult = {
   			}
   		}
   		MB_PREINSULT_03 = {
-  		weight = { weight = 10000 }
+  			weight = { weight = 10000 }
   			trigger = {
   				has_ai_personality = mirthful_bandits
   				OR = {
@@ -1407,39 +1407,59 @@ action_insult = {
 #  		}
 #  	}
   	accept = {
-  		MB_INSULTED_01 = {
-  			weight = { weight = 10000 }
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				OR = {
-  					is_friendly_to = FROM
-  					is_cordial_to = FROM
-  					is_protective_to = FROM
-  					is_loyal_to = FROM
-  					is_overlord_to = FROM
-  				}
-  			}
-  		}
-  		MB_INSULTED_02 = {
-  			weight = { weight = 10000 }
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				OR = {
-  					is_neutral_to = FROM
-  					is_threatened_to = FROM
-  				}
-  			}
-  		}
-  		MB_INSULTED_03 = {
-  			weight = { weight = 10000 }
-  			trigger = {
-  				has_ai_personality = mirthful_bandits
-  				OR = {
-  					is_hostile_to = FROM
-  					is_domineering_to = FROM
-  					is_unfriendly_to = FROM
-  				}
-  			}
-  		}
-  	}
+		MB_INSULTED_01 = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+					is_loyal_to = FROM
+					is_overlord_to = FROM
+				}
+			}
+		}
+		MB_INSULTED_02 = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+					is_disloyal_to = FROM
+				}
+			}
+		}
+		MB_INSULTED_03 = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+					is_disloyal_to = FROM
+				}
+			}
+		}
+		MB_INSULTED_PE = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = cunning_raiders
+				FROM = { is_pirate_empire = yes }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+					is_disloyal_to = FROM
+				}
+			}
+		}
+	}
 }

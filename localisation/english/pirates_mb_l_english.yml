@@ -156,7 +156,7 @@
  MB_DOW_PROPOSE_01:0 "We have watched you grow fat on the riches you've extracted from your people for too long. Stand and deliver!"
  MB_DOW_PROPOSE_02:0 "Nice coffers you have. It'd be a shame if someone, say... blew the doors on that bank vault. Open your digi-wallets. This is a stick-up."
  MB_DOW_PROPOSE_03:0 "We've stood by and watched you crush sapient xenos under an iron heel for too long. That ends, today! MATES! NO QUARTER FOR SLAVERS!!"
- MB_PE_DOW_PROPOSE:0 "An old [From.GetSpeciesAdj] spacer, blind in one [From.GetEyeName], slowly approaches the [Root.GetRulerTitle]. Slowly, solemnly, they press a piece of ancient paper into [Root.GetRulerName]'s [Root.GetHandName]. The only thing written upon it is a black spot."
+ MB_DOW_PROPOSE_PE:0 "An old [From.GetSpeciesAdj] spacer, blind in one [From.GetEyeName], slowly approaches the [Root.GetRulerTitle]. Slowly, solemnly, they press a piece of ancient paper into [Root.GetRulerName]'s [Root.GetHandName]. The only thing written upon it is a black spot."
  MB_VASSAL_DOW_PROPOSE:0 "You've kept us belowdecks for far too long. This is a mutiny, [From.GetRulerName]! Your reign ends here!"
  MB_DOW_ACCEPT_01:0 "An attack on one of us is an attack on all of us. All hands! Battle stations! Prepare to repel boarders!"
  MB_DOW_ACCEPT_02:0 "You're outmatched and outclassed, [From.GetSpeciesNamePlural]. We're twice the pirates you'll ever be!"
