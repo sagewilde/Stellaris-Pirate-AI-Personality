@@ -425,8 +425,25 @@ action_declare_war = {
 				}
 			}
 		}
-		# Pirates
 		MB_DOW_PROPOSE_02 = {
+			weight = { weight = 10000 }
+			trigger = {
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		MB_DOW_PROPOSE_02 = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_policy_flag = { slavery_allowed = yes }
+				FROM = {
+					has_ai_personality = mirthful_bandits
+				}
+			}
+		}
+		# Pirates
+		MB_PE_DOW_PROPOSE = {
 			weight = { weight = 10000 }
 			trigger = {
 				FROM = {
@@ -488,13 +505,14 @@ action_offer_peace = {
 		MB_PEACE_PROPOSE_01 = {
 			weight = { weight = 1000 }
 			trigger = {
+				is_pirate_empire = no
 				from = {
 					has_ai_personality = mirthful_bandits
 				}
 			}
 		}
 		# Peace with Pirates
-		MB_PEACE_PROPOSE_03 = {
+		MB_PEACE_PROPOSE_02 = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_pirate_empire = yes 
@@ -503,11 +521,11 @@ action_offer_peace = {
 				}
 			}
 		}
-		# Cunning Raiders
-		MB_PEACE_PROPOSE_04 = {
+		# Slavers
+		MB_PEACE_PROPOSE_03 = {
 			weight = { weight = 1000 }
 			trigger = {
-				has_ai_personality = mirthful_bandits
+				has_policy_flag = { slavery_allowed = yes }
 				from = {
 					has_ai_personality = mirthful_bandits
 				}
@@ -516,20 +534,11 @@ action_offer_peace = {
 	}
 	accept = {
 		# Generic Empires
-		MB_PEACE_ACCEPT_01 = {
+		MB_PEACE_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
 				
-			}
-		}
-		# Peace with PEans
-		MB_PEACE_ACCEPT_02 = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				
-				FROM = { is_pirate_empire = yes	}
 			}
 		}
 	}

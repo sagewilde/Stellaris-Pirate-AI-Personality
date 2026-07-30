@@ -1488,20 +1488,6 @@ action_demand_subjugation = {
 				has_ai_personality = cunning_raiders
 			}
 		}
-		# Accept Wilderness
-		CR_DEMAND_VASS_ACCEPT_02 = {
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { has_ai_personality = benevolent_wilderness }
-			}
-		}
-		# Accept Humans
-		CR_DEMAND_VASS_ACCEPT_3 = {
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { is_human_species = yes }
-			}
-		}
 	}
 	refuse = {
 		# Refuse
@@ -1509,23 +1495,6 @@ action_demand_subjugation = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		# Refuse Hostile
-		CR_DEMAND_VASS_REFUSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				NOT = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
 			}
 		}
 	}
@@ -1584,20 +1553,11 @@ action_demand_subsidiary = {
 		}
 	}
 	select = {
-		# Tankies
-		CR_DEMAND_SUBS_SELECT_01 = {
+		CR_DEMAND_SUBS_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		CR_DEMAND_SUBS_SELECT_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
@@ -1610,38 +1570,29 @@ action_demand_subsidiary = {
 		}
 	}
 	accept = {
-		# Tankies
+		# Pirates
 		CR_DEMAND_SUBS_ACCEPT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = { is_socialism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
-		# Capitalists
+		# Non-Pirates
 		CR_DEMAND_SUBS_ACCEPT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = no }
 			}
 		}
 	}
 	refuse = {
-		# Tankies
-		CR_DEMAND_SUBS_REFUSE_01 = {
+		CR_DEMAND_SUBS_REFUSE = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		CR_DEMAND_SUBS_REFUSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
@@ -1665,20 +1616,10 @@ action_ask_to_become_subsidiary = {
 		}
 	}
 	propose = {
-		# Tankies
 		CR_ASK_FOR_SUBS_PROPOSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		CR_ASK_FOR_SUBS_PROPOSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = { is_capitalism = yes }
 			}
 		}
 	}

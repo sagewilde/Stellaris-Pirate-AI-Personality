@@ -685,7 +685,7 @@ greetings = {
 				is_impoverished = yes 
 				NOR = {
 					is_lithoid_empire = yes
-					is_robotic_species = yes
+					is_robot_empire = yes
 				}
 			}
   			OR = {
@@ -740,7 +740,7 @@ greetings = {
   			NOT = { is_at_war_with = FROM }
   			FROM = { 
 				is_impoverished = yes 
-				is_robotic_species = yes
+				is_robot_empire = yes
 			}
   			OR = {
 				is_neutral_to = FROM
@@ -799,6 +799,432 @@ greetings = {
   			is_disloyal_to = FROM
   		}
   	}
+
+	# Addressing Mirthful Bandits
+	DFLT_MB_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CORP_MB_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	MECH_MB_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HM_MB_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	DFLT_MB_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	CORP_MB_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_threatened_to = FROM
+				is_neutral_to = FROM
+			}
+		}
+	}
+	MECH_MB_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_threatened_to = FROM
+				is_neutral_to = FROM
+			}
+		}
+	}
+	HM_MB_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	THREATENED_MB_GREETING = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			is_threatened_to = FROM
+		}
+	}
+	DFLT_MB_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	CORP_MB_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	MECH_MB_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	HM_MB_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+
+	# Pleas for Help
+	DFLT_GREETING_POOR_01 = {
+  		weight = { weight = 10000 }
+		trigger = {
+			is_country_type = default
+			is_impoverished = yes
+			NOR = {
+				is_robot_empire = yes
+				is_lithoid_empire = yes
+				has_ethic = ethic_gestalt_consciousness
+			}
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	DFLT_GREETING_POOR_02 = {
+  		weight = { weight = 10000 }
+		trigger = {
+			is_country_type = default
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			is_impoverished = yes
+			is_lithoid_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	DFLT_GREETING_POOR_03 = {
+  		weight = { weight = 10000 }
+		trigger = {
+			is_country_type = default
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			is_impoverished = yes
+			is_robot_empire = yes
+			OR = {
+				has_country_flag = synthetic_empire
+				is_individual_machine = yes
+			}
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	MECH_GREETING_POOR_01 = {
+  		weight = { weight = 10000 }
+		trigger = {
+			is_country_type = default
+			is_machine_empire = yes
+			is_impoverished = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	HM_GREETING_POOR_01 = {
+  		weight = { weight = 10000 }
+		trigger = {
+			is_country_type = default
+			has_ethic = ethic_gestalt_consciousness
+			NOT = { is_robot_empire = yes }
+			is_impoverished = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_anarchy_utopia
+					has_valid_civic = civic_anarchy_ideals
+					is_worker_coop_empire = yes
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
 }
 
 action_insult = {

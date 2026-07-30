@@ -26,6 +26,12 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
+            FROM = { 
+                OR = {
+                    is_egalitarian = yes 
+                    is_socialism = yes
+                }
+            }
             OR = {
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
@@ -37,39 +43,12 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
+            FROM = {
+                OR = {
+                    is_xenophobe = yes
+                    is_authoritarian_or_homicidal = yes
+                }
             }
-        }
-    }
-    CR_HOSTILE_GREETING_05 = {
-        weight = { weight = 10000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_06 = {
-        weight = { weight = 10000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
-        }
-    }
-    CR_HOSTILE_GREETING_07 = {
-        weight = { weight = 10000 }
-        trigger = {
-            has_ai_personality = cunning_raiders
-            NOT = { is_at_war_with = FROM }
             OR = {
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
@@ -81,11 +60,11 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
+            FROM = { is_robot_empire = yes }
             OR = {
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
             }
-            FROM = { is_species_class = ROBOT }
         }
     }
     CR_HOSTILE_GREETING_MECH_02 = {
@@ -93,11 +72,11 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
+            FROM = { is_robot_empire = yes }
             OR = {
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
             }
-            FROM = { is_species_class = ROBOT }
         }
     }
     CR_HOSTILE_GREETING_HM_01 = {
@@ -105,13 +84,13 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
             FROM = { 
                 is_gestalt = yes
                 is_machine_empire = no
+            }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
             }
         }
     }
@@ -120,131 +99,1046 @@
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
-            OR = {
-                is_hostile_to = FROM
-                is_unfriendly_to = FROM
-            }
             FROM = { 
                 is_gestalt = yes
                 is_machine_empire = no
             }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+                is_domineering_to = FROM
+            }
         }
     }
-    CR_HOSTILE_GREETING_07 = {
+    CR_HOSTILE_GREETING_CORP_01 = {
         weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
             NOT = { is_at_war_with = FROM }
+            FROM = { is_megacorp = yes }
             OR = {
                 is_hostile_to = FROM
                 is_unfriendly_to = FROM
             }
-            FROM = { 
-                is_megacorp = yes 
-                is_special_personality = no 
+        }
+    }
+    CR_HOSTILE_GREETING_CORP_02 = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            NOT = { is_at_war_with = FROM }
+            FROM = { is_megacorp = yes }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+                is_domineering_to = FROM
             }
         }
     }
+    CR_HOSTILE_GREETING_CR = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            NOT = { is_at_war_with = FROM }
+            FROM = { 
+                is_pirate_empire = yes
+                OR = {
+                    has_valid_civic = civic_anarchy_utopia
+                    has_valid_civic = civic_anarchy_ideals
+                    is_worker_coop_empire = yes
+                }
+            }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+            }
+        }
+    }
+    CR_HOSTILE_GREETING_PE = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            NOT = { is_at_war_with = FROM }
+            FROM = { is_pirate_empire = yes }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+            }
+        }
+    }
+    CR_PROTECTIVE_GREETING_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			is_protective_to = FROM
+  		}
+    }
     CR_NEUTRAL_GREETING_01 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			is_neutral_to = FROM
+  		}
     }
     CR_NEUTRAL_GREETING_02 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
     CR_NEUTRAL_GREETING_03 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            OR = {
+  			    is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
     CR_NEUTRAL_GREETING_04 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { is_pirate_empire = yes }
+  			is_neutral_to = FROM
+  		}
     }
-    CR_NEUTRAL_GREETING_05 = {
-    
+    CR_NEUTRAL_GREETING_SLV_01 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			FROM = {
+				is_gestalt = no
+				OR = {
+					has_policy_flag = { slavery_allowed = yes }
+					is_slaver = yes
+				}
+			}
+            OR = {
+				is_neutral_to = FROM
+				is_cordial_to = FROM
+			}
+  		}
     }
-    CR_NEUTRAL_GREETING_CORP_01 = {
-    
-    }
-    CR_NEUTRAL_GREETING_CORP_01 = {
-    
-    }
-    CR_NEUTRAL_GREETING_HM_01 = {
-    
+    CR_NEUTRAL_GREETING_SLV_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { is_slaver = yes }
+  			OR = {
+				is_neutral_to = FROM
+				is_cordial_to = FROM
+			}
+  		}
     }
     CR_NEUTRAL_GREETING_MECH_01 = {
-    
+  		weight = { weight = 10000 }
+          trigger = {
+              has_ai_personality = cunning_raiders
+              FROM = { 
+                OR = { 
+                    is_individual_machine = yes 
+                    has_country_flag = synthetic_empire
+                }
+            }
+            NOT = { is_at_war_with = FROM }
+            OR = { 
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+    	}
     }
-    CR_NEUTRAL_GREETING_PAC_01 = {
+    CR_NEUTRAL_GREETING_MECH_02 = {
+  		weight = { weight = 10000 }
+          trigger = {
+            has_ai_personality = cunning_raiders
+            FROM = { is_robot_empire = yes }
+            NOT = { is_at_war_with = FROM }
+            OR = { 
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+    	}
     }
-    CR_NEUTRAL_GREETING_MIL_01 = {
+    CR_NEUTRAL_GREETING_PAC = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_pacifist }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_AUT_01 = {
+    CR_NEUTRAL_GREETING_MIL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_militarist }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_EGL_01 = {
+    CR_NEUTRAL_GREETING_AUT = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_authoritarian }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_MAT_01 = {
+    CR_NEUTRAL_GREETING_EGL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_egalitarian }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_SPR_01 = {
+    CR_NEUTRAL_GREETING_MAT = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_materialist }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_XPB_01 = {
+    CR_NEUTRAL_GREETING_SPR = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_spiritualist }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_XPL_01 = {
+    CR_NEUTRAL_GREETING_XPB = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_xenophobe }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_SOC_01 = {
+    CR_NEUTRAL_GREETING_XPL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_xenophile }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_CAP_01 = {
+    CR_NEUTRAL_GREETING_SOC = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_socialism }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_ECO_01 = {
+    CR_NEUTRAL_GREETING_CAP = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_capitalism }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
-    CR_NEUTRAL_GREETING_IND_01 = {
+    CR_NEUTRAL_GREETING_ECO = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_green }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
     }
+    CR_NEUTRAL_GREETING_IND = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  			has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+			FROM = { has_ethic = ethic_fanatic_industrial }
+  			OR = {
+                is_neutral_to = FROM
+                is_domineering_to = FROM
+            }
+  		}
+    }
+    CR_THREATENED_GREETING = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			is_threatened_to = FROM
+  		}
+  	}
+    CR_THREATENED_GREETING = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+  			is_threatened_to = FROM
+  		}
+  	}
     CR_FRIENDLY_GREETING_01 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
     CR_FRIENDLY_GREETING_02 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_pirate_empire = no }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
     CR_FRIENDLY_GREETING_03 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
     CR_FRIENDLY_GREETING_04 = {
-    
-    }
-    CR_FRIENDLY_GREETING_05 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_pirate_empire = yes }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+                is_overlord_to = FROM
+			}
+        }
     }
     CR_FRIENDLY_GREETING_CORP_01 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_megacorp = yes }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_CORP_01 = {
-    
+    CR_FRIENDLY_GREETING_CORP_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_megacorp = yes }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_HM_01 = {
-    
+    CR_FRIENDLY_GREETING_HM = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { 
+                has_ethic = ethic_gestalt_consciousness 
+                is_machine_empire = no
+            }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
     CR_FRIENDLY_GREETING_MECH_01 = {
-    
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { 
+                NOT = { has_ethic = ethic_gestalt_consciousness }
+                is_robot_empire = yes
+             }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_PAC_01 = {
+    CR_FRIENDLY_GREETING_MECH_02 = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_machine_empire = yes }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_MIL_01 = {
+    CR_FRIENDLY_GREETING_AQU = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { is_species_class = AQUATIC }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_AUT_01 = {
+    CR_FRIENDLY_GREETING_MIL = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { has_ethic = ethic_fanatic_militarist }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_EGL_01 = {
+    CR_FRIENDLY_GREETING_AUT = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { has_ethic = ethic_fanatic_authoritarian }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_MAT_01 = {
+    CR_FRIENDLY_GREETING_CAP = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = { has_ethic = ethic_fanatic_capitalism }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_SPR_01 = {
+    CR_FRIENDLY_GREETING_SLV = {
+  		weight = { weight = 10000 }
+  		trigger = {
+  		    has_ai_personality = cunning_raiders
+  			NOT = { is_at_war_with = FROM }
+            FROM = {
+                has_policy_flag = { slavery_allowed = yes }
+            }
+            OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+        }
     }
-    CR_FRIENDLY_GREETING_XPB_01 = {
+    CR_WAR_GREETING_01 = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            is_at_war_with = FROM
+            FROM = { is_robot_empire = no }
+        }
     }
-    CR_FRIENDLY_GREETING_XPL_01 = {
+    CR_WAR_GREETING_02 = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            is_at_war_with = FROM
+        }
     }
-    CR_FRIENDLY_GREETING_SOC_01 = {
+    CR_WAR_GREETING_03 = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            is_at_war_with = FROM
+        }
     }
-    CR_FRIENDLY_GREETING_CAP_01 = {
+    CR_WAR_GREETING_MECH = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            is_at_war_with = FROM
+            FROM = { is_robot_empire = yes }
+        }
     }
-    CR_FRIENDLY_GREETING_ECO_01 = {
+    CR_WAR_GREETING_PE = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+            is_at_war_with = FROM
+            FROM = { is_pirate_empire = yes }
+        }
     }
-    CR_FRIENDLY_GREETING_IND_01 = {
-   }
- }
+
+   # Addressing Cunning Raiders
+	DFLT_CR_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	CORP_CR_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	MECH_CR_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HM_CR_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	DFLT_CR_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	CORP_CR_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_threatened_to = FROM
+				is_neutral_to = FROM
+			}
+		}
+	}
+	MECH_CR_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_threatened_to = FROM
+				is_neutral_to = FROM
+			}
+		}
+	}
+	HM_CR_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	THREATENED_CR_GREETING = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			is_threatened_to = FROM
+		}
+	}
+	DFLT_CR_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			is_megacorp = no
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	DFLT_CR_FRIENDLY_GREETING_SLV = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			has_policy_flag = { slavery_allowed = yes }
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	DFLT_CR_FRIENDLY_GREETING_MIL = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			has_ethic = ethic_fanatic_militarist
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	DFLT_CR_FRIENDLY_GREETING_CAP = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_gestalt = no
+			has_ethic = ethic_fanatic_capitalism
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	DFLT_CR_FRIENDLY_GREETING_CRIM = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_country_type = default
+			is_criminal_syndicate = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	CORP_CR_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_special_personality = no
+            is_militarist = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	CORP_CR_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megacorp = yes
+			is_special_personality = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	MECH_CR_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	MECH_CR_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_machine_empire = yes
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	HM_CR_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+	HM_CR_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			is_machine_empire = no
+			FROM = {
+				is_pirate_empire = yes
+				OR = {
+					is_slaver = yes
+                    is_criminal_syndicate = yes
+                    has_valid_civic = civic_military_dictatorship_corporate
+                    has_origin = origin_heirs_of_the_khan
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+  			OR = {
+  				is_friendly_to = FROM
+  				is_cordial_to = FROM
+  				is_protective_to = FROM
+  			}
+		}
+	}
+}

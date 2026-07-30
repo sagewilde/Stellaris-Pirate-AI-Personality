@@ -342,20 +342,20 @@ diplomatic_stance = {
 				}
 			}
 
-			modifier = {
-				factor = 0.25
-				has_ai_personality = mirthful_bandits	# Mirthful Bandits are big softies. They won't pick on poor empires that are nice. --SageWilde
-				any_neighbor_country = {
-					has_communications = root
-					is_country_type = default
-					is_subject = no
-					relative_power = {
-						who = root
-						category = economy
-						value < equivalent
-					}
-				}
-			}
+			#modifier = {
+			#	factor = 0.25
+			#	has_ai_personality = mirthful_bandits	# Mirthful Bandits are big softies. They won't pick on poor empires that are nice. --SageWilde
+			#	any_neighbor_country = {
+			#		has_communications = root
+			#		is_country_type = default
+			#		is_subject = no
+			#		relative_power = {
+			#			who = root
+			#			category = economy
+			#			value < equivalent
+			#		}
+			#	}
+			#}
 			
 			#modifier = {
 			#	factor = 2000
