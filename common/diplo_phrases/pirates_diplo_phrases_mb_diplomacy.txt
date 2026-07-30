@@ -1,13 +1,22 @@
-###################################
-# MIRTHFUL BANDIT DIPLOMACY PHRASES
-###################################
+##################################
+# CUNNING RAIDER DIPLOMACY PHRASES
+##################################
 
 # RIVALRY AND WAR
+
 action_make_rival = {
 	select = {
-		MB_MAKE_RIVAL_SELECT = {
+		MB_MAKE_RIVAL_SELECT_01 = {
 			weight = { weight = 50 }
 			trigger = {
+				is_pirate_empire = no
+				has_ai_personality = mirthful_bandits
+			}
+		}
+		MB_MAKE_RIVAL_SELECT_PE = {
+			weight = { weight = 50 }
+			trigger = {
+				is_pirate_empire = yes
 				has_ai_personality = mirthful_bandits
 			}
 		}
@@ -23,16 +32,7 @@ action_make_rival = {
 				}
 			}
 		}
-		DFLT_MB_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				from = {
-					NOT = {	is_megacorp = yes }
-				}
-			}
-		}
-		MB_TO_CORPO_MAKE_RIVAL_PROPOSE = {
+		MB_TO_CORP_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
@@ -40,156 +40,20 @@ action_make_rival = {
 				NOT = {	is_pirate_empire = yes }
 			}
 		}
-		CORPO_TO_MB_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				from = { 
-					is_megacorp = yes
-					NOT = { is_pirate_empire = yes }
-				}
-			}
-		}
 		MB_PE_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
 				is_pirate_empire = yes
-				NOT = { has_ai_personality = mirthful_bandits }
-			}
-		}
-		PE_MB_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				from = { is_pirate_empire = yes }
-			}
-		}
-		MB_TO_CR_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				from = { has_ai_personality = cunning_raiders }
 			}
 		}
 	}
 	accept = {
-		MB_DFLT_MAKE_RIVAL_ACCEPT_HOSTILE = {
+		MB_DFLT_MAKE_RIVAL_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
-					}
-				}
-				OR = {
-					is_unfriendly_to = FROM
-					is_domineering_to = FROM
-					is_hostile_to = FROM
-				}
-			}
-		}
-		MB_DFLT_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
-					}
-				}
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		MB_DFLT_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
-					}
-				}
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		DFLT_MB_MAKE_RIVAL_ACCEPT_HOSTILE = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = mirthful_bandits }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = mirthful_bandits
-				}
-				OR = {
-					is_unfriendly_to = FROM
-					is_domineering_to = FROM
-					is_hostile_to = FROM
-				}
-			}
-		}
-		DFLT_MB_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = mirthful_bandits }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = mirthful_bandits
-				}
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		DFLT_MB_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = mirthful_bandits }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = mirthful_bandits
-				}
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		MB_TO_CORPO_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = {
-					is_megacorp = yes
-					NOT = { is_pirate_empire = yes }
-				}
-			}
-		}
-		CORPO_TO_MB_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = mirthful_bandits }
-				is_megacorp = yes
-				NOT = { is_pirate_empire = yes }
+				FROM = { NOT = { is_pirate_empire = yes } }
 			}
 		}
 		MB_TO_PE_RIVAL_ACCEPT = {
@@ -198,25 +62,6 @@ action_make_rival = {
 				has_ai_personality = mirthful_bandits
 				FROM = {
 					is_pirate_empire = yes
-				}
-			}
-		}
-		PE_TO_MB_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				is_pirate_empire = yes
-				NOT = { has_ai_personality = mirthful_bandits }
-				FROM = {
-					has_ai_personality = mirthful_bandits
-				}
-			}
-		}
-		MB_TO_CR_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = {
-					has_ai_personality = cunning_raiders
 				}
 			}
 		}
@@ -240,7 +85,7 @@ action_end_rivalry = {
 				FROM = {
 					NOR = {
 						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
+						is_pirate_empire = yes
 					}
 				}
 				OR = {
@@ -257,7 +102,7 @@ action_end_rivalry = {
 				FROM = {
 					NOR = {
 						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
+						is_pirate_empire = yes
 					}
 				}
 				OR = {
@@ -266,43 +111,14 @@ action_end_rivalry = {
 				}
 			}
 		}
-		MB_DFLT_END_RIVALRY_HOSTILE = {
+		MB_TO_CORP_END_RIVALRY_FRIENDLY = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = {
-					NOR = {
-						is_megacorp = yes
-						has_ai_personality = mirthful_bandits
-					}
+				FROM = { 
+					is_megacorp = yes 
+					is_pirate_empire = no
 				}
-				OR = {
-					is_unfriendly_to = FROM
-					is_threatened_to = FROM
-					is_domineering_to = FROM
-				}
-			}
-		}
-		DFLT_MB_END_RIVALRY_HOSTILE = {
-			weight = { weight = 1000 }
-			trigger = {
-				NOR = {
-					has_ai_personality = mirthful_bandits
-					is_megacorp = yes
-				}
-				FROM = { has_ai_personality = mirthful_bandits }
-				OR = {
-					is_unfriendly_to = FROM
-					is_domineering_to = FROM
-					is_hostile_to = FROM
-				}
-			}
-		}
-		MB_TO_CORPO_END_RIVALRY_FRIENDLY = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_megacorp = yes }
 				OR = {
 					is_friendly_to = FROM
 					is_cordial_to = FROM
@@ -310,105 +126,84 @@ action_end_rivalry = {
 				}
 			}
 		}
-		CORPO_TO_MB_END_RIVALRY_FRIENDLY= {
-			weight = { weight = 1000 }
-			trigger = {
-				NOR = {
-					has_ai_personality = mirthful_bandits
-					is_megacorp = yes
-					is_pirate_empire = yes
-					has_ethic = ethic_gestalt_consciousness
-				}
-				FROM = { has_ai_personality = mirthful_bandits }
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		MB_TO_CORPO_END_RIVALRY_NEUTRAL= {
+		MB_TO_CORP_END_RIVALRY_NEUTRAL = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_megacorp = yes }
+				FROM = { 
+					is_megacorp = yes 
+					is_pirate_empire = no
+				}
 				OR = {
 					is_neutral_to = FROM
 					is_threatened_to = FROM
 				}
 			}
 		}
-		CORPO_TO_MB_END_RIVALRY_NEUTRAL= {
-			weight = { weight = 1000 }
-			trigger = {
-				is_megacorp = yes
-				FROM = { has_ai_personality = mirthful_bandits }
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		MB_TO_CORPO_END_RIVALRY_HOSTILE= {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_megacorp = yes }
-				OR = {
-					is_unfriendly_to = FROM
-					is_threatened_to = FROM
-					is_domineering_to = FROM
-				}
-			}
-			
-		}
-		CORPO_TO_MB_END_RIVALRY_HOSTILE= {
-			weight = { weight = 1000 }
-			trigger = {
-				is_megacorp = yes
-				FROM = { has_ai_personality = mirthful_bandits }
-				OR = {
-					is_unfriendly_to = FROM
-					is_threatened_to = FROM
-					is_domineering_to = FROM
-				}
-			}
-		}
-		MB_TO_CR_END_RIVALRY= {
+		MB_TO_PE_END_RIVALRY_FRIENDLY = {
 			weight = { weight = 10000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { has_ai_personality = cunning_raiders }
+				FROM = { is_pirate_empire = yes }
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+		MB_TO_PE_END_RIVALRY_NEUTRAL = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		MB_END_RIVALRY_HOSTILE = {
+			weight = { weight = 10000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				OR = {
+					is_unfriendly_to = FROM
+					is_threatened_to = FROM
+					is_domineering_to = FROM
+				}
 			}
 		}
 	}
 	accept = {
-		# MBs to Default
+		# CRs to Default
 		MB_DFLT_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
 				FROM = {
-					NOT = {
-						is_pirate_empire = yes
-					}
+					is_pirate_empire = no
+					is_megacorp = no
 				}
 			}
 		}
-		MB_TO_CORPO_END_RIVALRY_ACCEPT = {
+		# CRs to Corp
+		MB_TO_CORP_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
 				FROM = {
+					is_pirate_empire = no
 					is_megacorp = yes
 				}
 			}
 		}
-		MB_TO_CR_END_RIVALRY_ACCEPT = {
+		# CRs to Pirates
+		MB_TO_PE_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { has_ai_personality = cunning_raiders}
+				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
@@ -427,6 +222,7 @@ action_declare_war = {
 				}
 			}
 		}
+		# Pirates
 		MB_DOW_PROPOSE_02 = {
 			weight = { weight = 10000 }
 			trigger = {
@@ -519,7 +315,7 @@ action_offer_peace = {
 			}
 		}
 		# Peace with Pirates
-		MB_PEACE_PROPOSE_02 = {
+		MB_PEACE_PROPOSE_PE = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_pirate_empire = yes 
@@ -528,22 +324,23 @@ action_offer_peace = {
 				}
 			}
 		}
-		# Slavers
-		MB_PEACE_PROPOSE_03 = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_policy_flag = { slavery_allowed = yes }
-				from = {
-					has_ai_personality = mirthful_bandits
-				}
-			}
-		}
 	}
 	accept = {
-		MB_PEACE_ACCEPT = {
+		# Generic Empires
+		MB_PEACE_ACCEPT_01 = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = no }
+				
+			}
+		}
+		# Peace with Pirates
+		MB_PEACE_ACCEPT_PE = {
+			weight = { weight = 1000 }
+			trigger = {
+				has_ai_personality = mirthful_bandits
+				FROM = { is_pirate_empire = yes	}
 			}
 		}
 	}
@@ -721,7 +518,6 @@ action_form_non_aggression_pact = {
 		MB_FORM_NAP_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				NOT = { is_anti_hippie = yes }
 				from = { has_ai_personality = mirthful_bandits }
 			}
 		}
@@ -1501,20 +1297,6 @@ action_demand_subjugation = {
 				has_ai_personality = mirthful_bandits
 			}
 		}
-		# Accept Wilderness
-		MB_DEMAND_VASS_ACCEPT_02 = {
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { has_ai_personality = benevolent_wilderness }
-			}
-		}
-		# Accept Humans
-		MB_DEMAND_VASS_ACCEPT_3 = {
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_human_species = yes }
-			}
-		}
 	}
 	refuse = {
 		# Refuse
@@ -1522,23 +1304,6 @@ action_demand_subjugation = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		# Refuse Hostile
-		MB_DEMAND_VASS_REFUSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				NOT = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
 			}
 		}
 	}
@@ -1597,20 +1362,11 @@ action_demand_subsidiary = {
 		}
 	}
 	select = {
-		# Tankies
-		MB_DEMAND_SUBS_SELECT_01 = {
+		MB_DEMAND_SUBS_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		MB_DEMAND_SUBS_SELECT_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
@@ -1623,38 +1379,29 @@ action_demand_subsidiary = {
 		}
 	}
 	accept = {
-		# Tankies
+		# Pirates
 		MB_DEMAND_SUBS_ACCEPT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_socialism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
-		# Capitalists
+		# Non-Pirates
 		MB_DEMAND_SUBS_ACCEPT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = no }
 			}
 		}
 	}
 	refuse = {
-		# Tankies
-		MB_DEMAND_SUBS_REFUSE_01 = {
+		MB_DEMAND_SUBS_REFUSE = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		MB_DEMAND_SUBS_REFUSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_capitalism = yes }
+				FROM = { is_pirate_empire = yes }
 			}
 		}
 	}
@@ -1678,20 +1425,10 @@ action_ask_to_become_subsidiary = {
 		}
 	}
 	propose = {
-		# Tankies
 		MB_ASK_FOR_SUBS_PROPOSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				FROM = { is_socialism = yes }
-			}
-		}
-		# Capitalists
-		MB_ASK_FOR_SUBS_PROPOSE_02 = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_capitalism = yes }
 			}
 		}
 	}
@@ -2001,36 +1738,10 @@ action_recall_embassy = {
 		}
 	}
 	accept = {
-		MB_RECALL_EMBASSY_ACCEPT_FRIENDLY = {
+		MB_RECALL_EMBASSY_ACCEPT = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		MB_RECALL_EMBASSY_ACCEPT_NEUTRAL = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		MB_RECALL_EMBASSY_ACCEPT_HOSTILE = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				OR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
 			}
 		}
 	}
@@ -2067,7 +1778,7 @@ action_negotiate_existing_agreement = {
 
 action_pledge_secret_fealty = {
 	select = {
-		MB_SELECT_PLEDGE_SEMBET_FEALTY = {
+		MB_SELECT_PLEDGE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2075,7 +1786,7 @@ action_pledge_secret_fealty = {
 		}
 	}
 	propose = {
-		MB_PROPOSE_PLEDGE_SEMBET_FEALTY = {
+		MB_PROPOSE_PLEDGE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
@@ -2083,7 +1794,7 @@ action_pledge_secret_fealty = {
 		}
 	}
 	accept = {
-		MB_ACCEPT_PLEDGE_SEMBET_FEALTY = {
+		MB_ACCEPT_PLEDGE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2094,7 +1805,7 @@ action_pledge_secret_fealty = {
 
 action_propose_secret_fealty = {
 	select = {
-		MB_SELECT_PROPOSE_SEMBET_FEALTY = {
+		MB_SELECT_PROPOSE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2102,7 +1813,7 @@ action_propose_secret_fealty = {
 		}
 	}
 	propose = {
-		MB_PROPOSE_SEMBET_FEALTY = {
+		MB_PROPOSE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
@@ -2110,7 +1821,7 @@ action_propose_secret_fealty = {
 		}
 	}
 	accept = {
-		MB_ACCEPT_PROPOSE_SEMBET_FEALTY = {
+		MB_ACCEPT_PROPOSE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2118,7 +1829,7 @@ action_propose_secret_fealty = {
 		}
 	}
 	reject = {
-		MB_REJECT_PROPOSE_SEMBET_FEALTY = {
+		MB_REJECT_PROPOSE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2129,7 +1840,7 @@ action_propose_secret_fealty = {
 
 action_propose_to_break_secret_fealty = {
 	select = {
-		MB_SELECT_REVOKE_SEMBET_FEALTY = {
+		MB_SELECT_REVOKE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2137,7 +1848,7 @@ action_propose_to_break_secret_fealty = {
 		}
 	}
 	propose = {
-		MB_PROPOSE_REVOKE_SEMBET_FEALTY = {
+		MB_PROPOSE_REVOKE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
@@ -2145,7 +1856,7 @@ action_propose_to_break_secret_fealty = {
 		}
 	}
 	accept = {
-		MB_ACCEPT_REVOKE_SEMBET_FEALTY = {
+		MB_ACCEPT_REVOKE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2156,7 +1867,7 @@ action_propose_to_break_secret_fealty = {
 
 action_break_secret_fealty = {
 	select = {
-		MB_SELECT_BREAK_SEMBET_FEALTY = {
+		MB_SELECT_BREAK_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2164,7 +1875,7 @@ action_break_secret_fealty = {
 		}
 	}
 	propose = {
-		MB_PROPOSE_BREAK_SEMBET_FEALTY = {
+		MB_PROPOSE_BREAK_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				from = { has_ai_personality = mirthful_bandits }
@@ -2172,7 +1883,7 @@ action_break_secret_fealty = {
 		}
 	}
 	accept = {
-		MB_ACCEPT_BREAK_SEMBET_FEALTY = {
+		MB_ACCEPT_BREAK_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits
@@ -2180,7 +1891,7 @@ action_break_secret_fealty = {
 		}
 	}
 	reject = {
-		MB_REJECT_BREAK_SEMBET_FEALTY = {
+		MB_REJECT_BREAK_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = mirthful_bandits

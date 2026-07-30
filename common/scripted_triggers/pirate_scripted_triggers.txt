@@ -11,7 +11,7 @@ values_others = {
 			has_animal_handler_job = yes
 			has_symbiosis_integrator_job = yes
 			has_valid_civic = civic_hive_familiar_face
-			#has_hippie_government = yes
+			has_hippie_government = yes					# For compatibility with Hippie AI Personalities
 			has_ai_personality = mirthful_bandits
 		}
 		NOT = {
@@ -42,44 +42,60 @@ is_pirate_empire = {
     OR = {
         has_valid_civic = civic_crusader_spirit_corporate
 		has_valid_civic = civic_void_reavers
-        has_technology = tech_pirate_leadership
+        has_technology = tech_pirate_leaders
     }
 }
 
 is_impoverished = {
+	is_country_type = default
 	OR = {
 		AND = {
-			is_lithoid_empire = no
-			is_robot_empire = no
-			has_country_resource = { 
-				type = food 
-				amount < 450 
+			NOR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+				is_species_class = LITHOID
 			}
-			has_monthly_income = {
-				resource = food
-				value < 1
-			}
-		}
-		AND = {
-			is_lithoid_empire = yes
-			has_country_resource = { 
-				type = minerals 
-				amount < 450 
-			}
-			has_monthly_income = {
-				resource = minerals
-				value < 1
+			exists = owner
+			owner = { 
+				has_country_resource = { 
+					type = food 
+					amount < 100 
+				}
+				has_monthly_income = {
+					resource = food
+					value < 0
+				}
 			}
 		}
 		AND = {
-			is_robot_empire = yes
-			has_country_resource = { 
-				type = energy
-				amount < 450 
+			is_species_class = LITHOID
+			exists = owner
+			owner = { 
+				has_country_resource = { 
+					type = minerals 
+					amount < 100 
+				}
+				has_monthly_income = {
+					resource = minerals
+					value < 0
+				}
 			}
-			has_monthly_income = {
-				resource = energy
-				value < 1
+		}
+		AND = {
+			OR = {
+				is_species_class = ROBOT
+				is_species_class = MACHINE
+			}
+			exists = owner
+			owner = {
+				has_country_resource = { 
+					type = energy
+					amount < 100 
+				}
+				has_monthly_income = {
+					resource = energy
+					value < 0
+				}
 			}
 		}
 	}
@@ -102,9 +118,8 @@ is_weak_and_rich = {
 
 is_special_personality = {
 	OR = {
-		#has_ai_personality = peaceful_counterculture
-		has_ai_personality = mirthful_bandits
-		has_ai_personality = cunning_raiders
-		#has_ai_personality = mega_union
+		has_ai_personality = "peaceful_counterculture"
+		has_ai_personality = "mirthful_bandits"
+		has_ai_personality = "cunning_raiders"
 	}
 }

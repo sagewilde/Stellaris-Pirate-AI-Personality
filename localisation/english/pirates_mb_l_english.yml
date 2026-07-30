@@ -163,9 +163,10 @@
  MB_DOW_VOTE_PROPOSE:0 "We prefer to fight our own battles, as the Pirate Code dictates. But now that we are allies, we come to you asking for your support in this campaign."
 ## Peace Treaties
  MB_PEACE_PROPOSE_01:0 "Ready to wave the white flag yet, [Root.GetSpeciesNamePlural]? Or do you still plan to protect your riches with your [Root.GetRemnantNamePlural]?"
- MB_PEACE_PROPOSE_02:0 "Ready to admit who the better pirates are, you yellow-bellied voidworms?"
- MB_PEACE_PROPOSE_03:0 "We'll give you one last chance to make peace. After that, we can't guarantee we'll be in the mood to talk with you slave-holding sons-of-voidworms."
+ MB_PEACE_PROPOSE_02:0 "We'll give you one last chance to make peace. After that, we can't guarantee we'll be in the mood to talk with you slave-holding sons-of-voidworms."
+ MB_PEACE_PROPOSE_PE:0 "Ready to admit who the better pirates are, you yellow-bellied voidworms?"
  MB_PEACE_ACCEPT:0 "The captains have decided to accept this peace treaty."
+ MB_PEACE_ACCEPT_PE:0 "Right-o. See you next bout then, you sludge-sucking bootlickers! Don't let the gangplank hit you on the way out!"
  MB_PEACE_REFUSE:0 "You're joking right? Mates, give 'em another broadside!"
 
 # Diplomacy
@@ -263,37 +264,26 @@
  MB_MAKE_RIVAL_SELECT:0 ""
  MB_END_RIVAL_SELECT:0 ""
  MB_DFLT_MAKE_RIVAL_PROPOSE:0 ""
- DFLT_MB_MAKE_RIVAL_PROPOSE:0 ""
  MB_CORP_MAKE_RIVAL_PROPOSE:0 ""
- CORP_MB_MAKE_RIVAL_PROPOSE:0 ""
  MB_PE_MAKE_RIVAL_PROPOSE:0 ""
 ## Accepting Rivalry
  MB_DFLT_MAKE_RIVAL_ACCEPT:0 ""
- DFLT_MB_MAKE_RIVAL_ACCEPT:0 ""
  MB_CORP_MAKE_RIVAL_ACCEPT:0 ""
- CORP_MB_MAKE_RIVAL_ACCEPT:0 ""
  MB_PE_MAKE_RIVAL_ACCEPT:0 ""
 ## Ending Rivalry - Friendly
  MB_DFLT_END_RIVALRY_FRIENDLY:0 ""
- DFLT_MB_END_RIVALRY_FRIENDLY:0 ""
  MB_CORP_END_RIVALRY_FRIENDLY:0 ""
- CORP_MB_END_RIVALRY_FRIENDLY:0 ""
  MB_PE_END_RIVALRY_FRIENDLY:0 ""
 ## Ending Rivalry - Neutral
  MB_DFLT_END_RIVALRY_NEUTRAL:0 ""
- DFLT_MB_END_RIVALRY_NEUTRAL:0 ""
  MB_CORP_END_RIVALRY_NEUTRAL:0 ""
- CORP_MB_END_RIVALRY_NEUTRAL:0 ""
  MB_PE_END_RIVALRY_NEUTRAL:0 ""
 ## Ending Rivalry - Hostile
  MB_DFLT_END_RIVALRY_HOSTILE:0 ""
- DFLT_MB_END_RIVALRY_HOSTILE:0 ""
  MB_CORP_END_RIVALRY_HOSTILE:0 ""
- CORP_MB_END_RIVALRY_HOSTILE:0 ""
  MB_PE_END_RIVALRY_HOSTILE:0 ""
 ## Ending Rivalry - Acceptance
  MB_DFLT_END_RIVALRY_ACCEPT:0 ""
- MB_CORP_END_RIVALRY_ACCEPT:0 ""
  MB_PE_END_RIVALRY_ACCEPT:0 ""
 
 # Federations

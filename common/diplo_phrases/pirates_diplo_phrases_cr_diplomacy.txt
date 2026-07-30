@@ -49,122 +49,11 @@ action_make_rival = {
 		}
 	}
 	accept = {
-		CR_DFLT_MAKE_RIVAL_ACCEPT_HOSTILE = {
+		CR_DFLT_MAKE_RIVAL_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				has_ai_personality = cunning_raiders
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = cunning_raiders
-					}
-				}
-				OR = {
-					is_unfriendly_to = FROM
-					is_domineering_to = FROM
-					is_hostile_to = FROM
-				}
-			}
-		}
-		CR_DFLT_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = cunning_raiders
-					}
-				}
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		CR_DFLT_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = {
-					NOR = {
-						is_pirate_empire = yes
-						is_megacorp = yes
-						has_ai_personality = cunning_raiders
-					}
-				}
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_HOSTILE = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = cunning_raiders
-				}
-				OR = {
-					is_unfriendly_to = FROM
-					is_domineering_to = FROM
-					is_hostile_to = FROM
-				}
-			}
-		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = cunning_raiders
-				}
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
-				}
-			}
-		}
-		DFLT_CR_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
-				NOR = {
-					is_pirate_empire = yes
-					is_megacorp = yes
-					has_ai_personality = cunning_raiders
-				}
-				OR = {
-					is_friendly_to = FROM
-					is_cordial_to = FROM
-					is_protective_to = FROM
-				}
-			}
-		}
-		CR_TO_CORPO_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = {
-					is_megacorp = yes
-					NOT = { is_pirate_empire = yes }
-				}
-			}
-		}
-		CORPO_TO_CR_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				FROM = { has_ai_personality = cunning_raiders }
-				is_megacorp = yes
-				NOT = { is_pirate_empire = yes }
+				FROM = { NOT = { is_pirate_empire = yes } }
 			}
 		}
 		CR_TO_PE_RIVAL_ACCEPT = {
@@ -173,25 +62,6 @@ action_make_rival = {
 				has_ai_personality = cunning_raiders
 				FROM = {
 					is_pirate_empire = yes
-				}
-			}
-		}
-		PE_TO_CR_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				is_pirate_empire = yes
-				NOT = { has_ai_personality = cunning_raiders }
-				FROM = {
-					has_ai_personality = cunning_raiders
-				}
-			}
-		}
-		CR_TO_CR_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-				FROM = {
-					has_ai_personality = cunning_raiders
 				}
 			}
 		}
@@ -624,7 +494,6 @@ action_form_non_aggression_pact = {
 		CR_FORM_NAP_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				NOT = { is_anti_hippie = yes }
 				from = { has_ai_personality = cunning_raiders }
 			}
 		}

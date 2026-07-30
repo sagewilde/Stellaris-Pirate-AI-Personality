@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_english:0
 ### Cunning Raiders ###
 # Greetings
 ## Hostile
@@ -18,7 +18,7 @@
  CR_NEUTRAL_GREETING_01:0 "We are the [Root.GetName], and we are the shadow cast by the great [Root.GetRulerTitle] [Root.GetRulerName]"
  CR_NEUTRAL_GREETING_02:0 "You are permitted to speak in the presence of the [Root.GetRulerTitle]. You are invited to offer [Root.Ruler.GetHerHim] proper tribute."
  CR_NEUTRAL_GREETING_03:0 "If you are too weak to protect what is yours, then you do not deserve to keep it. Your ships, your valuables, or your freedom, it is all the same to the [Root.GetName]."
- CR_NEUTRAL_GREETING_04:0 "Only two things matter, [From.GetSpeciesNamePlural]: Power, and obedience. There is a natural order, and we are its instrument in the void. Fall in line, and kneel to the Pirate Lord!"
+ CR_NEUTRAL_GREETING_04:0 "Only two things matter, [From.GetSpeciesNamePlural]:0 Power, and obedience. There is a natural order, and we are its instrument in the void. Fall in line, and kneel to the Pirate Lord!"
  CR_NEUTRAL_GREETING_SLV_01:0 "The [Root.GetRulerTitle] foresees a profitable relationship between us. We take the ships, and you take the captives. What do you say?"
  CR_NEUTRAL_GREETING_SLV_02:0 "It would seem we are peers in a lucrative trade. Would you care to observe our overseers at work? Perhaps we could compare knowledge on how best to break a new slave."
  CR_NEUTRAL_GREETING_CORP_01:0 "If it is profit you seek, then you would do well to remain on our good side, [From.GetSpeciesNamePlural]. We can either be excellent business partners, or... cutthroat competitors."
@@ -235,23 +235,18 @@
 # Rivalry
 ## Declaring Rivalry
  CR_MAKE_RIVAL_SELECT_01:0 "A grave error on your part."
- CR_MAKE_RIVAL_SELECT_PE:0 "Oh? You're challenging me? You're getting closer instead of running away?"
+ CR_MAKE_RIVAL_SELECT_PE:0 "Oh? You're approaching me? Instead of running away, you're coming right to me?"
  CR_END_RIVAL_SELECT:0 "Have you grown bored of our little game of cat and mouse, then?"
  CR_DFLT_MAKE_RIVAL_PROPOSE:0 "You [Root.GetSpeciesAdj] have made yourselves fat and comfortable on your throne of riches. The light of its shine only drew the eyes of the shadows that would circle around such beauty. And we, the darkness waiting in the wings, will not rest until your empire has crumbled into ruin, and we sit atop your hoard!"
- DFLT_CR_MAKE_RIVAL_PROPOSE:0 "We can no longer abide the presence of monsters like you in the galaxy. Today, we formalize our commitment to remove all pirates from the galaxy... starting with you!"
  CR_CORP_MAKE_RIVAL_PROPOSE:0 "You [Root.GetSpeciesAdj] have made yourselves fat and comfortable on your deposits and stocks. The light of its shine only drew the eyes of the shadows that would circle around such beauty. And we, the darkness waiting in the wings, will not rest until your company has crumbled into ruin, and we sit atop your hoard!"
- CORP_CR_MAKE_RIVAL_PROPOSE:0 "Your activities in our sector have made our current business policy untenable. Today, we're pivoting to anti-piracy security and crime prevention services. Chin up, scum. You wanted your face on wanted posters, and now you've got it!"
- CR_PE_MAKE_RIVAL_PROPOSE:0 "You pathetic, worthless scum. You shivering, scurvy traitors! You've shown yourselves to be capable brigands. You've been given chances to join us. Now, you face our sworn oath; you will belong to us! You will belong to the [Root.GetRulerTitle]!"
+ CR_PE_MAKE_RIVAL_PROPOSE:0 "You pathetic, worthless scum. You shivering, scurvy traitors! You've shown yourselves to be capable brigands. You've been given chances to join us. And you've spit on our pride! Now, you face our sworn oath; you will belong to us! You will belong to the [Root.GetRulerTitle]!"
 ## Accepting Rivalry
- CR_DFLT_MAKE_RIVAL_ACCEPT:0 "Ha! Excellent! We'll gladly take the challenge. Your [From.GetRemnantNamePlural] will make fine decorations for the prows of our warships!"
- DFLT_CR_MAKE_RIVAL_ACCEPT:0 "You presume too much. You think we'll be intimidated by filthy, wretched pirates? Your pride will be your downfall, brigands!"
- CR_CORP_MAKE_RIVAL_ACCEPT:0 "Ha! Excellent! We'll gladly take the challenge. Your [From.GetRemnantNamePlural] will make fine decorations for the prows of our warships!"
- CORP_CR_MAKE_RIVAL_ACCEPT:0 "Good luck with that, you miserable pack of mongrels. You sure talk a big game. Why don't you put your money where your mouth is, and try to come and take it?"
- CR_PE_MAKE_RIVAL_ACCEPT:0 "Then by all means, get as close as you like!"
+ CR_DFLT_MAKE_RIVAL_ACCEPT:0 "Ha! Excellent! We'll gladly take the challenge. Your [From.GetRemnantNamePlural] will make fine ornaments for the prows of our warships!"
+ CR_PE_MAKE_RIVAL_ACCEPT:0 "Oh ho! Then come as close as you like!"
 ## Ending Rivalry - Friendly
  CR_DFLT_END_RIVALRY_FRIENDLY:0 "We've grown tired of this farce. Your little local squabbles hold no interest to the [Root.GetRulerTitle]. You may go."
  CR_CORP_END_RIVALRY_FRIENDLY:0 "We've grown tired of this farce. Your little lemonade stand holds no interest to the [Root.GetRulerTitle]. You may go."
- CR_PE_END_RIVALRY_FRIENDLY:0 "We've grown tired of this farce. Your childish fantasies of piracy hold no interest to the [Root.GetRulerTitle]. You may go."
+ CR_PE_END_RIVALRY_FRIENDLY:0 "We've grown tired of this farce. Your childish fantasies of adventure hold no interest to the [Root.GetRulerTitle]. You may go."
 ## Ending Rivalry - Neutral
  CR_DFLT_END_RIVALRY_NEUTRAL:0 "You and the rest of your impoverished peons have nothing to offer the [Root.GetName]. Your little toy rockets aren't worth the glue they're slapped together with. Don't bother looking for a fight. You're not worth the ammunition."
  CR_CORP_END_RIVALRY_NEUTRAL:0 "You and the rest of your impoverished office interns have nothing to offer the [Root.GetName]. Your flying death-traps aren't worth the trash they haul. Don't bother looking for a fight. You're not worth the ammunition."
@@ -260,7 +255,7 @@
  CR_END_RIVALRY_HOSTILE:0 "This isn't over, [From.GetSpeciesNamePlural]. Rest assured, we will come back. And your little [From.Capital.GetName] will be ours!"
 ## Ending Rivalry - Acceptance
  CR_DFLT_END_RIVALRY_ACCEPT:0 "How typical of the [From.GetName] to preen and posture, as if they're immune to projectiles. Keep prancing, you weak, lily-livered fools."
- CR_CORP_END_RIVALRY_ACCEPT:0 "How typical of the [From.GetName] to veil their arrogance behind their duplicitous Corporatese. Your silver tongues won't save you, when we cut them from your heads!"
+ CR_CORP_END_RIVALRY_ACCEPT:0 "How typical of the [From.GetName] to veil their arrogance behind their duplicitous Corporatese. Your silver tongues won't save you, not when we cut them from your heads!"
  CR_PE_END_RIVALRY_ACCEPT:0 "You will submit to the rule of the [Root.GetName] eventually. It is inevitable. [Root.GetRulerTitle] is the rightful Lord of Pirates, and you will submit to [Root.Leader.GetHerHim]!"
 
 # Federations

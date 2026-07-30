@@ -21,12 +21,16 @@ gov_pirate_marauders = {
 	should_force_rename = yes
 
 	possible = {
+		is_megacorp = yes
+		OR = { 
+			has_valid_civic = civic_crusader_spirit_corporate 
+			has_valid_civic = civic_void_reavers 
+		}
 		OR = {
-			AND = {
-				has_valid_civic = civic_crusader_spirit_corporate
-				has_valid_civic = civic_barbaric_despoilers_corporate
-			}
-			has_valid_civic = civic_void_reavers
+			has_origin = origin_heirs_of_the_khan_corporate
+			has_valid_civic = civic_barbaric_despoilers_corporate
+			has_valid_civic = PrimPlayer_civic_barbaric_despoilers_khan
+			has_valid_civic = civic_barbaric_despoilers_khan
 		}
 	}
 
@@ -43,7 +47,10 @@ gov_pirate_haven = {
 
 	possible = {
 		is_megacorp = yes
-		has_valid_civic = civic_crusader_spirit_corporate
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 		OR = {
 			has_valid_civic = civic_criminal_heritage
 			has_valid_civic = civic_military_dictatorship_corporate
@@ -69,7 +76,10 @@ gov_pirate_kingdom = {
 
 	possible = {
 		is_imperial_authority = yes
-		is_pirate_empire = yes
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 	}
 
 	weight = {
@@ -85,7 +95,10 @@ gov_pirate_regime = {
 
 	possible = {
 		is_dictatorial_authority = yes
-		is_pirate_empire = yes
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 	}
 
 	weight = {
@@ -101,7 +114,10 @@ gov_pirate_oligarchy = {
 
 	possible = {
 		is_oligarchic_authority = yes
-		is_pirate_empire = yes
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 	}
 
 	weight = {
@@ -117,7 +133,10 @@ gov_death_raiders = {
 	should_force_rename = yes
 
 	possible = {
-		is_pirate_empire = yes
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 		OR = {
 			has_valid_civic = civic_reanimated_armies
 			has_origin = origin_necrophage
@@ -140,11 +159,17 @@ gov_privateer_guild = {
 			AND = {
 				is_oligarchic_authority = yes
 				has_valid_civic = civic_corporate_dominion
-				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_crusader_spirit_corporate
+					has_valid_civic = civic_void_reavers 
+				}
 			}
 			AND = {
 				is_megacorp = yes
-				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_crusader_spirit_corporate
+					has_valid_civic = civic_void_reavers 
+				}
 			}
 		}
 	}
@@ -162,7 +187,10 @@ gov_pirate_confederation = {
 
 	possible = {
 		is_democratic_authority = yes
-		is_pirate_empire = yes
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers 
+		}
 	}
 
 	weight = {
@@ -179,25 +207,36 @@ gov_free_fleets = {
 	possible = {
 		OR = {
 			AND = {
-				is_worker_coop_empire = yes
-				is_pirate_empire = yes
+				has_authority = auth_corporate
+				has_valid_civic = civic_worker_coop
+				OR = {
+					has_valid_civic = civic_crusader_spirit_corporate
+					has_valid_civic = civic_void_reavers 
+				}
 				OR = {
 					has_valid_civic = civic_anarchy_utopia
 					has_valid_civic = civic_anarchy_ideals
+					has_origin = origin_broken_shackles
+					has_origin = origin_payback
 				}
 			}
 			AND = {
 				has_authority = auth_direct_democratic
-				is_pirate_empire = yes
+				OR = {
+					has_valid_civic = civic_crusader_spirit_corporate
+					has_valid_civic = civic_void_reavers 
+				}
 				OR = {
 					has_valid_civic = civic_anarchy_utopia
 					has_valid_civic = civic_shared_burden
+					has_origin = origin_broken_shackles
+					has_origin = origin_payback
 				}
 			}
 		}
 	}
 
 	weight = {
-		base = 30000
+		base = 50000
 	}
 }

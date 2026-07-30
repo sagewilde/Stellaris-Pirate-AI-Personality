@@ -19,18 +19,6 @@ opinion_from_personality = {
 	}
 }
 
-# Left intentionally blank, in case people install Hippies.
-
-opinion_pc_vs_the_man = {
-	trigger = { }
-	opinion = { }
-}
-
-opinion_the_man_vs_pc = { 
-	trigger = { }
-	opinion = { }
-}
-
 # Modded
 
 opinion_honor_among_thieves = {
