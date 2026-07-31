@@ -6,8 +6,8 @@ The most comprehensive Pirate AI Personalities in Stellaris are here! With two f
 Befriend or battle a nation of post-FTL heroes of the people! The [b]Mirthful Bandits[/b] are galactic liberators of wealth and protectors of impoverished empires. Mirthful Bandits are quick-witted, sneaky, and rarely pick a fight they would lose. They're quick to make enemies with rich or oppressive empires, and have a soft spot for empires with low resources.
 [h3]Spawn Requirements[/h3]
 [list]
-[*] Anarchist Utopia or Anarchist Ideals civic
-[*] Letters of Marque civic
+[*] Anarchist Utopia civic, Anarchist Ideals civic, or Worker Co-Op civic.
+[*] Letters of Marque civic, Void Reavers civic, or Treasure Hunters origin
 [*] Cannot be Competitive or Xenophobic
 [/list]
 
@@ -15,20 +15,24 @@ Befriend or battle a nation of post-FTL heroes of the people! The [b]Mirthful Ba
 The scourge of the galaxy is here! The Pirate Lord has unified the squabbling raiders and has come to take your empire for all that it has. Ruthless and tactical, the [b]Cunning Raiders[/b] are sneak-attackers and opportunists with military spending to match. Rather than conquer territory or subjugate empires, they prefer frequent pirate raids that keep their neighbors weak and ripe for extortion. But if there is another Cunning Raider in the galaxy, they will swear eternal enmity against each other; there can only be one Pirate Lord!
 [h3]Spawn Requirements[/h3]
 [list]
-[*] Criminal Heritage or Pirate Lord civic
-[*] Letters of Marque civic
+[*] Criminal Heritage civic, as well as your choice of Letters of Marque, Void Reavers, or Treasure Hunter origin
+[*] Any Barbaric Despoilers civic or Heirs of the Khan origin, as well as your choice of Letters of Marque civic, Void Reavers civic, or Treasure Hunters origin.
+[*] Pirate Lord civic
 [/list]
 
+[h2]Meet the Free Fleets of Lore[/h2]
+A new prescripted nation of anarchist pirates that sprung from an ocean world. After overthrowing the global oppressive pirate regime in a planet-scale mutiny, these wily rogues and scoundrels have taken their philosophy of astrarchy-from-below to the stars.
+
 [h2]New Dialogue[/h2]
-This mod completely revamps dialogue with any empire that has the Cunning Raider or Mirthful Bandit personality, with immersive dialogue tailored to every ethic. Unlocks some special interactions and insults with Peaceful Counterculture empires.
+This mod completely revamps dialogue with any empire that has the Cunning Raider or Mirthful Bandit personality, with immersive dialogue tailored to every ethic. Player empires that have a pirate civic will unlock immersive roleplay dialogue with empires that will recognize you as a nation of buccaneers!
 
 [h2]New Governments[/h2]
-This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to function better as an empire of pirates. In addition, Pirate empires that choose to play as Megacorporations or Direct Democracies will gain access to new government forms that are unique to Pirates after any ascension path, including EvoPreds.
+This mod tweaks a few civics slightly, primarily allowing Worker Coop empires to function better as an empire of pirates. In addition, Pirate empires that choose to play as Megacorporations or Direct Democracies will gain access to new authority forms that are unique to Pirates.
 
 [h2]New Jobs[/h2]
 The [b]Shanty Singer[/b] job makes entertainers a valuable asset to your empire's navy. Empires that have the Letters of Marque civic or the Pirate Leadership technology have a guaranteed chance of encountering the [u]Message in a Bottle[/u] archeological dig site. Upon completion, Entertainers throughout your empire will become Shanty Singers, which increase your sublight speed, as well as build speed for ships and buildings.
 
-[b]Steward Captains[/b] are bureaucrats in Pirate Worker Coop empires. They fulfill the same functions as regular Pirate Captain elites and enhance the role of Stewards. They increase planetary stability and naval capacity, as well as reduce orbital bombardment damage.
+[b]Steward Captains[/b] are bureaucrats in Pirate Worker Coop empires, for the ultimate company of free adventurers in the void. They fulfill the same functions as regular Pirate Captain elites and enhance the role of Stewards. They increase planetary stability and naval capacity, as well as reduce orbital bombardment damage.
 
 [b]Pirate Combat Instructors[/b] allow anarchist pirates to place education before punishment, making roleplay more seamless for anti-authoritarian outlaws. They increase starting army experience, in addition to the general benefits of Educators.
 
