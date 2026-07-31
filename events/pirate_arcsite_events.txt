@@ -1,0 +1,219 @@
+# Space Shanty - Rebuilt
+
+fleet_event = {
+	id = ancrel.15021
+	title = "ancrel.15021.name"
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = no
+			}
+		}
+		text = "ancrel.15021.desc"
+	}
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "ancrel.15021.desc.pirate"
+	}
+	picture = GFX_evt_ancient_databank
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = INTRIGUING
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = ancrel.15022
+	title = "ancrel.15022.name"
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = no
+			}
+		}
+		text = "ancrel.15022.desc"
+	}
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "ancrel.15022.desc.pirate"
+	}
+	picture = GFX_evt_ancient_databank
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ancrel.15022.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = ancrel.15023
+	title = "ancrel.15023.name"
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = no
+			}
+		}
+		text = "ancrel.15023.desc"
+	}
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "ancrel.15023.desc.pirate"
+	}
+	picture = GFX_evt_ancient_databank
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ancrel.15023.a
+		small_artifact_reward = no
+	}
+}
+
+fleet_event = {
+	id = ancrel.15024
+	title = "ancrel.15024.name"
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = no
+			}
+		}
+		text = "ancrel.15024.desc"
+	}
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "ancrel.15024.desc.pirate"
+	}
+	picture = GFX_evt_ancient_databank
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ancrel.15024.a
+		small_artifact_reward = no
+	}
+}
+
+fleet_event = {
+	id = ancrel.15025
+	title = "ancrel.15025.name"
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = no
+			}
+		}
+		text = "ancrel.15025.desc"
+	}
+	desc = {
+		trigger = {
+			exists = owner 
+			owner = {
+				is_pirate_empire = yes
+			}
+		}
+		text = "ancrel.15025.desc.pirate"
+	}
+	picture = GFX_evt_ancient_databank
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	specimen = fish_in_the_sea_sheet_music
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	option = {
+		name = ancrel.15025.a
+		small_artifact_reward = no
+		owner = {
+			add_modifier = {
+				modifier = harmonious_crew
+				days = -1
+			}
+		}
+	}
+}

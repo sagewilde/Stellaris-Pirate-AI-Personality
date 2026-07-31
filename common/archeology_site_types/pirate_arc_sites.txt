@@ -26,7 +26,7 @@ site_space_shanty_dig = {
 				country_uses_bio_ships = yes
 			}
 		}
-		text = "space_shanty_intro_bio"
+		text = "space_shanty_intro_pirate_bio"
 	}
 	picture = GFX_evt_frozen
 	stages = 5
