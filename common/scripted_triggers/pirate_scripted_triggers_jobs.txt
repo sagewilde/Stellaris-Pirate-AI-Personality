@@ -1,21 +1,3 @@
-# EaC Overwrites
-politician_is_commandante_pirate = {
-	exists = owner
-	OR = {
-		has_active_building = building_pirate_haven_2
-		owner = {
-			is_pirate_empire = yes
-		}
-	}
-}
-
-soldier_is_pirate = {
-	exists = owner
-	owner = {
-		is_pirate_empire = yes
-	}
-}	
-
 # Modded
 bureaucrat_is_steward_captain = {
 	exists = owner

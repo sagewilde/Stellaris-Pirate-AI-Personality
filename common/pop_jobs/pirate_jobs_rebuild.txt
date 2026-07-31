@@ -987,6 +987,7 @@ bureaucrat = {
                 bureaucrat_is_pyromancer = yes
                 bureaucrat_is_fire_seer = yes
                 bureaucrat_is_cremator = yes
+				bureaucrat_is_sacred_path_specialist = yes	
             }
         }
         tags = { psionic_aura }
@@ -1103,9 +1104,7 @@ bureaucrat = {
                 planet = {
                     bureaucrat_is_low_tech = yes
                 }
-                owner = {
-                    is_gestalt = no
-                }
+                owner = { is_gestalt = no }
             }
             consumer_goods = -1
         }

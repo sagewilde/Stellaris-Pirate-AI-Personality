@@ -55,6 +55,21 @@
             }
         }
     }
+	CR_HOSTILE_GREETING_NEC = {
+        weight = { weight = 10000 }
+        trigger = {
+            has_ai_personality = cunning_raiders
+			has_government = gov_death_raiders
+            NOT = { is_at_war_with = FROM }
+            FROM = {
+                is_materialist = yes
+            }
+            OR = {
+                is_hostile_to = FROM
+                is_unfriendly_to = FROM
+            }
+        }
+    }
     CR_HOSTILE_GREETING_MECH_01 = {
         weight = { weight = 10000 }
         trigger = {

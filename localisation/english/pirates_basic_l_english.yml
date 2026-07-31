@@ -149,7 +149,7 @@
  gov_privateer_union:0 "$auth_privateer_union$"
  gov_privateer_union_desc:0 "$auth_privateer_union_desc$"
 
- civic_anarchy_utopia_effects:0 "$civic_crowdsourcing_anarchy_effects$\n$civic_anarchy_ideals_effects$$TABBED_NEW_LINE$- The §HXenoist§! faction will provide higher §YFaction Output§! whenever a large number of §YUnique Species§! are within the empire (greater than 5, 7 or 10).\n\nAllows the §Y$trade_policy_mutual_aid$§! Trade Policy, which converts $r_trade$ to $r_energy$, $r_minerals$ and $r_food$."
+ civic_anarchy_utopia_effects:0 "$civic_crowdsourcing_anarchy_effects$\n$civic_anarchy_ideals_effects$$TABBED_NEW_LINE$- The §HXenoist§! faction will provide higher §YFaction Output§! whenever a large number of §YUnique Species§! are within the empire (greater than 5, 7 or 10).$TABBED_NEW_LINE$- Allows the §Y$trade_policy_mutual_aid$§! Trade Policy, which converts $r_trade$ to $r_energy$, $r_minerals$ and $r_food$."
 
 # AUTHORITIES - Corporate
 # Synth Corporate Physical
