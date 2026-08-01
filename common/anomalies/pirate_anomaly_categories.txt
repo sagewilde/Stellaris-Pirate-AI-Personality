@@ -29,19 +29,19 @@ on_solar_sails_cat = {
 			OR = {
 				from.owner = { is_ai = yes }
 				from.owner = { is_pirate_empire = yes }
-				#has_global_flag = empirate_anomaly_spawned
+				has_global_flag = empirate_anomaly_spawned
 			}
 		}
 	}
 
-	#on_spawn = { set_global_flag = empirate_anomaly_spawned }
+	on_spawn = { set_global_flag = empirate_anomaly_spawned }
 
 	on_success = anomaly.7020
 }
 
 # Wreck of the Daughter
 daughters_ballad_cat = {
-	desc = daughters_ballad_cat_desc
+	desc = "daughters_ballad_cat_desc"
 	picture = GFX_evt_star_neutron
 	level = @empirate_anomaly_level
 	max_once_global = yes
@@ -49,17 +49,27 @@ daughters_ballad_cat = {
 	spawn_chance = {
 		factor = @empirate_anomaly_factor
 		modifier = {
-			factor = 0			# They get their own thing, because fuck getting this to work any other way.
-			from.owner = { is_pirate_empire = no }
+			add = 0.1
+			is_star = no
 		}
- 		modifier = {
- 			factor = 0
- 			from.owner = { is_gestalt = yes }
- 		}
 		modifier = {
 			factor = 0
 			is_star = yes
 		}
+		modifier = {
+			add = 0.1
+			from.leader = {
+				species = {
+					NOT = { has_trait = trait_aquatic }
+				}
+			}
+		}
+		modifier = {
+			add = 0.3
+ 			from.leader = {
+ 				species = { has_trait = trait_aquatic }
+ 			}
+ 		}
 		modifier = {
 			mult = @empirate_anomaly_multiplayer_factor
 			is_multiplayer = yes
@@ -68,20 +78,30 @@ daughters_ballad_cat = {
 			add = @empirate_guaranteed_factor
 			years_passed >= @empirate_anomaly_guaranteed_years
 		}
+		modifier = {
+			factor = 0			# They get their own thing, because fuck getting this to work any other way.
+			from.owner = { is_pirate_empire = no }
+		}
+ 		modifier = {
+ 			factor = 0
+ 			from.owner = { is_gestalt = yes }
+ 		}
 		modifier = {			
-		#	factor = 0
-		#	OR = {
-		#		#has_global_flag = empirate_anomaly_spawned
+			factor = 0
+			OR = {
+				has_global_flag = empirate_anomaly_spawned
 				from.owner = { is_ai = yes }
-		#		has_global_flag = fixed_random
-		#		has_global_flag = random_player
-		#		has_global_flag = player_choice
-		#		has_global_flag = spawn_all
-		#	}
+				has_global_flag = fixed_random
+				has_global_flag = random_player
+				has_global_flag = player_choice
+				has_global_flag = spawn_all
+			}
 		}
 	}
 
-	#on_spawn = { set_global_flag = empirate_anomaly_spawned }
+	on_spawn = { set_global_flag = empirate_anomaly_spawned }
+
+	null_spawn_chance = 0.60 # 40% chance to spawn
 
 	on_success = empirates.1001
 }

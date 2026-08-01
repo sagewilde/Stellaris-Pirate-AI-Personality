@@ -22,9 +22,18 @@ enforcer = {
         }
         swap_type = {
             trigger = {
-                OWNER = {
-                    has_edict = negotiate_with_crime_lords_edict
-                }
+                enforcer_is_pirate_combat_instructor = yes
+            }
+            name = pirate_combat_instructor
+            desc = pirate_combat_instructor
+            icon = educator
+            building_icon = building_state_academy
+            condition_string = BATTLE_THRALL_JOB_TRIGGER
+            weight = 35
+        }
+        swap_type = {
+            trigger = {
+                OWNER = { has_edict = negotiate_with_crime_lords_edict }
             }
             icon = pirate_lord_enforcer
             building_icon = building_precinct_house
@@ -77,17 +86,6 @@ enforcer = {
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 20
         }
-        swap_type = {
-            trigger = {
-                enforcer_is_pirate_combat_instructor = yes
-            }
-            name = pirate_combat_instructor
-            desc = pirate_combat_instructor
-            icon = educator
-            building_icon = building_state_academy
-            condition_string = BATTLE_THRALL_JOB_TRIGGER
-            weight = 20
-        }
     }
     tags = {
         crime
@@ -103,150 +101,163 @@ enforcer = {
         battle_thrall_job_check_trigger = yes
     }
     resources = {
-        category = planet_enforcers
-        inline_script = "jobs/job_enforcer_triggered_resources"
-        produces = {
-            trigger = {
-                exists = owner
-                owner = {
-                    has_valid_civic = civic_police_state
-                }
-            }
-            unity = 1
-        }
-        produces = {
-            trigger = {
-                exists = planet
-                OWNER = {
-                    OR = {
-                        has_civic = civic_military_dictatorship_corporate
-                        has_civic = civic_criminal_heritage
-                        AND = {
-                            has_civic = civic_brand_loyalty
-                            is_authoritarian = yes
-                        }
-                    }
-                }
-            }
-            unity = 1
-        }
-        upkeep = {
-            trigger = {
-                exists = planet
-                planet = {
-                    has_modifier = anticrime_campaign
-                }
-            }
-            energy = 2
-        }
-        upkeep = {
-            trigger = {
-                exists = planet
-                OWNER = {
-                    OR = {
-                        has_civic = civic_military_dictatorship_corporate
-                        has_civic = civic_criminal_heritage
-                        AND = {
-                            has_civic = civic_brand_loyalty
-                            is_authoritarian = yes
-                        }
-                    }
-                }
-            }
-            trade = 0.5
-        }
+		category = planet_enforcers
+		inline_script = "jobs/job_enforcer_triggered_resources"
+		produces = {
+			trigger = {
+				exists = owner										# Modded
+				owner = { has_valid_civic = civic_police_state }	# Modded
+			}
+			unity = 1												# Modded
+		}
+		produces = {
+			trigger = {
+				exists = owner										# Modded
+				owner = { is_hive_empire = yes }	# Modded
+			}
+			unity = 0.5												# Modded
+		}
+		produces = {
+			trigger = {
+				exists = planet
+				OWNER = { 
+					OR = {
+						has_civic = civic_military_dictatorship_corporate 
+						has_civic = civic_criminal_heritage
+						AND = {
+							has_civic = civic_brand_loyalty
+							is_authoritarian = yes
+						}
+					}
+				}
+			}
+			unity = 1
+		}
+		upkeep = {
+			trigger = {
+				exists = planet
+				planet = { has_modifier = anticrime_campaign }
+			}
+			energy = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = planet
+				OWNER = { 
+					OR = {
+						has_civic = civic_military_dictatorship_corporate 
+						has_civic = civic_criminal_heritage
+						AND = {
+							has_civic = civic_brand_loyalty
+							is_authoritarian = yes
+						}
+					}
+				}
+			}
+			trade = 0.5
+		}
+		#Distributism
+		produces = {
+			trigger = {
+				owner = { has_valid_civic = civic_distributism }
+			}
+			trade = 1
+		}
     }
-    triggered_planet_modifier = {
-        potential = {
-            enforcer_is_educator_trigger = no
-            OWNER = {
-                NOT = {
-                    has_edict = negotiate_with_crime_lords_edict
-                }
-            }
-        }
-        planet_crime_add = -25
-    }
-    triggered_planet_modifier = {
-        potential = {
-            enforcer_is_educator_trigger = yes
-            OWNER = {
-                NOT = {
-                    has_edict = negotiate_with_crime_lords_edict
-                }
-            }
-        }
-        planet_crime_add = -20
-    }
-    triggered_planet_modifier = {
-        potential = {
-            enforcer_is_educator_trigger = no
-        }
-        planet_defense_armies_add = 2
-        planet_stability_add = 1
-    }
-    triggered_planet_modifier = {
-        potential = {
-            enforcer_is_educator_trigger = yes
-        }
-        planet_defense_armies_add = 1
-        pop_government_ethic_attraction = 0.1
-    }
+
+	triggered_planet_modifier = {
+		potential = {
+			enforcer_is_educator_trigger = no
+			owner = { is_hive_empire = yes }
+		}
+		planet_crime_no_happiness_add = -20
+		planet_defense_armies_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			enforcer_is_educator_trigger = no
+			owner = { is_hive_empire = no }
+			OWNER = { NOT = { has_edict = negotiate_with_crime_lords_edict } }
+		}
+		planet_crime_add = -25
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			enforcer_is_educator_trigger = yes
+			owner = { is_hive_empire = no }
+			OWNER = { NOT = { has_edict = negotiate_with_crime_lords_edict } }
+		}
+		planet_crime_add = -20
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			enforcer_is_educator_trigger = no
+		}
+		planet_defense_armies_add = 2
+		planet_stability_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			enforcer_is_educator_trigger = yes
+		}
+		planet_defense_armies_add = 1
+		pop_government_ethic_attraction = 0.1
+	}
+	
     triggered_planet_modifier = {
         potential = {
             enforcer_is_pirate_combat_instructor = yes
         }
         army_starting_experience_add = 100
     }
+
     inline_script = "jobs/job_enforcer_additional_modifiers"
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                has_valid_civic = civic_police_state
-            }
-        }
-        modifier = {
-            planet_crime_add = -5
-        }
-    }
-    weight = {
-        weight = @specialist_job_weight
-        modifier = {
-            mult = value:job_weights_modifier|JOB|enforcer|RESOURCE|unity|FACTOR|0.25|
-            owner = {
-                has_active_tradition = tr_domination_judgment_corps
-            }
-        }
-        modifier = {
-            factor = 50
-        }
-        modifier = {
-            factor = 0.2
-            has_citizenship_rights = no
-            NOT = {
-                has_trait = trait_mechanical
-            }
-        }
-        modifier = {
-            factor = 2
-            has_trait = trait_resilient
-        }
-        modifier = {
-            factor = 2
-            has_trait = trait_very_strong
-        }
-        modifier = {
-            factor = 1.5
-            has_trait = trait_strong
-        }
-        modifier = {
-            factor = 10
-            is_enslaved = yes
-            has_slavery_type = {
-                type = slavery_military
-            }
-        }
+
+	triggered_planet_modifier = {	#Modded
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_police_state }
+		}
+		modifier = {
+			planet_crime_add = -5
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+
+		modifier = {
+			owner = { has_active_tradition = tr_domination_judgment_corps }
+		}
+		modifier = {
+			factor = 50
+		}
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_resilient
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_military }
+		}
         modifier = {
             factor = 0.5
             has_trait = trait_weak
@@ -267,42 +278,42 @@ enforcer = {
             factor = 1.1
             has_trait = trait_limited_regeneration
         }
-        modifier = {
-            factor = 0.8
-            is_enslaved = yes
-            has_slavery_type = {
-                type = slavery_indentured
-            }
-        }
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
         modifier = {
             factor = 2
             has_trait = trait_lithoid
         }
         modifier = {
             factor = 1.5
-            has_trait = trait_robot_integrated_weaponry
-        }
-    }
-    triggered_desc = {
-        trigger = {
-            exists = owner
-            enforcer_is_educator_trigger = no
-            OWNER = {
-                has_civic = civic_military_dictatorship_corporate
+            OR = {
+                has_trait = trait_robot_integrated_weaponry
+                has_trait = trait_cyborg_integrated_weaponry
             }
         }
-        text = job_pirate_lord_enforcer_effect_desc
     }
-    triggered_desc = {
-        trigger = {
-            exists = owner
-            enforcer_is_educator_trigger = no
-            OWNER = {
-                has_civic = civic_criminal_heritage
-            }
-        }
-        text = job_mob_boss_enforcer_effect_desc
-    }
+
+	# Description
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		enforcer_is_educator_trigger = no
+	#		OWNER = { has_civic = civic_military_dictatorship_corporate }
+	#	}
+	#	text = job_pirate_lord_enforcer_effect_desc
+	#}
+	# Description
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		enforcer_is_educator_trigger = no
+	#		OWNER = { has_civic = civic_criminal_heritage }
+	#	}
+	#	text = job_mob_boss_enforcer_effect_desc
+	#}
     triggered_desc = {
         trigger = {
             exists = owner
@@ -310,15 +321,18 @@ enforcer = {
         }
         text = job_pirate_combat_instructor_effect_desc
     }
-    promotion = {
-        time = @standard_promotion_time
-        effect = {
-            pop_amount_change_category = {
-                CATEGORY = specialist
-                AMOUNT = local_pop_amount
-            }
-        }
-    }
+
+	
+	
+	#promotion = {
+	#	time = @standard_promotion_time
+	#	effect = {
+	#		pop_amount_change_category = {
+	#			CATEGORY = specialist
+	#			AMOUNT = local_pop_amount
+	#		}
+	#	}
+	#}
 }
 
 entertainer = {
@@ -1616,7 +1630,7 @@ bureaucrat = {
 	triggered_planet_modifier = {
 		potential = {
 			bureaucrat_is_sacred_path_specialist = yes
-			owner? = { has_modifier = deeply_devoted_2 }
+			owner = { has_modifier = deeply_devoted_2 }
 		}
 		ship_speed_mult = 0.025
 	}
@@ -1661,7 +1675,26 @@ bureaucrat = {
 		planet_housing_mult = 0.005
 		pop_government_ethic_attraction = -0.015
 	}
-	
+
+	# Steward Captain
+    triggered_planet_modifier = {
+        potential = {
+            bureaucrat_is_steward_pirate = yes
+        }
+        planet_stability_add = 0.25
+        planet_orbital_bombardment_damage = -0.012
+    }
+    triggered_planet_modifier = {
+        potential = {
+            bureaucrat_is_steward_pirate = yes
+            has_councilor = {
+                COUNCILOR = councilor_worker_coop
+            }
+        }
+        planet_stability_add = 0.25
+        mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_stability_mult|TYPE|councilor_worker_coop|
+    }
+
 	#Druid
     triggered_planet_modifier = {
         potential = {
@@ -1693,30 +1726,6 @@ bureaucrat = {
         pop_ethic_spiritualist_attraction_mult = 0.025
     }
 
-    # Steward Captain
-    triggered_planet_modifier = {
-        potential = {
-            bureaucrat_is_steward_pirate = yes
-        }
-        planet_stability_add = 0.25
-        planet_orbital_bombardment_damage = -0.012
-    }
-    triggered_planet_modifier = {
-        potential = {
-            bureaucrat_is_steward_pirate = yes
-            has_councilor = {
-                COUNCILOR = councilor_worker_coop
-            }
-        }
-        planet_stability_add = 0.25
-        mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_stability_mult|TYPE|councilor_worker_coop|
-    }
-    triggered_country_modifier = {
-        potential = {
-            bureaucrat_is_steward_pirate = yes
-        }
-        country_naval_cap_add = 0.5
-    }
 
 	weight = {
 		weight = @specialist_job_weight
