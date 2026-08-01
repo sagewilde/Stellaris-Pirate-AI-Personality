@@ -1,0 +1,11 @@
+# Credit to Rodahtnov & Zyralynn for their work on the Eios, the Lost Chronolord mod, for giving me a template to follow here. Thank you for making your documentation on your scripting so clear and easy to follow. I appreciate it!
+
+# Mod Identifier
+@has_pirate_ai_personalities = 1
+
+@empirate_anomaly_guaranteed_years = 30
+@empirate_anomaly_multiplayer_factor = 0.2
+@empirate_guaranteed_factor = 50
+
+@empirate_anomaly_factor = 10
+@empirate_anomaly_level = 2

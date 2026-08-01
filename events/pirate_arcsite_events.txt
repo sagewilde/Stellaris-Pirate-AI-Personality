@@ -1,26 +1,9 @@
-# Space Shanty - Rebuilt
-
+# The Daughter's Ballad
 fleet_event = {
-	id = ancrel.15021
-	title = "ancrel.15021.name"
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = no
-			}
-		}
-		text = "ancrel.15021.desc"
-	}
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = yes
-			}
-		}
-		text = "ancrel.15021.desc.pirate"
-	}
+	id = empirates.1
+	title = empirates.1.name
+	desc = empirates.1.desc
+	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
 
@@ -37,32 +20,16 @@ fleet_event = {
 	}
 
 	option = {
-		name = INTRIGUING
+		name = EXCELLENT
 		small_artifact_reward = yes
 	}
 }
 
 fleet_event = {
-	id = ancrel.15022
-	title = "ancrel.15022.name"
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = no
-			}
-		}
-		text = "ancrel.15022.desc"
-	}
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = yes
-			}
-		}
-		text = "ancrel.15022.desc.pirate"
-	}
+	id = empirates.2
+	title = empirates.2.name
+	desc = empirates.2.desc
+
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
 
@@ -79,32 +46,16 @@ fleet_event = {
 	}
 
 	option = {
-		name = ancrel.15022.a
+		name = empirates.2.a
 		small_artifact_reward = yes
 	}
 }
 
 fleet_event = {
-	id = ancrel.15023
-	title = "ancrel.15023.name"
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = no
-			}
-		}
-		text = "ancrel.15023.desc"
-	}
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = yes
-			}
-		}
-		text = "ancrel.15023.desc.pirate"
-	}
+	id = empirates.3
+	title = empirates.3.name
+	desc = empirates.3.desc
+	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
 
@@ -121,32 +72,16 @@ fleet_event = {
 	}
 
 	option = {
-		name = ancrel.15023.a
+		name = empirates.3.a
 		small_artifact_reward = no
 	}
 }
 
 fleet_event = {
-	id = ancrel.15024
-	title = "ancrel.15024.name"
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = no
-			}
-		}
-		text = "ancrel.15024.desc"
-	}
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = yes
-			}
-		}
-		text = "ancrel.15024.desc.pirate"
-	}
+	id = empirates.4
+	title = empirates.4.name
+	desc = empirates.4.desc
+	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
 
@@ -163,32 +98,16 @@ fleet_event = {
 	}
 
 	option = {
-		name = ancrel.15024.a
+		name = empirates.4.a
 		small_artifact_reward = no
 	}
 }
 
 fleet_event = {
-	id = ancrel.15025
-	title = "ancrel.15025.name"
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = no
-			}
-		}
-		text = "ancrel.15025.desc"
-	}
-	desc = {
-		trigger = {
-			exists = owner 
-			owner = {
-				is_pirate_empire = yes
-			}
-		}
-		text = "ancrel.15025.desc.pirate"
-	}
+	id = empirates.5
+	title = empirates.5.name
+	desc =  empirates.5.desc
+	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
 
@@ -207,7 +126,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ancrel.15025.a
+		name = empirates.5.a
 		small_artifact_reward = no
 		owner = {
 			add_modifier = {

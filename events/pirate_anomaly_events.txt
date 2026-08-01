@@ -1,0 +1,22 @@
+# The Daughter's Ballad anomaly trigger
+
+ship_event = {
+	id = empirates.1001
+	title = empirates.1001.name
+	desc = empirates.1001.desc
+	picture = "GFX_evt_ship_in_orbit"
+	show_sound = event_ship_bridge
+	location = FROM
+	trackable = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { clear_deposits = yes }
+	}
+
+	option = {
+		name = empirates.1001.a
+		from = { create_archaeological_site = site_daughters_ballad_dig }
+	}
+}

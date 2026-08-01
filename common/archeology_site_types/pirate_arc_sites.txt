@@ -1,33 +1,8 @@
 
-# Message in a Bottle
-site_space_shanty_dig = {
-	desc = {
-		trigger = {
-			owner = {
-				is_pirate_empire = yes
-				country_uses_bio_ships = no
-			}
-		}
-		text = "space_shanty_intro_pirate"
-	}
-	desc = {
-		trigger = {
-			owner = {
-				is_pirate_empire = no
-				country_uses_bio_ships = no
-			}
-		}
-		text = "space_shanty_intro"
-	}
-	desc = {
-		trigger = {
-			owner = {
-				is_pirate_empire = no
-				country_uses_bio_ships = yes
-			}
-		}
-		text = "space_shanty_intro_pirate_bio"
-	}
+# the Daughter's Ballad
+site_daughters_ballad_dig = {
+	desc = "daughters_ballad_intro"
+	
 	picture = GFX_evt_frozen
 	stages = 5
 	weight = 0 #via system initializer
@@ -48,31 +23,31 @@ site_space_shanty_dig = {
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A2
-		event = ancrel.15021
+		event = empirates.1
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A2
-		event = ancrel.15022
+		event = empirates.2
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = ancrel.15023
+		event = empirates.3
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = ancrel.15024
+		event = empirates.4
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = ancrel.15025
+		event = empirates.5
 	}
 
 	on_roll_failed = {
