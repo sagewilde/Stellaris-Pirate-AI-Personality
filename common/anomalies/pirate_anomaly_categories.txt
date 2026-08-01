@@ -39,7 +39,7 @@ on_solar_sails_cat = {
 # Wreck of the Daughter
 daughters_ballad = {
 	desc = "daughters_ballad_desc"
-	picture = GFX_evt_ship_in_orbit_3
+	picture = GFX_evt_star_neutron
 	level = @empirate_anomaly_level
 	max_once_global = yes
 

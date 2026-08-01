@@ -190,7 +190,7 @@ lore_spacers = {
 
 	room = "default_room"
 
-	authority = "auth_pirate_commune"
+	authority = "auth_direct_democracy"
 	civics = { "civic_anarchy_utopia" "civic_crusader_spirit_corporate" "civic_martial_brotherhood" }
 	government = gov_free_fleets
 	origin="origin_default"

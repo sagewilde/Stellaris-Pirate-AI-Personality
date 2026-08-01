@@ -1,8 +1,8 @@
 # The Daughter's Ballad
 fleet_event = {
 	id = empirates.1
-	title = empirates.1.name
-	desc = empirates.1.desc
+	title = "empirates.1.name"
+	desc = "empirates.1.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -27,8 +27,8 @@ fleet_event = {
 
 fleet_event = {
 	id = empirates.2
-	title = empirates.2.name
-	desc = empirates.2.desc
+	title = "empirates.2.name"
+	desc = "empirates.2.desc"
 
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -53,8 +53,8 @@ fleet_event = {
 
 fleet_event = {
 	id = empirates.3
-	title = empirates.3.name
-	desc = empirates.3.desc
+	title = "empirates.3.name"
+	desc = "empirates.3.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -79,8 +79,8 @@ fleet_event = {
 
 fleet_event = {
 	id = empirates.4
-	title = empirates.4.name
-	desc = empirates.4.desc
+	title = "empirates.4.name"
+	desc = "empirates.4.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -105,8 +105,8 @@ fleet_event = {
 
 fleet_event = {
 	id = empirates.5
-	title = empirates.5.name
-	desc =  empirates.5.desc
+	title = "empirates.5.name"
+	desc =  "empirates.5.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
