@@ -29,16 +29,19 @@ on_solar_sails_cat = {
 			OR = {
 				from.owner = { is_ai = yes }
 				from.owner = { is_pirate_empire = yes }
-				has_global_flag = empirate_anomaly_spawned
+				#has_global_flag = empirate_anomaly_spawned
 			}
 		}
 	}
+
+	#on_spawn = { set_global_flag = empirate_anomaly_spawned }
+
 	on_success = anomaly.7020
 }
 
 # Wreck of the Daughter
-daughters_ballad = {
-	desc = "daughters_ballad_desc"
+daughters_ballad_cat = {
+	desc = daughters_ballad_cat_desc
 	picture = GFX_evt_star_neutron
 	level = @empirate_anomaly_level
 	max_once_global = yes
@@ -66,21 +69,19 @@ daughters_ballad = {
 			years_passed >= @empirate_anomaly_guaranteed_years
 		}
 		modifier = {			
-			factor = 0
-			OR = {
-				has_global_flag = empirate_anomaly_spawned
+		#	factor = 0
+		#	OR = {
+		#		#has_global_flag = empirate_anomaly_spawned
 				from.owner = { is_ai = yes }
-				has_global_flag = fixed_random
-				has_global_flag = random_player
-				has_global_flag = player_choice
-				has_global_flag = spawn_all
-			}
+		#		has_global_flag = fixed_random
+		#		has_global_flag = random_player
+		#		has_global_flag = player_choice
+		#		has_global_flag = spawn_all
+		#	}
 		}
 	}
 
-	on_spawn = {
-		set_global_flag = empirate_anomaly_spawned
-	}
+	#on_spawn = { set_global_flag = empirate_anomaly_spawned }
 
 	on_success = empirates.1001
 }

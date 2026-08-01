@@ -232,6 +232,9 @@
  gov_shroud_corporate_corporeal_pirate_desc:0 "$auth_shroud_corporate_corporeal_pirate_desc$"
 
 # SPACE SHANTY Rebuilt - Melody: "Santiana"
+ daughters_ballad_cat:0 "The Daughter's Ballad"
+ daughters_ballad_cat_desc:0 "We have found the wreckage of an archaic spaceship with an unusual design. She's... beautiful."
+
  empirates.1001.name:0 "The Wreck of the Daughter"
  empirates.1001.desc:0 "The ancient wreck of a large vessel evidently designed as a crude solar sailer, crashed on the surface of the planet. Its design is... breathtakingly beautiful. We feel drawn to it, as if it is calling out to us."
  empirates.1001.a:0 "What secrets does it hold?"
@@ -259,5 +262,3 @@
  empirates.4.a:0 "We want more lyrics!"
  empirates.5.a:0 "For Crew, and for Glory!"
 
- daughters_ballad:0 "The Daughter's Ballad"
- daughters_ballad_desc:0 "We have found the wreckage of an archaic spaceship with an unusual design. She's... beautiful."

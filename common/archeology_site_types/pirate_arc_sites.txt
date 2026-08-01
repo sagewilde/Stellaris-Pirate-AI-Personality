@@ -2,7 +2,6 @@
 # the Daughter's Ballad
 site_daughters_ballad_dig = {
 	desc = "daughters_ballad_intro"
-	
 	picture = GFX_evt_frozen
 	stages = 5
 	weight = 0 #via system initializer
