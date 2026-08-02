@@ -1,0 +1,78 @@
+# Free Fleets of Lore
+lore_spacers = {
+	name = "EMPIRE_DESIGN_lore_spacers"
+	adjective = "PRESCRIPTED_adjective_lore_spacers"
+	spawn_enabled = yes # yes / no / always
+
+	flag = lore_spacers
+
+	ship_prefix = "PRESCRIPTED_lore_spacers"
+
+	species = {
+		class = "HUM"
+		portrait="cyb8"
+		name = "PRESCRIPTED_species_name_lore_spacers"
+		plural = "PRESCRIPTED_species_plural_lore_spacers"
+		adjective = "PRESCRIPTED_species_adjective_lore_spacers"
+		species_bio="PRESCRIPTED_species_bio_lore_spacers"
+		name_list="paradox_pirates_improved"
+		gender=not_set
+		trait="trait_very_strong"
+		trait="trait_talented"
+		trait="trait_unruly"
+	}
+
+	room = "default_room"
+
+	authority = "auth_direct_democracy"
+	civics = { "civic_anarchy_utopia" "civic_crusader_spirit_corporate" "civic_martial_brotherhood" }
+	government = gov_free_fleets
+	origin="origin_default"
+
+	ethic="ethic_fanatic_egalitarian"
+	ethic="ethic_xenophile"
+	ethic="ethic_socialism"
+	ethic="ethic_militarist"
+
+	planet_name = "PRESCRIPTED_planet_name_lore_spacers"
+	planet_class = "pc_ocean"
+	system_name = "PRESCRIPTED_system_name_lore_spacers"
+	
+	advisor_voice_type="l_the_soldier"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+
+	empire_flag = {
+		icon = {
+			category="human"
+			file="flag_human_15.dds"
+		}
+		background = {
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors = {
+			"black"
+			"red"
+			"black"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_lore_spacers"
+		gender = female
+		portrait="cyb8"
+		texture=0
+		evolution_mask=0
+		attachment=0
+		clothes=1
+ 		custom_biography = {
+			key="PRESCRIPTED_ruler_bio_lore_spacers"
+			literal=yes
+		}
+		trait="leader_trait_eye_for_talent"
+		leader_class="commander"
+	}
+}
