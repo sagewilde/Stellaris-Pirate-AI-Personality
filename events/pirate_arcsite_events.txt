@@ -1,3 +1,6 @@
+
+namespace = empirates
+
 # The Daughter's Ballad
 fleet_event = {
 	id = empirates.1

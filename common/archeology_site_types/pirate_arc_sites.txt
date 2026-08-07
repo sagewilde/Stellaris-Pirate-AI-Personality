@@ -1,4 +1,7 @@
 
+namespace = empirates
+namespace = story
+
 # the Daughter's Ballad
 site_daughters_ballad_dig = {
 	desc = "daughters_ballad_intro"

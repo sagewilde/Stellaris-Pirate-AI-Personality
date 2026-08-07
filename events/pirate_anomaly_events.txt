@@ -1,3 +1,5 @@
+namespace = empirates
+
 # The Daughter's Ballad anomaly trigger
 ship_event = {
 	id = empirates.1001
