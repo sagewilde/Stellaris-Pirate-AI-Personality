@@ -101,7 +101,7 @@ daughters_ballad_cat = {
 
 	on_spawn = { set_global_flag = empirate_anomaly_spawned }
 
-	null_spawn_chance = 0.60 # 40% chance to spawn
+	#null_spawn_chance = 0.60 # 40% chance to spawn
 
-	on_success = empirates.1001
+	on_success = empirates.1
 }

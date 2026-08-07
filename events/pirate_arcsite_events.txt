@@ -1,11 +1,10 @@
-
 namespace = empirates
 
 # The Daughter's Ballad
 fleet_event = {
-	id = empirates.1
-	title = "empirates.1.name"
-	desc = "empirates.1.desc"
+	id = empirates.1001
+	title = "empirates.1001.name"
+	desc = "empirates.1001.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -29,9 +28,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.2
-	title = "empirates.2.name"
-	desc = "empirates.2.desc"
+	id = empirates.1002
+	title = "empirates.1002.name"
+	desc = "empirates.1002.desc"
 
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -55,9 +54,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.3
-	title = "empirates.3.name"
-	desc = "empirates.3.desc"
+	id = empirates.1003
+	title = "empirates.1003.name"
+	desc = "empirates.1003.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -81,9 +80,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.4
-	title = "empirates.4.name"
-	desc = "empirates.4.desc"
+	id = empirates.1004
+	title = "empirates.1004.name"
+	desc = "empirates.1004.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -107,9 +106,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.5
-	title = "empirates.5.name"
-	desc =  "empirates.5.desc"
+	id = empirates.1005
+	title = "empirates.1005.name"
+	desc =  "empirates.1005.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue

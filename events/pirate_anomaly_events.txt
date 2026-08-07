@@ -2,9 +2,9 @@ namespace = empirates
 
 # The Daughter's Ballad anomaly trigger
 ship_event = {
-	id = empirates.1001
-	title = empirates.1001.name
-	desc = empirates.1001.desc
+	id = empirates.1
+	title = empirates.1.name
+	desc = empirates.1.desc
 	picture = GFX_evt_star_neutron
 	show_sound = event_ship_bridge
 	location = FROM
@@ -17,7 +17,7 @@ ship_event = {
 	}
 
 	option = {
-		name = empirates.1001.a
+		name = empirates.1.a
 		from = { create_archaeological_site = site_daughters_ballad_dig }
 	}
 }
