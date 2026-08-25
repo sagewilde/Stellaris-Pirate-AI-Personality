@@ -154,10 +154,7 @@ lore_spacers_2 = {
 		evolution_mask=0
 		attachment=0
 		clothes=1
- 		custom_biography = {
-			key="PRESCRIPTED_ruler_bio_lore_spacers"
-			literal=yes
-		}
+ 		custom_biography = "PRESCRIPTED_ruler_bio_lore_spacers"
 		trait="leader_trait_treasure_hoarder"
 		leader_class="commander"
 	}
