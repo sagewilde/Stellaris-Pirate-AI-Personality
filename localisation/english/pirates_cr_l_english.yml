@@ -128,7 +128,7 @@
  CR_INSULTED_01:0 "You're fortunate we're in a forgiving mood. We may send your envoy's head back this time."
  CR_INSULTED_02:0 "Perhaps a walk would do you good. A walk in the void. Without a suit."
  CR_INSULTED_03:0 "Every syllable you speak, filth, will be another twist of the vibro-blade in your [From.GetSpeciesOrganName]."
- CR_INSULTED_PE:0 "You're a shame to our brotherhood, you arrogant [From.GetSpeciesNameInsultPlural]. To speak to the rightful Pirate Lord with such brazenness!"
+ CR_INSULTED_PE:0 "You're a shame to our brotherhood, you arrogant [From.GetSpeciesNamePluralInsult]. To speak to the rightful Pirate Lord with such brazenness!"
 
 # War
 ## Declaring War
