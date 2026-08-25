@@ -8,13 +8,12 @@
  personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the void."
 
 ### Prescripted Empire - Free Fleets of Lore
- EMPIRE_DESIGN_lore_spacers:0 "Free Fleets of Lore"
+ EMPIRE_DESIGN_lore_spacers:0 "Free Fleets of Lore"EMPIRE_DESIGN_bio_lore_spacers_desc:0 "Land on Libertalia is a rare and precious resource. For centuries, the Exceeds fought viciously over the few patches of dry ground the planet had. After centuries of the pirate kings' rule, the old order was dashed in a planet-wide mutiny. The successors slowly disassembled old rivalries and united with a common goal; the safety and prosperity of their pirate havens. Together, they eagerly take to the stars, bringing with them millennia of seafaring culture."
  PRESCRIPTED_adjective_lore_spacers:0 "Lore Spacers"
  PRESCRIPTED_lore_spacers:0 "FV"
  PRESCRIPTED_species_name_lore_spacers:0 "Exceed"
  PRESCRIPTED_species_plural_lore_spacers:0 "Exceeds"
  PRESCRIPTED_species_adjective_lore_spacers:0 "Exceed"
- PRESCRIPTED_species_bio_lore_spacers:0 "Land on Libertalia is a rare and precious resource. For centuries, the Exceeds fought viciously over the few patches of dry ground the planet had. After centuries of the pirate kings' rule, the old order was dashed in a planet-wide mutiny. The successors slowly disassembled old rivalries and united with a common goal; the safety and prosperity of their pirate havens. Together, they eagerly take to the stars, bringing with them millennia of seafaring culture."
  PRESCRIPTED_planet_name_lore_spacers:0 "Libertalia"
  PRESCRIPTED_system_name_lore_spacers:0 "Lore"
  PRESCRIPTED_ruler_name_lore_spacers:0 "Phanta Sharp"
@@ -109,7 +108,7 @@
  RT_DREAD_LORD:0 "Dread Lord"
  HT_DREAD_SCION:0 "Scion of Dark Tides"
  RT_COMMODORE:0 "Commodore"
- RT_HIGH_ADMIRAL:0 "High Admiral"
+ RT_GRAND_ADMIRAL:0 "Grand Admiral"
  RT_CAPTAIN_PEOPLE:0 "Captain of the People"
 
  gov_pirate_kingdom:0 "Pirate Kingdom"
@@ -128,7 +127,7 @@
  gov_privateer_guild_desc:0 "These privateers are well-organized and well-funded. The Charter of Space that binds them is complex and legally robust. All privateers of the company pay a portion of the booty directly to the guild's coffers for the right to operate under their flag. Breaches of the Charter are dealt with by the Captains personally."
 
  gov_pirate_confederation:0 "Pirate Confederation"
- gov_pirate_confederation_desc:0 "This confederation of associated fleets operates as a federated democracy, with each fleet or haven sending a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."
+ gov_pirate_confederation_desc:0 "This confederation of associated fleets operates as a federated democracy. Each fleet or haven sends a representative of their community to vote on matters important to all pirates. A portion of the loot earned supports buccaneers who have been maimed in the line of service, as well as to their families in their havens."
 
  gov_free_fleets:0 "Free Fleets"
  gov_free_fleets_desc:0 "Free fleets are anarchist pirates, bound by nothing but mutual need and loyalty to the Pirate Code. In this spaceborne hydrarchy - astrarchy, if you will - these motley fleets recognize no singular leader. A 'Captain of the People' is chosen for the purposes of representing them in interstellar diplomacy, but the fleets govern themselves. The Code is the only Law."

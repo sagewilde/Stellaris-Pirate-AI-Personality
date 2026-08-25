@@ -181,7 +181,7 @@ gov_privateer_guild = {
 
 # Pirate Confederation
 gov_pirate_confederation = {
-	ruler_title = RT_HIGH_ADMIRAL
+	ruler_title = RT_GRAND_ADMIRAL
 
 	should_force_rename = yes
 
