@@ -32,6 +32,11 @@
  triggered_opinion_cr_vs_jerks:0 "Morally Flexible"
  triggered_opinion_king_of_pirates:0 "Pirate Lord"
 
+ RECIPIENT_IS_PIRATE: "Pirate Empire"
+ WANTS_TO_BE_FREE_PIRATES: "Mirthful Bandits accept no masters."
+ PIRATE_LORD: "Pirate Lord"
+ ANARCHISTS: "Anarchist Ethos"
+
 ### Jobs and Job Descriptions
  job_pirate_combat_instructor:0 "Pirate Combat Instructor"
  job_pirate_combat_instructor_plural:0 "Pirate Combat Instructors"
