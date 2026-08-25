@@ -22,12 +22,8 @@ values_others = {
 
 # Pirates
 
-is_pirate_empire = {
-    OR = {
-        has_valid_civic = civic_crusader_spirit_corporate
-		has_valid_civic = civic_void_reavers
-        has_technology = tech_pirate_leaders
-    }
+has_not_distar = {
+	NOT = {	host_has_dlc = "Distant Stars Story Pack" }
 }
 
 is_impoverished = {
