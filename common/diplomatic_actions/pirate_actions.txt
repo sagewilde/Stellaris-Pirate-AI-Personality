@@ -42,13 +42,15 @@ action_improve_relation = {
 				OR = {
 					is_country_type = default
 					AND = {
-						is_country_type = primitive
+						is_primitive = yes
 						NOT = {
 							has_country_flag = solarpunk_country
 						}
 						current_awareness_level = full
 						observation_owner_is_actor = yes
 					}
+					is_country_type = PrimPlayer_ethic_fanatic_nation 
+					is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic
 					is_country_type = exiled
 				}
 			}
@@ -86,7 +88,7 @@ action_improve_relation = {
 			fail_text = "requires_actor_not_machine_terminator"
 			OR = {
 				is_same_species = from
-				NOT = { has_civic = civic_machine_terminator }
+				NOT = { has_valid_civic = civic_machine_terminator }
 				AND = {
 					has_civic = civic_machine_terminator
 					from = {
@@ -103,7 +105,7 @@ action_improve_relation = {
 			fail_text = "requires_recipient_not_machine_terminator"
 			OR = {
 				is_same_species = from
-				from = { NOT = { has_civic = civic_machine_terminator } }
+				from = { NOT = { has_valid_civic = civic_machine_terminator } }
 				AND = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
@@ -134,9 +136,7 @@ action_improve_relation = {
 				has_policy_flag = interference_subtle
 				has_policy_flag = interference_active
 				from = {
-					NOT = {
-						is_country_type = primitive
-					}
+					is_primitive = no
 				}
 			}
 		}
@@ -172,9 +172,11 @@ action_build_spy_network = {
 				OR = {
 					is_country_type = default
 					AND = {
-						is_country_type = primitive
+						is_primitive = yes
 						observation_owner_is_actor = yes
 					}
+					is_country_type = PrimPlayer_ethic_fanatic_nation 
+					is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic
 					AND = {
 						is_galactic_emperor = yes
 						has_country_flag = fallen_empire_hive_control
@@ -186,7 +188,7 @@ action_build_spy_network = {
 					has_country_flag = fotd_seperatist_country
 					AND = {
 						has_country_flag = solarpunk_country
-						is_country_type = primitive
+						is_primitive = yes
 					}
 				}
 			}
@@ -201,9 +203,10 @@ action_build_spy_network = {
 				from = { is_country_type = exiled }
 				from = { is_fallen_empire = yes }
 				AND = {
-					from = { is_country_type = primitive }
+					from = { is_primitive = yes }
 					NOT = { has_policy_flag = interference_not_allowed }
 				}
+				from = { OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic } }
 			}
 		}
 		custom_tooltip = {
@@ -245,9 +248,11 @@ action_manage_spy_network = {
 				OR = {
 					is_country_type = default
 					AND = {
-						is_country_type = primitive
+						is_primitive = yes
 						observation_owner_is_actor = yes
 					}
+					is_country_type = PrimPlayer_ethic_fanatic_nation 
+					is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic
 					AND = {
 						is_galactic_emperor = yes
 						has_country_flag = fallen_empire_hive_control
@@ -266,9 +271,10 @@ action_manage_spy_network = {
 				from = { is_country_type = default }
 				from = { is_fallen_empire = yes }
 				AND = {
-					from = { is_country_type = primitive }
+					from = { is_primitive = yes }
 					NOT = { has_policy_flag = interference_not_allowed }
 				}
+				from = { OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic } }
 			}
 		}
 		custom_tooltip = {
@@ -311,13 +317,15 @@ action_harm_relation = {
 				OR = {
 					is_country_type = default
 					AND = {
-						is_country_type = primitive
+						is_primitive = yes
 						NOT = {
 							has_country_flag = solarpunk_country
 						}
 						current_awareness_level = full
 						observation_owner_is_actor = yes
 					}
+					is_country_type = PrimPlayer_ethic_fanatic_nation 
+					is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic
 					is_country_type = exiled
 				}
 			}
@@ -325,6 +333,14 @@ action_harm_relation = {
 	}
 
 	possible = {
+		custom_tooltip = {
+			fail_text = "PrimPlayer_awareness_situation_cant_migrate"
+			OR = {
+				NOT = { from = { any_situation = { is_situation_type = PrimPlayer_awareness_situation } } }
+				is_country_type = PrimPlayer_ethic_fanatic_nation	#We want to allow 'Nations' to trade
+				is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic
+			}
+		}
 		custom_tooltip = {
 			fail_text = "DIPLOMACY_STATUS_WAR"
 			NOT = { is_at_war_with = from }
@@ -362,6 +378,7 @@ action_harm_relation = {
 						OR = {
 							has_country_flag = synthetic_empire
 							is_machine_empire = yes
+							is_synthetic_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -378,6 +395,7 @@ action_harm_relation = {
 					OR = {
 						has_country_flag = synthetic_empire
 						is_machine_empire = yes
+						is_synthetic_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -403,9 +421,7 @@ action_harm_relation = {
 				has_policy_flag = interference_subtle
 				has_policy_flag = interference_active
 				from = {
-					NOT = {
-						is_country_type = primitive
-					}
+					is_primitive = no
 				}
 			}
 		}
@@ -484,6 +500,7 @@ action_start_proxy_war = {
 			OR = {
 				has_tradition = tr_subterfuge_finish
 				is_secret_societies_empire = yes
+				has_valid_civic = civic_military_dictatorship
 			}
 		}
 	}
@@ -756,6 +773,10 @@ action_make_rival = {
 			NOT = { has_valid_civic = civic_inwards_perfection }
 		}
 		custom_tooltip = {
+			fail_text = "civic_peacekeepers"
+			NOT = { has_valid_civic = civic_peacekeepers }
+		}
+		custom_tooltip = {
 			fail_text = "requires_terrible_opinion_or_supremacist"
 			OR = {
 				opinion_level = { who = from level <= terrible }
@@ -773,6 +794,15 @@ action_make_rival = {
 
 				# We can be rivals with the Mirror Empire no matter relations' level
 				from = { is_country_type = mirrored_country }
+				
+				#
+				AND = {
+					OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic }
+					OR = {
+						from = { opinion = { who = root level <= terrible } }
+						opinion = { who = from level level <= terrible }
+					}
+				}
 			}
 		}
 		custom_tooltip = {
@@ -796,6 +826,20 @@ action_make_rival = {
 				type = cb_humiliation
 			}
 			set_country_flag = has_declared_rival
+		}
+	}
+	
+	# We want Primitive Nations to propose this under these conditions
+	should_ai_propose = {
+		weight = 1
+		modifier = {
+			factor = 1000
+			exists = from
+			OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic }
+			OR = {
+				from = { opinion = { who = root level <= terrible } }
+				opinion = { who = from level level <= terrible }
+			}
 		}
 	}
 }
@@ -1411,6 +1455,9 @@ action_form_commercial_pact = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
+				from = {
+					OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic }
+				}
 				opinion_level = {
 					who = from
 					level >= good
@@ -1435,6 +1482,14 @@ action_form_commercial_pact = {
 			}
 		}
 		if = {
+			limit = { 
+				from = {
+					OR = { is_country_type = PrimPlayer_ethic_fanatic_nation is_country_type = PrimPlayer_ethic_fanatic_nation_nomadic }
+				}
+			}
+			always = yes
+		}
+		else_if = {
 			limit = {
 				is_megacorp = no
 			}
@@ -2931,7 +2986,7 @@ action_form_migration_pact = {
 			}
 		}
 		if = {
-			limit = { from = { has_valid_civic = civic_barbaric_despoilers } }
+			limit = { from = { is_barbaric_despoiler = yes } }
 			if = {
 				limit = {
 					has_intel = {
@@ -2953,7 +3008,7 @@ action_form_migration_pact = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_actor_not_barbaric_despoilers"
-			NOT = { has_valid_civic = civic_barbaric_despoilers }
+			NOT = { is_barbaric_despoiler = yes }
 		}
 		custom_tooltip = {
 			fail_text = "federation_internal_migration"
@@ -3051,14 +3106,14 @@ action_form_migration_pact = {
 				has_active_tradition = tr_diplomacy_diplomatic_networking
 			}
 		}
-#		custom_tooltip = {
-#			fail_text = "requires_actor_not_nomad"
-#			is_nomadic = no
-#		}
-#		custom_tooltip = {
-#			fail_text = "requires_recipient_not_nomad"
-#			FROM = { is_nomadic = no }
-#		}
+	#	custom_tooltip = {
+	#		fail_text = "requires_actor_not_nomad"
+	#		is_nomadic = no
+	#	}
+	#	custom_tooltip = {
+	#		fail_text = "requires_recipient_not_nomad"
+	#		FROM = { is_nomadic = no }
+	#	}
 	}
 	should_ai_propose = {
 		# Will not propose if not multispecies.
@@ -4478,7 +4533,10 @@ action_demand_subjugation = {
 			from = {
 				has_country_flag = heir_of_the_khan_khan
 			}
-			has_origin = origin_heirs_of_the_khan
+			OR = {
+				has_origin = origin_heirs_of_the_khan
+				has_civic = civic_heirs_of_the_khan
+			}
 			desc = RIGHTFUL_KHAN
 		}
 
@@ -4783,7 +4841,10 @@ action_ask_to_become_subjugated = {
 			from = {
 				has_country_flag = heir_of_the_khan_khan
 			}
-			has_origin = origin_heirs_of_the_khan
+			OR = {
+				has_origin = origin_heirs_of_the_khan
+				has_civic = civic_heirs_of_the_khan
+			}
 			desc = RIGHTFUL_KHAN
 		}
 
