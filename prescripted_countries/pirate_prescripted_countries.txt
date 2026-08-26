@@ -6,7 +6,7 @@ lore_spacers_1 = {
 
 	playable = has_distar
 
-	flag = lore_spacers
+	flag = empire_free_fleets_of_lore
 
 	ship_prefix = "PRESCRIPTED_lore_spacers"
 
@@ -87,7 +87,7 @@ lore_spacers_2 = {
 
 	playable = has_not_distar
 
-	flag = lore_spacers
+	flag = empire_free_fleets_of_lore
 
 	ship_prefix = "PRESCRIPTED_lore_spacers"
 
