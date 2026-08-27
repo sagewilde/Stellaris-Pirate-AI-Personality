@@ -1092,9 +1092,9 @@ action_form_defensive_pact = {
 			factor = 0
 			NOT = { has_embassy = from }
 		}
-		# Never propose if we're too far away to help.
+		# Less likely to propose if we're too far away to help.
 		modifier = {
-			factor = 0
+			factor = 0.5
 			NOT = { is_neighbor_of = from }
 		}
 		# Will never propose if we are the Pirate Lord
@@ -2603,9 +2603,9 @@ action_guarantee_independence = {
 			factor = 0
 			NOT = { has_embassy = from }
 		}
-		# Never propose if we're too far away to help.
+		# Less likely to propose if we're too far away to help.
 		modifier = {
-			factor = 0
+			factor = 0.5
 			NOT = { is_neighbor_of = from }
 		}
 		# Will never propose if we are xenophobes
@@ -2799,15 +2799,11 @@ action_support_independence = {
 
 	should_ai_propose = {
 		weight = 5
-		# More likely to propose if we have a vested interest in supporting freedom
+		# More likely to propose if we have a vested interest in supporting Freedom(tm).
 		modifier = {
-			factor = 2
+			factor = 3
 			root = {
-				OR = {
-					has_ai_personality_behaviour = liberator
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = mirthful_bandits
-				}
+				has_ai_personality_behaviour = liberator
 			}
 		}
 		# More likely if we already have good relations
@@ -2836,9 +2832,9 @@ action_support_independence = {
 			factor = 0
 			NOT = { has_embassy = from }
 		}
-		# Never propose if we're too far away to help.
+		# Less likely if we're too far away to help.
 		modifier = {
-			factor = 0
+			factor = 0.5
 			NOT = { is_neighbor_of = from }
 		}
 		# Will never propose if we are authoritarian

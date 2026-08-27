@@ -29,7 +29,7 @@ lore_spacers_1 = {
 	civics = { 
 		"civic_anarchy_utopia" 
 		"civic_crusader_spirit_corporate" 
-		"civic_martial_brotherhood" 
+		"civic_martial_brotherhood"
 	}
 	government = gov_free_fleets
 	origin="origin_treasure_hunters"
@@ -104,7 +104,7 @@ lore_spacers_2 = {
 		trait="trait_unruly"
 	}
 
-	room = "marauder_room"
+	room = "scrappy_room"
 
 	authority = "auth_direct_democracy"
 	civics = { 
