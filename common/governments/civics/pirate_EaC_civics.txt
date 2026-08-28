@@ -129,7 +129,7 @@ civic_exalted_priesthood = {
 	# modifier = {
 	#	planet_bureaucrats_unity_produces_add = 1	# Removed Vanilla Code
 	#}
-	random_weight = { base = 0 } # random_weight = { base = @civic_default_random_weight }
+	random_weight = { base = @civic_default_random_weight }
     ai_weight = {
         base = @ai_civic_default_base_weight
         modifier = {
@@ -370,7 +370,7 @@ civic_environmentalist = {
 	}
 	random_weight = { base = @civic_rare_random_weight } # random_weight = { base = @civic_default_random_weight }
 	ai_weight = {
-        base = @ai_civic_default_base_weight
+        base = @ai_civic_rare_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
@@ -645,6 +645,7 @@ civic_shadow_council = {
 		civics = { NOT = { value = civic_parliamentary_system } }	# Modded
 
 	}
+	random_weight = { base = @civic_default_random_weight }
 	ai_weight = {
 		base = @ai_civic_default_base_weight
         modifier = {
@@ -952,7 +953,7 @@ civic_shared_burden = {
 	}
 	random_weight = { base = @civic_default_random_weight } # base = @civic_rare_random_weight # Should be fairly rare
 	ai_weight = {
-        base = @ai_civic_rare_base_weight
+        base = @ai_civic_default_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
@@ -1309,10 +1310,10 @@ civic_civil_education = {
 	}
 	hide_modifiers = yes
     random_weight = { 
-        base = @ai_civic_rare_base_weight
+        base = @civic_rare_random_weight
     }
     ai_weight = {
-        base = @ai_civic_default_base_weight
+        base = @ai_civic_rare_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
@@ -1374,7 +1375,7 @@ civic_circular_economy = {
 	}
     	random_weight = { base = @civic_rare_random_weight }
     ai_weight = {
-        base = @ai_civic_default_base_weight
+        base = @ai_civic_rare_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
@@ -1442,7 +1443,7 @@ civic_naturalism = {
 
 	random_weight = { base = @civic_rare_random_weight }
     ai_weight = {
-        base = @ai_civic_default_base_weight
+        base = @ai_civic_rare_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
@@ -1508,7 +1509,7 @@ civic_peaceful_urbanism = {
 
 	random_weight = { base = @civic_rare_random_weight }
     ai_weight = {
-        base = @ai_civic_default_base_weight
+        base = @ai_civic_rare_base_weight
         modifier = {
             factor = @ai_civic_personality_match_factor
             OR = {
