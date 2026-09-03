@@ -90,7 +90,7 @@ is_weak_and_rich = {
 		}
 		relative_power = {
 			who = root
-			category = military
+			category = fleet
 			value <= equivalent
 		}
 	}
