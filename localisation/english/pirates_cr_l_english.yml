@@ -58,7 +58,7 @@
 ## War
  CR_WAR_GREETING_01:0 "I am going to feed you your own [From.GetSpeciesToothNamePlural], one by one, until you tell me exactly where your treasure is hidden!"
  CR_WAR_GREETING_02:0 "You had better be here to beg, [From.GetSpeciesNamePluralInsult]. Or else offer the [Root.GetRulerTitle] something very, very expensive."
- CR_WAR_GREETING_03:0 "The [Root.GetRulerTitle] is only interested in hearing the sound of you pleading for mercy. All else is just blubbering and [From.GetRandomSpeciesSound]."
+ CR_WAR_GREETING_03:0 "The [Root.GetRulerTitle] is only interested in hearing you declare surrender. All else is just blubbering and [From.GetRandomSpeciesSound]."
  CR_WAR_GREETING_MECH:0 "I am going to pull out your cables, one by one, and start plugging them into high-voltage power cells. And I will keep doing it until you tell me where your treasure is hidden!"
  CR_WAR_GREETING_PE:0 "You pathetic, quivering, [From.GetRandomSpeciesSound] [From.GetSpeciesNamePluralInsult]! You're all yellow-bellied cowards! You're all unworthy of calling yourselves cutthroats and scoundrels!"
 
@@ -122,7 +122,7 @@
  CR_INSULT_DEFAULT_01:0 "You look like you need to eat more oranges. Perhaps a few thousand of them."
  CR_INSULT_HUMAN_01:0 "You're no Blackbeard. You're not even a Dread Pirate Roberts! You're Robbie Rotten!"
 ## Insults sent by CR
- CR_INSULT_01:0 "The [Root.GetAdjective] envoy strides arrogantly into the [From.GetRulerTitle]'s office. With a haughty, wicked grin, they throw a bag onto [From.Leader.GetHerHis] desk. Inside is the severed head of a [From.GetSpecies]!"
+ CR_INSULT_01:0 "The [Root.GetAdjective] envoy strides arrogantly into the [From.GetRulerTitle]'s office. With a haughty, wicked grin, they throw a bag onto [From.Leader.GetHerHis] desk. Inside is the severed head of a [From.GetSpeciesName]!"
  CR_INSULT_02:0 "When I became [Root.GetRulerTitle], I had to jettison my predecessor from an airlock to prove that I was a worthy leader. When I make you walk the ramp, your [From.GetSpeciesSpawnName] will weep before I make them follow you."
 ## Accepting Insults
  CR_INSULTED_01:0 "You're fortunate we're in a forgiving mood. We may send your envoy's head back this time."
@@ -284,9 +284,9 @@
  CR_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
  CR_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE:0 "Yarr!"
 ## Revoke Association
- CR_REVOKE_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
- CR_REVOKE_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
- CR_REVOKE_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
 ## Ask for Association
  CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
  CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
@@ -297,9 +297,9 @@
  CR_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
  CR_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
 ## Leave Federation
- CR_ASK_TO_LEAVE_A_SELECT:0 "Yarr!"
- CR_ASK_TO_LEAVE_A_PROPOSE:0 "Yarr!"
- CR_ASK_TO_LEAVE_A_ACCEPT:0 "Yarr!"
+ CR_LEAVE_A_SELECT:0 "Yarr!"
+ CR_LEAVE_A_PROPOSE:0 "Yarr!"
+ CR_LEAVE_A_ACCEPT:0 "Yarr!"
 
 # Addressing Cunning Raiders
 ## Hostile

@@ -1,4 +1,9 @@
 # the Daughter's Ballad
+random =  {
+	visible = { OR = { } }
+	on_roll_failed = { from = { } }
+}
+
 site_daughters_ballad_dig = {
 	desc = "daughters_ballad_intro"
 	picture = GFX_evt_frozen

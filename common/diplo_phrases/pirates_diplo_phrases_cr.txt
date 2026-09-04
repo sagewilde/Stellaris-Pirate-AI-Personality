@@ -1,5 +1,6 @@
- greetings = {
-    CR_HOSTILE_GREETING_01 = {
+### Pirate Greetings
+greetings = {
+	CR_HOSTILE_GREETING_01 = {
         weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
@@ -150,7 +151,7 @@
             }
         }
     }
-    CR_HOSTILE_GREETING_CR = {
+    CR_HOSTILE_GREETING_MB = {
         weight = { weight = 10000 }
         trigger = {
             has_ai_personality = cunning_raiders
@@ -180,14 +181,6 @@
                 is_unfriendly_to = FROM
             }
         }
-    }
-    CR_PROTECTIVE_GREETING_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = cunning_raiders
-  			NOT = { is_at_war_with = FROM }
-  			is_protective_to = FROM
-  		}
     }
     CR_NEUTRAL_GREETING_01 = {
   		weight = { weight = 10000 }
@@ -236,7 +229,7 @@
   			FROM = {
 				is_gestalt = no
 				OR = {
-					has_policy_flag = { slavery_allowed = yes }
+					has_policy_flag = slavery_allowed
 					is_slaver = yes
 				}
 			}
@@ -619,7 +612,7 @@
   		    has_ai_personality = cunning_raiders
   			NOT = { is_at_war_with = FROM }
             FROM = {
-                has_policy_flag = { slavery_allowed = yes }
+                has_policy_flag = slavery_allowed
             }
             OR = {
 				is_friendly_to = FROM
@@ -995,7 +988,7 @@
 		trigger = {
 			is_country_type = default
 			is_gestalt = no
-			has_policy_flag = { slavery_allowed = yes }
+			has_policy_flag = slavery_allowed
 			FROM = {
 				is_pirate_empire = yes
 				OR = {

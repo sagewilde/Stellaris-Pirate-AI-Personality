@@ -158,8 +158,8 @@
  MB_DOW_PROPOSE_03:0 "We've stood by and watched you crush sapient xenos under an iron heel for too long. That ends, today! MATES! NO QUARTER FOR SLAVERS!!"
  MB_DOW_PROPOSE_PE:0 "An old [From.GetSpeciesAdj] spacer, blind in one [From.GetEyeName], slowly approaches the [Root.GetRulerTitle]. Slowly, solemnly, they press a piece of ancient paper into [Root.GetRulerName]'s [Root.GetHandName]. The only thing written upon it is a black spot."
  MB_VASSAL_DOW_PROPOSE:0 "You've kept us belowdecks for far too long. This is a mutiny, [From.GetRulerName]! Your reign ends here!"
- MB_DOW_ACCEPT_01:0 "An attack on one of us is an attack on all of us. All hands! Battle stations! Prepare to repel boarders!"
- MB_DOW_ACCEPT_02:0 "You're outmatched and outclassed, [From.GetSpeciesNamePlural]. We're twice the pirates you'll ever be!"
+ MB_DOW_ACCEPT:0 "An attack on one of us is an attack on all of us. All hands! Battle stations! Prepare to repel boarders!"
+ MB_DOW_ACCEPT_PE:0 "You're outmatched and outclassed, [From.GetSpeciesNamePlural]. We're twice the pirates you'll ever be!"
  MB_DOW_VOTE_PROPOSE:0 "We prefer to fight our own battles, as the Pirate Code dictates. But now that we are allies, we come to you asking for your support in this campaign."
 ## Peace Treaties
  MB_PEACE_PROPOSE_01:0 "Ready to wave the white flag yet, [Root.GetSpeciesNamePlural]? Or do you still plan to protect your riches with your [Root.GetRemnantNamePlural]?"
@@ -262,6 +262,7 @@
 # Rivalry
 ## Declaring Rivalry
  MB_MAKE_RIVAL_SELECT:0 "Yarr!"
+ MB_MAKE_RIVAL_SELECT_PE:0 "Yarr!"
  MB_END_RIVAL_SELECT:0 "Yarr!"
  MB_DFLT_MAKE_RIVAL_PROPOSE:0 "Yarr!"
  MB_CORP_MAKE_RIVAL_PROPOSE:0 "Yarr!"
@@ -279,11 +280,10 @@
  MB_CORP_END_RIVALRY_NEUTRAL:0 "Yarr!"
  MB_PE_END_RIVALRY_NEUTRAL:0 "Yarr!"
 ## Ending Rivalry - Hostile
- MB_DFLT_END_RIVALRY_HOSTILE:0 "Yarr!"
- MB_CORP_END_RIVALRY_HOSTILE:0 "Yarr!"
- MB_PE_END_RIVALRY_HOSTILE:0 "Yarr!"
+ MB_END_RIVALRY_HOSTILE:0 "Yarr!"
 ## Ending Rivalry - Acceptance
  MB_DFLT_END_RIVALRY_ACCEPT:0 "Yarr!"
+ MB_CORP_END_RIVALRY_ACCEPT:0 "Yarr!"
  MB_PE_END_RIVALRY_ACCEPT:0 "Yarr!"
 
 # Federations
@@ -311,9 +311,9 @@
  MB_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
  MB_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE:0 "Yarr!"
 ## Revoke Association
- MB_REVOKE_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
- MB_REVOKE_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
- MB_REVOKE_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
+ MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
+ MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
+ MB_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
 ## Ask for Association
  MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
  MB_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
@@ -324,9 +324,9 @@
  MB_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
  MB_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
 ## Leave Federation
- MB_ASK_TO_LEAVE_A_SELECT:0 "Yarr!"
- MB_ASK_TO_LEAVE_A_PROPOSE:0 "Yarr!"
- MB_ASK_TO_LEAVE_A_ACCEPT:0 "Yarr!"
+ MB_LEAVE_A_SELECT:0 "Yarr!"
+ MB_LEAVE_A_PROPOSE:0 "Yarr!"
+ MB_LEAVE_A_ACCEPT:0 "Yarr!"
 
 # Addressing Mirthful Bandits
 ## Hostile
@@ -339,7 +339,7 @@
  CORP_MB_NEUTRAL_GREETING_01:0 "'Rob the rich to feed the poor', eh? Feh. Good luck dealing with our asset protection unit, [From.GetSpeciesNamePlural]. Because they're going to love the bonuses they get for knocking you out."
  MECH_MB_NEUTRAL_GREETING_01:0 "Warning: Attempts to decompile, modify, or republish [From.GetName] source code will be considered hostile action, [From.GetSpeciesNamePlural]. You wouldn't download a shuttle."
  HM_MB_NEUTRAL_GREETING_01:0 "The [Root.GetName] will be watching you particularly closely, [From.GetSpeciesNamePlural]. Attempts to reappropriate our resources will not be looked upon kindly. Even if it is 'for the poor', as you claim."
- THREATENED_MB_GREETING_01:0 "Now, when you say 'Rob the rich to feed the poor', who are you planning to rob, exactly? Surely, you don't mean us...?"
+ MB_THREATENED_GREETING_01:0 "Now, when you say 'Rob the rich to feed the poor', who are you planning to rob, exactly? Surely, you don't mean us...?"
 ## Friendly
  DFLT_MB_FRIENDLY_GREETING_01:0 "We view the [From.GetSpeciesAdj] spirit as an admirable embrace of personal liberty. Our young [Root.GetSpeciesSpawnNamePlural] seem to idolize tales of your adventures."
  CORP_MB_FRIENDLY_GREETING_01:0 "The whole 'hero of the people' shtick is a very profitable marketing angle, [From.GetSpeciesNamePlural]. We're happy to help you bring collectable memorabilia to market, if you're interested in signing a PR contract."
@@ -354,4 +354,4 @@
 
 # Concerning Hippies
  PC_MB_INSULT_01: "You dudes seem to like to think you're the good guys. Didn't your mothers ever teach you that stealing is wrong, and picking fights isn't cool?"
- MB_PC_INSULT_01: "*As the [From.GetSpecies] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their baggie of Marin Kharin is gone. The vibe has been harshed.*"
+ MB_PC_INSULT_01: "*As the [From.GetSpeciesAdj] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their baggie of Marin Kharin is gone. The vibe has been harshed.*"

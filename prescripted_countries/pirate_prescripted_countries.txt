@@ -18,14 +18,15 @@ lore_spacers_1 = {
 		adjective = "PRESCRIPTED_species_adjective_lore_spacers"
 		name_list="AQUATIC2"
 		gender=not_set
-		trait="trait_very_strong"
-		trait="trait_talented"
+		trait="trait_strong"
+		trait="trait_adaptive"
+		trait="trait_natural_sociologists"
 		trait="trait_unruly"
 	}
 
-	room = "scrappy_room"
+	room = "nomads_military_room"
 
-	authority = "auth_direct_democracy"
+	authority = auth_direct_democratic
 	civics = { 
 		"civic_anarchy_utopia" 
 		"civic_crusader_spirit_corporate" 
@@ -50,12 +51,12 @@ lore_spacers_1 = {
 
 	empire_flag = {
 		icon = {
-			category="human"
-			file="flag_human_15.dds"
+			category="pirate"
+			file="flag_pirate_1.dds"
 		}
 		background = {
 			category="backgrounds"
-			file="vertical.dds"
+			file="flag_BG_12.dds"
 		}
 		colors = {
 			"black"
@@ -73,7 +74,7 @@ lore_spacers_1 = {
 		evolution_mask=0
 		attachment=0
 		clothes=1
- 		custom_biography = "PRESCRIPTED_ruler_bio_lore_spacers"
+ 		ruler_title = "PRESCRIPTED_ruler_title_lore_spacers"
 		trait="leader_trait_treasure_hoarder"
 		leader_class="commander"
 	}
@@ -99,14 +100,15 @@ lore_spacers_2 = {
 		adjective = "PRESCRIPTED_species_adjective_lore_spacers"
 		name_list="AQUATIC2"
 		gender=not_set
-		trait="trait_very_strong"
-		trait="trait_talented"
+		trait="trait_strong"
+		trait="trait_adaptive"
+		trait="trait_natural_sociologists"
 		trait="trait_unruly"
 	}
 
-	room = "scrappy_room"
+	room = "nomads_military_room"
 
-	authority = "auth_direct_democracy"
+	authority = auth_direct_democratic
 	civics = { 
 		"civic_anarchy_utopia" 
 		"civic_crusader_spirit_corporate" 
@@ -131,12 +133,12 @@ lore_spacers_2 = {
 
 	empire_flag = {
 		icon = {
-			category="human"
-			file="flag_human_15.dds"
+			category="pirate"
+			file="flag_pirate_1.dds"
 		}
 		background = {
 			category="backgrounds"
-			file="vertical.dds"
+			file="flag_BG_12.dds"
 		}
 		colors = {
 			"black"
@@ -154,7 +156,7 @@ lore_spacers_2 = {
 		evolution_mask=0
 		attachment=0
 		clothes=1
- 		custom_biography = "PRESCRIPTED_ruler_bio_lore_spacers"
+ 		ruler_title = "PRESCRIPTED_ruler_title_lore_spacers"
 		trait="leader_trait_treasure_hoarder"
 		leader_class="commander"
 	}

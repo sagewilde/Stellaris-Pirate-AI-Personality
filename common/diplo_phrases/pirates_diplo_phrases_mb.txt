@@ -301,7 +301,7 @@ greetings = {
   			}
   		}
     }
-    MB_PROTECTIVE_GREETING_01 = {
+    MB_PROTECTIVE_GREETING = {
   		weight = { weight = 10000 }
   		trigger = {
   			has_ai_personality = mirthful_bandits
@@ -357,7 +357,7 @@ greetings = {
 			FROM = {
 				is_gestalt = no
 				OR = {
-					has_policy_flag = { slavery_allowed = yes }
+					has_policy_flag = slavery_allowed
 					is_slaver = yes
 				}
 			}
@@ -382,7 +382,7 @@ greetings = {
   			is_neutral_to = FROM
   		}
     }
-    MB_MECH_NEUTRAL_GREETING_01 = {
+    MB_NEUTRAL_GREETING_MECH_01 = {
   		weight = { weight = 10000 }
           trigger = {
               has_ai_personality = mirthful_bandits
@@ -391,14 +391,6 @@ greetings = {
               is_neutral_to = FROM
     	}
     }
-    MB_THREATENED_GREETING_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			NOT = { is_at_war_with = FROM }
-  			is_threatened_to = FROM
-  		}
-  	}
     MB_FRIENDLY_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
@@ -598,7 +590,7 @@ greetings = {
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
-  			FROM = { has_ethic = ethic_fanatic_socialist }
+  			FROM = { has_ethic = ethic_fanatic_socialism }
   			OR = {
   				is_friendly_to = FROM
   				is_cordial_to = FROM
@@ -658,14 +650,55 @@ greetings = {
   			is_at_war_with = FROM
   		}
     }
-    MB_WAR_GREETING_HUMAN_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			is_at_war_with = FROM
-  			FROM = { is_human_species = yes }
-  		}
-    }
+	MB_WAR_GREETING_04 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_at_war_with = FROM
+			FROM = {
+				is_authoritarian = yes
+			}
+		}
+	}
+	MB_WAR_GREETING_05 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_at_war_with = FROM
+			FROM = {
+				OR = {
+					has_authority = auth_dictatorial 
+					has_authority = auth_imperial
+				}
+			}
+		}
+	}
+	MB_WAR_GREETING_CORP_01 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_at_war_with = FROM
+			FROM = { 
+				AND = {
+					has_authority = auth_corporate
+					is_capitalism = yes
+				}
+			}
+		}
+	}
+	MB_WAR_GREETING_CORP_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			is_at_war_with = FROM
+			FROM = { 
+				AND = {
+					has_authority = auth_corporate
+					is_capitalism = yes
+				}
+			}
+		}
+	}
     MB_VASSAL_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
@@ -855,7 +888,7 @@ greetings = {
 			}
 		}
 	}
-	THREATENED_MB_GREETING = {
+	MB_THREATENED_GREETING_01 = {
 		weight = { weight = 3 }
 		trigger = {
 			is_country_type = default
@@ -1039,21 +1072,6 @@ action_insult = {
 			trigger = {
 				has_ai_personality = mirthful_bandits
 				OR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-					is_disloyal_to = FROM
-				}
-			}
-		}
-		MB_INSULTED_PE = {
-			weight = { weight = 10000 }
-			trigger = {
-				has_ai_personality = mirthful_bandits
-				FROM = { is_pirate_empire = yes }
-				OR = {
-					is_neutral_to = FROM
-					is_threatened_to = FROM
 					is_hostile_to = FROM
 					is_domineering_to = FROM
 					is_unfriendly_to = FROM
