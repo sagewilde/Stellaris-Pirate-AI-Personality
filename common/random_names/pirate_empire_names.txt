@@ -2,9 +2,9 @@
 empire_name_parts_list = {
 	key = prt_kingdom
 	parts = {
-		"Royal Armada" = 3
+		Royal_Armada = 3
 		Warbands = 2
-		"Raider Empire" = 2
+		Raider_Empire = 2
 		Imperium = 1
 		Kingdom = 1
 	}
@@ -36,10 +36,10 @@ empire_name_parts_list = {
 empire_name_parts_list = {
 	key = prt_death_raiders
 	parts = {
-		Necro-Corsairs = 3
-		"Deathless Command" = 2
-		"Wraiths" = 2
-		"Death Fleets" = 1
+		Necro_Corsairs = 3
+		Deathless_Command = 2
+		Wraiths = 2
+		Death_Fleets = 1
 	}
 }
 
@@ -49,7 +49,7 @@ empire_name_parts_list = {
 		Eternal = 3
 		Dreaded = 2
 		Immortal = 2
-		Tomb-Born = 1
+		Tomb_Born = 1
 		Corpsewrought = 1
 	}
 }
@@ -68,11 +68,11 @@ empire_name_parts_list = {
 empire_name_parts_list = {
 	key = prt_oligarchy
 	parts = {
-		"Buccaneer Order" = 3
-		"Privateer Command" = 2
-		"Corsair Coalition" = 2
-		"Gilded Planets" = 2
-		"Hidden Suns" = 1
+		Buccaneer_Order = 3
+		Privateer_Command = 2
+		Corsair_Coalition = 2
+		Gilded_Planets = 2
+		Hidden_Suns = 1
 	}
 }
 
@@ -103,7 +103,7 @@ empire_name_parts_list = {
 		Company = 3
 		Guild = 2
 		Conglomerate = 2
-		Enterprise = 2
+		Enterprises = 2
 		Union = 1
 	}
 }
@@ -123,7 +123,7 @@ empire_name_parts_list = {
 	parts = {
 		Interstellar = 3
 		Allied = 3
-		Traders' = 2
+		Traders = 2
 		United = 1
 	}
 }
@@ -137,7 +137,7 @@ empire_name_parts_list = {
 		Militias = 2
 		Nation = 2
 		Coalition = 1
-		Cartels = 1
+		Cartel = 1
 	}
 }
 
@@ -166,12 +166,14 @@ empire_name_parts_list = {
 empire_name_parts_list = {
 	key = prt_free_fleets
 	parts = {
-		"Free Fleets" = 3
-		"Rebel Commune" = 2
+		Free_Fleets = 3
+		Rebel_Commune = 2
+		United_Havens = 2
 		Municipalities = 2
 		Affinities = 2
-		"Privateer Union" = 1
-		"Pirate Cooperative" = 1
+		Privateer_Union = 1
+		Pirate_Cooperative = 1
+		United_Havens = 2
 	}
 }
 
@@ -182,7 +184,6 @@ empire_name_parts_list = {
 		Autonomous = 2
 		Cooperative = 2
 		Syndicalist = 1
-		Revolutionary = 1
 	}
 }
 
