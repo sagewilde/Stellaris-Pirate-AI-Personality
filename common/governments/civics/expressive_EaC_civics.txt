@@ -1277,7 +1277,7 @@ civic_anarchy_utopia = {
 		civics = {
 			NOR = {
 				text = civic_tooltip_ethics_rebuild_communism
-				value = civic_anarchy_utopia
+				value = civic_shared_burden
 				value = civic_worker_coop
 			}
 			NOR = {
