@@ -43,7 +43,7 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 	option = {
-		name = empirates.2.a
+		name = empirates.1002.a
 		small_artifact_reward = yes
 	}
 
@@ -69,7 +69,7 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 	option = {
-		name = empirates.3.a
+		name = empirates.1003.a
 		small_artifact_reward = no
 	}
 
@@ -96,7 +96,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = empirates.4.a
+		name = empirates.1004.a
 		small_artifact_reward = no
 	}
 
@@ -124,7 +124,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = empirates.5.a
+		name = empirates.1005.a
 		small_artifact_reward = no
 		owner = {
 			add_modifier = {

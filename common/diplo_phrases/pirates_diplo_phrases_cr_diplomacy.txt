@@ -1401,7 +1401,7 @@ action_ask_to_become_subsidiary = {
 		}
 	}
 	propose = {
-		CR_ASK_FOR_SUBS_PROPOSE_01 = {
+		CR_ASK_FOR_SUBS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders

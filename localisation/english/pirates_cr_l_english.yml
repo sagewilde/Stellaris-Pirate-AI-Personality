@@ -2,7 +2,7 @@
 ### Cunning Raiders ###
 # Greetings
 ## Hostile
- CR_HOSTILE_GREETING_01:0 "You dare to have such audacity? To approach the terrible [Root.GetRulerName]'s feet, the Lord of Pirates? You're not worthy of my grace, worm."
+ CR_HOSTILE_GREETING_01: "You dare to have such audacity? To approach the terrible [Root.GetRulerName]'s feet, the Lord of Pirates? You're not worthy of my grace, worm."
  CR_HOSTILE_GREETING_02:0 "We'll strip your ships bare before we sink them into the closest star. And if you have [From.GetSpeciesSpawnNamePlural] on them, we'll tie them up next to a viewport so they can watch their parents burn."
  CR_HOSTILE_GREETING_03:0 "You should know something. It's people like you who break first. The ones with such flowery ideals about justice and the worth of trash. You'll be a sobbing puddle of filth by the time I'm done with you."
  CR_HOSTILE_GREETING_04:0 "You should know something. It's people like you who break first. The ones with such haughty notions of your own self-worth. You all shut up real quick once you realize you're filth."
@@ -122,7 +122,7 @@
  CR_INSULT_DEFAULT_01:0 "You look like you need to eat more oranges. Perhaps a few thousand of them."
  CR_INSULT_HUMAN_01:0 "You're no Blackbeard. You're not even a Dread Pirate Roberts! You're Robbie Rotten!"
 ## Insults sent by CR
- CR_INSULT_01:0 "The [Root.GetAdjective] envoy strides arrogantly into the [From.GetRulerTitle]'s office. With a haughty, wicked grin, they throw a bag onto [From.Leader.GetHerHis] desk. Inside is the severed head of a [From.GetSpecies]!"
+ CR_INSULT_01:0 "The [Root.GetAdjective] envoy strides arrogantly into the [From.GetRulerTitle]'s office. With a haughty, wicked grin, they throw a bag onto [From.Leader.GetHerHis] desk. Inside is the severed head of a [From.GetSpeciesName]!"
  CR_INSULT_02:0 "When I became [Root.GetRulerTitle], I had to jettison my predecessor from an airlock to prove that I was a worthy leader. When I make you walk the ramp, your [From.GetSpeciesSpawnName] will weep before I make them follow you."
 ## Accepting Insults
  CR_INSULTED_01:0 "You're fortunate we're in a forgiving mood. We may send your envoy's head back this time."
@@ -284,9 +284,9 @@
  CR_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
  CR_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE:0 "Yarr!"
 ## Revoke Association
- CR_REVOKE_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
- CR_REVOKE_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
- CR_REVOKE_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"
+ CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "Yarr!"
 ## Ask for Association
  CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Yarr!"
  CR_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "Yarr!"

@@ -357,7 +357,7 @@ greetings = {
 			FROM = {
 				is_gestalt = no
 				OR = {
-					has_policy_flag = { slavery_allowed = yes }
+					has_policy_flag = slavery_allowed
 					is_slaver = yes
 				}
 			}
@@ -391,14 +391,6 @@ greetings = {
               is_neutral_to = FROM
     	}
     }
-    MB_THREATENED_GREETING_01 = {
-  		weight = { weight = 10000 }
-  		trigger = {
-  			has_ai_personality = mirthful_bandits
-  			NOT = { is_at_war_with = FROM }
-  			is_threatened_to = FROM
-  		}
-  	}
     MB_FRIENDLY_GREETING_01 = {
   		weight = { weight = 10000 }
   		trigger = {
@@ -598,7 +590,7 @@ greetings = {
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
-  			FROM = { has_ethic = ethic_fanatic_socialist }
+  			FROM = { has_ethic = ethic_fanatic_socialism }
   			OR = {
   				is_friendly_to = FROM
   				is_cordial_to = FROM
