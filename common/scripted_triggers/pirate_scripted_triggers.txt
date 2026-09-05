@@ -1,3 +1,8 @@
+### Mod Identifier
+
+has_pirate_ai_personalities = { always = yes }
+has_sage_expressive_personalities = { always = yes }
+
 ### Vanilla Overwrites
 
 values_others = {

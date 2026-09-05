@@ -2,6 +2,7 @@
 
 # Mod Identifier
 @has_pirate_ai_personalities = 1
+@has_sage_expressive_personalities = 1
 
 @empirate_anomaly_guaranteed_years = 30
 @empirate_anomaly_multiplayer_factor = 0.2
