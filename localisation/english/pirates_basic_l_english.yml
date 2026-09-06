@@ -50,32 +50,8 @@
  job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the void, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
 
 ### Slightly tweaked, for humor and flavor.  -  SageWilde
- 
- name_list_paradox_pirates_improved:0 "Paradox Pirates (Improved)"
- name_list_paradox_pirates_improved_desc:0 " "
  name_list_cybrxkhan_handmade_pirate:0 "Fantasy Pirates (Cybrxkhan)"
  name_list_cybrxkhan_handmade_pirate_desc:0 " "
-
- PARADOX_PIRATES_IMPROVED_xxFLEETNAMES_ORD:0 "$ORD$ Armada"
- PARADOX_PIRATES_IMPROVED_xxMACHINEDEFENSE_ORD:0 "$ORD$ Port Guard"
- PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT1_ORD:0 "$ORD$ Corsairs"
- PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT2_ORD:0 "$ORD$ Corsairs"
- PARADOX_PIRATES_IMPROVED_xxMACHINEASSAULT3_ORD:0 "$ORD$ Corsairs"
- PARADOX_PIRATES_IMPROVED_xxDEFENSEARMY_ORD:0 "$ORD$ Port Guard"
- PARADOX_PIRATES_IMPROVED_xxASSAULTARMY_ORD:0 "$ORD$ Corsairs"
- PARADOX_PIRATES_IMPROVED_xxSLAVEARMY_ORD:0 "$ORD$ Pressganged Hands"
- PARADOX_PIRATES_IMPROVED_xxCLONEARMY_ORD:0 "$ORD$ Doppelganger Pirates"
- PARADOX_PIRATES_IMPROVED_xxUNDEADARMY_ORD:0 "$ORD$ Cursed Pirates"
- PARADOX_PIRATES_IMPROVED_xxROBOTICARMY_ORD:0 "$ORD$ Ironclad Corsairs" 
- PARADOX_PIRATES_IMPROVED_xxROBOTICDEFENSEARMY_ORD:0 "$ORD$ Ironclad Guard"
- PARADOX_PIRATES_IMPROVED_xxPSIONICARMY_ORD:0 "$ORD$ Psychic Raiders"
- PARADOX_PIRATES_IMPROVED_xxXENOMORPHARMY_ORD:0 "$ORD$ Davy Jones' Dogs"
- PARADOX_PIRATES_IMPROVED_xxGENEWARRIORARMY_ORD:0 "$ORD$ Spliced Scallywags"
- PARADOX_PIRATES_IMPROVED_xxOCCUPATIONARMY_ORD:0 "$ORD$ Boarding Party"
- PARADOX_PIRATES_IMPROVED_xxROBOTICOCCUPATIONARMY_ORD:0 "$ORD$ Ironclad Boarding Party"
- PARADOX_PIRATES_IMPROVED_PRIMITIVEARMYxx_SEQ:0 "Primitive Pirates $C$"
- PARADOX_PIRATES_IMPROVED_INDUSTRIALARMYxx_SEQ:0 "Industrial Pirates $C$"
- PARADOX_PIRATES_IMPROVED_POSTATOMICARMYxx_SEQ:0 "Post-Atomic Pirates $C$"
 
  cybrxkhan_handmade_pirate_xxFLEETNAMES_ORD:0 "$ORD$ Armada"
  cybrxkhan_handmade_pirate_xxMACHINEDEFENSE_ORD:0 "$ORD$ Militia"

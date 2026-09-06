@@ -1,15 +1,15 @@
 ﻿### Paradox Pirates Improved
-### This list includes all of the names of the default pirate ships and starbases from the vanilla game, as well as a few jokes of my own. --SageWilde
-
+### This list includes all of the names of the default pirate ships and starbases from the vanilla game, as well as a few jokes of my own.
+### While some of the names are in reference to various pop culture characters, a few are the names of actual historical pirates. If you see a name you recognize, I encourage you to research their actual life and history. They're scum and villains, all of them, but their lives were fascinating. In a horrifying way, I guess. 
+### Anybody who thinks history was boring had a shitty history teacher. --SageWilde
 
 paradox_pirates_improved = {
 	category = "Humanoid"
 
 	ship_names = {
 		generic = {
-        	Eyesore Tinderbox Pipedream Deathtrap Jawbreaker Crybaby Spoilsport Pottymouth Whippersnapper Stepchild Homewrecker Roadkill Malcontent "Loose Cannon" Butterfingers Snapperhead "Hissy Fit" Sourpuss "Sucker Punch" Gutbuster "I Hate Everything" Highwayman Outlaw "Turbulent Priest" "Sea Monkey" "Dairy Farmer" "Morally Bankrupt" "Bucket of Bolts" "Free Lunch" "Wallet Inspector" "Laughing Stock" Gunslinger Sellsword Rapscallion "Wayward Son" Braindrain "Inconspicuous Asteroid" "One Trick Pony" "Wide Load" "No Refunds" Fencesitter Blindspot "Ugly Stick" "Shows Over" "Four Lights" "Poetic Justice" "Foreign Object" "Why Me" "Last Straw" "Designated Driver" "Comet Sighted" "Slapped Together" "Lowest Bidder" "Wet Blanket" "Sordid Methods" "Broken Record" Neer-do-well Grotesque "Impudent Whelp" "Harsh Language" "Public Servant" "Love Is In The Air" "Class Act" Ineptitude Malaise Chomper "Diminishing Returns" "Calculated Risk" "Logistical Nightmare" "Come Closer" "Soylent Green" "Tunnel of Love" "Tax Evasion" "Hippie Slayer" "Gross Negligence" "Another Mouth to Feed" Blunderbuss "Catch Me If You Can" Obscenity "Holier Than Thou" "Open Wide" Target Bullseye Taxman Solicitor "Red Dread" "Missing Link" "Duct Taped" "Robber Baron" "Affront to Nature" "Queen Xoggras' Revenge" "Total Loss" "Village Idiot" Tattletale Filibuster "Smarmy Toad" "Ligma" "Mangy Cur" Cityslicker "Depth Perception" "This Way" "Mysterious Rash" "Divine Intervention" Crossbones "Jolly Roger" "No Surrender" "No Quarter" "Victim of Circumstance" "Red Flag" "Product of Society" "Under Evaluation" "Flying Coffin" "Gilded Cage" "Disgruntled Worker" "Of Sound Mind" "Ivory Tower" "Bastard Son" "Carpet Sample" "Scarlet Tentacle" "Down In Front" "Learning Experience VII" "Lowest Common Denominator" "Glory Days" "Gripping Appendage" "Desperate Pauper" "Born Lucky" "Boltragg's Folly" "MyFirstShip IV" "Base Instincts" "Check Please" "Infinite Loop" "Lazy Morning" "Consequences Be Damned" "Pointless Platitude" "Grey Matter" "Conscientious Objector" "Unexplained Itch" Anarchist "Out of Control" "Unexpected Obstacle" "Toxic Behavior" "Controlled Explosion" Fugitive "Unfortunate Ending" "Criminally Insane" "Not Guilty" "Double Jeopardy" "Perfect Pitch" "Pedal to the Metal" Mistrial "Lump of Coal" "I Am Truly Sorry" "Dark Forecast" "Apologies in Advance" "Reduced to This" "Surprise Encounter" "Meat Locker" "Cardiac Arrest" "Piece of Junk" "I Didnt Want This" "Bottom Line" "With Abandon" "Do Not Respond" "Unsound Methods" "Beast of Burden" "Red Claw" "Flying Dorgabloid" "No Laughing Matter" "Nothing Personal" "Great Experiment" "Looks Like Trouble" "Curse of Zuldaxim" Scalawag Guttersnipe "Murderous Intent" "If Looks Could Kill" "What Sorcery Is This" Untranslatable "Liquid Courage" "Attention Seeker" "Your Female Parent" "Juvenile Delinquent" "Mystery Meat" "Slippery Slope" Knucklehead "Spirit of Zalussa" "Empty Gesture" "Annoying Pest" "Zarga's Ship" "Zarga's Other Ship" "Killing Implement" "Blunt Object" "The General Xarg" "Blockade Runner" "Innocent Bystander" Reprobate "Lacking Purpose" "Beyond Salvation" "This Too Shall Pass" "Guilty Pleasure" "Exploratory Surgery" "Inelegant Solution" Ragamuffin "Under New Ownership" "Resonance Cascade" "Festering Wound" "Red Smile" Rabble-rouser "Mysterious Stranger" "Process of Elimination" Wastrel Poppycock Hogwash Balderdash "Enough Lollygagging" "Prone to Hysteria" "Star Beggar" "Grace Under Pressure" Brainiac Nogoodnik Pockmark "Dream Shatterer" Oathbreaker Turncoat "Do The Math" "By The Numbers" Mishap Harridan "Big Boy" "Teacher's Pet" Destitute "Hell's Bells" Beguiler "Critical Mass" "Star Wench" "Double Standard" Half-wit Dunderhead Numbskull "Blind Fury" "Curse You All" "Carrion Eater" Unbidden "Pound of Flesh" "Pucker Up" "Short Fuse" Killjoy Footpad "Travel Agent" Bushranger Simpleton Ignoramus "Not What It Seems" Reprehensible Intolerant Petulant "Deceiving Looks" "Pillage and Reconciliation" "An Arrow in Flight" Gun-to-Head Megalomaniac "Petty Theft" "Grand Larceny" "Pop Up" "A Promise Kept" "Frag Machine" "Impersonal Space" "Fallen Pillar" "Motion Tabled" Aimbot "Attack on Freighter" "The Slings" "The Arrows" "Outrageous Fortune" Thermopylaeic "Pyrrhic and Proud" "Wiggling Bait" "Shoot for Loot" "Feature Creep" "Creepy Feats" "Tone Deaf Siren" "No Good" "The Worst Thing" "Oh That's a Pirate" "Science Ship Killer" Ravageoid Violence-Liker "Illegal Repercussions" "Shameless Plagiarist" "Dove Crow" Alcheringa "Barnacle Jim" "Charles in Charge" Ganker "Manus Celer Dei" "Fatum Iustum Stultorum" "Strange Aeons" "Red Queen" Jabberwock Boojum Snark
+			PRT1_SHIP_Eyesore PRT1_SHIP_Tinderbox PRT1_SHIP_Pipedream PRT1_SHIP_Deathtrap PRT1_SHIP_Jawbreaker PRT1_SHIP_Crybaby PRT1_SHIP_Spoilsport PRT1_SHIP_Pottymouth PRT1_SHIP_Whippersnapper PRT1_SHIP_Stepchild PRT1_SHIP_Homewrecker PRT1_SHIP_Roadkill PRT1_SHIP_Malcontent PRT1_SHIP_LooseCannon PRT1_SHIP_Butterfingers PRT1_SHIP_Snapperhead PRT1_SHIP_HissyFit PRT1_SHIP_Sourpuss PRT1_SHIP_SuckerPunch PRT1_SHIP_Gutbuster PRT1_SHIP_IHateEverything PRT1_SHIP_Highwayman PRT1_SHIP_Outlaw PRT1_SHIP_TurbulentPriest PRT1_SHIP_SeaMonkey PRT1_SHIP_DairyFarmer PRT1_SHIP_MorallyBankrupt PRT1_SHIP_BucketofBolts PRT1_SHIP_FreeLunch PRT1_SHIP_WalletInspector PRT1_SHIP_LaughingStock PRT1_SHIP_Gunslinger PRT1_SHIP_Sellsword PRT1_SHIP_Rapscallion PRT1_SHIP_WaywardSon PRT1_SHIP_Braindrain PRT1_SHIP_InconspicuousAsteroid PRT1_SHIP_OneTrickPony PRT1_SHIP_WideLoad PRT1_SHIP_NoRefunds PRT1_SHIP_Fencesitter PRT1_SHIP_Blindspot PRT1_SHIP_UglyStick PRT1_SHIP_ShowsOver PRT1_SHIP_FourLights PRT1_SHIP_PoeticJustice PRT1_SHIP_ForeignObject PRT1_SHIP_WhyMe PRT1_SHIP_LastStraw PRT1_SHIP_DesignatedDriver PRT1_SHIP_CometSighted PRT1_SHIP_SlappedTogether PRT1_SHIP_LowestBidder PRT1_SHIP_WetBlanket PRT1_SHIP_SordidMethods PRT1_SHIP_BrokenRecord PRT1_SHIP_Neer-do-well PRT1_SHIP_Grotesque PRT1_SHIP_ImpudentWhelp PRT1_SHIP_HarshLanguage PRT1_SHIP_PublicServant PRT1_SHIP_LoveIsInTheAir PRT1_SHIP_ClassAct PRT1_SHIP_Ineptitude PRT1_SHIP_Malaise PRT1_SHIP_DeviantCitizen PRT1_SHIP_Chomper PRT1_SHIP_DiminishingReturns PRT1_SHIP_CalculatedRisk PRT1_SHIP_LogisticalNightmare PRT1_SHIP_ComeCloser PRT1_SHIP_SoylentGreen PRT1_SHIP_TunnelofLove PRT1_SHIP_GrossNegligence PRT1_SHIP_AnotherMouthToFeed PRT1_SHIP_NoRefunds PRT1_SHIP_Blunderbuss PRT1_SHIP_CatchMeIfYouCan PRT1_SHIP_Obscenity PRT1_SHIP_HolierThanThou PRT1_SHIP_OpenWide PRT1_SHIP_Target PRT1_SHIP_Bullseye PRT1_SHIP_Taxman PRT1_SHIP_Solicitor PRT1_SHIP_RedDread PRT1_SHIP_MissingLink PRT1_SHIP_DuctTaped PRT1_SHIP_RobberBaron PRT1_SHIP_AffronttoNature PRT1_SHIP_QueenXoggrasRevenge PRT1_SHIP_TotalLoss PRT1_SHIP_VillageIdiot PRT1_SHIP_Tattletale PRT1_SHIP_Filibuster PRT1_SHIP_SmarmyToad PRT1_SHIP_MangyCur PRT1_SHIP_Cityslicker PRT1_SHIP_DepthPerception PRT1_SHIP_ThisWay PRT1_SHIP_MysteriousRash PRT1_SHIP_DivineIntervention PRT1_SHIP_Crossbones PRT1_SHIP_JollyRoger PRT1_SHIP_NoSurrender PRT1_SHIP_NoQuarter PRT1_SHIP_VictimofCircumstance PRT1_SHIP_RedFlag PRT1_SHIP_ProductofSociety PRT1_SHIP_UnderEvaluation PRT1_SHIP_FlyingCoffin PRT1_SHIP_GildedCage PRT1_SHIP_DisgruntledWorker PRT1_SHIP_OfSoundMind PRT1_SHIP_IvoryTower PRT1_SHIP_BastardSon PRT1_SHIP_CarpetSample PRT1_SHIP_ScarletTentacle PRT1_SHIP_DownInFront PRT1_SHIP_LearningExperienceVII PRT1_SHIP_LowestCommonDenominator PRT1_SHIP_GloryDays PRT1_SHIP_GrippingAppendage PRT1_SHIP_DesperatePauper PRT1_SHIP_BornLucky PRT1_SHIP_BoltraggsFolly PRT1_SHIP_MyFirstShipIV PRT1_SHIP_BaseInstincts PRT1_SHIP_CheckPlease PRT1_SHIP_InfiniteLoop PRT1_SHIP_LazyMorning PRT1_SHIP_ConsequencesBeDamned PRT1_SHIP_RuntimeError PRT1_SHIP_PointlessPlatitude PRT1_SHIP_GreyMatter PRT1_SHIP_ConscientiousObjector PRT1_SHIP_UnexplainedItch PRT1_SHIP_Anarchist PRT1_SHIP_OutofControl PRT1_SHIP_UnexpectedObstacle PRT1_SHIP_ToxicBehavior PRT1_SHIP_ControlledExplosion PRT1_SHIP_Fugitive PRT1_SHIP_HappyCamper PRT1_SHIP_UnfortunateEnding PRT1_SHIP_CriminallyInsane PRT1_SHIP_NotGuilty PRT1_SHIP_DoubleJeopardy PRT1_SHIP_PerfectPitch PRT1_SHIP_PedaltotheMetal PRT1_SHIP_Mistrial PRT1_SHIP_LumpofCoal PRT1_SHIP_IAmTrulySorry PRT1_SHIP_DarkForecast PRT1_SHIP_ApologiesinAdvance PRT1_SHIP_ReducedToThis PRT1_SHIP_SurpriseEncounter PRT1_SHIP_MeatLocker PRT1_SHIP_CardiacArrest PRT1_SHIP_PieceofJunk PRT1_SHIP_IDidntWantThis PRT1_SHIP_BottomLine PRT1_SHIP_WithAbandon PRT1_SHIP_DoNotRespond PRT1_SHIP_UnsoundMethods PRT1_SHIP_BeastofBurden PRT1_SHIP_RedClaw PRT1_SHIP_FlyingDorgabloid PRT1_SHIP_NoLaughingMatter PRT1_SHIP_NothingPersonal PRT1_SHIP_GreatExperiment PRT1_SHIP_LooksLikeTrouble PRT1_SHIP_TurningPoint PRT1_SHIP_CurseofZuldaxim PRT1_SHIP_Scalawag PRT1_SHIP_Guttersnipe PRT1_SHIP_MurderousIntent PRT1_SHIP_IfLooksCouldKill PRT1_SHIP_WhatSorceryIsThis PRT1_SHIP_Untranslatable PRT1_SHIP_LiquidCourage PRT1_SHIP_AttentionSeeker PRT1_SHIP_YourFemaleParent PRT1_SHIP_JuvenileDelinquent PRT1_SHIP_MysteryMeat PRT1_SHIP_SlipperySlope PRT1_SHIP_Knucklehead PRT1_SHIP_SpiritofZalussa PRT1_SHIP_EmptyGesture PRT1_SHIP_AnnoyingPest PRT1_SHIP_ZargasShip PRT1_SHIP_ZargasOtherShip PRT1_SHIP_KillingImplement PRT1_SHIP_BluntObject PRT1_SHIP_TheGeneralXarg PRT1_SHIP_BlockadeRunner PRT1_SHIP_InnocentBystander PRT1_SHIP_Reprobate PRT1_SHIP_LackingPurpose PRT1_SHIP_BeyondSalvation PRT1_SHIP_ThisTooShallPass PRT1_SHIP_GuiltyPleasure PRT1_SHIP_ExploratorySurgery PRT1_SHIP_InelegantSolution PRT1_SHIP_Ragamuffin PRT1_SHIP_UnderNewOwnership PRT1_SHIP_ResonanceCascade PRT1_SHIP_FesteringWound PRT1_SHIP_RedSmile PRT1_SHIP_Rabble-rouser PRT1_SHIP_MysteriousStranger PRT1_SHIP_ProcessofElimination PRT1_SHIP_Wastrel PRT1_SHIP_Poppycock PRT1_SHIP_Hogwash PRT1_SHIP_Balderdash PRT1_SHIP_EnoughLollygagging PRT1_SHIP_PronetoHysteria PRT1_SHIP_StarBeggar PRT1_SHIP_GraceUnderPressure PRT1_SHIP_Brainiac PRT1_SHIP_Nogoodnik PRT1_SHIP_Pockmark PRT1_SHIP_DreamShatterer PRT1_SHIP_Oathbreaker PRT1_SHIP_Turncoat PRT1_SHIP_DoTheMath PRT1_SHIP_ByTheNumbers PRT1_SHIP_Mishap PRT1_SHIP_Harridan PRT1_SHIP_BigBoy PRT1_SHIP_TeachersPet PRT1_SHIP_Destitute PRT1_SHIP_HellsBells PRT1_SHIP_Beguiler PRT1_SHIP_CriticalMass PRT1_SHIP_StarWench PRT1_SHIP_DoubleStandard PRT1_SHIP_Half-wit PRT1_SHIP_Dunderhead PRT1_SHIP_Numbskull PRT1_SHIP_BlindFury PRT1_SHIP_CurseYouAll PRT1_SHIP_CarrionEater PRT1_SHIP_Unbidden PRT1_SHIP_PoundofFlesh PRT1_SHIP_PuckerUp PRT1_SHIP_ShortFuse PRT1_SHIP_Killjoy PRT1_SHIP_Footpad PRT1_SHIP_RoadAgent PRT1_SHIP_Bushranger PRT1_SHIP_Simpleton PRT1_SHIP_Ignoramus PRT1_SHIP_NotWhatItSeems PRT1_SHIP_Reprehensible PRT1_SHIP_Intolerant PRT1_SHIP_Petulant PRT1_SHIP_DeceivingLooks PRT1_SHIP_PillageandReconciliation PRT1_SHIP_AnArrowinFlight PRT1_SHIP_Gun-to-Head PRT1_SHIP_Megalomanic PRT1_SHIP_PettyTheft PRT1_SHIP_GrandLarceny PRT1_SHIP_PopUp PRT1_SHIP_APromiseKept PRT1_SHIP_FragMachine PRT1_SHIP_UnrepentantCamper PRT1_SHIP_ImpersonalSpace PRT1_SHIP_FallenPillar PRT1_SHIP_MotionTabled PRT1_SHIP_Aimbot PRT1_SHIP_AttackonFreighter PRT1_SHIP_TheSlings PRT1_SHIP_TheArrows PRT1_SHIP_OutrageousFortune PRT1_SHIP_Thermopylaeic PRT1_SHIP_PyrrhicandProud PRT1_SHIP_WigglingBait PRT1_SHIP_ShootforLoot PRT1_SHIP_FeatureCreep PRT1_SHIP_CreepyFeats PRT1_SHIP_ToneDeafSiren PRT1_SHIP_NoGood PRT1_SHIP_TheWorstThing PRT1_SHIP_OhThatsaPirate PRT1_SHIP_ScienceShipKiller PRT1_SHIP_Ravageoid PRT1_SHIP_Violence-Liker PRT1_SHIP_IllegalRepercussions PRT1_SHIP_ShamelessPlagiarist PRT1_SHIP_DoveCrow PRT1_SHIP_Alcheringa PRT1_SHIP_BarnacleJim PRT1_SHIP_CharlesinCharge PRT1_SHIP_Ganker PRT1_SHIP_ManusCelerDei PRT1_SHIP_FatumIustumStultorum PRT1_SHIP_StrangeAeons PRT1_SHIP_RedQueen PRT1_SHIP_Jabberwock PRT1_SHIP_Boojum PRT1_SHIP_Snark
 		}
-	
 		corvette = {
 		}
 		
@@ -20,23 +20,23 @@ paradox_pirates_improved = {
 		}
 		
 		battleship = {
-            "Alestorm" "Robbie Rotten" "Big Hug" "Complete Breakfast" "Per My Last E-Mail" "Millennial Falchion" "Ball Eater" "Mistake" "Nein Heroez" "I Would Like To Rage" "Your Extended Warranty" "Get Off my Keybfjjjj" "Goin' Commando" "Emotional Support Vessel" "Belma's Panties" "Going Jolly" "Million Moony" "Pirate D. Ship" "Mental Possum" "Lusty Tzynn Maid" "Doorknob Sock" "Stolen Sweetroll" Mass-kisser "Ban Hammer" Nerf-herder "Gaston" "Spit and Prayers" "Daddy's Little Ship" "Byzantium V" "Wench's Wink" Showstopper Show-off "Scythe of Death" "Philosophy" 
+            PRT1_SHIP_PirateMcPirateFace PRT1_SHIP_Alestorm PRT1_SHIP_RobbieRotten PRT1_SHIP_BigHug PRT1_SHIP_CompleteBreakfast PRT1_SHIP_PerMyLastEMail PRT1_SHIP_MillennialFalchion PRT1_SHIP_BallEater PRT1_SHIP_Mistake PRT1_SHIP_NeinHeroez PRT1_SHIP_IWouldLikeToRage PRT1_SHIP_YourExtendedWarranty PRT1_SHIP_GetOffMyKeybfjjjj PRT1_SHIP_GoinCommando PRT1_SHIP_EmotionalSupportVessel PRT1_SHIP_BelmasPanties PRT1_SHIP_GoingJolly PRT1_SHIP_MillionMoony PRT1_SHIP_PirateDShip PRT1_SHIP_MentalPossum PRT1_SHIP_LustyTzynnMaid PRT1_SHIP_DoorknobSock PRT1_SHIP_StolenSweetroll PRT1_SHIP_MassKisser PRT1_SHIP_BanHammer PRT1_SHIP_NerfHerder PRT1_SHIP_Gaston PRT1_SHIP_SpitAndPrayers PRT1_SHIP_DaddysLittleShip PRT1_SHIP_ByzantiumV PRT1_SHIP_WenchsWink PRT1_SHIP_Showstopper PRT1_SHIP_ShowOff PRT1_SHIP_ScytheOfDeath PRT1_SHIP_Philosophy
 		}
 
 		titan = {
-			"Blackbeard" "Tortuga" "Drake" "Revenge" "Legacy" "Parade" "Flying Blorg"
+			PRT1_SHIP_Blackbeard PRT1_SHIP_Tortuga PRT1_SHIP_Drake PRT1_SHIP_Revenge PRT1_SHIP_Legacy PRT1_SHIP_Parade PRT1_SHIP_Flying Blorg
 		}
 
 		juggernaut = {
-			"Planetlubber" "Drydock" "Harbor" "Brigand Cove" "Merxeno Lagoon" "Haulout" "Your Mom"
+			PRT1_SHIP_Planetlubber PRT1_SHIP_Drydock PRT1_SHIP_Harbor PRT1_SHIP_BrigandCove PRT1_SHIP_MerxenoLagoon PRT1_SHIP_Haulout PRT1_SHIP_Your Mom
 		}
 
 		colossus = {
-			"Black Spot" "Kraken" "Gargantua"
+			PRT1_SHIP_BlackSpot PRT1_SHIP_Kraken PRT1_SHIP_Gargantua
 		}
 		
 		science = {
-			"Orville" "Enterprise" "1337 H4XX0R" "Runtime Error" "Failed Host Lookup" "DROPTABLE" "Deviant Drone" "404 Ship Not Found" "Tiyanki Feathers" "Pirate School Dropout" "Mystery Machine" "NEET's Basement" "Flagpole Undies" "Nerd Alert" "Humm Parsec" "Modern Major-General"
+			PRT1_SHIP_Orville PRT1_SHIP_Enterprise PRT1_SHIP_1337H4XX0R PRT1_SHIP_RuntimeError PRT1_SHIP_FailedHostLookup PRT1_SHIP_DROPTABLE PRT1_SHIP_DeviantDrone PRT1_SHIP_404ShipNotFound PRT1_SHIP_Blip-A PRT1_SHIP_PirateSchoolDropout PRT1_SHIP_MysteryMachine PRT1_SHIP_NEETsBasement PRT1_SHIP_FlagpoleUndies PRT1_SHIP_NerdAlert PRT1_SHIP_HummParsec PRT1_SHIP_ModernMajor-General
 		}
 		
 		colonizer = {
@@ -46,6 +46,7 @@ paradox_pirates_improved = {
 		}
 		
 		transport = {
+			PRT1_SHIP_CarryMeHome
 		}
 
 		#orbital_station = { }
@@ -57,7 +58,7 @@ paradox_pirates_improved = {
 		#outpost_station = {	}
 	
 		military_station_small = {
-			"Maria's Claw" "Margaret's Talon" "Morales' Dagger" "Mercedes' Appendage" "Mario's Plunger" "Marc's Cutlass"
+			PRT1_SHIP_MariasClaw PRT1_SHIP_MargaretsTalon PRT1_SHIP_MoralesDagger PRT1_SHIP_MercedesAppendage PRT1_SHIP_MariosPlunger PRT1_SHIP_MarcsCutlass
 		}
 	
 		military_station_medium = {}
@@ -69,7 +70,7 @@ paradox_pirates_improved = {
 	
 	fleet_names = {
 		random_names = {
-            "Blood Armada" "Dread Fleet" "Flotilla of Death" "Skull Armada" "Fleet of Doom" "Raider Flotilla" "Pirate Squadron" "Dark Flotilla" "War Party" "Pirate Armada" "Pirate Flotilla" "Raiding Strike Force" "Blood Host" "Hunting Squadron" "Hunting Pack" "Scourge of the Stars" "Black Flotilla" "Crimson Flotilla" "Stellar Marauders" "Black Flag Furore" "Pirates Without Borders" "Incessant Nagging" "Cirque des Soleils" "Scallywags United" "Captain Kirk's Trousers" "qID Saghqu'" "Merry Men of Sherwood Planet" "Tribble Tossers" Disagreeables "Dishonor Among Thieves" "Prize Rule Breakers" Sunblasters Moonchasers "Carbon Hounds" "Under Pressure" "Home Team" "Away Team" Interlopers "The Persistents" "Piracy Potentiators" "Prank Patrol" "China Plates" "Privateering Enthusiasts" "Raiding Specialists" "Boarding Broncos" "Peaceful Travelers" "Blue Rogues" "Radical Dreamers" "They Breathe" Orbwalkers
+			PRT1_FLEET_BloodArmada PRT1_FLEET_DreadFleet PRT1_FLEET_FlotillaofDeath PRT1_FLEET_SkullArmada PRT1_FLEET_FleetofDoom PRT1_FLEET_RaiderFlotilla PRT1_FLEET_RaidingForce PRT1_FLEET_PirateSquadron PRT1_FLEET_DarkFlotilla PRT1_FLEET_WarParty PRT1_FLEET_PirateArmada PRT1_FLEET_PirateFlotilla PRT1_FLEET_RaidingStrikeForce PRT1_FLEET_BloodHost PRT1_FLEET_HuntingSquadron PRT1_FLEET_HuntingPack PRT1_FLEET_ScourgeoftheStars PRT1_FLEET_BlackFlotilla PRT1_FLEET_CrimsonFlotilla PRT1_FLEET_StellarMarauders PRT1_FLEET_BlackFlagFurore PRT1_FLEET_PiratesWithoutBorders PRT1_FLEET_IncessantNagging PRT1_FLEET_ScallywagsUnited PRT1_FLEET_Disagreeables PRT1_FLEET_DishonorAmongThieves PRT1_FLEET_PrizeRuleBreakers PRT1_FLEET_Sunblasters PRT1_FLEET_Moonchasers PRT1_FLEET_CarbonHounds PRT1_FLEET_UnderPressure PRT1_FLEET_HomeTeam PRT1_FLEET_AwayTeam PRT1_FLEET_Interlopers PRT1_FLEET_ThePersistents PRT1_FLEET_PiracyPotentiators PRT1_FLEET_PrankPatrol PRT1_FLEET_ChinaPlates PRT1_FLEET_PrivateeringEnthusiasts PRT1_FLEET_RaidingSpecialists PRT1_FLEET_BoardingBroncos PRT1_FLEET_BlueRogues PRT1_FLEET_RadicalDreamers PRT1_FLEET_TheyBreathe PRT1_FLEET_Orbwalkers
 		}
 		sequential_name = PARADOX_PIRATES_IMPROVED_xxFLEETNAMES_ORD
 	}
@@ -165,6 +166,12 @@ paradox_pirates_improved = {
 		warpling_army = {
 			sequential_name = seq_warpling_army
 		}
+		ember_legion = {
+			sequential_name = seq_ember_legion
+		}
+		lm_imbued_army = {
+			sequential_name = seq_lm_imbued_army
+		}
 		abomination_army = {
 			sequential_name = seq_abomination_army
 		}
@@ -182,55 +189,55 @@ paradox_pirates_improved = {
 	
 		generic = {
 			names = {
-            	"Libertalia" "Nassau" "Tortuga" "Dark Lair" "Port Despair" "Solid Ground" "Vorpal House" "Morbid Home" "Spacer Alley" "The Big House" "Beyond the Pale" "The Pirate Bulge" "Foul Parish" "Pit of Piracy" "Corsair Court" "The Privateers Privates" "Buccaneer Bodega" "Zero-G Chateau" "Just Rewards" "The Heft of Theft" "Predatory Positioning" "Military-Piracy Complex"
+            	PRT1_PLANET_Libertalia PRT1_PLANET_Nassau PRT1_PLANET_Tortuga PRT1_PLANET_DarkLair PRT1_PLANET_PortDespair PRT1_PLANET_SolidGround PRT1_PLANET_VorpalHouse PRT1_PLANET_MorbidHome PRT1_PLANET_SpacerAlley PRT1_PLANET_TheBigHouse PRT1_PLANET_BeyondthePale PRT1_PLANET_ThePirateBulge PRT1_PLANET_FoulParish PRT1_PLANET_PitofPiracy PRT1_PLANET_CorsairCourt PRT1_PLANET_ThePrivateersPrivates PRT1_PLANET_BuccaneerBodega PRT1_PLANET_ZeroGChateau PRT1_PLANET_JustRewards PRT1_PLANET_TheHeftofTheft PRT1_PLANET_PredatoryPositioning PRT1_PLANET_MilitaryPiracyComplex
             }
 		}
 		
 		pc_desert = {
 			names = {
-                "Kingdom Crumbs" "Gothgirlsere" "Anken's Bane"
+                PRT1_PLANET_KingdomCrumbs PRT1_PLANET_Gothgirlsere PRT1_PLANET_AnkensBane
 			}
 		}
 		
 		pc_tropical = {
 			names = {
-                "Polly's Perch" "Poogan's Porch" "Prestley's Preach"
+                PRT1_PLANET_PollysPerch PRT1_PLANET_PoogansPorch PRT1_PLANET_PrestleysPreach
 			}
 		}
 		
 		pc_arid = {
 			names = {
-                "Lookout" "Reckless Abandon" "Stripey Rocks"
+                PRT1_PLANET_Lookout PRT1_PLANET_RecklessAbandon PRT1_PLANET_StripeyRocks
 			}
 		}
 		
 		pc_continental = {
 			names = {
-                "Happy Camper" "Grumpy Camper" "Goldilocks"
+                PRT1_PLANET_HappyCamper PRT1_PLANET_GrumpyCamper PRT1_PLANET_Montressor
 			}
 		}
 		
 		pc_ocean = {
 			names = {
-                "Unsafe Harbor" "Safe Harbor" "OSHA-Approved Harbor"
+                PRT1_PLANET_UnsafeHarbor PRT1_PLANET_SafeHarbor PRT1_PLANET_OSHAApprovedHarbor
 			}
 		}
 		
 		pc_tundra = {
 			names = {
-                "Snow Day" "Hard Pack" "Balto" 
+                PRT1_PLANET_SnowDay PRT1_PLANET_HardPack PRT1_PLANET_Balto
 			}
 		}
 		
 		pc_arctic = {
 			names = {
-                "Black Ice" "Franklin" "Shield of Crystal"
+                PRT1_PLANET_BlackIce PRT1_PLANET_Franklin PRT1_PLANET_ShieldOfCrystal
 			}
 		}
 
         pc_alpine = {
             names = {
-                "Rocky Outhouse" "Tumbledown" "Mt Areskupardi"
+                PRT1_PLANET_RockyOuthouse PRT1_PLANET_Tumbledown PRT1_PLANET_MtAreskupardi
             }
         }
 		
@@ -243,36 +250,36 @@ paradox_pirates_improved = {
 			weight = 100
 
             first_names_male = { 
-                Ace Aragon Ash Bjorn Ben Boar Bootstrap Braveheart Brock Burt Cole Cygnus Delvin Doug Elias Erdin Eurylochus Francis Frisk G'karr Gabrelle Garrick Gary Gunner Han Haslett Honest Ivor Jack Jaeger Jan Juan Judge Justice Kale "Long John" Londo Lucifer Malcolm Matsura Max "Monkey D." Odysseus Orval Omar Racer Rathkran Rebel Revelry Robert Rocket Robin Rock Shepherd Smiley "Stan Lee" Todd Trombone Sully Todd Tristan Tupper Vegeta Weasel William Z Zheng 
+                PRT1_NAME_Ace PRT1_NAME_Aragon PRT1_NAME_Ash PRT1_NAME_Bjorn PRT1_NAME_Ben PRT1_NAME_Boar PRT1_NAME_Bootstrap PRT1_NAME_Braveheart PRT1_NAME_Brock PRT1_NAME_Burt PRT1_NAME_Cole PRT1_NAME_Cygnus PRT1_NAME_Delvin PRT1_NAME_Doug PRT1_NAME_Elias PRT1_NAME_Erdin PRT1_NAME_Eurylochus PRT1_NAME_Francis PRT1_NAME_Frisk PRT1_NAME_Gkarr PRT1_NAME_Gabrelle PRT1_NAME_Garrick PRT1_NAME_Gary PRT1_NAME_Gunner PRT1_NAME_Han PRT1_NAME_Haslett PRT1_NAME_Honest PRT1_NAME_Ivor PRT1_NAME_Jack PRT1_NAME_Jaeger PRT1_NAME_Jan PRT1_NAME_Juan PRT1_NAME_Judge PRT1_NAME_Justice PRT1_NAME_Kale PRT1_NAME_LongJohn PRT1_NAME_Londo PRT1_NAME_Lucifer PRT1_NAME_Malcolm PRT1_NAME_Matsura PRT1_NAME_Max PRT1_NAME_MonkeyD PRT1_NAME_Odysseus PRT1_NAME_Orval PRT1_NAME_Omar PRT1_NAME_Petrichor PRT1_NAME_Racer PRT1_NAME_Rathkran PRT1_NAME_Rebel PRT1_NAME_Revelry PRT1_NAME_Robert PRT1_NAME_Rocket PRT1_NAME_Robin PRT1_NAME_Rock PRT1_NAME_Shepherd PRT1_NAME_Smiley PRT1_NAME_StanLee PRT1_NAME_Todd PRT1_NAME_Trombone PRT1_NAME_Sully PRT1_NAME_Todd PRT1_NAME_Tristan PRT1_NAME_Tupper PRT1_NAME_Vegeta PRT1_NAME_Weasel PRT1_NAME_William PRT1_NAME_Z PRT1_NAME_Zheng 
             }
            
             first_names_female = { 
-                Ace Agene Blaze Catra Cassiopeia Coliope Curse Danger Delenn Determination Dolores Drucilla Echo Edith Elegy Fantoma Frisk Geraldine Harmony Helga Jester Karai Law Light Lillian Lillith Margot Max Makone Melody Misty May Ondine Eurydice Kitty Hunter Lyra Phanta Peep Penelope Penny Peridot Peril Perseverance Rhapsody Rue Sela Scarlet Shizuka Siren Trouble Tulip Tyde Valkyrie Vellen Vendetta Z Zariel Zelda Zoe
+                PRT1_NAME_Ace PRT1_NAME_Agene PRT1_NAME_Blaze PRT1_NAME_Catra PRT1_NAME_Cassiopeia PRT1_NAME_Coliope PRT1_NAME_Curse PRT1_NAME_Danger PRT1_NAME_Delenn PRT1_NAME_Determination PRT1_NAME_Dolores PRT1_NAME_Drucilla PRT1_NAME_Echo PRT1_NAME_Edith PRT1_NAME_Elegy PRT1_NAME_Fantoma PRT1_NAME_Frisk PRT1_NAME_Geraldine PRT1_NAME_Harmony PRT1_NAME_Helga PRT1_NAME_Jester PRT1_NAME_Karai PRT1_NAME_Law PRT1_NAME_Light PRT1_NAME_Lillian PRT1_NAME_Lillith PRT1_NAME_Margot PRT1_NAME_Max PRT1_NAME_Makone PRT1_NAME_Melody PRT1_NAME_Misty PRT1_NAME_May PRT1_NAME_Ondine PRT1_NAME_Eurydice PRT1_NAME_Kitty PRT1_NAME_Hunter PRT1_NAME_Lyra PRT1_NAME_Phanta PRT1_NAME_Peep PRT1_NAME_Penelope PRT1_NAME_Penny PRT1_NAME_Peridot PRT1_NAME_Peril PRT1_NAME_Perseverance PRT1_NAME_Rhapsody PRT1_NAME_Rue PRT1_NAME_Sela PRT1_NAME_Scarlet PRT1_NAME_Shizuka PRT1_NAME_Siren PRT1_NAME_Trouble PRT1_NAME_Tulip PRT1_NAME_Tyde PRT1_NAME_Valkyrie PRT1_NAME_Vellen PRT1_NAME_Vendetta PRT1_NAME_Z PRT1_NAME_Zariel PRT1_NAME_Zelda PRT1_NAME_Zoe
             }
 			
 			second_names = { 
-                Aruj Ace Ango Aleyn Alday Archer Axe Bones Book Bras-de-Fer Bellamy Barbarossa Barton Bishop Brasiliano Butler Baldassare Bashir Calevario Chance Crusher Crusoe Cossa Clisson Crabbe Cooke d'Squelette d'Morto Dax "De Foe" Drake Groundrunner Hawkins Hawley Hood Hook Jailbreak Janeway Jing Juzou Kim Kirk Kyber Lawless Luffy Mayweather Mendoza Morgan Ning North Nobody Nolastname Nowhere O'Hare Pyle Raze Reaver Reed Rees Resolve Ryker Sharp Silver Special Solo Sparrow Stevenson Takanobu Tempest Teach "von Wicke" Washbuckle Ward Wick Wunder Victorious Viper 
+                Aruj Ace PRT1_NAME_Ango PRT1_NAME_Aleyn PRT1_NAME_Alday PRT1_NAME_Archer PRT1_NAME_Axe PRT1_NAME_Bones PRT1_NAME_Book PRT1_NAME_Bras-de-Fer PRT1_NAME_Bellamy PRT1_NAME_Barbarossa PRT1_NAME_Barton PRT1_NAME_Bishop PRT1_NAME_Brasiliano PRT1_NAME_Butler PRT1_NAME_Baldassare PRT1_NAME_Bashir PRT1_NAME_Calevario PRT1_NAME_Chance PRT1_NAME_Crusher PRT1_NAME_Crusoe PRT1_NAME_Cossa PRT1_NAME_Clisson PRT1_NAME_Crabbe PRT1_NAME_Cooke PRT1_NAME_dSquelette PRT1_NAME_dMorto PRT1_NAME_Dax PRT1_NAME_DeFoe PRT1_NAME_Drake PRT1_NAME_Groundrunner PRT1_NAME_Hawkins PRT1_NAME_Hawley PRT1_NAME_Hood PRT1_NAME_Hook PRT1_NAME_Jailbreak PRT1_NAME_Janeway PRT1_NAME_Jing PRT1_NAME_Juzou PRT1_NAME_Kim PRT1_NAME_Kirk PRT1_NAME_Kyber PRT1_NAME_Lawless PRT1_NAME_Luffy PRT1_NAME_Mayweather PRT1_NAME_Mendoza PRT1_NAME_Morgan PRT1_NAME_Ning PRT1_NAME_North PRT1_NAME_Nobody PRT1_NAME_Nolastname PRT1_NAME_Nowhere PRT1_NAME_OHare PRT1_NAME_Pyle PRT1_NAME_Raze PRT1_NAME_Reaver PRT1_NAME_Reed PRT1_NAME_Rees PRT1_NAME_Resolve PRT1_NAME_Ryker PRT1_NAME_Sharp PRT1_NAME_Silver PRT1_NAME_Special PRT1_NAME_Solo PRT1_NAME_Sparrow PRT1_NAME_Stevenson PRT1_NAME_Takanobu PRT1_NAME_Tempest PRT1_NAME_Teach PRT1_NAME_vonWicke PRT1_NAME_Washbuckle PRT1_NAME_Ward PRT1_NAME_Wick PRT1_NAME_Wunder PRT1_NAME_Victorious PRT1_NAME_Viper
 			}
 
 			full_names_male = {
-				"Cheung Po Tsai" "Chen Tien-pao" "Zheng Zhilong" "Ho Hsi-wen" "Zheng Yi" "'Calico' Jack Rackham" "James Misson" "Stede Bonnet" "François l'Olonnais" "Henry Morgan" "Black Caesar" "Uluj Ali" "Samuel Axe" "Rock Brasiliano" "Baltazar de Cordes" "Francis Drake" "Arnaut Mami" "Matsura Takanobu" "Jelles de Lecat" "Montbars the Exterminator" "Stenka Razin" "Rahmah ibn Jabir al-Jalhami" "Jasim bin Jabir" "Thomas Tew" "Oruç Reis"
+				PRT1_NAME_CheungPoTsai PRT1_NAME_ChenTien-pao PRT1_NAME_ZhengZhilong PRT1_NAME_HoHsi-wen PRT1_NAME_ZhengYi PRT1_NAME_CalicoJackRackham PRT1_NAME_JamesMisson PRT1_NAME_StedeBonnet PRT1_NAME_FrancoislOlonnais PRT1_NAME_HenryMorgan PRT1_NAME_BlackCaesar PRT1_NAME_UlujAli PRT1_NAME_SamuelAxe PRT1_NAME_RockBrasiliano PRT1_NAME_BaltazardeCordes PRT1_NAME_FrancisDrake PRT1_NAME_ArnautMami PRT1_NAME_MatsuraTakanobu PRT1_NAME_JellesdeLecat PRT1_NAME_MontbarstheExterminator PRT1_NAME_StenkaRazin PRT1_NAME_RahmahibnJabiralJalhami PRT1_NAME_JasimbinJabir PRT1_NAME_ThomasTew PRT1_NAME_OrucReis
 			}
 
 			full_names_female = {
 				
-				"Zheng Yi Sao" "Mary Read" "Anne Bonny" "Tchiao Kuo-fu-ja" "Artemisia of Caria" "Joanna 'the Flame' Flanders" "Jeanne 'the Lioness' de Clisson" "Grace O'Malley" "Sayyida al Hurra" "Lady Killigrew" "Cornelia 'Neel' Cowper" "Jacquotte Delahaye" "Sarah Bishop" "Rachel Wall" "Johanna Hård" "Lo Hon-cho" "'Sister' Ping"
+				PRT1_NAME_ZhengYiSao PRT1_NAME_MaryRead PRT1_NAME_AnneBonny PRT1_NAME_TchiaoKuofuja PRT1_NAME_ArtemisiaofCaria PRT1_NAME_JoannatheFlameFlanders PRT1_NAME_JeannetheLionessdeClisson PRT1_NAME_GraceOMalley PRT1_NAME_SayyidaalHurra PRT1_NAME_LadyKilligrew PRT1_NAME_CorneliaNeelCowper PRT1_NAME_JacquotteDelahaye PRT1_NAME_SarahBishop PRT1_NAME_RachelWall PRT1_NAME_JohannaHard PRT1_NAME_LoHoncho PRT1_NAME_SisterPing"
 			}
 			
             regnal_first_names_male = {
-				"Jack" "Baltazar" "Vigo" "Karsus" "Vindict" "Garrick" "Shepherd" "Barnabus" "Siren" "Sable" "Lazarus" "Judas" "Baal" "Paimon" "Agares" "Thanatos"
+				PRT1_NAME_Jack PRT1_NAME_Baltazar PRT1_NAME_Vigo PRT1_NAME_Karsus PRT1_NAME_Vindict PRT1_NAME_Garrick PRT1_NAME_Shepherd PRT1_NAME_Barnabus PRT1_NAME_Siren PRT1_NAME_Sable PRT1_NAME_Lazarus PRT1_NAME_Judas PRT1_NAME_Baal PRT1_NAME_Paimon PRT1_NAME_Agares PRT1_NAME_Thanatos
             }
            
             regnal_first_names_female = {
-				"Katrina" "Vendetta" "Anne" "Mary" "Danger" "Lilith" "Banshee" "Harpy" "Siren" "Sable" "Bride" "Lucy" "Andariel" "Hecate" "Hera"
+				PRT1_NAME_Katrina PRT1_NAME_Vendetta PRT1_NAME_Anne PRT1_NAME_Mary PRT1_NAME_Danger PRT1_NAME_Lilith PRT1_NAME_Banshee PRT1_NAME_Harpy PRT1_NAME_Siren PRT1_NAME_Sable PRT1_NAME_Bride PRT1_NAME_Lucy PRT1_NAME_Andariel PRT1_NAME_Hecate PRT1_NAME_Hera
             }
 			
 			regnal_second_names = {
-                "of the Great Black" "of the Void" "of the Starry Seas" "of the Hidden Nebula" "of the Gilded Planet" "D. Roger"
+                PRT1_NAME_oftheGreatBlack PRT1_NAME_oftheVoid PRT1_NAME_oftheStarrySeas PRT1_NAME_oftheHiddenNebula PRT1_NAME_oftheGildedPlanet PRT1_NAME_DRoger
 			}
 		}
 	}
