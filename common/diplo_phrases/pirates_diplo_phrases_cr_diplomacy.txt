@@ -783,14 +783,6 @@ action_break_migration_pact = {
 			}
 		}
 	}
-	refuse = {
-		CR_BREAK_MIGRATION_PACT_REFUSE = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-			}
-		}
-	}
 }
 
 action_open_borders = {
@@ -1107,14 +1099,6 @@ action_revoke_federation_association_status = {
 	}
 	accept = {
 		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT = {
-			weight = { weight = 50 }
-			trigger = {
-				has_ai_personality = cunning_raiders
-			}
-		}
-	}
-	refuse = {
-		CR_REVOKE_FEDERATION_ASSOCIATION_STATUS_REFUSE = {
 			weight = { weight = 50 }
 			trigger = {
 				has_ai_personality = cunning_raiders
