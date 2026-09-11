@@ -20,7 +20,7 @@ paradox_pirates_improved = {
 		}
 		
 		battleship = {
-            PRT1_SHIP_PirateMcPirateFace PRT1_SHIP_Alestorm PRT1_SHIP_RobbieRotten PRT1_SHIP_BigHug PRT1_SHIP_CompleteBreakfast PRT1_SHIP_PerMyLastEMail PRT1_SHIP_MillennialFalchion PRT1_SHIP_BallEater PRT1_SHIP_Mistake PRT1_SHIP_NeinHeroez PRT1_SHIP_IWouldLikeToRage PRT1_SHIP_YourExtendedWarranty PRT1_SHIP_GetOffMyKeybfjjjj PRT1_SHIP_GoinCommando PRT1_SHIP_EmotionalSupportVessel PRT1_SHIP_BelmasPanties PRT1_SHIP_GoingJolly PRT1_SHIP_MillionMoony PRT1_SHIP_PirateDShip PRT1_SHIP_MentalPossum PRT1_SHIP_LustyTzynnMaid PRT1_SHIP_DoorknobSock PRT1_SHIP_StolenSweetroll PRT1_SHIP_MassKisser PRT1_SHIP_BanHammer PRT1_SHIP_NerfHerder PRT1_SHIP_Gaston PRT1_SHIP_SpitAndPrayers PRT1_SHIP_DaddysLittleShip PRT1_SHIP_ByzantiumV PRT1_SHIP_WenchsWink PRT1_SHIP_Showstopper PRT1_SHIP_ShowOff PRT1_SHIP_ScytheOfDeath PRT1_SHIP_Philosophy
+			PRT1_SHIP_PirateMcPirateface PRT1_SHIP_Alestorm PRT1_SHIP_RobbieRotten PRT1_SHIP_BigHug PRT1_SHIP_CompleteBreakfast PRT1_SHIP_PerMyLastEMail PRT1_SHIP_MillennialFalchion PRT1_SHIP_BallEater PRT1_SHIP_Mistake PRT1_SHIP_NeinHeroez PRT1_SHIP_IWouldLikeToRage PRT1_SHIP_YourExtendedWarranty PRT1_SHIP_GetOffMyKeybfjjjj PRT1_SHIP_GoinCommando PRT1_SHIP_EmotionalSupportVessel PRT1_SHIP_BelmasPanties PRT1_SHIP_GoingJolly PRT1_SHIP_MillionMoony PRT1_SHIP_PirateDShip PRT1_SHIP_MentalPossum PRT1_SHIP_LustyTzynnMaid PRT1_SHIP_DoorknobSock PRT1_SHIP_StolenSweetroll PRT1_SHIP_MassKisser PRT1_SHIP_BanHammer PRT1_SHIP_NerfHerder PRT1_SHIP_Gaston PRT1_SHIP_SpitAndPrayers PRT1_SHIP_DaddysLittleShip PRT1_SHIP_ByzantiumV PRT1_SHIP_WenchsWink PRT1_SHIP_Showstopper PRT1_SHIP_ShowOff PRT1_SHIP_ScytheOfDeath PRT1_SHIP_Philosophy
 		}
 
 		titan = {
@@ -189,13 +189,13 @@ paradox_pirates_improved = {
 	
 		generic = {
 			names = {
-            	PRT1_PLANET_Libertalia PRT1_PLANET_Nassau PRT1_PLANET_Tortuga PRT1_PLANET_DarkLair PRT1_PLANET_PortDespair PRT1_PLANET_SolidGround PRT1_PLANET_VorpalHouse PRT1_PLANET_MorbidHome PRT1_PLANET_SpacerAlley PRT1_PLANET_TheBigHouse PRT1_PLANET_BeyondthePale PRT1_PLANET_ThePirateBulge PRT1_PLANET_FoulParish PRT1_PLANET_PitofPiracy PRT1_PLANET_CorsairCourt PRT1_PLANET_ThePrivateersPrivates PRT1_PLANET_BuccaneerBodega PRT1_PLANET_ZeroGChateau PRT1_PLANET_JustRewards PRT1_PLANET_TheHeftofTheft PRT1_PLANET_PredatoryPositioning PRT1_PLANET_MilitaryPiracyComplex
+            	PRT1_PLANET_Libertalia PRT1_PLANET_Nassau PRT1_PLANET_Tortuga PRT1_SHIP_DarkLair PRT1_SHIP_PortDespair PRT1_SHIP_SolidGround PRT1_SHIP_VorpalHouse PRT1_SHIP_MorbidHome PRT1_SHIP_SpacerAlley PRT1_SHIP_TheBigHouse PRT1_SHIP_BeyondthePale PRT1_SHIP_ThePirateBulge PRT1_SHIP_FoulParish PRT1_SHIP_PitofPiracy PRT1_SHIP_CorsairCourt PRT1_SHIP_ThePrivateersPrivates PRT1_SHIP_BuccaneerBodega PRT1_SHIP_ZeroGChateau PRT1_SHIP_JustRewards PRT1_SHIP_TheHeftofTheft PRT1_SHIP_PredatoryPositioning PRT1_SHIP_MilitaryPiracyComplex
             }
 		}
 		
 		pc_desert = {
 			names = {
-                PRT1_PLANET_KingdomCrumbs PRT1_PLANET_Gothgirlsere PRT1_PLANET_AnkensBane
+                PRT1_SHIP_KingdomCrumbs PRT1_PLANET_Gothgirlsere PRT1_PLANET_AnkensBane
 			}
 		}
 		
@@ -219,7 +219,7 @@ paradox_pirates_improved = {
 		
 		pc_ocean = {
 			names = {
-                PRT1_PLANET_UnsafeHarbor PRT1_PLANET_SafeHarbor PRT1_PLANET_OSHAApprovedHarbor
+                PRT1_SHIP_UnsafeHarbor PRT1_SHIP_SafeHarbor PRT1_PLANET_OSHAApprovedHarbor
 			}
 		}
 		

@@ -23,8 +23,8 @@ opinion_from_personality = {
 
 opinion_honor_among_thieves = {
 	trigger = {
-		has_ai_personality = mirthful_bandit
-		FROM = { has_ai_personality = mirthful_bandit }
+		has_ai_personality = mirthful_bandits
+		FROM = { has_ai_personality = mirthful_bandits }
 	}
 	opinion = {
 		add = 100
@@ -56,7 +56,7 @@ triggered_opinion_tempting_raiding_target = {
 		modifier = {
 			relative_power = {
 				who = root
-				category = military
+				category = fleet
 				value <= inferior
 				}
 			add = -20
@@ -67,7 +67,7 @@ triggered_opinion_tempting_raiding_target = {
 triggered_opinion_tyrants_vs_robinhood = {
 	trigger = {
 		is_gestalt = no
-		has_policy_flag = { slavery_allowed = yes }
+		has_policy_flag = slavery_allowed
 		FROM = { has_ai_personality = mirthful_bandits }
 	}
 	opinion = {
@@ -84,7 +84,7 @@ triggered_opinion_robinhood_vs_tyrants = {
 		has_ai_personality = mirthful_bandits
 		FROM = {
 			is_gestalt = no
-			has_policy_flag = { slavery_allowed = yes }
+			has_policy_flag =slavery_allowed
 		}
 	}
 	opinion = {
@@ -159,7 +159,7 @@ triggered_opinion_cr_vs_slavers = {
 		has_ai_personality = cunning_raiders
 		FROM = {
 			is_gestalt = no
-			has_policy_flag = { slavery_allowed = yes }
+			has_policy_flag = slavery_allowed
 		}
 	}
 	opinion = {
