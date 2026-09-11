@@ -42,7 +42,7 @@ on_solar_sails_cat = {
 		}
 	}
 
-	on_spawn = { set_global_flag = empirate_anomaly_spawned }
+	#on_spawn = { set_global_flag = empirate_anomaly_spawned }
 
 	on_success = anomaly.7020
 }
