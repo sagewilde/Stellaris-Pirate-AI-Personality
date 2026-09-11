@@ -9,6 +9,7 @@ entertainer = {
             condition_string = SPECIALIST_JOB_TRIGGER
             building_icon = building_holo_theatres
         }
+        # Duelists
         swap_type = {
             trigger = {
                 entertainer_is_duelist_trigger = yes
@@ -20,6 +21,7 @@ entertainer = {
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 5
         }
+        # Storm Interpreter
         swap_type = {
             trigger = {
                 entertainer_is_duelist_trigger = no
@@ -31,6 +33,7 @@ entertainer = {
             building_icon = building_astrometeorology_observation_center
             weight = 5
         }
+        # Curator
         swap_type = {
             trigger = {
                 entertainer_is_curator_trigger = yes
@@ -41,6 +44,7 @@ entertainer = {
             building_icon = aesthetic_wonders_holomuseum
             weight = 15
         }
+        # Storm Duelists
         swap_type = {
             trigger = {
                 entertainer_is_duelist_trigger = yes
@@ -53,6 +57,20 @@ entertainer = {
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 20
         }
+        # Reenactor
+        swap_type = {
+            trigger = {
+                entertainer_is_duelist_trigger = yes
+                entertainer_is_curator_trigger = yes
+            }
+            name = reenactor
+            desc = reenactor
+            icon = duelist
+            building_icon = aesthetic_wonders_holomuseum
+            condition_string = BATTLE_THRALL_JOB_TRIGGER
+            weight = 20
+        }
+        # Shanty Singer
         swap_type = {
             trigger = {
                 entertainer_is_shanty_singer_trigger = yes
@@ -64,6 +82,7 @@ entertainer = {
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 20
         }
+        #Tavern Storyteller
         swap_type = {
             trigger = {
                 entertainer_is_duelist_trigger = yes
@@ -73,19 +92,20 @@ entertainer = {
             desc = duelist_shanty_singer
             icon = duelist
             condition_string = BATTLE_THRALL_JOB_TRIGGER
-            weight = 20
+            weight = 25
         }
     }
-    tags = {
-        amenities
-        unity
-    }
+
+    tags = { amenities unity }
+
     possible_pre_triggers = {
         has_owner = yes
         is_being_purged = no
         is_being_assimilated = no
         is_sapient = yes
     }
+
+    #Cog Note - Returned Storm Technicians/Dancers/Chanters to it's own job. Storm Entertainer job is now Storm Enterpreter. Enterpreter are influenced by the storm, opposite of dancers.
     possible = {
         if = {
             limit = {
@@ -93,15 +113,6 @@ entertainer = {
                 entertainer_is_storm_interpreter_trigger = yes
             }
             battle_thrall_job_check_trigger = yes
-            OR = {
-                has_ethic = ethic_militarist
-                owner = {
-                    is_individual_machine = yes
-                }
-                owner = {
-                    is_gestalt = yes
-                }
-            }
         }
         else_if = {
             limit = {
@@ -109,24 +120,16 @@ entertainer = {
                 entertainer_is_storm_interpreter_trigger = no
             }
             battle_thrall_job_check_trigger = yes
-            OR = {
-                has_ethic = ethic_militarist
-                owner = {
-                    is_individual_machine = yes
-                }
-                owner = {
-                    is_gestalt = yes
-                }
-            }
         }
         else = {
             entertainer_job_check_trigger = yes
         }
     }
+
     resources = {
         category = planet_entertainers
         produces = {
-            unity = 1
+            unity = 0.5
         }
         upkeep = {
             trigger = {
@@ -134,11 +137,33 @@ entertainer = {
             }
             consumer_goods = 1
         }
+        # Job Swap - Curator
+        produces = {
+            trigger = {
+                entertainer_is_curator_trigger = yes
+            }
+            society_research = 0.5
+        }
+        upkeep = {
+            trigger = {
+                entertainer_is_curator_trigger = yes
+                entertainer_is_duelist_trigger = no
+            }
+            consumer_goods = 1
+        }
+        upkeep = {
+            trigger = {
+                entertainer_is_curator_trigger = yes
+                entertainer_is_duelist_trigger = yes
+            }
+            alloys = 0.5
+        }
+        # Job Swap - Duelist
         produces = {
             trigger = {
                 entertainer_is_duelist_trigger = yes
             }
-            unity = 1
+            unity = 0.5
         }
         upkeep = {
             trigger = {
@@ -146,6 +171,19 @@ entertainer = {
                 entertainer_is_storm_interpreter_trigger = no
             }
             alloys = 0.5
+        }
+        # Job Swap - Storm Interpreter
+        produces = {
+            trigger = {
+                entertainer_is_storm_interpreter_trigger = yes
+            }
+            unity = 1.5
+        }
+        upkeep = {
+            trigger = {
+                entertainer_is_storm_interpreter_trigger = yes
+            }
+            consumer_goods = 1
         }
         upkeep = {
             trigger = {
@@ -154,34 +192,39 @@ entertainer = {
             }
             alloys = 1
         }
+        #Distributism
         produces = {
             trigger = {
-                entertainer_is_storm_interpreter_trigger = yes
+                owner = { has_valid_civic = civic_distributism }
             }
-            consumer_goods = 0.5
-            unity = 1
-        }
-        produces = {
-            trigger = {
-                entertainer_is_shanty_singer_trigger = yes
-            }
-            unity = 1
-        }
-        upkeep = {
-            trigger = {
-                entertainer_is_shanty_singer_trigger = yes
-                entertainer_is_duelist_trigger = yes
-            }
-            alloys = 0.5
+            trade = 1
+            unity = 1.5
         }
     }
+
     triggered_planet_modifier = {
         potential = {
-            always = yes
+            owner? = { NOT = { has_valid_civic = civic_dystopian_society } }
         }
         planet_amenities_add = 1250
         mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
     }
+
+    triggered_country_modifier = {
+        potential = {
+            entertainer_is_duelist_trigger = yes
+        }
+        country_naval_cap_add = 2
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner? = { has_modifier = exploitation_accord }
+        }
+        planet_jobs_produces_mult = @accord_exploitation_resources_from_jobs
+    }
+
+    ## Duelist
     triggered_planet_modifier = {
         potential = {
             entertainer_is_duelist_trigger = yes
@@ -192,11 +235,8 @@ entertainer = {
     triggered_planet_modifier = {
         potential = {
             entertainer_is_duelist_trigger = yes
-            exists = owner
-            owner = {
-                has_councilor = {
-                    COUNCILOR = "councilor_warrior_culture"
-                }
+            owner? = {
+                has_councilor = { COUNCILOR = "councilor_warrior_culture" }
             }
         }
         planet_amenities_add = 100
@@ -205,12 +245,12 @@ entertainer = {
     triggered_planet_modifier = {
         potential = {
             entertainer_is_duelist_trigger = yes
-            owner = {
-                is_gestalt = no
-            }
+            owner = { is_gestalt = no }
         }
-        pop_ethic_militarist_attraction_mult = 0.05
+        pop_government_ethic_attraction = 0.05
     }
+
+    #Storm Dancer
     triggered_planet_modifier = {
         potential = {
             entertainer_is_duelist_trigger = no
@@ -218,6 +258,7 @@ entertainer = {
         }
         planet_amenities_add = -450
     }
+
     triggered_planet_modifier = {
         potential = {
             entertainer_is_duelist_trigger = yes
@@ -225,70 +266,30 @@ entertainer = {
         }
         planet_amenities_add = -350
     }
+
     triggered_country_modifier = {
         potential = {
             entertainer_is_duelist_trigger = yes
+            has_councilor = { COUNCILOR = "councilor_warrior_culture" }
         }
-        country_naval_cap_add = 2
-    }
-    triggered_country_modifier = {
-        potential = {
-            entertainer_is_duelist_trigger = yes
-            has_councilor = {
-                COUNCILOR = "councilor_warrior_culture"
-            }
-        }
+
         country_naval_cap_add = 0.2
         mult = value:councilor_level|TYPE|councilor_warrior_culture|
     }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_pleasure_seeker_empire = yes
-                is_individual_machine = no
-            }
-        }
-        modifier = {
-            founder_species_growth_mult = 0.01
-        }
-    }
+
     triggered_planet_modifier = {
         potential = {
             owner = {
                 OR = {
-                    has_valid_civic = civic_consumerism
-                    has_valid_civic = civic_consumerism_corporate
+                    has_valid_civic = civic_consumerism 			# Modded
+                    has_valid_civic = civic_consumerism_corporate	# Modded
                 }
             }
         }
-        planet_amenities_add = 200
-        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+        planet_amenities_add = 200												# Modded
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|	# Modded
     }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                has_modifier = exploitation_accord
-            }
-        }
-        planet_jobs_produces_mult = @accord_exploitation_resources_from_jobs
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_pleasure_seeker_empire = yes
-                OR = {
-                    is_individual_machine = yes
-                    is_synthetic_empire = yes
-                }
-            }
-        }
-        modifier = {
-            planet_pop_assembly_mult = 0.01
-        }
-    }
+    # Shanty Singer
     triggered_planet_modifier = {
         potential = {
             entertainer_is_shanty_singer_trigger = yes
@@ -302,16 +303,14 @@ entertainer = {
         ship_speed_mult = 0.005
         starbase_shipyard_build_speed_mult = 0.005
     }
+
     weight = {
         weight = @high_prio_specialist_job_weight
-        mult = value:job_weights_modifier|JOB|entertainer|RESOURCE|unity|FACTOR|0.25|
         mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
         modifier = {
             factor = 0.2
             has_citizenship_rights = no
-            NOT = {
-                has_trait = trait_mechanical
-            }
+            NOT = { has_trait = trait_mechanical }
         }
         modifier = {
             factor = 3
@@ -325,32 +324,36 @@ entertainer = {
             factor = 0.1
             is_domestic_servant = yes
         }
+
         modifier = {
             factor = 50
         }
+
         modifier = {
             add = 500
-            exists = planet
-            planet = {
+            colony? = {
                 has_modifier = artistic_boom
             }
         }
-        modifier = {
-            add = 500
+
+        modifier = {	#Due to this being an ethic-based job
+            factor = 5
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_pacifist
+            }
             entertainer_is_duelist_trigger = yes
-            owner = {
-                is_individual_machine = no
+        }
+
+        modifier = {
+            factor = 5
+            OR = {
+                has_ethic = ethic_green
+                has_ethic = ethic_industrial
             }
+            entertainer_is_storm_interpreter_trigger = yes
         }
     }
+
     inline_script = "jobs/automodding_priority_charisma"
-    promotion = {
-        time = @standard_promotion_time
-        effect = {
-            pop_amount_change_category = {
-                CATEGORY = specialist
-                AMOUNT = local_pop_amount
-            }
-        }
-    }
 }
