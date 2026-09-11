@@ -37,12 +37,39 @@ entertainer = {
         swap_type = {
             trigger = {
                 entertainer_is_curator_trigger = yes
+                entertainer_is_shanty_singer_trigger = no
             }
             name = curator
             desc = curator
             icon = historical_curator
             building_icon = aesthetic_wonders_holomuseum
             weight = 15
+        }
+        # Shanty Singer
+        swap_type = {
+            trigger = {
+                entertainer_is_shanty_singer_trigger = yes
+                entertainer_is_curator_trigger = no
+            }
+            name = shanty_singer
+            desc = shanty_singer
+            icon = entertainer
+            building_icon = building_pirate_haven
+            condition_string = BATTLE_THRALL_JOB_TRIGGER
+            weight = 15
+        }
+        # Maritime Museum Guide
+        swap_type = {
+            trigger = {
+                entertainer_is_shanty_singer_trigger = yes
+                entertainer_is_curator_trigger = yes
+            }
+            name = museum_guide
+            desc = museum_guide
+            icon = entertainer
+            building_icon = building_pirate_haven
+            condition_string = BATTLE_THRALL_JOB_TRIGGER
+            weight = 20
         }
         # Storm Duelists
         swap_type = {
@@ -70,19 +97,7 @@ entertainer = {
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 20
         }
-        # Shanty Singer
-        swap_type = {
-            trigger = {
-                entertainer_is_shanty_singer_trigger = yes
-            }
-            name = shanty_singer
-            desc = shanty_singer
-            icon = entertainer
-            building_icon = building_pirate_haven
-            condition_string = BATTLE_THRALL_JOB_TRIGGER
-            weight = 20
-        }
-        #Tavern Storyteller
+        # Tavern Storyteller
         swap_type = {
             trigger = {
                 entertainer_is_duelist_trigger = yes
@@ -93,6 +108,20 @@ entertainer = {
             icon = duelist
             condition_string = BATTLE_THRALL_JOB_TRIGGER
             weight = 25
+        }
+        # Naval Reenactor
+        swap_type = {
+            trigger = {
+                entertainer_is_shanty_singer_trigger = yes
+                entertainer_is_curator_trigger = yes
+                entertainer_is_duelist_trigger = yes
+            }
+            name = naval_reenactor
+            desc = naval_reenactor
+            icon = entertainer
+            building_icon = building_pirate_haven
+            condition_string = BATTLE_THRALL_JOB_TRIGGER
+            weight = 30
         }
     }
 

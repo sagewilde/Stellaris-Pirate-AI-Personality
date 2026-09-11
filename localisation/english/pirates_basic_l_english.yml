@@ -41,13 +41,25 @@
  ANARCHISTS: "Anarchist Ethos"
 
 ### Jobs and Job Descriptions
+ shanty_singer: "$job_shanty_singer$"
  job_shanty_singer:0 "Shanty Singer"
  job_shanty_singer_plural:0 "Shanty Singers"
- job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of the ancient seafaring ballads of their ancestral homeworlds, creating a sense of continuity in their people's traditions."
+ job_shanty_singer_desc:0 "These entertainers are veritable encyclopedias of naval lore, and know hundreds of songs that synchronize tasks and improve morale. Some shanties are modernized renditions of the ancient seafaring ballads of our ancestral homeworlds, creating a sense of continuity in our people's traditions."
 
+ duelist_shanty_singer: "$job_duelist_shanty_singer$"
  job_duelist_shanty_singer:0 "Tavern Storyteller"
  job_duelist_shanty_singer_plural:0 "Tavern Storytellers"
  job_duelist_shanty_singer_desc:0 "These old sailors, suffering injuries of the body or mind too severe to return to the void, remain on planet to tell dread tales of leviathans and devourers. The young are callow and hopeful; better to show them reality before they get in too far over their heads. And to those who doubt their warnings, they will prove why it is so rare to see an old pirate."
+
+ museum_guide: "$job_museum_guide$"
+ job_museum_guide:0 "Maritime Museum Guide"
+ job_museum_guide_plural:0 "Maritime Museum Guides"
+ job_museum_guide_desc:0 "The history of sailing on our homeworld is vital to our spacefaring culture. Learning about the life and history of the first sailors is not only fun, but essential to the education of the public."
+
+ naval_reenactor: "$job_naval_reenactor$"
+ job_naval_reenactor:0 "Naval Reenactor"
+ job_naval_reenactor_plural:0 "Naval Reenactors"
+ job_naval_reenactor_desc:0 "Families from all over the world gather at the naval history museum to watch exciting holographic reenactments of famous naval battles from our pre-FTL history. These martial performers ensure that future spacers are familiar with ancestral tactical maneuvers, victories, and losses."
 
 ### Slightly tweaked, for humor and flavor.  -  SageWilde
  name_list_cybrxkhan_handmade_pirate:0 "Fantasy Pirates (Cybrxkhan)"
