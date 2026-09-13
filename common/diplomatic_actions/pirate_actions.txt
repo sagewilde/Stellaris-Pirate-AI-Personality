@@ -4963,6 +4963,20 @@ action_release_subject = {
 	should_show_auto_accept_message_recipient = yes
 	action_type = positive
 
+	should_ai_propose = {
+		weight = 0
+		modifier = {
+			add = 100
+			root = {
+				has_ai_personality = mirthful_bandits
+				opinion_level = { who = from level >= good }
+			}
+			from = {
+				is_homicidal = no
+			}
+		}
+	}
+
 	possible = {
 		custom_tooltip = {
 			fail_text = is_a_purging_subject
@@ -4980,11 +4994,34 @@ action_ask_to_be_released_subject = {
 	AI_acceptance_base_value = -50
 	action_type = neutral
 
+	should_ai_propose = {
+		weight = 10
+		modifier = {
+			add = 1000
+			root = {
+				is_anarchist_empire = yes
+				opinion_level = { who = from level <= poor }
+				relative_power = {
+					who = FROM
+					category = fleet
+					value > equivalent
+				}
+			}
+		}
+	}
+
 	ai_acceptance = {
+		weight = 0
 		modifier = {
 			add = -100
 			has_origin = origin_slavers
 			desc = personality_decadent_capitalists
+		}
+		modifier = {
+			add = 100
+			is_anarchist_empire = yes
+			from = { is_homicidal = no }
+			desc = ANARCHISTS
 		}
 	}
 }

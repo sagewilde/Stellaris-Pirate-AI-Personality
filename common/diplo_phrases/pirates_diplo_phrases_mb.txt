@@ -709,6 +709,16 @@ greetings = {
   			NOT = { is_disloyal_to = FROM }
   		}
   	}
+	MB_VASSAL_GREETING_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			NOT = { is_disloyal_to = FROM }
+		}
+	}
   	MB_VASSAL_GREETING_DISLOYAL_01 = {
   		weight = { weight = 10000 }
   		trigger = {
@@ -719,6 +729,42 @@ greetings = {
   			is_disloyal_to = FROM
   		}
   	}
+	MB_VASSAL_GREETING_DISLOYAL_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			is_disloyal_to = FROM
+		}
+	}
+	MB_OVERLORD_GREETING_01 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_overlord_to = FROM
+			from = { is_homicidal = no }
+		}
+	}
+	MB_OVERLORD_GREETING_02 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_overlord_to = FROM
+		}
+	}
+	MB_OVERLORD_GREETING_03 = {
+		weight = { weight = 10000 }
+		trigger = {
+			has_ai_personality = mirthful_bandits
+			NOT = { is_at_war_with = FROM }
+			is_overlord_to = FROM
+			from = { is_homicidal = yes }
+		}
+	}
 
 	# Addressing Mirthful Bandits
 	DFLT_MB_HOSTILE_GREETING_01 = {
@@ -730,11 +776,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -752,11 +794,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -773,11 +811,7 @@ greetings = {
 			is_machine_empire = yes
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -795,11 +829,7 @@ greetings = {
 			is_machine_empire = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -818,11 +848,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
@@ -835,11 +861,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -854,11 +876,7 @@ greetings = {
 			is_machine_empire = yes
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -874,11 +892,7 @@ greetings = {
 			is_machine_empire = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -896,11 +910,7 @@ greetings = {
 			is_megacorp = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			is_threatened_to = FROM
@@ -915,11 +925,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
   			OR = {
@@ -936,11 +942,7 @@ greetings = {
 			is_special_personality = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
   			OR = {
@@ -956,11 +958,7 @@ greetings = {
 			is_machine_empire = yes
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
   			OR = {
@@ -977,11 +975,7 @@ greetings = {
 			is_machine_empire = no
 			FROM = {
 				is_pirate_empire = yes
-				OR = {
-					has_valid_civic = civic_anarchy_utopia
-					has_valid_civic = civic_anarchy_ideals
-					is_worker_coop_empire = yes
-				}
+				is_non_hierarchical = yes
 			}
 			NOT = { is_at_war_with = FROM }
   			OR = {
