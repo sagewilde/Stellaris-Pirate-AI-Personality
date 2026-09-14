@@ -257,7 +257,7 @@
 ## Ending Rivalry - Acceptance
  CR_DFLT_END_RIVALRY_ACCEPT:0 "How typical of the [From.GetName] to preen and posture, as if they're immune to projectiles. Keep prancing, you weak, lily-livered fools."
  CR_CORP_END_RIVALRY_ACCEPT:0 "How typical of the [From.GetName] to veil their arrogance behind their duplicitous Corporatese. Your silver tongues won't save you, not when we cut them from your heads!"
- CR_PE_END_RIVALRY_ACCEPT:0 "You will submit to the rule of the [Root.GetName] eventually. It is inevitable. [Root.GetRulerTitle] is the rightful Lord of Pirates, and you will submit to [Root.Leader.GetHerHim]!"
+ CR_PE_END_RIVALRY_ACCEPT:0 "You will submit to the rule of the [Root.GetName] eventually. It is inevitable. [Root.GetRulerName] is the rightful Lord of Pirates, and you will submit to [Root.Leader.GetHerHim]!"
 
 # Federations
 ## Asking to Join
