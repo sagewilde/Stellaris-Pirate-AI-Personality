@@ -13,7 +13,7 @@ required:
 
 galactic paragons
 
-megacorporations
+grand archive
 
 -------------------
 
