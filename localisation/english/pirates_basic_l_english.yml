@@ -10,8 +10,6 @@
 ### Prescripted Empire - Free Fleets of Lore
  EMPIRE_DESIGN_lore_spacers:0 "Free Fleets of Lore"
  EMPIRE_DESIGN_lore_spacers_desc:0 "Land on Libertalia is a rare and precious resource. For centuries, the Exceeds fought viciously over the few patches of dry ground the planet had. After centuries of the pirate kings' rule, the old order was dashed in a planet-wide mutiny.\n\nThe successors slowly disassembled old rivalries and united with a common goal; the safety and prosperity of their pirate havens. Together, they eagerly take to the stars, bringing with them millennia of seafaring culture."
- EMPIRE_DESIGN_lore_spacers_1_desc:0 "$EMPIRE_DESIGN_lore_spacers_desc$"
- EMPIRE_DESIGN_lore_spacers_2_desc:0 "$EMPIRE_DESIGN_lore_spacers_desc$"
  PRESCRIPTED_adjective_lore_spacers:0 "Lore Spacers"
  PRESCRIPTED_lore_spacers:0 "FV"
  PRESCRIPTED_species_name_lore_spacers:0 "Exceed"

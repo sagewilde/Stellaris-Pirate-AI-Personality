@@ -33,9 +33,7 @@ ethic_egalitarian = {
 	country_modifier = {
 		pop_factions_produces_mult = 0.25				# Vanilla
 		empire_size_systems_mult = -0.25
-		# country_leader_pool_size = 1
 		pop_ethics_shift_speed_mult = 0.1
-		# planet_jobs_specialist_produces_mult = 0.05	# Vanilla
 		add_attunement_the_composer_of_strands = @ethic_attunement1
 	}
 
@@ -49,7 +47,6 @@ ethic_egalitarian = {
 			is_egalitarian = yes
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_FACTION_POS
 		trigger = {
@@ -57,22 +54,6 @@ ethic_egalitarian = {
 			has_faction = progressive
 		}
 	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_CONSUMER_GOODS_POS
-		trigger = {
-			is_authoritarian = no
-			any_owned_species = {
-				OR = {
-					has_living_standard = { type = living_standard_utopian country = root }
-					has_living_standard = { type = living_standard_good country = root }
-					has_living_standard = { type = living_standard_shared_burden country = root }
-					has_living_standard = { type = living_standard_worker_ownership country = root }
-				}
-			}
-		}
-	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_EGALITARIAN_DIPLOMACY_POS
 		trigger = {
@@ -90,15 +71,14 @@ ethic_egalitarian = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_UTOPIAN_CITIZENSHIP_POS
 		trigger = {
 			any_owned_species = {
-				NOR = { is_robotic = yes is_same_species = root }
+				is_robotic = no
+				NOT = { is_same_species = root }
 			}
 			count_owned_species = {
-				count = 0
 				limit = {
 					is_sapient = yes
 					is_robotic = no
@@ -106,10 +86,10 @@ ethic_egalitarian = {
 						has_citizenship_type = { type = citizenship_full country = root }
 					}
 				}
+				count = 0
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_ENSLAVED_POS
 		trigger = {
@@ -118,21 +98,18 @@ ethic_egalitarian = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_DEMOCRATIC_GOV_POS
 		trigger = {
 			has_election_type = democratic
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_AUTOCRATIC_GOV_NEG
 		trigger = {
 			has_election_type = none
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_OVERLORD_POS
 		trigger = {
@@ -141,17 +118,29 @@ ethic_egalitarian = {
 			overlord = { is_egalitarian = yes }
 		}
 	}
-
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_UNRULY_POS
+		trigger = {
+			any_owned_species = {
+				OR = {
+					has_trait = "trait_unruly"
+					has_trait = "trait_robot_high_bandwidth"
+					has_trait = "trait_cyborg_high_bandwidth"
+				}
+			}
+		}
+	}
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_DECADENT_NEG
 		trigger = {
 			any_owned_species = {
-				has_trait = "trait_decadent"
-				has_trait = "trait_robot_decadent"
+				OR = {
+					has_trait = "trait_decadent"
+					has_trait = "trait_robot_decadent"
+				}
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_NOBLES_NEG
 		trigger = {
@@ -161,7 +150,6 @@ ethic_egalitarian = {
 			}
 		}
 	}
-
 	# Check for any leader on the Council with Faction's Ethic.
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_REPRESENTED_ON_COUNCIL
@@ -177,7 +165,6 @@ ethic_egalitarian = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_GOVERNOR_POS
 		trigger = {
@@ -187,7 +174,6 @@ ethic_egalitarian = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_STATELY_ACCLIAM
 		trigger = {
@@ -199,48 +185,63 @@ ethic_egalitarian = {
 		}
 	}
 
+	# This = Country
 	country_attraction = {
 		base = 1
 		modifier = {
 			factor = 0
 			NOR = {
 				is_country_type = default
-				is_egalitarian = yes
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_gestalt_consciousness # No governing ethic
+				check_modifier_value = { # Allow foreign ethics if no governing ethics attraction
+					modifier = pop_government_ethic_attraction
+					value <= -1
+				}
 				AND = {
-					is_primitive = yes
+					is_country_type = primitive
 					has_country_flag = preftl_societal_enlightenment_pact
 					capital_scope = {
 						has_observation_outpost = yes
 						observation_outpost_owner = {
-							is_egalitarian = yes
+							OR = {
+								has_ethic = ethic_fanatic_egalitarian
+								has_ethic = ethic_egalitarian
+							}
 						}
 					}
 				}
 			}
+			desc = FROM_EMPIRE
 		}
 		# Effects of indoctrination mission
 		modifier = {
 			factor = 20
-			is_primitive = yes
+			is_country_type = primitive
 			has_country_flag = preftl_societal_enlightenment_pact
 			capital_scope = {
 				has_observation_outpost = yes
 				observation_outpost_owner = { has_ethic = ethic_fanatic_egalitarian }
 			}
+			desc = FROM_OBSERVER
 		}
 		modifier = {
 			factor = 10
-			is_primitive = yes
+			is_country_type = primitive
 			has_country_flag = preftl_societal_enlightenment_pact
 			capital_scope = {
 				has_observation_outpost = yes
 				observation_outpost_owner = { has_ethic = ethic_egalitarian }
 			}
+			desc = FROM_OBSERVER
 		}
 		modifier = {
 			factor = 2
-			is_country_type = default
-			is_egalitarian = no
+			hidden_trigger = {
+				is_country_type = default
+				is_egalitarian = no
+			}
 			has_faction = progressive
 		}
 		modifier = {
@@ -255,24 +256,27 @@ ethic_egalitarian = {
 			exists = overlord
 			has_loyalty > 0
 			mult = value:ethics_from_overlord|ETHIC|egalitarian|
+			desc = FROM_OVERLORD
 		}
 		modifier = {
 			factor = 0.75
 			is_country_type = default
 			has_election_type = none
+			desc = FROM_AUTHORITY
 		}
 		modifier = {
 			factor = 1.25
 			is_country_type = default
 			has_election_type = democratic
+			desc = FROM_AUTHORITY
 		}
 		modifier = {
 			factor = 1.25
 			any_owned_species = {
-				NOR = { is_robotic = yes is_same_species = root }
+				is_robotic = no
+				NOT = { is_same_species = root }
 			}
 			count_owned_species = {
-				count = 0
 				limit = {
 					is_sapient = yes
 					is_robotic = no
@@ -280,23 +284,38 @@ ethic_egalitarian = {
 						has_citizenship_type = { type = citizenship_full country = root }
 					}
 				}
+				count = 0
 			}
+			desc = FROM_UTOPIAN_CITIZENSHIP
 		}
+
 		# Check for any leader on the Council with Faction's Ethic.
 		modifier = {
 			factor = value:count_councilors_with_ethic|ETHIC|egalitarian|
+			check_variable_arithmetic = {
+				which = value:count_councilors_with_ethic|ETHIC|egalitarian|
+				value != 1
+			}
+			desc = FROM_COUNCIL
 		}
-		
-		modifier = {			# Ensures that AI Mirthful Bandits stay Mirthful Bandits
+
+		modifier = {
+			factor = value:egalitarian_ethics_from_relations
+			check_variable_arithmetic = {
+				which = value:egalitarian_ethics_from_relations
+				value != 1
+			}
+			desc = FROM_RELATIONS
+		}
+		modifier = {
 			factor = 10
 			is_ai = yes
-			has_ai_personality = mirthful_bandits
+			has_ai_personality = mirthful_bandits	# To make sure Mirthful Bandits never change.
 		}
-
-		mult = value:egalitarian_ethics_from_relations
 	}
 
-	# from = planet
+	# This = Pop group
+	# From = Planet
 	pop_attraction = {
 		base = 1
 
@@ -316,11 +335,21 @@ ethic_egalitarian = {
 			has_trait = trait_hive_mind
 		}
 		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = "trait_unruly"
+				has_trait = "trait_robot_high_bandwidth"
+				has_trait = "trait_cyborg_high_bandwidth"
+			}
+			desc = HAS_UNRULY_TRAIT
+		}
+		modifier = {
 			factor = 0.5
 			OR = {
 				has_trait = "trait_decadent"
 				has_trait = "trait_robot_decadent"
 			}
+			desc = HAS_DECADENT_TRAIT
 		}
 		modifier = {
 			factor = 1.25
@@ -330,27 +359,19 @@ ethic_egalitarian = {
 			factor = 1.5
 			is_enslaved = yes
 			is_robot_pop_group = no
+			desc = FROM_SLAVERY
 		}
 		modifier = {
-			factor = 30
-			is_enslaved = yes
-			is_robot_pop_group = no
-			from = { has_building = building_underground_railroad_office }
-		}
-		modifier = {
-			factor = 1.25
-			owner = { is_authoritarian = no }
-			OR = {
-				has_living_standard = { type = living_standard_utopian }
-				has_living_standard = { type = living_standard_good }
-				has_living_standard = { type = living_standard_shared_burden }
-				has_living_standard = { type = living_standard_worker_ownership }
+			factor = 1.2
+			from = {
+				has_branch_office = yes
+				has_holding = {
+					holding = building_underground_railroad_office
+					owner = branch_office_owner
+				}
 			}
+			desc = FROM_BRANCH_OFFICES
 		}
-		# modifier = {
-		#	factor = 0.1
-		#	has_job_type = noble		# No Longer Used in Stellaris 4.0
-		#}
 	}
 }
 
@@ -370,6 +391,9 @@ ethic_capitalism = {
 		artificer = 25
 		noble = 25
 		executive = 25
+		trader = 25
+		clerk = 25
+		bath_attendant = 25
 	}
 
 	tags = {
@@ -393,7 +417,6 @@ ethic_capitalism = {
 			is_capitalism = yes
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_FACTION_POS
 		trigger = {
@@ -401,37 +424,34 @@ ethic_capitalism = {
 			has_faction = bankers
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_RULER_TRAIT_INVESTOR_POS
 		trigger = {
 			exists = ruler
-			ruler = { has_trait = "trait_ruler_investor" }
-		}
-	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_TALENTED_POS
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop_group = {
-					has_trait = "trait_talented"
+			ruler = { 
+				OR = {
+					has_trait = "trait_ruler_investor" 
+					has_trait = "trait_ruler_investor_2"
+					has_trait = "trait_ruler_investor_3"
 				}
 			}
 		}
 	}
-
 	pop_attraction_tag = {
-		desc = POP_ATTRACTION_QUICK_LEARN_POS
+		desc = POP_ATTRACTION_FREE_MARKET_POS
 		trigger = {
-			any_owned_planet = {
-				any_owned_pop_group = {
-					has_trait = "trait_quick_learners"
-				}
+			OR = {
+				has_policy_flag = economic_stance_criminal_market
+				has_policy_flag = economic_stance_market
 			}
 		}
 	}
-
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_PLANNED_ECONOMY_NEG
+		trigger = {
+			has_policy_flag = economic_stance_planned
+		}
+	}
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_CONSUMER_GOODS_NEG
 		trigger = {
@@ -441,12 +461,33 @@ ethic_capitalism = {
 						has_living_standard = { type = living_standard_utopian }
 						has_living_standard = { type = living_standard_good }
 						has_living_standard = { type = living_standard_shared_burden }
+						has_living_standard = { type = living_standard_worker_ownership }
+						has_living_standard = { type = living_standard_community_labor }
 					}
 				}
 			}
 		}
 	}
-
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_SLOW_LEARN_NEG
+		trigger = {
+			any_owned_planet = {
+				any_owned_pop_group = {
+					has_trait = "trait_slow_learners"
+				}
+			}
+		}
+	}
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_COMMUNAL_NEG
+		trigger = {
+			any_owned_planet = {
+				any_owned_pop_group = {
+					has_trait = "trait_communal"
+				}
+			}
+		}
+	}
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_THRIFTY_POS
 		trigger = {
@@ -457,29 +498,6 @@ ethic_capitalism = {
 			}
 		}
 	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_CHARISMA_POS
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop_group = {
-					has_trait = "trait_charismatic"
-				}
-			}
-		}
-	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_WASTEFUL_POS
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop_group = {
-					has_trait = "trait_wasteful"
-				}
-			}
-		}
-	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_SOLITARY_POS
 		trigger = {
@@ -490,18 +508,6 @@ ethic_capitalism = {
 			}
 		}
 	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_CONSERVATIONAL_NEG
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop_group = {
-					has_trait = "trait_conservational"
-				}
-			}
-		}
-	}
-
 	# Check for any leader on the Council with Faction's Ethic.
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_REPRESENTED_ON_COUNCIL
@@ -517,7 +523,6 @@ ethic_capitalism = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_GOVERNOR_POS
 		trigger = {
@@ -527,7 +532,6 @@ ethic_capitalism = {
 			}
 		}
 	}
-
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_STATELY_ACCLIAM
 		trigger = {
@@ -539,83 +543,118 @@ ethic_capitalism = {
 		}
 	}
 
+	# This = Country
 	country_attraction = {
 		base = 1
 		modifier = {
 			factor = 0
 			NOR = {
 				is_country_type = default
-				is_capitalism = yes
+				has_ethic = ethic_capitalism
+				has_ethic = ethic_fanatic_capitalism
+				has_ethic = ethic_gestalt_consciousness # No governing ethic
+				check_modifier_value = { # Allow foreign ethics if no governing ethics attraction
+					modifier = pop_government_ethic_attraction
+					value <= -1
+				}
 				AND = {
-					is_primitive = yes
+					is_country_type = primitive
 					has_country_flag = preftl_societal_enlightenment_pact
 					capital_scope = {
 						has_observation_outpost = yes
 						observation_outpost_owner = {
-							is_capitalism = yes
+							OR = {
+								has_ethic = ethic_fanatic_capitalism
+								has_ethic = ethic_capitalism
+							}
 						}
 					}
 				}
 			}
+			desc = FROM_EMPIRE
 		}
 		# Effects of indoctrination mission
 		modifier = {
-			factor = 10
-			is_primitive = yes
+			factor = 20
+			is_country_type = primitive
 			has_country_flag = preftl_societal_enlightenment_pact
 			capital_scope = {
 				has_observation_outpost = yes
 				observation_outpost_owner = { has_ethic = ethic_fanatic_capitalism }
 			}
+			desc = FROM_OBSERVER
 		}
-
 		modifier = {
-			factor = 5
-			is_primitive = yes
+			factor = 10
+			is_country_type = primitive
 			has_country_flag = preftl_societal_enlightenment_pact
 			capital_scope = {
 				has_observation_outpost = yes
 				observation_outpost_owner = { has_ethic = ethic_capitalism }
 			}
+			desc = FROM_OBSERVER
 		}
-
 		modifier = {
 			factor = 2
-			is_country_type = default
-			is_capitalism = no
+			hidden_trigger = {
+				is_country_type = default
+				is_capitalism = no
+			}
 			has_faction = bankers
 		}
-
 		modifier = {
-			factor = 1.5
-			is_country_type = default
-			exists = ruler
-			ruler = { OR = { has_trait = trait_ruler_investor } }
+			exists = overlord
+			has_loyalty > 0
+			mult = value:ethics_from_overlord|ETHIC|capitalism|
+			desc = FROM_OVERLORD
 		}
-
 		modifier = {
 			factor = 2
 			has_ethic = ethic_capitalism
 		}
-
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_capitalism
 		}
-		
-		modifier = {		# Ensures AI Cunning Raiders stay Cunning Raiders
-			factor = 10
-			is_ai = yes
-			has_ai_personality = cunning_raiders
+		modifier = {
+			factor = 1.5
+			is_country_type = default
+			exists = ruler
+			ruler = { 
+				OR = {
+					has_trait = trait_ruler_investor
+					has_trait = trait_ruler_investor_2
+					has_trait = trait_ruler_investor_3
+				}
+			}
 		}
 
 		# Check for any leader on the Council with Faction's Ethic.
 		modifier = {
 			factor = value:count_councilors_with_ethic|ETHIC|capitalism|
+			check_variable_arithmetic = {
+				which = value:count_councilors_with_ethic|ETHIC|capitalism|
+				value != 1
+			}
+			desc = FROM_COUNCIL
+		}
+		modifier = {
+			factor = value:capitalism_ethics_from_policy
+			check_variable_arithmetic = {
+				which = value:capitalism_ethics_from_policy
+				value != 1
+			}
+			desc = FROM_POLICY
+		}
+		modifier = {
+			factor = 10
+			is_ai = yes
+			has_ai_personality = cunning_raiders # To make sure Cunning Raiders never change.
 		}
 	}
 
-	# from = planet
+	# This = Pop group
+	# From = Planet
 	pop_attraction = {
 		base = 1
 
@@ -634,49 +673,50 @@ ethic_capitalism = {
 			factor = 0
 			has_trait = trait_hive_mind
 		}
-
-		modifier = {
-			factor = 1.7
-			has_trait = "trait_thrifty"
-		}
-
-		modifier = {
-			factor = 1.2
-			has_trait = "trait_charismatic"
-		}
-
-		modifier = {
-			factor = 1.3
-			has_trait = "trait_solitary"
-		}
-
-		modifier = {
-			factor = 0.75
-			has_trait = "trait_conservational"
-		}
-
-		modifier = {
-			factor = 1.2
-			has_trait = "trait_wasteful"
-		}
-
-		modifier = {
-			factor = 1.5
-			has_trait = "trait_talented"
-		}
-
-		modifier = {
-			factor = 1.25
-			has_trait = trait_quick_learners
-		}
-
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_living_standard = { type = living_standard_utopian }
-				has_living_standard = { type = living_standard_good }
-				has_living_standard = { type = living_standard_shared_burden }
+			has_trait = "trait_communal"
+			desc = HAS_COMMUNAL_TRAIT
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = "trait_thrifty"
+			desc = HAS_THRIFTY_TRAIT
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = "trait_solitary"
+			desc = HAS_SOLITARY_TRAIT
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = "trait_slow_learners"
+			desc = HAS_SLOW_LEARN_TRAIT
+		}
+		modifier = {
+			factor = 1.1
+			from = {
+				has_branch_office = yes
+				OR = {
+					has_holding = {
+						holding = building_union_busting_lawfirm
+						owner = branch_office_owner
+					}
+					has_holding = {
+						holding = building_criminal_headquarters
+						owner = branch_office_owner
+					}
+				}
 			}
+			desc = FROM_BRANCH_OFFICES
+		}
+		modifier = {
+			factor = value:capitalism_ethics_from_living_standards
+			check_variable_arithmetic = {
+				which = value:capitalism_ethics_from_living_standards
+				value != 1
+			}
+			desc = FROM_LIVING_STANDARDS
 		}
 	}
 }

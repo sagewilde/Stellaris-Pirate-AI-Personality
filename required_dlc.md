@@ -15,6 +15,8 @@ galactic paragons
 
 grand archive
 
+megacorp
+
 -------------------
 
 recommended:

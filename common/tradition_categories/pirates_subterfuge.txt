@@ -32,6 +32,7 @@ tradition_subterfuge = {
 		modifier = {
 			factor = 10
 				OR = {
+				has_faction = interventionists
 				has_valid_civic = civic_xeno_militarist
 				has_valid_civic = civic_shadow_council
 				has_valid_civic = civic_cutthroat_politics

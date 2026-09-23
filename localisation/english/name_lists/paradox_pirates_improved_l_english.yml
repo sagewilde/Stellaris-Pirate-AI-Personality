@@ -17,7 +17,7 @@
  PRT1_SHIP_GetOffMyKeybfjjjj:0 "Get Off my Keybfjjjj"               # Joke about cats on keyboards. Localize how you wish.
  PRT1_SHIP_GoinCommando:0 "Goin' Commando"                          # Joke about the US Military. 'Going commanod' or 'to go commando' doesn't mean doing anything cool. It means that you've waited too long to wash your laundry, and you're not wearing any undergarments underneath your trousers. It's actually pretty embarrassing.
  PRT1_SHIP_EmotionalSupportVessel:0 "Emotional Support Vessel"      # Joke about therapy animals and naval logistics. An 'emotional support animal' is a kind of service animal for individuals with PTSD or other psychiatric disorders related to anxiety or depression. A 'support vessel' is a logistics ship that provides menial services to a military fleet.
- PRT1_SHIP_BelmasPanties:0 "Belma's Panties"                        # Joke about DragonBall
+ PRT1_SHIP_BelmasPanties:0 "Belma's Panties"                        # Joke about DragonBall. 'Bulma's Panties'
  PRT1_SHIP_GoingJolly:0 "Going Jolly"                               # Joke about One Piece. the 'Going Merry'
  PRT1_SHIP_MillionMoony:0 "Million Moony"                           # Joke about One Piece. the 'Million Sunny'.
  PRT1_SHIP_PirateDShip:0 "Iron Pearl"                               # Joke about Pirates of the Caribbean. the 'Black Pearl'.
@@ -73,7 +73,7 @@
  PRT1_SHIP_MariasClaw:0 "Maria's Claw"
  PRT1_SHIP_MargaretsTalon:0 "Margaret's Talon"
  PRT1_SHIP_MoralesDagger:0 "Morales' Dagger"
- PRT1_SHIP_MercedesAppendage:0 "Mercedes' Appendage"
+ PRT1_SHIP_MercedesAppendage:0 "Mercedes' Appendage"                # As in Mercedes Romero, the in-game leader
  PRT1_SHIP_MariosPlunger:0 "Mario's Plunger"                        # Super Mario Bros. joke
  PRT1_SHIP_MarcsCutlass:0 "Marc's Cutlass"
  PRT1_PLANET_Libertalia:0 "Libertalia"                              # Mythical pirate port in Madagascar
@@ -290,9 +290,9 @@
  PRT1_NAME_Sharp:0 "Sharp"
  PRT1_NAME_Silver:0 "Silver"
  PRT1_NAME_Special:0 "Special"
- PRT1_NAME_Solo:0 "Solo"                                                # Star Wars joke.
- PRT1_NAME_Sparrow:0 "Sparrow"                                          # Pirates of the Caribbean joke.
- PRT1_NAME_Stevenson:0 "Stevenson"
+ PRT1_NAME_Solo:0 "Solo"                                    # Star Wars joke.
+ PRT1_NAME_Sparrow:0 "Sparrow"                              # Pirates of the Caribbean joke.
+ PRT1_NAME_Stevenson:0 "Stevenson"                          # As in Robert Louis Stevenson.
  PRT1_NAME_Takanobu:0 "Takanobu"
  PRT1_NAME_Tempest:0 "Tempest"
  PRT1_NAME_Teach:0 "Teach"

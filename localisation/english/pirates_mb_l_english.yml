@@ -140,14 +140,14 @@
 
 # Insults
 ## Preinsult
- MB_PREINSULT_01:0 "Oh? You wanna have a roast with us?"
+ MB_PREINSULT_01:0 "If you're trying to flirt with me, you're not my type."
  MB_PREINSULT_02:0 "Hm. If you're looking for comedy advice, I'd suggest quitting while you're ahead."
  MB_PREINSULT_03:0 "That's right, keep focusing on me. Don't pay attention to what's behind you."
 ## Insults targeting MB
 ## Insults sent by MB
  MB_INSULT_08:0 "As the [From.GetAdj] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their digi-wallet is gone! Those scurvy thieves!"
 ## Accepting Insults
- MB_INSULTED_01:0 "Yeah, your delivery needs work."
+ MB_INSULTED_01:0 "You can save that kind of flim-flammery for your starport floozies, [From.GetRulerName]."
  MB_INSULTED_02:0 "Wow. That was a creative and well-thought disappointment to whatever you have that passes for a mother."
  MB_INSULTED_03:0 "Thank you for your kind donation to the havens. Pleasure doing business with your pockets."
 
@@ -254,7 +254,7 @@
  MB_SELECT_REVOKE_SECRET_FEALTY:0 "Decided to throw your lot in with your current captain? Bootlicking coward."
  MB_PROPOSE_REVOKE_SECRET_FEALTY:0 "The captains have voted. And against all odds, it was unanimous. The [Root.GetName] has nothing to offer us. Start walking. Turn around, and you'll see the end of a blaster."
  MB_ACCEPT_REVOKE_SECRET_FEALTY:0 "You're lucky you're not a [Root.GetAdj]. You'd be shot for treason."
- MB_SELECT_BREAK_SECRET_FEALTY:0 "You double-crossing, two-faced slime!"
+ MB_SELECT_BREAK_SECRET_FEALTY:0 "You double-crossing, two-faced son of a black hole!"
  MB_PROPOSE_BREAK_SECRET_FEALTY:0 "There's no way to put this delicately. I know it's hard to hear. It's hard to say this, too. But we can't help you. We're sorry."
  MB_ACCEPT_BREAK_SECRET_FEALTY:0 "You... I can't believe this. We trusted you. We trusted you!"
  MB_REJECT_BREAK_SECRET_FEALTY:0 "Oh, no. No, no, no. A captain goes down with the ship, and this ship hasn't sunk yet. You're staying, and so am I."
