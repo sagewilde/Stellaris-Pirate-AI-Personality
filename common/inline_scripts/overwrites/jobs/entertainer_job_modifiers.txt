@@ -1,0 +1,14 @@
+# Shanty Singer
+triggered_planet_modifier = {
+	potential = {
+		entertainer_is_shanty_singer_trigger = yes
+	}
+	planet_building_build_speed_mult = 0.1
+}
+triggered_country_modifier = {
+	potential = {
+		entertainer_is_shanty_singer_trigger = yes
+	}
+	ship_speed_mult = 0.005
+	starbase_shipyard_build_speed_mult = 0.005
+}

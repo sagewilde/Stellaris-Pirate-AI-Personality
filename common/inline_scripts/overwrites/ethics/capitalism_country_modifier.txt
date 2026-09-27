@@ -1,0 +1,5 @@
+modifier = {
+	factor = 10
+	is_ai = yes
+	has_ai_personality = cunning_raiders # To make sure Cunning Raiders never change.
+}

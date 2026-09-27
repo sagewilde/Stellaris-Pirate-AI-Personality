@@ -303,15 +303,15 @@
 
 # Addressing Cunning Raiders
 ## Hostile
- DFLT_CR_HOSTILE_GREETING_01:0 "Pirates!"
- CORP_CR_HOSTILE_GREETING_01:0 "Pirates!"
- MECH_CR_HOSTILE_GREETING_01:0 "Pirates!"
- HM_CR_HOSTILE_GREETING_01:0 "Pirates!"
+ DFLT_CR_HOSTILE_GREETING_01:0 "Keep your distance, monster. Our worlds are better defended than you think, and [From.GetSpeciesNamePlural] are more than ready to fight for themselves."
+ CORP_CR_HOSTILE_GREETING_01:0 "If we see [Root.GetAdjective] ships on our scanners, you can bet any business we conduct won't end well for you."
+ MECH_CR_HOSTILE_GREETING_01:0 "Target acquired. Missile battery armed. WARNING: Anti-Piracy Protocol in effect. Retreat, or [From.GetAdjective] defense platforms will engage your vessel."
+ HM_CR_HOSTILE_GREETING_01:0 "[From.GetSpeciesAdjective] [From.GetSpeciesSpawnNamePlural] are voracious. Unless you want your [Root.GetRemnantName] to be given to them, you will leave. Now."
 ## Neutral
- DFLT_CR_NEUTRAL_GREETING_01:0 "Pirates!"
- CORP_CR_NEUTRAL_GREETING_01:0 "Pirates!"
- MECH_CR_NEUTRAL_GREETING_01:0 "Pirates!"
- HM_CR_NEUTRAL_GREETING_01:0 "Pirates!"
+ DFLT_CR_NEUTRAL_GREETING_01:0 "We prefer not to associate with violent brigands. Unless you've been invited to see the [From.GetRulerTitle], do not cross our border."
+ CORP_CR_NEUTRAL_GREETING_01:0 "We can be partners, or we can be enemies, [Root.GetSpeciesNamePlural]. We both like to turn a profit, but it's better if we're not pointing blasters at each other."
+ MECH_CR_NEUTRAL_GREETING_01:0 "Encryption protocols for [From.GetAdjective] communications are millennia beyond your capacity to decipher, [Root.GetSpeciesNamePlural]. But our directive is simple: do not engage our vessels."
+ HM_CR_NEUTRAL_GREETING_01:0 "Your presence is a discordant note in a harmonious song, [Root.GetSpeciesNamePlural]. The collective knows well how to defend itself against predators of all kinds. Consider yourselves warned."
  THREATENED_CR_GREETING:0 "We'd be happy to negotiate a reasonable tribute. Surely, it's not worth the effort of killing us or enslaving us?"
 ## Friendly
  DFLT_CR_FRIENDLY_GREETING_01:0 "We're xenos of the same mind, you and I. There are the weak, and there are the strong. The natural order sorts itself out nicely."

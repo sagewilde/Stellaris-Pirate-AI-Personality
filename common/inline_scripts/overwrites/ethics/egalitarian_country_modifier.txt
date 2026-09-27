@@ -1,0 +1,5 @@
+modifier = {
+	factor = 10
+	is_ai = yes
+	has_ai_personality = mirthful_bandits	# To make sure Mirthful Bandits never change.
+}
