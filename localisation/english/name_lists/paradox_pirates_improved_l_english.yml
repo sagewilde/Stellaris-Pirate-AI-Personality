@@ -199,7 +199,7 @@
  PRT1_NAME_Misty:0 "Misty"
  PRT1_NAME_May:0 "May"
  PRT1_NAME_Ondine:0 "Ondine"                                        # From Greek myth
- PRT1_NAME_Eurydice:0 "Eurydice"
+ PRT1_NAME_Eurydice:0 "Eurydice"                                    # Ditto
  PRT1_NAME_Kitty:0 "Kitty"
  PRT1_NAME_Hunter:0 "Hunter"
  PRT1_NAME_Lyra:0 "Lyra"                                            # From the constellation 'Lyra, the Harp'
@@ -210,19 +210,21 @@
  PRT1_NAME_Peridot:0 "Peridot"
  PRT1_NAME_Peril:0 "Peril"
  PRT1_NAME_Perseverance:0 "Perseverance"
- PRT1_NAME_Petrichor:0 "Petrichor"
+ PRT1_NAME_Petrichor:0 "Petrichor"                                  # A word which means 'The particular scent of dry earth after a fresh rain'. It's one of my favorite words. :3
  PRT1_NAME_Rhapsody:0 "Rhapsody"
  PRT1_NAME_Rue:0 "Rue"
  PRT1_NAME_Sela:0 "Sela"
  PRT1_NAME_Scarlet:0 "Scarlet"
  PRT1_NAME_Shizuka:0 "Shizuka"
  PRT1_NAME_Siren:0 "Siren"
+ PRT1_NAME_Sonder:0 "Sonder"                                        # A word which refers to 'the state of realizing that in the grand perspective, one is both anonymous to the world and the main character in one's own story, and that each person with whom we interact is living in the exact same state of simultaneous importance and anonymity'. Also one of my favorite words. :3
  PRT1_NAME_Trouble:0 "Trouble"
  PRT1_NAME_Tulip:0 "Tulip"
  PRT1_NAME_Tyde:0 "Tyde"                                            # As in 'tides of the ocean'.
  PRT1_NAME_Valkyrie:0 "Valkyrie"
  PRT1_NAME_Vellen:0 "Vellen"
  PRT1_NAME_Vendetta:0 "Vendetta"
+ PRT1_NAME_Victoria:0 "Victoria"
  PRT1_NAME_Zariel:0 "Zariel"
  PRT1_NAME_Zelda:0 "Zelda"
  PRT1_NAME_Zoe:0 "Zoe"

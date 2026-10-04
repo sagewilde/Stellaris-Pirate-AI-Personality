@@ -49,7 +49,6 @@ For Crew and for Glory!
 The cost was the world o' the Ytterites
 Oh free ones, never shall they die!
 
-
 [Chorus]
 (Verse 7)
 For once in her life, our Queen did mourn,

@@ -3,6 +3,7 @@
 
 cybrxkhan_handmade_pirate = {
 	category = "Aquatic"
+	randomized = no
 
 	ship_names = {
 		generic = {
