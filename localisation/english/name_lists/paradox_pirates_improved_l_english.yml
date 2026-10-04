@@ -16,21 +16,21 @@
  PRT1_SHIP_YourExtendedWarranty:0 "Your Extended Warranty"          # Common scam.
  PRT1_SHIP_GetOffMyKeybfjjjj:0 "Get Off my Keybfjjjj"               # Joke about cats on keyboards. Localize how you wish.
  PRT1_SHIP_GoinCommando:0 "Goin' Commando"                          # Joke about the US Military. 'Going commanod' or 'to go commando' doesn't mean doing anything cool. It means that you've waited too long to wash your laundry, and you're not wearing any undergarments underneath your trousers. It's actually pretty embarrassing.
- PRT1_SHIP_EmotionalSupportVessel:0 "Emotional Support Vessel"      # Joke about therapy animals and naval logistics. An 'emotional support animal' is a kind of service animal for individuals with PTSD or other psychiatric disorders related to anxiety or depression. A 'support vessel' is a logistics ship that provides menial services to a military fleet.
+ PRT1_SHIP_EmotionalSupportVessel:0 "Emotional Support Vessel"      # Joke about therapy animals and naval logistics. An 'emotional support animal' is a kind of service animal for individuals with PTSD or other psychiatric disorders related to anxiety or depression. A 'support vessel' is any auxiliary ship designed to serve, sustain, or extend the capabilities of a primary vessel or offshore operation.
  PRT1_SHIP_BelmasPanties:0 "Belma's Panties"                        # Joke about DragonBall. 'Bulma's Panties'
  PRT1_SHIP_GoingJolly:0 "Going Jolly"                               # Joke about One Piece. the 'Going Merry'
  PRT1_SHIP_MillionMoony:0 "Million Moony"                           # Joke about One Piece. the 'Million Sunny'.
  PRT1_SHIP_PirateDShip:0 "Iron Pearl"                               # Joke about Pirates of the Caribbean. the 'Black Pearl'.
  PRT1_SHIP_MentalPossum:0 "Mental Possum"                           # Paradox uses a different word here, 'Mental M***et.' I have removed the slur against people of small stature and replaced it with an animal. Ableism isn't cool, guys.
  PRT1_SHIP_LustyTzynnMaid:0 "Lusty Tzynn Maid"                      # Skyrim joke. 'the Lusty Argonian Maid' is a book item that can be found in the game. It's a joke about pornography.
- PRT1_SHIP_DoorknobSock:0 "Doorknob Sock"
+ PRT1_SHIP_DoorknobSock:0 "Doorknob Sock"                           # If you live with adult roommates, you know what a sock on the doorknob means. If you don't, then to explain the joke, a sock on the doorknob typically means that the occupant is engaged in sexual activity and is not to be disturbed under any circumstances barring a major emergency.
  PRT1_SHIP_StolenSweetroll:0 "Stolen Sweetroll"                     # Skyrim joke. 
  PRT1_SHIP_MassKisser:0 "Mass-kisser"                               # English pun. An 'ass-kisser' or 'one who kisses ass' is a person who fawns over authority figures in an attempt to win their approval. A 'mass-driver' is the English term for the in-game weapon. The implication here is that this ship tends to take many mass-driver rounds directly to the face.
  PRT1_SHIP_BanHammer:0 "Ban Hammer"                                 # General internet joke. The 'Ban Hammer' is a colloquialism for what happens when someone receives a ban from a social media site.
  PRT1_SHIP_NerfHerder:0 "Nerf-herder"                               # Star Wars joke.
  PRT1_SHIP_Gaston:0 "Gaston"                                        # Disney joke. Villain from Beauty and the Beast.
  PRT1_SHIP_SpitAndPrayers:0 "Spit and Prayers"
- PRT1_SHIP_DaddysLittleShip:0 "Daddy's Little Ship"
+ PRT1_SHIP_DaddysLittleShip:0 "Daddy's Little Ship"                 # Joke about the common term of affection, 'Daddy's Little Girl'. Can be used earnestly by an old-fashioned father referring to his dear daughter, or in a fetishistic manner by a male referring to his female partner. Intended to be read as the latter rather than the former.
  PRT1_SHIP_ByzantiumV:0 "Byzantium V"                               # Babylon 5 joke.
  PRT1_SHIP_WenchsWink:0 "Wench's Wink"
  PRT1_SHIP_Showstopper:0 "Showstopper"
@@ -48,7 +48,7 @@
  PRT1_SHIP_Drydock:0 "Drydock"                                      # Drydock is a necessary part of any major repairs to the hull of a seagoing vessel, where the ship is hauled out of the water entirely.
  PRT1_SHIP_Harbor:0 "Harbor"
  PRT1_SHIP_BrigandCove:0 "Brigand Cove"
- PRT1_SHIP_MerxenoLagoon:0 "Merxeno Lagoon"                         # "Mermaid Lagoon"
+ PRT1_SHIP_MerxenoLagoon:0 "Mer-xeno Lagoon"                         # "Mermaid Lagoon"
  PRT1_SHIP_Haulout:0 "Haulout"
  PRT1_SHIP_YourMom:0 "Your Mom"                                     # Classic 'yo mama' joke.
  PRT1_SHIP_BlackSpot:0 "Black Spot"                                 # 'The Black Spot', in the history of piracy in the Caribbean Sea, was a literal black circle written on a piece of paper, and handed to a pirate as a warning that their life was forfeit. A pirate's death sentence.
@@ -76,11 +76,33 @@
  PRT1_SHIP_MercedesAppendage:0 "Mercedes' Appendage"                # As in Mercedes Romero, the in-game leader
  PRT1_SHIP_MariosPlunger:0 "Mario's Plunger"                        # Super Mario Bros. joke
  PRT1_SHIP_MarcsCutlass:0 "Marc's Cutlass"
+
+ PRT1_CLASS_Vandal:0 "Vandal"
+ PRT1_CLASS_Kidnapper:0 "Kidnapper"
+ PRT1_CLASS_Arsonist:0 "Arsonist"
+ PRT1_CLASS_Murderer:0 "Murderer"
+ PRT1_CLASS_Jaywalker:0 "Jaywalker"
+ PRT1_CLASS_Impersonator:0 "Impersonator"
+ PRT1_CLASS_Pickpocket:0 "Pickpocket"
+ PRT1_CLASS_WireFraudster:0 "Wire Fraudster"
+ PRT1_CLASS_Saboteur:0 "Saboteur"
+ PRT1_CLASS_Larcener:0 "Larcener"
+ PRT1_CLASS_Shoplifter:0 "Shoplifter"
+ PRT1_CLASS_ZroTrafficker:0 "Zro Trafficker"
+ PRT1_CLASS_ArmsDealer:0 "Arms Dealer"
+ PRT1_CLASS_Embezzler:0 "Embezzler"
+ PRT1_CLASS_BankRobber:0 "Bank Robber"
+ PRT1_CLASS_HomeInvader:0 "Home Invader"
+ PRT1_CLASS_Trespasser:0 "Trespasser"
+ PRT1_CLASS_Hooligan:0 "Hooligan"
+ PRT1_CLASS_Loiterer:0 "Loiterer"
+ PRT1_CLASS_Burglar:0 "Burglar"
+
  PRT1_PLANET_Libertalia:0 "Libertalia"                              # Mythical pirate port in Madagascar
  PRT1_PLANET_Nassau:0 "Nassau"                                      # Real-world pirate port
  PRT1_PLANET_Tortuga:0 "Tortuga"                                    # Real-world pirate port
  PRT1_PLANET_Gothgirlsere:0 "Gothgirlsere"                          # 'Goth Girls Here' A thinly-veiled attempt to get sweaty, thirsty shut-ins to move to a new colony. Similar rugpull in historical Greenland vs Iceland. Localize how you wish, this is a joke about the misogynist expectations of poorly socialized nerds.
- PRT1_PLANET_AnkensBane:0 "Anken's Bane"                            # 'Anakin's Bane.' Star Wars joke.
+ PRT1_PLANET_AnkensBane:0 "Anken's Bane"                            # 'Anakin's Bane.' Star Wars joke. "I don't like sand. It's course, and rough, and it gets everywhere."
  PRT1_PLANET_PollysPerch:0 "Polly's Perch"                          # Treasure Island joke.
  PRT1_PLANET_PoogansPorch:0 "Poogan's Porch"                        # Bastardization of previous joke.
  PRT1_PLANET_PrestleysPreach:0 "Prestley's Preach"                  # Ditto.
@@ -99,7 +121,7 @@
  PRT1_PLANET_ShieldOfCrystal:0 "Shield of Crystal"                  # Slightly off-kilter reference to the Canadian Shield. If you're Canadian, please make a recommendation, I was running out of ideas.
  PRT1_PLANET_RockyOuthouse:0 "Rocky Outhouse"
  PRT1_PLANET_Tumbledown:0 "Tumbledown"
- PRT1_PLANET_MtAreskupardi:0 "Mt. Areskupardi"                       # English pun. 'Mount a rescue party' means 'to organize a search and rescue operation'. This joke might not be translateable. If you can make it work, that's awesome. If you can't, then make up your own joke.
+ PRT1_PLANET_MtAreskupardi:0 "Mt. Areskupardi"                       # English pun. 'To mount a rescue party' means 'to organize a search and rescue operation'. This joke might not be translateable. If you can make it work, that's awesome. If you can't, then make up your own pun about mountains.
  PRT1_NAME_Ace:0 "Ace"
  PRT1_NAME_Aragon:0 "Aragon"
  PRT1_NAME_Ash:0 "Ash"
@@ -145,7 +167,7 @@
  PRT1_NAME_Odysseus:0 "Odysseus"                                    # Character from Homer's 'The Odyssey'
  PRT1_NAME_Orval:0 "Orval"
  PRT1_NAME_Omar:0 "Omar"
- PRT1_NAME_Petrichor:0 "Petrichor"
+ PRT1_NAME_Petrichor:0 "Petrichor"                                  # A word which means 'The particular scent of dry earth after a fresh rain'. It's one of my favorite words. :3
  PRT1_NAME_Racer:0 "Racer"
  PRT1_NAME_Rathkran:0 "Rathkran"
  PRT1_NAME_Rebel:0 "Rebel"
@@ -210,7 +232,6 @@
  PRT1_NAME_Peridot:0 "Peridot"
  PRT1_NAME_Peril:0 "Peril"
  PRT1_NAME_Perseverance:0 "Perseverance"
- PRT1_NAME_Petrichor:0 "Petrichor"                                  # A word which means 'The particular scent of dry earth after a fresh rain'. It's one of my favorite words. :3
  PRT1_NAME_Rhapsody:0 "Rhapsody"
  PRT1_NAME_Rue:0 "Rue"
  PRT1_NAME_Sela:0 "Sela"
@@ -257,7 +278,7 @@
  PRT1_NAME_dSquelette:0 "d'Squelette"                       # French. 'of the Skeleton'
  PRT1_NAME_dMorto:0 "d'Morto"                               # Latin. 'Of Death'
  PRT1_NAME_Dax:0 "Dax"
- PRT1_NAME_DeFoe:0 "de Foe"
+ PRT1_NAME_DeFoe:0 "de Foe"                                 # Surname of one of my favorite actors, Willem de Foe.
  PRT1_NAME_Drake:0 "Drake"
  PRT1_NAME_Groundrunner:0 "Groundrunner"                    # Joke about Luke Skywalker
  PRT1_NAME_Hawkins:0 "Hawkins"
@@ -269,9 +290,9 @@
  PRT1_NAME_Jing:0 "Jing"
  PRT1_NAME_Juzou:0 "Juzou"
  PRT1_NAME_Kim:0 "Kim"
- PRT1_NAME_Kirk:0 "Kirk"
- PRT1_NAME_Kyber:0 "Kyber"
- PRT1_NAME_Lawless:0 "Lawless"
+ PRT1_NAME_Kirk:0 "Kirk"                                    # Joke about Star Trek
+ PRT1_NAME_Kyber:0 "Kyber"                                  # As in 'kyber crystals' from Star Wars
+ PRT1_NAME_Lawless:0 "Lawless"                              # Surname of one of my favorite actresses, Lucy Lawless.
  PRT1_NAME_Luffy:0 "Luffy"                                  # Character from One Piece
  PRT1_NAME_Mayweather:0 "Mayweather"
  PRT1_NAME_Mendoza:0 "Mendoza"
@@ -279,18 +300,18 @@
  PRT1_NAME_Ning:0 "Ning"
  PRT1_NAME_North:0 "North"
  PRT1_NAME_Nobody:0 "Nobody"
- PRT1_NAME_Nolastname:0 "Nolastname"
+ PRT1_NAME_Nolastname:0 "Nolastname"                        # Joke about Helluva Boss.
  PRT1_NAME_Nowhere:0 "Nowhere"
  PRT1_NAME_OHare:0 "O'Hare"
  PRT1_NAME_Pyle:0 "Pyle"
  PRT1_NAME_Raze:0 "Raze"
- PRT1_NAME_Reaver:0 "Reaver"
+ PRT1_NAME_Reaver:0 "Reaver"                                # Reference to the roving bands of cannibal raiders from Firefly.
  PRT1_NAME_Reed:0 "Reed"
  PRT1_NAME_Rees:0 "Rees"
  PRT1_NAME_Resolve:0 "Resolve"
- PRT1_NAME_Ryker:0 "Ryker"
+ PRT1_NAME_Ryker:0 "Ryker"                                  # Star Trek joke.
  PRT1_NAME_Sharp:0 "Sharp"
- PRT1_NAME_Silver:0 "Silver"
+ PRT1_NAME_Silver:0 "Silver"                                # Treasure Island joke.
  PRT1_NAME_Special:0 "Special"
  PRT1_NAME_Solo:0 "Solo"                                    # Star Wars joke.
  PRT1_NAME_Sparrow:0 "Sparrow"                              # Pirates of the Caribbean joke.
@@ -397,7 +418,7 @@
  PARADOX_PIRATES_IMPROVED_xxUNDEADARMY_ORD:0 "$ORD$ Cursed Pirates"
  PARADOX_PIRATES_IMPROVED_xxROBOTICARMY_ORD:0 "$ORD$ Ironclad Corsairs" 
  PARADOX_PIRATES_IMPROVED_xxROBOTICDEFENSEARMY_ORD:0 "$ORD$ Ironclad Guard"
- PARADOX_PIRATES_IMPROVED_xxPSIONICARMY_ORD:0 "$ORD$ Psychic Raiders"
+ PARADOX_PIRATES_IMPROVED_xxPSIONICARMY_ORD:0 "$ORD$ Psychic Reavers"
  PARADOX_PIRATES_IMPROVED_xxXENOMORPHARMY_ORD:0 "$ORD$ Davy Jones' Dogs"
  PARADOX_PIRATES_IMPROVED_xxGENEWARRIORARMY_ORD:0 "$ORD$ Spliced Scallywags"
  PARADOX_PIRATES_IMPROVED_xxOCCUPATIONARMY_ORD:0 "$ORD$ Boarding Party"
