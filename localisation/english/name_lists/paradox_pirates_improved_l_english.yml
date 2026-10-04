@@ -21,7 +21,7 @@
  PRT1_SHIP_GoingJolly:0 "Going Jolly"                               # Joke about One Piece. the 'Going Merry'
  PRT1_SHIP_MillionMoony:0 "Million Moony"                           # Joke about One Piece. the 'Million Sunny'.
  PRT1_SHIP_PirateDShip:0 "Iron Pearl"                               # Joke about Pirates of the Caribbean. the 'Black Pearl'.
- PRT1_SHIP_MentalPossum:0 "Mental Possum"
+ PRT1_SHIP_MentalPossum:0 "Mental Possum"                           # Paradox uses a different word here, 'Mental M***et.' I have removed the slur against people of small stature and replaced it with an animal. Ableism isn't cool, guys.
  PRT1_SHIP_LustyTzynnMaid:0 "Lusty Tzynn Maid"                      # Skyrim joke. 'the Lusty Argonian Maid' is a book item that can be found in the game. It's a joke about pornography.
  PRT1_SHIP_DoorknobSock:0 "Doorknob Sock"
  PRT1_SHIP_StolenSweetroll:0 "Stolen Sweetroll"                     # Skyrim joke. 
@@ -79,7 +79,7 @@
  PRT1_PLANET_Libertalia:0 "Libertalia"                              # Mythical pirate port in Madagascar
  PRT1_PLANET_Nassau:0 "Nassau"                                      # Real-world pirate port
  PRT1_PLANET_Tortuga:0 "Tortuga"                                    # Real-world pirate port
- PRT1_PLANET_Gothgirlsere:0 "Gothgirlsere"
+ PRT1_PLANET_Gothgirlsere:0 "Gothgirlsere"                          # 'Goth Girls Here' A thinly-veiled attempt to get sweaty, thirsty shut-ins to move to a new colony. Similar rugpull in historical Greenland vs Iceland. Localize how you wish, this is a joke about the misogynist expectations of poorly socialized nerds.
  PRT1_PLANET_AnkensBane:0 "Anken's Bane"                            # 'Anakin's Bane.' Star Wars joke.
  PRT1_PLANET_PollysPerch:0 "Polly's Perch"                          # Treasure Island joke.
  PRT1_PLANET_PoogansPorch:0 "Poogan's Porch"                        # Bastardization of previous joke.
@@ -95,8 +95,8 @@
  PRT1_PLANET_HardPack:0 "Hard Pack"
  PRT1_PLANET_Balto:0 "Balto"
  PRT1_PLANET_BlackIce:0 "Black Ice"
- PRT1_PLANET_Franklin:0 "Franklin"
- PRT1_PLANET_ShieldOfCrystal:0 "Shield of Crystal"
+ PRT1_PLANET_Franklin:0 "Hand of Franklin"                          # Joke about the meme concerning the 'alternative' Canadian national anthem, 'Northwest Passage' by Stan Rogers. # Oh for just one time / I would take the Northwest Passage / To find the hand of Franklin / Reaching for the Beaufort Sea / Tracing one warm line / Through a land so wild and savage / And make a Northwest Passge to the sea!
+ PRT1_PLANET_ShieldOfCrystal:0 "Shield of Crystal"                  # Slightly off-kilter reference to the Canadian Shield. If you're Canadian, please make a recommendation, I was running out of ideas.
  PRT1_PLANET_RockyOuthouse:0 "Rocky Outhouse"
  PRT1_PLANET_Tumbledown:0 "Tumbledown"
  PRT1_PLANET_MtAreskupardi:0 "Mt. Areskupardi"                       # English pun. 'Mount a rescue party' means 'to organize a search and rescue operation'. This joke might not be translateable. If you can make it work, that's awesome. If you can't, then make up your own joke.
