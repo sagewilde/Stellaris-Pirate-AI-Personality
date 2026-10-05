@@ -54,7 +54,7 @@
  MB_FRIENDLY_GREETING_01:0 "A slight warning to you. Avoid the systems on this list for the next few days or so. Just trust us, don't go there. We're conducting, ah, a charity drive soon."
  MB_FRIENDLY_GREETING_02:0 "The [From.GetName] and the [Root.GetName], partners in cri - er, international diplomacy. It's good to see you. What can we do for you?"
  MB_FRIENDLY_GREETING_03:0 "Thank you for helping us resettle those refugees. The pirate's life isn't for everyone, and we only take willing crew. Did you want to discuss our migration treaty, or something else?"
- MB_FRIENDLY_GREETING_04:0 "Welcome in, mate! Sit down, share a bottle of *very* potent potables with me. Let's talk business."
+ MB_FRIENDLY_GREETING_04:0 "Welcome in, mate! Sit down, share a bottle of very potent potables with me. Let's talk business."
  MB_FRIENDLY_GREETING_05:0 "The havens are full of new opportunities for new crews, each eager to make their mark on the void. Thanks to our friendship, they're fuller than ever."
  MB_FRIENDLY_GREETING_CORP_01:0 "[From.GetRulerTitle] [From.GetRulerName], welcome. I trust that our current trade agreements are still suitable for your needs? Or are you looking to recommend new targets?"
  MB_FRIENDLY_GREETING_CORP_02:0 "Hm? A missing merchant vessel? Sorry, mate. Trust me, you'd be the first one to know if it was on my orders. Obviously, I can't make promises for unsanctioned raids..."
@@ -69,7 +69,7 @@
  MB_FRIENDLY_GREETING_XPL:0 "Ahoy, [From.GetRulerName]! We were just discussing the finer points of [From.GetSpeciesAdj] holocinema. Our torrents are full of [From.GetAdj] media, and we'd like your opinion: subbed, or dubbed?"
  MB_FRIENDLY_GREETING_SOC:0 "Ahoy, comrade! Welcome to our humble diplomacy vessel. The crew was about to take evening meal, would you like to join us in the mess hall?"
  MB_FRIENDLY_GREETING_ECO:0 "Illegal salvage operation? No, this is just, uh, recycling. You don't mind if we do our part and pick up litter? Unless, of course, you want to split the take."
- MB_FRIENDLY_GREETING_IND:0 "'All mates, attention! [From.GetAdjective] envoy on deck! Keep your [Root.Species.GetHandNamePlural] to yourselves! In case of accidental exposure, see the ship surgeon for decontamination.' ... Don't worry, it's just a little white lie to keep pickpockets away."
+ MB_FRIENDLY_GREETING_IND:0 "'Attention all hands! [From.GetAdjective] envoy on deck! Keep your [Root.Species.GetHandNamePlural] to yourselves! If you're exposed, report to sick bay for decontamination.' ... Heh. Pickpockets."
  MB_PROTECTIVE_GREETING:0 "Here's an idea for you; why not join our merry band? We'll keep you warm and comfortable, and the galaxy's ripe for plundering from those too big for their own good!"
  MB_GREETING_POOR_01:0 "Are you alright? You look faint. When was the last time you ate? If you're hungry, we have plenty to share. We can work out a humanitarian package with the [Root.GetRulerTitle]."
  MB_GREETING_POOR_02:0 "You're looking a little rough around the edges. If times are hard, we have raw minerals to barter. We can work out a humanitarian package to [From.Capital.GetName]."
@@ -101,7 +101,7 @@
  MB_ASK_FOR_VASS_SELECT:0 "This is wrong. You shouldn't be subservient to others, even for protection."
  MB_ASK_FOR_VASS_PROPOSE:0 "The age of free buccaneers has come to an end. We're lowering our flag. This is a dark day. We'll mourn it until there are no [Root.GetSpeciesNamePlural] left."
  MB_ASK_FOR_VASS_ACCEPT:0 "If you want to join us, then fine. But it means you're bound to the Pirate Code, same as us. Even if you're just honorary pirates, we have rules and you have rights."
- MB_ASK_FOR_VASS_REFUSE:0 "Look, if you want protection, we can work out something else. But that's a mighty big ask, and it goes against our ethics. We're sorry, but no."
+ MB_ASK_FOR_VASS_REFUSE:0 "Look, if you want protection, we can work out something else. But that's a mighty big ask, and it goes against our Code. We're sorry, but no."
 ## Subsidiaries
  MB_DEMAND_SUBS_SELECT:0 "Oh, this is gonna be funny."
  MB_DEMAND_SUBS_PROPOSE:0 "It's not press-ganging. We don't believe in that. Consider this an opportunity to join a band of fortune-finders and thrill-seekers. If you can't handle that, then we'll be happy to, ah... initiate a hostile takeover."
@@ -209,7 +209,7 @@
  MB_BREAK_NAP_ACCEPT:0 "Very well. We were running dry on business anyway. Nice knowin' ya."
 ## Guarantee Independence
  MB_GUARANTEE_SELECT:0 "You'd come to our aid? Really? You'd protect pirates like us?"
- MB_GUARANTEE_PROPOSE:0 "We may be pirates, but we have a code. And part of that code means that we take care of our own. The havens have come to think of your people as an extension of ours. We're a brotherhood of fortune, and we extend that to you."
+ MB_GUARANTEE_PROPOSE:0 "We may be pirates, but we have a Code. And part of that Code means that we take care of our own. The havens have come to think of your people as an extension of ours. We're a brotherhood of fortune, and we extend that to you."
  MB_GUARANTEE_ACCEPT:0 "We don't tend to expect allies, you know. But we welcome them. A toast to our new friends!"
  MB_REVOKE_GUARANTEE_SELECT:0 "We're used to relying on ourselves anyway."
  MB_REVOKE_GUARANTEE_PROPOSE:0 "Our ships are overextended. We've been having trouble maintaining ourselves. We're sorry, but we'd rather not offer false promises and leave you vulnerable."
@@ -282,9 +282,9 @@
 ## Ending Rivalry - Hostile
  MB_END_RIVALRY_HOSTILE:0 "We're not through with you, [From.GetName]! Not by a long shot!"
 ## Ending Rivalry - Acceptance
- MB_DFLT_END_RIVALRY_ACCEPT:0 "Yarr!"
- MB_CORP_END_RIVALRY_ACCEPT:0 "Yarr!"
- MB_PE_END_RIVALRY_ACCEPT:0 "Yarr!"
+ MB_DFLT_END_RIVALRY_ACCEPT:0 "Next time you wanna play games, pick someone who might actually lose."
+ MB_CORP_END_RIVALRY_ACCEPT:0 "Word to the wise; your [From.GetRulerTitle]'s [From.GetEyeName] twitches when [From.Ruler.GetSheHe] [From.Ruler.GetIsAre] lying."
+ MB_PE_END_RIVALRY_ACCEPT:0 "That's right, you mind yourself. And next time you wanna play games with us, prepare to lose it all."
 
 # Federations
 ## Asking to Join

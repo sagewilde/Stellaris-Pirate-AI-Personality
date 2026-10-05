@@ -422,6 +422,7 @@ greetings = {
   		trigger = {
   			has_ai_personality = mirthful_bandits
   			NOT = { is_at_war_with = FROM }
+			has_diplo_migration_treaty = FROM
   			OR = {
   				is_friendly_to = FROM
   				is_cordial_to = FROM
