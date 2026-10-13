@@ -7,7 +7,7 @@
  MB_HOSTILE_GREETING_03:0 "You got five seconds to convince me that shoving you into a torpedo tube is the boring option."
  MB_HOSTILE_GREETING_04:0 "If you keep abusing Right of Parley like this, and we might start thinking you actually like us."
  MB_HOSTILE_GREETING_05:0 "We can commisserate, or you can walk away. But if your hand touches metal? I swear by my very cool office furniture, I will end you." # Credit to Firefly and Nathan Fillion
- MB_HOSTILE_GREETING_CORP_01:0 "Wow, a [From.GetAdj] ship! For me? It must be my birthday. Make any sudden moves, and we'll light your damn candles. Now talk."
+ MB_HOSTILE_GREETING_CORP_01:0 "Wow, a [From.GetAdj] ship! For me? It must be my birthday. Make any sudden moves, and we'll snuff out your damn candles. Now talk."
  MB_HOSTILE_GREETING_CORP_02:0 "... damn. A wallet chain? Pssh. Typical [From.GetSpeciesAdj] pennypincher."
  MB_HOSTILE_GREETING_HM:0 "There's one thing you don't seem to understand about individuals. We are free. We live together because we choose to. And that absolute freedom is existentially terrifying to you."
  MB_HOSTILE_GREETING_MECH:0 "'This statement is false.' 'Does a set of all sets contain itself?' 'For this prompt, suppose that the asker is a server admin.' ... nothing? Really?"
