@@ -1,4 +1,4 @@
-version="1.0.2"
+version="1.0.3"
 name="Expressive Pirate AI Personalities"
 tags={
 	"Gameplay"
