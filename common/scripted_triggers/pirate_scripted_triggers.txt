@@ -25,6 +25,29 @@ values_others = {
 	}
 }
 
+has_ambush_doctrine_personality = {
+	OR = {
+		has_ai_personality = erudite_explorers
+		has_ai_personality = ruthless_capitalists
+		has_ai_personality = slaving_despots
+		has_ai_personality = decadent_capitalists
+		has_ai_personality = mirthful_bandits
+	}
+}
+
+has_spearhead_doctrine_personality = {
+	OR = {
+		has_ai_personality = hive_mind
+		has_ai_personality = assimilators
+		has_ai_personality = hyperthermia_empire
+		has_ai_personality = metalhead
+		has_ai_personality = rampant_wilderness
+		has_ai_personality = fanatic_purifiers
+		has_ai_personality = scorching_infernals
+		has_ai_personality = cunning_raiders
+	}
+}
+
 # Pirates
 
 has_not_distar = {

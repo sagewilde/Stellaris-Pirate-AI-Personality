@@ -1,11 +1,11 @@
 mirthful_bandits = {
-	aggressiveness = 2.5
+	aggressiveness = 2.0
 	trade_willingness = 1.2
-	bravery = 1.5
+	bravery = 1.0
 	combat_bravery = 0.8
 
 	military_spending = 1.2
-	colony_spending = 1.0
+	colony_spending = 1.1
 
 	federation_acceptance = 5 # 50
 	nap_acceptance = -10
@@ -19,11 +19,11 @@ mirthful_bandits = {
 
 	weapon_preferences = weapon_type_explosive
 	armor_ratio = 0.4
-	shields_ratio = 0.5
-	hull_ratio = 0.1
+	shields_ratio = 0.3
+	hull_ratio = 0.3
 
 	threat_modifier = 1.1
-	friction_modifier = 1.0
+	friction_modifier = 1.3
 	claims_modifier = 0.75
 
 	behaviour = {
@@ -45,11 +45,6 @@ mirthful_bandits = {
 		crisis_leader = yes
         sneak_attacker = yes # What was Robin Hood famous for? Highway robbery and ambushes, baby.
 	}
-
-    ship_roles = {
-        corvette = kinetic_stealth
-        frigate = explosive_stealth
-    }
 
 	allow = {
 		is_country_type = default
@@ -77,8 +72,8 @@ cunning_raiders = {
 	bravery = 0.5
 	combat_bravery = 1.0
 
-	military_spending = 1.3
-	colony_spending = 0.9
+	military_spending = 1.2
+	colony_spending = 1.2
 
 	federation_acceptance = 0 #-10
 	nap_acceptance = -100 # HA! NO!
@@ -102,10 +97,10 @@ cunning_raiders = {
 
 	behaviour = {
 		conqueror = no
-		subjugator = yes 	# Experimenting with yes/no on this. I want them to Raid as often as is feasible.
+		subjugator = yes
 		liberator = no
 		opportunist = yes
-		slaver = yes 		# Duh. Robin Hood and One Piece memes aside, this is historically what pirates did. 
+		slaver = yes # Duh. 
 		uplifter = no
 		purger = no
 		displacer = no
@@ -115,14 +110,9 @@ cunning_raiders = {
 		robot_liberator = no
 		propagator = no
 		multispecies = yes
-		crisis_fighter = no	# Cunning Raiders look out for number one.
+		crisis_fighter = no
 		sneak_attacker = yes
 		attack_neutrals = yes
-	}
-
-	ship_roles = {
-        corvette = kinetic_stealth
-        frigate = explosive_stealth
 	}
 
 	allow = {
