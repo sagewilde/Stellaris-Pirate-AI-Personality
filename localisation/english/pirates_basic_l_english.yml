@@ -8,6 +8,11 @@
  personality_cunning_raiders_desc:0 "The worst has come. The barbaric raiders that prowl outside the border have come under the lash of a merciless pirate lord, uniting them into a dreadful and terrifying force. They have set their sights on pillaging, plundering, and taking whatever they may want, for any reason they may invent. The hyperlanes may never be safe again as long as their ships fly the void."
 
 ### Prescripted Empire - Free Fleets of Lore
+ EMPIRE_DESIGN_lore_spacers_1:0 "$EMPIRE_DESIGN_lore_spacers$"
+ EMPIRE_DESIGN_lore_spacers_1_desc:0 "$EMPIRE_DESIGN_lore_spacers_desc$"
+ EMPIRE_DESIGN_lore_spacers_2:0 "$EMPIRE_DESIGN_lore_spacers$"
+ EMPIRE_DESIGN_lore_spacers_2_desc:0 "$EMPIRE_DESIGN_lore_spacers_desc$"
+
  EMPIRE_DESIGN_lore_spacers:0 "Free Fleets of Lore"
  EMPIRE_DESIGN_lore_spacers_desc:0 "Land on Libertalia is a rare and precious resource. For centuries, the Exceeds fought viciously over the few patches of dry ground the planet had. After centuries of the pirate kings' rule, the old order was dashed in a planet-wide mutiny.\n\nThe successors slowly disassembled old rivalries and united with a common goal; the safety and prosperity of their pirate havens. Together, they eagerly take to the stars, bringing with them millennia of seafaring culture."
  PRESCRIPTED_adjective_lore_spacers:0 "Lore Spacers"
@@ -245,3 +250,4 @@
  empirates.1004.a:0 "We want more lyrics!"
  empirates.1005.a:0 "For Crew, and for Glory!"
 
+ personality_mirthful_bandits_room:0 "Wily Mercenaries"

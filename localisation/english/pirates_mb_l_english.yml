@@ -227,7 +227,7 @@
  MB_REVOKE_INDEPENDENCE_ACCEPT_DISLOYAL:0 "Fine. Who needs you, coward? We'll fight our own battles!"
 ## Migration Pact
  MB_FORM_MIGRATION_PACT_SELECT:0 "You'd have a migration treaty with us? I don't think you know what that entails."
- MB_FORM_MIGRATION_PACT_PROPOSE:0 "You might not know this, but the [Root.GetName] operates under a strict Pirate Code. We don't take unwilling crew. A few of our own have expressed interest in a simpler life for themselves and their families. They want to settle on your worlds."
+ MB_FORM_MIGRATION_PACT_PROPOSE:0 "You might not know this, but the [From.GetName] operates under a strict Pirate Code. We don't take unwilling crew. A few of our own have expressed interest in a simpler life for themselves and their families. They want to settle on your worlds."
  MB_FORM_MIGRATION_PACT_ACCEPT:0 "Done. We receive a lot of refugees, and not all of them are cut out for the pirate's life. If you're willing to take them, we'll be glad to take your more adventurous [From.GetSpeciesAdj] spacers."
  MB_FORM_MIGRATION_PACT_REFUSE:0 "Let's be clear, we're flattered that you have spacers who want to join our crew. But our captains aren't interested in taking on planet-lubbers. A pirate's life isn't for everyone."
  MB_BREAK_MIGRATION_PACT_SELECT:0 "That's a bit of a surprise. You feeling alright, mate?"
