@@ -222,10 +222,10 @@
 
 # SPACE SHANTY Rebuilt - Melody: "Santiana"
  daughters_ballad_cat:0 "The Daughter's Ballad"
- daughters_ballad_cat_desc:0 "We have found the wreckage of an archaic spaceship with an unusual design. She's... beautiful."
+ daughters_ballad_cat_desc:0 "We have found the wreckage of an archaic spaceship with an unusual design. Its beauty is beyond description."
 
  empirates.1.name:0 "The Wreck of the Daughter"
- empirates.1.desc:0 "The ancient wreck of a large vessel evidently designed as a crude solar sailer, crashed on the surface of the planet. Its design is... breathtakingly beautiful. We feel drawn to it, as if it is calling out to us."
+ empirates.1.desc:0 "The ancient wreck of a large vessel evidently designed as a crude solar sailer, crashed on the surface of the planet. Its design is breathtakingly beautiful. We feel drawn to it, as if it is calling out to us."
  empirates.1.a:0 "What secrets does it hold?"
 
  site_daughters_ballad_dig:0 "The Daughter of Kambel"
@@ -256,5 +256,5 @@
  paragon.401.desc.pirate:0 "§HThe captains present in the [Root.Capital.GetName] Haven Common murmur with curiosity and wariness as the newcomer approaches, his head held high.§!\n\nSo, this is the capital of the famed nation of free xenos. A welcome sight, after such a long journey. You know who I am, it would seem, but I do not think you know what I want.\n\nMy crew has taken a vote, and by the Code we both honor, I am bound to see their wishes done. We seek to make berth permanently in your havens, as part of your enterprise."
  paragon.401.a.pirate:0 "We would be happy to accommodate you, but we have questions."
  paragon.401.a.response.pirate:0 "§HHe chuckles good-naturedly.§!\n\nI understand. Our journeys have taken us through many dangerous parts of the galaxy, and we've made our fair share of enemies. If you're worried that danger may come seeking us, rest assured, our pursuers have been dispatched. But our last encounter has left my crew craving safe harbor.\n\nWe have children on board. They need to grow up somewhere safe. They need a haven."
- paragon.401.b.response.pirate:0 "§HCaptain Lysator seems to consider his words carefully. When he finally speaks, it is with a sorrowful look in his eyes.§!\n\nOne can say that I am... 'selective' when it comes to patrons and clients. There are many pirates in the galaxy, but few who truly value life. From a practical standpoint, returning captives means that merchant vessels are more likely to surrender, rather than fight for their lives. It makes prize-taking less dangerous for us, and for them. More than once, I've had to defend that stance, and I've shed blood for it.\n\nOur skills make us valuable, but with that prowess comes a demand for finesse and restraint. Wanton destruction is something I dislike, and you seem to share that value."
+ paragon.401.b.response.pirate:0 "§HCaptain Lysator seems to consider his words carefully. When he finally speaks, it is with a sorrowful look in his eyes.§!\n\nOne can say that I am... 'selective' when it comes to patrons and clients. There are many pirates in the galaxy, but few who truly value life. From a practical standpoint, returning captives means that merchant vessels are more likely to surrender, rather than fight for their lives. It makes prize-taking less dangerous for us, and for them. More than once, I've had to defend that stance, and I've shed blood for it.\n\nWanton destruction is something I dislike, and you seem to share that value."
  paragon.401.c.response.pirate:0 "Honor among thieves, my friend. After all, why should I trust you?"
