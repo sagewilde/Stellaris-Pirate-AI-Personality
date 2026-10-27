@@ -1,7 +1,42 @@
+
+# Treasure Hunters
+part = {
+	location = 0
+	localization = "START_SCREEN_TREASURE_HUNTERS"
+
+	trigger = {
+		has_origin = origin_treasure_hunters
+		NOT = { has_country_flag = lore_spacers }
+		is_nomadic = no
+	}
+}
+
+# Treasure Hunters - nomads
+part = {
+	location = 0
+	localization = "START_SCREEN_TREASURE_HUNTERS_NOMADS"
+
+	trigger = {
+		has_origin = origin_treasure_hunters
+		NOT = { has_country_flag = lore_spacers }
+		is_nomadic = yes
+	}
+}
+
 part = {
 	location = 0
 	localization = "START_SCREEN_FFL"
 	trigger = {
+		is_nomadic = no
+		has_country_flag = lore_spacers
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_FFL_NOMADS"
+	trigger = {
+		is_nomadic = yes
 		has_country_flag = lore_spacers
 	}
 }
