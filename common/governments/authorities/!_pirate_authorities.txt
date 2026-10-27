@@ -31,7 +31,7 @@ auth_direct_democratic = {
 	election_type = democratic
 
 	uses_mandates = yes
-	
+
 	color = { 81 140 44 255 }
 
 	ruler_council_position = councilor_ruler_direct_democratic
@@ -58,7 +58,6 @@ auth_direct_democratic = {
 
 	country_modifier = {
 		empire_size_colonies_mult = -0.15
-		decisions_cost_mult = -0.15
 		planet_decision_enact_speed_mult = 0.25
 		pop_cat_worker_political_power = 3
 		pop_cat_specialist_political_power = 5
@@ -310,6 +309,9 @@ auth_direct_democratic = {
                 has_country_flag = cyber_collectivist
                 has_country_flag = synth_physical
                 has_country_flag = synth_virtual
+				has_country_flag = bio_purity
+				has_country_flag = bio_cloning
+				has_country_flag = bio_mutation
 				has_country_flag = corporeal_government
 				has_country_flag = transcendent_government
             }
@@ -337,7 +339,7 @@ auth_corporate = {
 	localization_postfix = corporate
 
 	has_agendas = yes
-	
+
 	color = { 132 143 38 255 }
 
 	ruler_council_position = councilor_ruler_corporate
@@ -362,13 +364,24 @@ auth_corporate = {
 				value = origin_primitive_player_industrial_age
 			}
 		}
-		ethics = {
-			OR = {
-				value = ethic_capitalism				# Modded
-				value = ethic_fanatic_capitalism		# Modded
-				value = ethic_socialism					# Modded
-				value = ethic_fanatic_socialism			# Modded
+		OR = {
+			country_type = {
+				OR = {
+					value = caravaneer_home
+					value = caravaneer_fleet
+					value = enclave
+				}
 			}
+			ethics = {
+				OR = {
+					value = ethic_capitalism				# Modded
+					value = ethic_fanatic_capitalism		# Modded
+					value = ethic_socialism					# Modded
+					value = ethic_fanatic_socialism			# Modded
+				}
+			}
+		}
+		ethics = {
 			NOR = {
 				value = ethic_gestalt_consciousness
 				# value = ethic_fanatic_egalitarian
@@ -384,11 +397,12 @@ auth_corporate = {
 		pop_cat_worker_political_power = 2		# Modded
 		pop_cat_specialist_political_power = 3	# Modded
 		pop_cat_ruler_political_power = 5		# Modded
-		commercial_pact_mult = 0.20
-		empire_size_colonies_mult = 0.50		# Removed Vanilla Code
-		external_leader_pool_add = 1
+		planet_jobs_trade_produces_mult = 0.10
+		nomadic_contract_value_mult = 0.10
+		empire_size_colonies_mult = 0.50
+		envoys_add = 1
 	}
-	
+
 	advanced_authority_swap	= {
 		name = "civic_military_dictatorship_corporate_authority"
 		description = "civic_military_dictatorship_corporate_authority_desc"
@@ -403,6 +417,9 @@ auth_corporate = {
 				has_country_flag = cyber_collectivist
 				has_country_flag = synth_physical
 				has_country_flag = synth_virtual
+				has_country_flag = bio_purity
+				has_country_flag = bio_cloning
+				has_country_flag = bio_mutation
 				has_country_flag = corporeal_government
 				has_country_flag = transcendent_government
 			}
@@ -414,10 +431,9 @@ auth_corporate = {
 			pop_cat_worker_political_power = -2		# Modded
 			pop_cat_specialist_political_power = -1	# Modded
 			pop_cat_ruler_political_power = 2		# Modded
-			country_war_exhaustion_mult = -0.05
 		}
 	}
-	
+
 	advanced_authority_swap	= {
 		name = "civic_criminal_heritage_authority"
 		description = "civic_criminal_heritage_authority_desc"
@@ -432,6 +448,9 @@ auth_corporate = {
 				has_country_flag = cyber_collectivist
 				has_country_flag = synth_physical
 				has_country_flag = synth_virtual
+				has_country_flag = bio_purity
+				has_country_flag = bio_cloning
+				has_country_flag = bio_mutation
 				has_country_flag = corporeal_government
 				has_country_flag = transcendent_government
 			}
@@ -442,7 +461,7 @@ auth_corporate = {
 			pop_cat_ruler_political_power = 2		# Modded
 		}
 	}
-	
+
 	advanced_authority_swap	= {
 		name = "civic_feudal_realm_authority"
 		description = "civic_feudal_realm_authority_desc"
@@ -459,6 +478,9 @@ auth_corporate = {
 				has_country_flag = cyber_collectivist
 				has_country_flag = synth_physical
 				has_country_flag = synth_virtual
+				has_country_flag = bio_purity
+				has_country_flag = bio_cloning
+				has_country_flag = bio_mutation
 				has_country_flag = corporeal_government
 				has_country_flag = transcendent_government
 			}
@@ -500,7 +522,6 @@ auth_corporate = {
 		}
 		modifier = {
 			custom_tooltip = auth_cyber_corporate_individualist_tt
-			#starbase_trade_protection_add = 15
 			country_trade_produces_mult = 0.1
 			planet_crime_add = 20
 			pop_lifestyle_trade_value_add = 1
@@ -520,7 +541,6 @@ auth_corporate = {
 		}
 		modifier = {
 			custom_tooltip = auth_cyber_corporate_collectivist_tt
-			#starbase_trade_protection_add = 15
 			country_trade_produces_mult = 0.1
 			planet_crime_add = 20
 			council_agenda_progress_speed = 0.25
@@ -671,7 +691,7 @@ auth_corporate = {
 		modifier = {
 			custom_tooltip = auth_shroud_corporate_corporeal_tt
 			psionic_aura_effectiveness_mult = 0.25
-			country_branch_office_influence_cost_mult-0.4
+			country_branch_office_influence_cost_mult = -0.4
 			council_agenda_early_activation_cost_mult = -0.25
 			council_agenda_cooldown_mult = -0.25
 			species_leader_exp_gain = 0.25
@@ -694,6 +714,9 @@ auth_corporate = {
 				has_country_flag = cyber_collectivist
 				has_country_flag = synth_physical
 				has_country_flag = synth_virtual
+				has_country_flag = bio_purity
+				has_country_flag = bio_cloning
+				has_country_flag = bio_mutation
 				has_country_flag = corporeal_government
 				has_country_flag = transcendent_government
 			}

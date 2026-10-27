@@ -17,23 +17,21 @@
 # Pirate Marauders - Rebuild
 gov_pirate_marauders = {
 	ruler_title = RT_PIRATE_LORD
-
 	should_force_rename = yes
-
 	possible = {
 		is_megacorp = yes
-		OR = { 
-			has_valid_civic = civic_crusader_spirit_corporate 
-			has_valid_civic = civic_void_reavers 
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_valid_civic = civic_void_reavers
 		}
 		OR = {
 			has_origin = origin_heirs_of_the_khan
+			has_valid_civic = PrimPlayer_civic_heirs_of_the_khan
 			has_valid_civic = civic_barbaric_despoilers_corporate
 			has_valid_civic = PrimPlayer_civic_barbaric_despoilers_khan
 			has_valid_civic = civic_barbaric_despoilers_khan
 		}
 	}
-
 	weight = {
 		base = 30000
 	}
