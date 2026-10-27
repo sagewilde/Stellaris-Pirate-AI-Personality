@@ -6,7 +6,7 @@
 
 @empirate_anomaly_guaranteed_years = 30
 @empirate_anomaly_multiplayer_factor = 0.2
-@empirate_guaranteed_factor = 50
+@empirate_guaranteed_factor = 100
 
-@empirate_anomaly_factor = 10
+@empirate_anomaly_factor = 5
 @empirate_anomaly_level = 2

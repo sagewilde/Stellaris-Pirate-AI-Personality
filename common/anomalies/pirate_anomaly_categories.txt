@@ -60,27 +60,19 @@ daughters_ballad_cat = {
 	max_once_global = yes
 
 	spawn_chance = {
-		factor = @empirate_anomaly_factor
 		modifier = {
-			add = 0.1
-			is_star = no
-		}
-		modifier = {
-			factor = 0
-			is_star = yes
-		}
-		modifier = {
-			add = 0.1
-			from.leader = {
-				species = {
-					NOT = { has_trait = trait_aquatic }
-				}
-			}
+			add = @empirate_anomaly_factor
+			uninhabitable_regular_planet = yes
 		}
 		modifier = {
 			add = 0.3
  			from.leader = {
- 				species = { has_trait = trait_aquatic }
+				species = {
+					OR = {
+						has_trait = trait_aquatic
+						has_trait = trait_reavers
+					}
+				}
  			}
  		}
 		modifier = {
@@ -90,6 +82,10 @@ daughters_ballad_cat = {
 		modifier = {
 			add = @empirate_guaranteed_factor
 			years_passed >= @empirate_anomaly_guaranteed_years
+		}
+		modifier = {
+			factor = 0
+			uninhabitable_regular_planet = no
 		}
 		modifier = {
 			factor = 0
