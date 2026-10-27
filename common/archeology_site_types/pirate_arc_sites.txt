@@ -26,31 +26,31 @@ site_daughters_ballad_dig = {
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A2
-		event = empirates.1001
+		event = empirates.11
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A2
-		event = empirates.1002
+		event = empirates.12
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = empirates.1003
+		event = empirates.13
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = empirates.1004
+		event = empirates.14
 	}
 
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_A3
-		event = empirates.1005
+		event = empirates.15
 	}
 
 	on_roll_failed = {

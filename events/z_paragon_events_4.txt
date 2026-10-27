@@ -1,0 +1,161 @@
+
+country_event = { # xenophile 1
+	id = paragon.40100
+	title = "paragon.40100.name"
+	desc = "paragon.40100.desc"
+	show_sound = par_portrait_12
+	is_triggered_only = yes
+
+	picture = GFX_leader_recruitment_bg_renowned
+	auto_opens = no
+	event_window_type = leader_recruit
+	notification_event_icon = "GFX_message_leader_recruitment_lysator"
+
+	immediate = {
+		ethic_leader_creator = {
+			SPECIES_CLASS = random_non_machine # Species class, for animation purposes, example: MAM4
+			LEADER_PORTRAIT = par_renown_12 # xenophile_leader_gen # Leader portrait
+			CLASS = commander
+			TIER = leader_tier_renowned
+			NAME = NAME_xenophile1
+			LEVEL = 4
+			GENDER = male
+			IMMORTAL = no
+			ETHIC = xenophile
+			DESC = xenophile1
+			CATCH_PHRASE = xenophile1_catch_phrase
+		}
+		last_created_leader = {
+			add_trait = {
+				trait = subclass_commander_admiral
+				consume_selection = yes
+			}
+			add_trait = {
+				trait = leader_trait_guerilla_tactics
+				consume_selection = yes
+			}
+			add_trait = {
+				trait = leader_trait_slipshod
+				consume_selection = yes
+			}
+			add_trait = {
+				trait = leader_trait_trickster
+				consume_selection = yes
+			}
+			add_trait = {
+				trait = leader_trait_corsair
+				consume_selection = yes
+			}
+			set_age = 33
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:ethic_leader
+		room = ethic_spaceship_room
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+		hidden_effect = {
+			remove_global_flag = xenophile_leader_1 # Put this leader back into the pool, so player could still get him
+			ethic_leader_kill_effect = yes
+			set_country_flag = dismissed_xenophile_leader_1
+		}
+	}
+	option = {
+		name = paragon.40100.a
+		response_text = paragon.40100.a.response
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = no
+		}
+	}
+	option = {
+		name = paragon.40100.a.pirate
+		response_text = paragon.40100.a.response.pirate
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = yes
+		}
+	}
+	option = {
+		name = paragon.40100.b
+		response_text = paragon.40100.b.response
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = no
+		}
+	}
+	option = {
+		name = paragon.40100.b
+		response_text = paragon.40100.b.response.pirate
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = yes
+		}
+	}
+	option = {
+		name = paragon.40100.c
+		response_text = paragon.40100.c.response
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = no
+		}
+	}
+	option = {
+		name = paragon.40100.c
+		response_text = paragon.40100.c.response.pirate
+		is_dialog_only = yes
+		trigger = {
+			is_player_mb = yes
+		}
+	}
+	option = {
+		name = paragon.40100.d
+		response_text = paragon.40100.d.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = HIRE
+		tag = hire_leader
+		custom_tooltip = paragon.40100.hire_custom_tooltip
+		hidden_effect = {
+			ethic_leader_hire_effect = {
+				GLOBAL_EVENT_TARGET = renowned_xenophile1
+			}
+		}
+		create_fleet = {
+			name = "LYSANDER_FLEET_NAME"
+			effect = {
+				set_owner = prev
+				create_ship = {
+					design = NAME_Reaver
+					graphical_culture = "pirate_01"
+					name = NAME_First_Pillager
+					prefix = no
+				}
+				create_ship = {
+					design = NAME_Dagger
+					graphical_culture = "reptilian_01"
+					name = NAME_Second_Pillager
+					prefix = no
+				}
+				create_ship = {
+					design = NAME_Dagger
+					graphical_culture = "reptilian_01"
+					name = NAME_Third_Pillager
+					prefix = no
+				}
+				set_location = {
+					target = prev.capital_scope
+					distance = 10
+					angle = random
+				}
+				assign_leader = event_target:renowned_xenophile1
+				set_fleet_stance = passive
+			}
+		}
+	}
+}

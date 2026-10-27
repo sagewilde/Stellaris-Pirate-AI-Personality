@@ -2,9 +2,9 @@ namespace = empirates
 
 # The Daughter's Ballad
 fleet_event = {
-	id = empirates.1001
-	title = "empirates.1001.name"
-	desc = "empirates.1001.desc"
+	id = empirates.11
+	title = "empirates.11.name"
+	desc = "empirates.11.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -28,9 +28,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.1002
-	title = "empirates.1002.name"
-	desc = "empirates.1002.desc"
+	id = empirates.12
+	title = "empirates.12.name"
+	desc = "empirates.12.desc"
 
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -43,7 +43,7 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 	option = {
-		name = empirates.1002.a
+		name = empirates.12.a
 		small_artifact_reward = yes
 	}
 
@@ -54,9 +54,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.1003
-	title = "empirates.1003.name"
-	desc = "empirates.1003.desc"
+	id = empirates.13
+	title = "empirates.13.name"
+	desc = "empirates.13.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -69,7 +69,7 @@ fleet_event = {
 		from = { set_site_progress_locked = yes }
 	}
 	option = {
-		name = empirates.1003.a
+		name = empirates.13.a
 		small_artifact_reward = no
 	}
 
@@ -80,9 +80,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.1004
-	title = "empirates.1004.name"
-	desc = "empirates.1004.desc"
+	id = empirates.14
+	title = "empirates.14.name"
+	desc = "empirates.14.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -96,7 +96,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = empirates.1004.a
+		name = empirates.14.a
 		small_artifact_reward = no
 	}
 
@@ -106,9 +106,9 @@ fleet_event = {
 }
 
 fleet_event = {
-	id = empirates.1005
-	title = "empirates.1005.name"
-	desc =  "empirates.1005.desc"
+	id = empirates.15
+	title = "empirates.15.name"
+	desc =  "empirates.15.desc"
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
@@ -124,7 +124,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = empirates.1005.a
+		name = empirates.15.a
 		small_artifact_reward = no
 		owner = {
 			add_modifier = {

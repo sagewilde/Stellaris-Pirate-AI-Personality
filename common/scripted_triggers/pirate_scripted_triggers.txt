@@ -131,3 +131,19 @@ is_special_personality = {
 		has_ai_personality = "cunning_raiders"
 	}
 }
+
+is_player_mb = {
+	AND = {
+		is_capitalism = no
+		is_xenophobe = no
+		OR = {
+			has_valid_civic = civic_crusader_spirit_corporate
+			has_origin = origin_treasure_hunters
+		}
+		OR = {
+			has_valid_civic = civic_anarchy_utopia
+			has_valid_civic = civic_anarchy_ideals
+			has_valid_civic = civic_worker_coop
+		}
+	}
+}
