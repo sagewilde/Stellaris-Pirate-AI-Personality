@@ -20,7 +20,7 @@ site_daughters_ballad_dig = {
 
 	stage = {
 		difficulty = 1
-		icon = GFX_archaeology_runes_A2
+		icon = GFX_archaeology_runes_A1
 		event = empirates.11
 	}
 
@@ -38,13 +38,13 @@ site_daughters_ballad_dig = {
 
 	stage = {
 		difficulty = 1
-		icon = GFX_archaeology_runes_A3
+		icon = GFX_archaeology_runes_A4
 		event = empirates.14
 	}
 
 	stage = {
 		difficulty = 1
-		icon = GFX_archaeology_runes_A3
+		icon = GFX_archaeology_runes_A5
 		event = empirates.15
 	}
 
