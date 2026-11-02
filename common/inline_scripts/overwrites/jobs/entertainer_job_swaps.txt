@@ -45,8 +45,76 @@ swap_type = {
 	}
 	name = naval_reenactor
 	desc = naval_reenactor
-	icon = entertainer
+	icon = duelist
 	building_icon = building_pirate_haven
 	condition_string = BATTLE_THRALL_JOB_TRIGGER
 	weight = 30
+}
+
+# Planetary Diversity 4.5 unique job swaps (included for compatibility)
+swap_type = {
+	trigger = {
+		has_modifier = pd_aquifer
+		num_zones = { type = zone_pd_aquifer_resort value > 0 }
+	}
+	name = pd_aquifer_oasis_host
+	desc = job_pd_aquifer_oasis_host_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
+}
+swap_type = {
+	trigger = {
+		has_modifier = pd_archipelago
+		num_zones = { type = zone_pd_archipelago_resort value > 0 }
+	}
+	name = pd_archipelago_island_concierge
+	desc = job_pd_archipelago_island_concierge_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
+}
+swap_type = {
+	trigger = {
+		has_modifier = pd_biolumen
+		num_zones = { type = zone_pd_biolumen_resort value > 0 }
+	}
+	name = pd_biolumen_glowtour_guide
+	desc = job_pd_biolumen_glowtour_guide_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
+}
+swap_type = {
+	trigger = {
+		has_modifier = pd_coral
+		num_zones = { type = zone_pd_coral_resort value > 0 }
+	}
+	name = pd_coral_curator
+	desc = job_pd_coral_curator_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
+}
+swap_type = {
+	trigger = {
+		has_modifier = pd_cryoflora
+		num_zones = { type = zone_pd_cryoflora_resort value > 0 }
+	}
+	name = pd_cryoflora_aurora_guide
+	desc = job_pd_cryoflora_aurora_guide_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
+}
+swap_type = {
+	trigger = {
+		has_modifier = pd_glaciovolcanic
+		num_zones = { type = zone_pd_glaciovolcanic_resort value > 0 }
+	}
+	name = pd_glaciovolcanic_geyser_guide
+	desc = job_pd_glaciovolcanic_geyser_guide_desc
+	icon = entertainer
+	building_icon = building_commercial_zone
+	weight = 200
 }
