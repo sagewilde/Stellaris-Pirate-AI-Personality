@@ -147,3 +147,35 @@ is_player_mb = {
 		}
 	}
 }
+
+ideal_planet_is_wet_not_ocean = {
+	OR = {
+		ideal_planet_class = pc_continental
+		ideal_planet_class = pc_tropical
+		# PD Compatibility
+		ideal_planet_class = pc_continental
+		ideal_planet_class = pc_pd_forest
+		ideal_planet_class = pc_pd_tepid
+		ideal_planet_class = pc_pd_retinal
+		ideal_planet_class = pc_pd_lake
+		ideal_planet_class = pc_pd_sakura
+		ideal_planet_class = pc_pd_moss
+		ideal_planet_class = pc_pd_marsh
+		ideal_planet_class = pc_pd_carotene
+		ideal_planet_class = pc_pd_mushroom
+		ideal_planet_class = pc_pd_petrified
+		ideal_planet_class = pc_pd_megaflora
+		ideal_planet_class = pc_tropical
+		ideal_planet_class = pc_pd_atoll
+		ideal_planet_class = pc_pd_tepui
+		ideal_planet_class = pc_pd_mangrove
+		ideal_planet_class = pc_pd_cenote
+		ideal_planet_class = pc_pd_fungal
+		ideal_planet_class = pc_pd_aerial
+		ideal_planet_class = pc_pd_lilypad
+		ideal_planet_class = pc_pd_obsidian
+		ideal_planet_class = pc_pd_thunder
+		ideal_planet_class = pc_pd_geothermal
+		ideal_planet_class = pc_pd_biolumen
+	}
+}

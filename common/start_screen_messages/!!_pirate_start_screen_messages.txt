@@ -23,20 +23,102 @@ part = {
 	}
 }
 
+# Free Fleets of Lore
 part = {
 	location = 0
-	localization = "START_SCREEN_FFL"
+	localization = "START_SCREEN_FFL_INTRO"
 	trigger = {
-		is_nomadic = no
 		has_country_flag = lore_spacers
 	}
 }
-
 part = {
-	location = 0
-	localization = "START_SCREEN_FFL_NOMADS"
+	location = 1
+	localization = "START_SCREEN_FFL_MSI"
+
 	trigger = {
-		is_nomadic = yes
 		has_country_flag = lore_spacers
+		has_slave_origin = yes
+	}
+}
+part = {
+	location = 1
+	localization = "START_SCREEN_FFL_COLD"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		ideal_planet_is_cold = yes
+		has_slave_origin = no
+	}
+}
+part = {
+	location = 1
+	localization = "START_SCREEN_FFL_DRY"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		ideal_planet_is_dry = yes
+		has_slave_origin = no
+	}
+}
+part = {
+	location = 1
+	localization = "START_SCREEN_FFL_WET"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		ideal_planet_is_wet_not_ocean = yes
+		has_slave_origin = no
+		
+	}
+}
+part = {
+	location = 1
+	localization = "START_SCREEN_FFL_DEFAULT"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		ideal_planet_is_special = no
+		has_slave_origin = no
+	}
+}
+part = {
+	location = 2
+	localization = "START_SCREEN_FFL_OUTRO_NOWORLD"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		OR = {
+			ideal_planet_is_special = yes
+			is_nomadic = yes
+		}
+		has_slave_origin = no
+	}
+}
+part = {
+	location = 2
+	localization = "START_SCREEN_FFL_OUTRO_PAYBACK"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		has_origin = origin_payback
+	}
+}
+part = {
+	location = 2
+	localization = "START_SCREEN_FFL_OUTRO_SHACKLES"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		has_origin = origin_broken_shackles
+	}
+}
+part = {
+	location = 2
+	localization = "START_SCREEN_FFL_OUTRO_DEFAULT"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		ideal_planet_is_special = no
+		has_slave_origin = no
 	}
 }
