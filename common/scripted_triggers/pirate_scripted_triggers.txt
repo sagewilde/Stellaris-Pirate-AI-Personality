@@ -153,7 +153,6 @@ ideal_planet_is_wet_not_ocean = {
 		ideal_planet_class = pc_continental
 		ideal_planet_class = pc_tropical
 		# PD Compatibility
-		ideal_planet_class = pc_continental
 		ideal_planet_class = pc_pd_forest
 		ideal_planet_class = pc_pd_tepid
 		ideal_planet_class = pc_pd_retinal
@@ -165,7 +164,6 @@ ideal_planet_is_wet_not_ocean = {
 		ideal_planet_class = pc_pd_mushroom
 		ideal_planet_class = pc_pd_petrified
 		ideal_planet_class = pc_pd_megaflora
-		ideal_planet_class = pc_tropical
 		ideal_planet_class = pc_pd_atoll
 		ideal_planet_class = pc_pd_tepui
 		ideal_planet_class = pc_pd_mangrove
@@ -177,5 +175,23 @@ ideal_planet_is_wet_not_ocean = {
 		ideal_planet_class = pc_pd_thunder
 		ideal_planet_class = pc_pd_geothermal
 		ideal_planet_class = pc_pd_biolumen
+	}
+}
+
+ideal_planet_is_ocean = {
+	OR = {
+		ideal_planet_class = pc_ocean
+		# PD Compatibility
+		ideal_planet_class = pc_pd_cascadian
+		ideal_planet_class = pc_pd_swamp
+		ideal_planet_class = pc_pd_fog
+		ideal_planet_class = pc_pd_kelp
+		ideal_planet_class = pc_pd_algae
+		ideal_planet_class = pc_pd_columnar
+		ideal_planet_class = pc_pd_tidepool
+		ideal_planet_class = pc_pd_barnacle
+		ideal_planet_class = pc_pd_crag
+		ideal_planet_class = pc_pd_reef
+		ideal_planet_class = pc_pd_archipelago
 	}
 }

@@ -77,19 +77,10 @@ part = {
 
 	trigger = {
 		has_country_flag = lore_spacers
-		ideal_planet_is_special = no
-		has_slave_origin = no
-	}
-}
-part = {
-	location = 2
-	localization = "START_SCREEN_FFL_OUTRO_NOWORLD"
-
-	trigger = {
-		has_country_flag = lore_spacers
 		OR = {
 			ideal_planet_is_special = yes
-			is_nomadic = yes
+			ideal_planet_is_ocean = yes
+
 		}
 		has_slave_origin = no
 	}
@@ -114,11 +105,27 @@ part = {
 }
 part = {
 	location = 2
+	localization = "START_SCREEN_FFL_OUTRO_NOWORLD"
+
+	trigger = {
+		has_country_flag = lore_spacers
+		OR = {
+			ideal_planet_is_special = yes
+			is_nomadic = yes
+		}
+		has_slave_origin = no
+	}
+}
+part = {
+	location = 2
 	localization = "START_SCREEN_FFL_OUTRO_DEFAULT"
 
 	trigger = {
 		has_country_flag = lore_spacers
-		ideal_planet_is_special = no
+		AND = {
+			ideal_planet_is_special = no
+			is_nomadic = no
+		}
 		has_slave_origin = no
 	}
 }
