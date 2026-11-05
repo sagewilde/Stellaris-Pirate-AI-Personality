@@ -23,6 +23,34 @@ part = {
 	}
 }
 
+# Payback - Standard
+part = {
+	location = 0
+	localization = "START_SCREEN_PAYBACK"
+
+	trigger = {
+		has_origin = origin_payback
+		NOR = {
+			is_hive_empire = yes
+			is_machine_empire = yes
+			is_megacorp = yes
+		}
+		NOT = { has_country_flag = lore_spacers }
+	}
+}
+
+# Broken Shackles
+part = {
+	location = 0
+	localization = "START_SCREEN_BROKEN_SHACKLES"
+
+	trigger = {
+		has_origin = origin_broken_shackles
+		is_megacorp = no
+		NOT = { has_country_flag = lore_spacers }
+	}
+}
+
 # Free Fleets of Lore
 part = {
 	location = 0
