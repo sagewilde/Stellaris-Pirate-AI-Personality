@@ -5,7 +5,9 @@
 
 paradox_pirates_improved = {
 	category = "Humanoid"
+	customize_random_override = AQU2
 	randomized = no
+	alias = "Exceed"
 
 	ship_names = {
 		generic = {
@@ -38,6 +40,9 @@ paradox_pirates_improved = {
 		colonizer = {
 			PRT1_NAME_ZhengYiSao PRT1_NAME_MaryRead PRT1_NAME_AnneBonny PRT1_NAME_TchiaoKuofuja PRT1_NAME_ArtemisiaofCaria PRT1_NAME_JoannatheFlameFlanders PRT1_NAME_JeannetheLionessdeClisson PRT1_NAME_GraceOMalley PRT1_NAME_SayyidaalHurra PRT1_NAME_LadyKilligrew PRT1_NAME_CorneliaNeelCowper PRT1_NAME_JacquotteDelahaye PRT1_NAME_SarahBishop PRT1_NAME_RachelWall PRT1_NAME_JohannaHard PRT1_NAME_LoHoncho PRT1_NAME_SisterPing
 		}
+		sponsored_colonizer = {
+			PRT1_NAME_ZhengYiSao PRT1_NAME_MaryRead PRT1_NAME_AnneBonny PRT1_NAME_TchiaoKuofuja PRT1_NAME_ArtemisiaofCaria PRT1_NAME_JoannatheFlameFlanders PRT1_NAME_JeannetheLionessdeClisson PRT1_NAME_GraceOMalley PRT1_NAME_SayyidaalHurra PRT1_NAME_LadyKilligrew PRT1_NAME_CorneliaNeelCowper PRT1_NAME_JacquotteDelahaye PRT1_NAME_SarahBishop PRT1_NAME_RachelWall PRT1_NAME_JohannaHard PRT1_NAME_LoHoncho PRT1_NAME_SisterPing
+		}
 		constructor = {
 			PRT1_NAME_ZhengYiSao PRT1_NAME_MaryRead PRT1_NAME_AnneBonny PRT1_NAME_TchiaoKuofuja PRT1_NAME_ArtemisiaofCaria PRT1_NAME_JoannatheFlameFlanders PRT1_NAME_JeannetheLionessdeClisson PRT1_NAME_GraceOMalley PRT1_NAME_SayyidaalHurra PRT1_NAME_LadyKilligrew PRT1_NAME_CorneliaNeelCowper PRT1_NAME_JacquotteDelahaye PRT1_NAME_SarahBishop PRT1_NAME_RachelWall PRT1_NAME_JohannaHard PRT1_NAME_LoHoncho PRT1_NAME_SisterPing
 		}
@@ -61,6 +66,9 @@ paradox_pirates_improved = {
 		}
 		colonizer = {
 			PRT1_CLASS_Squatter
+		}
+		sponsored_colonizer = {
+			PRT1_CLASS_Ursuer
 		}
 		constructor = {
 			PRT1_CLASS_Jaywalker
