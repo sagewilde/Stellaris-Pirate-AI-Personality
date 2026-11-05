@@ -145,7 +145,7 @@
  MB_PREINSULT_03:0 "That's right, keep focusing on me. Don't pay attention to what's behind you."
 ## Insults targeting MB
 ## Insults sent by MB
- MB_INSULT_08:0 "As the [From.GetAdj] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their digi-wallet is gone! Those scurvy thieves!"
+ MB_INSULT_08:0 "As the [Root.GetAdj] envoy leaves the [From.GetName] embassy, they pat down their pockets and notice something missing. Their digi-wallet is gone! Those scurvy thieves!"
 ## Accepting Insults
  MB_INSULTED_01:0 "You can save that kind of flim-flammery for your starport floozies, [From.GetRulerName]."
  MB_INSULTED_02:0 "Wow. That was a creative and well-thought disappointment to whatever you have that passes for a mother."

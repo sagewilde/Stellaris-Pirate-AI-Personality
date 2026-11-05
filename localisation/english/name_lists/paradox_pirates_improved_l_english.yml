@@ -1,7 +1,7 @@
 ﻿l_english:
  name_list_paradox_pirates_improved:0 "Paradox Pirates (Improved)"
- name_list_paradox_pirates_improved_desc:0 " "
-
+ name_list_paradox_pirates_improved_desc:0 "40% Cooler than the Aquatics 2 namelist!"
+ 
  PRT1_SHIP_PirateMcPirateface:0 "Pirate McPirateface"               # Joke about Boaty McBoatface, the AUV used in scientific research on the RSS Sir David Attenborough. Don't let the internet name revolutionary scientific equipment.
  PRT1_SHIP_Alestorm:0 "Alestorm"                                    # Rock band that sings exclusively about pirates and piracy. Goofy and silly.
  PRT1_SHIP_RobbieRotten:0 "Robbie Rotten"                           # Internet meme.
@@ -77,26 +77,34 @@
  PRT1_SHIP_MariosPlunger:0 "Mario's Plunger"                        # Super Mario Bros. joke
  PRT1_SHIP_MarcsCutlass:0 "Marc's Cutlass"
 
- PRT1_CLASS_Vandal:0 "Vandal"
- PRT1_CLASS_Kidnapper:0 "Kidnapper"
- PRT1_CLASS_Arsonist:0 "Arsonist"
- PRT1_CLASS_Murderer:0 "Murderer"
- PRT1_CLASS_Jaywalker:0 "Jaywalker"
- PRT1_CLASS_Impersonator:0 "Impersonator"
- PRT1_CLASS_Pickpocket:0 "Pickpocket"
- PRT1_CLASS_WireFraudster:0 "Wire Fraudster"
- PRT1_CLASS_Saboteur:0 "Saboteur"
- PRT1_CLASS_Larcener:0 "Larcener"
- PRT1_CLASS_Shoplifter:0 "Shoplifter"
- PRT1_CLASS_ZroTrafficker:0 "Zro Trafficker"
  PRT1_CLASS_ArmsDealer:0 "Arms Dealer"
- PRT1_CLASS_Embezzler:0 "Embezzler"
+ PRT1_CLASS_Arsonist:0 "Arsonist"
  PRT1_CLASS_BankRobber:0 "Bank Robber"
- PRT1_CLASS_HomeInvader:0 "Home Invader"
- PRT1_CLASS_Trespasser:0 "Trespasser"
- PRT1_CLASS_Hooligan:0 "Hooligan"
- PRT1_CLASS_Loiterer:0 "Loiterer"
+ PRT1_CLASS_Briber:0 "Briber"
+ PRT1_CLASS_Bully:0 "Bully"
  PRT1_CLASS_Burglar:0 "Burglar"
+ PRT1_CLASS_Conspirator:0 "Conspirator"
+ PRT1_CLASS_Embezzler:0 "Embezzler"
+ PRT1_CLASS_Forger:0 "Forger"
+ PRT1_CLASS_Hacker:0 "Hacker"
+ PRT1_CLASS_HomeInvader:0 "Home Invader"
+ PRT1_CLASS_Hooligan:0 "Hooligan"
+ PRT1_CLASS_Impersonator:0 "Impersonator"
+ PRT1_CLASS_Jaywalker:0 "Jaywalker"
+ PRT1_CLASS_Kidnapper:0 "Kidnapper"
+ PRT1_CLASS_Larcener:0 "Larcener"
+ PRT1_CLASS_Loiterer:0 "Loiterer"
+ PRT1_CLASS_MoneyLaunderer:0 "Money Launderer"
+ PRT1_CLASS_Murderer:0 "Murderer"
+ PRT1_CLASS_Perjurer:0 "Perjurer"
+ PRT1_CLASS_Pickpocket:0 "Pickpocket"
+ PRT1_CLASS_Saboteur:0 "Saboteur"
+ PRT1_CLASS_Shoplifter:0 "Shoplifter"
+ PRT1_CLASS_Squatter:0 "Squatter"
+ PRT1_CLASS_Trespasser:0 "Trespasser"
+ PRT1_CLASS_Vandal:0 "Vandal"
+ PRT1_CLASS_WireFraudster:0 "Wire Fraudster"
+ PRT1_CLASS_ZroTrafficker:0 "Zro Trafficker"
 
  PRT1_PLANET_Libertalia:0 "Libertalia"                              # Mythical pirate port in Madagascar
  PRT1_PLANET_Nassau:0 "Nassau"                                      # Real-world pirate port
@@ -189,8 +197,10 @@
  PRT1_NAME_Weasel:0 "Weasel"
  PRT1_NAME_William:0 "William"
  PRT1_NAME_Zheng:0 "Zheng"
+ PRT1_NAME_Aerin:0 "Aerin"
  PRT1_NAME_Agene:0 "Agene"
  PRT1_NAME_Blaze:0 "Blaze"
+ PRT1_NAME_Cat:0 "Cat"
  PRT1_NAME_Catra:0 "Catra"                                          # Character from She-Ra
  PRT1_NAME_Cassiopeia:0 "Cassiopeia"                                # From the constellation 'Cassiopeia, the Queen'
  PRT1_NAME_Coliope:0 "Coliope"
@@ -203,28 +213,28 @@
  PRT1_NAME_Echo:0 "Echo"
  PRT1_NAME_Edith:0 "Edith"
  PRT1_NAME_Elegy:0 "Elegy"
+ PRT1_NAME_Eurydice:0 "Eurydice"                                    # From Greek myth
  PRT1_NAME_Fantoma:0 "Fantoma"
  PRT1_NAME_Frisk:0 "Frisk"                                          # Character from Undertale
  PRT1_NAME_Geraldine:0 "Geraldine"
  PRT1_NAME_Harmony:0 "Harmony"
  PRT1_NAME_Helga:0 "Helga"
+ PRT1_NAME_Hunter:0 "Hunter"
  PRT1_NAME_Jester:0 "Jester"
  PRT1_NAME_Karai:0 "Karai"                                          # Character from Teenage Mutant Ninja Turtles
  PRT1_NAME_Law:0 "Law"
  PRT1_NAME_Light:0 "Light"
- PRT1_NAME_Lillian:0 "Lillian"
  PRT1_NAME_Lillith:0 "Lillith"
+ PRT1_NAME_Luz:0 "Luz"                                              # Girls' name common in Mexico
+ PRT1_NAME_Lyra:0 "Lyra"                                            # From the constellation 'Lyra, the Harp'
  PRT1_NAME_Margot:0 "Margot"
- PRT1_NAME_Max:0 "Max"
  PRT1_NAME_Makone:0 "Makone"
+ PRT1_NAME_Max:0 "Max"                                              # Unisex shortening of either 'Maximilian' or 'Maxine'
+ PRT1_NAME_May:0 "May"
  PRT1_NAME_Melody:0 "Melody"
  PRT1_NAME_Misty:0 "Misty"
- PRT1_NAME_May:0 "May"
+ PRT1_NAME_Naomi:0 "Naomi"                                          # Girls' name common in the United States
  PRT1_NAME_Ondine:0 "Ondine"                                        # From Greek myth
- PRT1_NAME_Eurydice:0 "Eurydice"                                    # Ditto
- PRT1_NAME_Kitty:0 "Kitty"
- PRT1_NAME_Hunter:0 "Hunter"
- PRT1_NAME_Lyra:0 "Lyra"                                            # From the constellation 'Lyra, the Harp'
  PRT1_NAME_Phanta:0 "Phanta"
  PRT1_NAME_Peep:0 "Peep"
  PRT1_NAME_Penelope:0 "Penelope"                                    # Wife of Odysseus, queen of Ithaca
