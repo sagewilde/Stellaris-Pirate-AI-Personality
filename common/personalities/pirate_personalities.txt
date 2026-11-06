@@ -112,6 +112,7 @@ cunning_raiders = {
 		multispecies = yes
 		crisis_fighter = no
 		sneak_attacker = yes
+		wants_tribute = yes
 		attack_neutrals = yes
 	}
 

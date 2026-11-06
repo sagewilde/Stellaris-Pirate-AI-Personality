@@ -1,3 +1,0 @@
-empire_free_fleets_of_lore = {
-	flags = { lore_spacers custom_start_screen }
-}

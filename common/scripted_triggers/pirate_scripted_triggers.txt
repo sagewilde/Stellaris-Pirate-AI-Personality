@@ -32,6 +32,7 @@ has_ambush_doctrine_personality = {
 		has_ai_personality = slaving_despots
 		has_ai_personality = decadent_capitalists
 		has_ai_personality = mirthful_bandits
+		has_ai_personality = cynical_socialists
 	}
 }
 
@@ -126,9 +127,9 @@ is_weak_and_rich = {
 
 is_special_personality = {
 	OR = {
-		has_ai_personality = "peaceful_counterculture"
-		has_ai_personality = "mirthful_bandits"
-		has_ai_personality = "cunning_raiders"
+		has_ai_personality = peaceful_counterculture
+		has_ai_personality = mirthful_bandits
+		has_ai_personality = cunning_raiders
 	}
 }
 
