@@ -354,4 +354,4 @@
 
 # Concerning Hippies
  PC_MB_INSULT_01: "You dudes seem to like to think you're the good guys. Didn't your mothers ever teach you that stealing is wrong, and picking fights isn't cool?"
- MB_PC_INSULT_01: "As the [From.GetSpeciesAdj] envoy leaves the [Root.GetName] embassy, they pat down their pockets and notice something missing. Their baggie of Marin Kharin is gone. The vibe has been harshed."
+ MB_PC_INSULT_01: "As the [Root.GetSpeciesAdj] envoy leaves the [From.GetName] embassy, they pat down their pockets and notice something missing. Their baggie of Marin Kharin is gone. The vibe has been harshed."
