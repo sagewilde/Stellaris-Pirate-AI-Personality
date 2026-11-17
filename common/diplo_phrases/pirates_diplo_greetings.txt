@@ -382,7 +382,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { NOT = { is_pirate_empire = yes } }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -399,7 +399,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { NOT = { is_pirate_empire = yes } }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -416,7 +416,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { 
 				is_pirate_empire = yes
 			}
@@ -435,7 +435,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { 
 				is_pirate_empire = yes
 			}
@@ -454,7 +454,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -468,7 +468,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -482,7 +482,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { is_pirate_empire = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -498,7 +498,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { 
 				is_pirate_empire = yes
 			}
@@ -516,7 +516,7 @@ greetings = {
 		trigger = { 
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -532,7 +532,7 @@ greetings = {
 		trigger = { 
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			is_in_federation_with = FROM
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -549,7 +549,7 @@ greetings = {
 		trigger = { 
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { is_pirate_empire = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -566,7 +566,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			is_at_war_with = FROM
 		}
 	}
@@ -577,7 +577,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			is_at_war_with = FROM
 		}
 	}
@@ -588,7 +588,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { 
 				is_megacorp = yes
 			}
@@ -602,7 +602,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			FROM = { 
 				is_pirate_empire = yes
 			}
@@ -616,7 +616,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOR = {
@@ -632,7 +632,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			is_disloyal_to = FROM
@@ -646,7 +646,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_pirate_empire = yes
-			is_special_personality = no
+			is_seap_personality = no
 			is_domineering_to = FROM
 			NOT = { is_at_war_with = FROM }
 		}

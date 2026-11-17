@@ -78,7 +78,7 @@ is_weak_and_rich = {
 	}
 }
 
-is_special_personality = {
+is_seap_personality = {
 	OR = {
 		has_ai_personality = peaceful_counterculture
 		has_ai_personality = mirthful_bandits
