@@ -750,7 +750,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_gestalt = no
-			is_megacorp = no
+			NOT = { has_authority = auth_corporate }
 			is_seap_personality = no
 			FROM = {
 				is_pirate_empire = yes
@@ -850,7 +850,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_gestalt = no
-			is_megacorp = no
+			NOT = { has_authority = auth_corporate }
 			is_seap_personality = no
 			FROM = {
 				is_pirate_empire = yes
@@ -941,7 +941,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_gestalt = no
-			is_megacorp = no
+			NOT = { has_authority = auth_corporate }
 			FROM = {
 				is_pirate_empire = yes
 				OR = {
@@ -962,7 +962,7 @@ greetings = {
 		trigger = {
 			is_country_type = default
 			is_gestalt = no
-			is_megacorp = no
+			NOT = { has_authority = auth_corporate }
 			is_seap_personality = no
 			FROM = {
 				is_pirate_empire = yes
