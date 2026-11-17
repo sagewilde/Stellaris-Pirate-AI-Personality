@@ -1,53 +1,6 @@
 ### Mod Identifier
 
 has_pirate_ai_personalities = { always = yes }
-has_sage_expressive_personalities = { always = yes }
-
-### Vanilla Overwrites
-
-values_others = {
-	AND = {
-		OR = {
-			is_xenophile = yes
-			has_valid_civic = civic_hive_empath
-			has_valid_civic = civic_machine_servitor
-			has_valid_civic = civic_machine_exploration_protocol
-			has_origin = origin_fruitful
-			has_animal_handler_job = yes
-			has_symbiosis_integrator_job = yes
-			has_valid_civic = civic_hive_familiar_face
-			has_hippie_government = yes					# For compatibility with Hippie AI Personalities
-			has_ai_personality = mirthful_bandits
-		}
-		NOT = {
-			has_menace_perk = menp_behemoth_ever_hungry
-		}
-	}
-}
-
-has_ambush_doctrine_personality = {
-	OR = {
-		has_ai_personality = erudite_explorers
-		has_ai_personality = ruthless_capitalists
-		has_ai_personality = slaving_despots
-		has_ai_personality = decadent_capitalists
-		has_ai_personality = mirthful_bandits
-		has_ai_personality = cynical_socialists
-	}
-}
-
-has_spearhead_doctrine_personality = {
-	OR = {
-		has_ai_personality = hive_mind
-		has_ai_personality = assimilators
-		has_ai_personality = hyperthermia_empire
-		has_ai_personality = metalhead
-		has_ai_personality = rampant_wilderness
-		has_ai_personality = fanatic_purifiers
-		has_ai_personality = scorching_infernals
-		has_ai_personality = cunning_raiders
-	}
-}
 
 # Pirates
 
