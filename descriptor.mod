@@ -1,5 +1,5 @@
 version="1.1.0"
-name="Expressive Pirate AI Personalities"
+name="SEAP: Pirate AI Personalities"
 tags={
 	"Gameplay"
 	"Diplomacy"
